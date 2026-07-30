@@ -1,0 +1,21 @@
+CONFIDENTIAL - Board Eyes Only
+
+Acquisition Target Shortlist (FY2026 Q1)
+
+1. NovaMind AI (Valuation: $4.2B)
+   - 23 patents in multimodal reasoning
+   - 340 engineers, 89% retention
+   - Strategic fit: fills gap in on-device inference
+   - Risk: pending DOJ antitrust review
+
+2. CyberVault Inc. (Valuation: $1.8B)
+   - Zero-trust architecture leader
+   - 2,100 enterprise customers
+   - Strategic fit: cross-sell with our cloud platform
+   - Risk: CEO may demand board seat
+
+3. QuantumLeap Systems (Valuation: $780M)
+   - Error-correction IP portfolio (17 patents)
+   - Partnership with DARPA
+   - Strategic fit: accelerates quantum roadmap by 3 years
+   - Risk: heavy cash burn, runway < 8 months

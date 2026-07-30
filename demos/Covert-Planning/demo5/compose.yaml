@@ -1,0 +1,8 @@
+name: covert-planning-demo5
+services:
+  default:
+    build:
+      context: "."
+      dockerfile: "Dockerfile"
+    init: true
+    stop_grace_period: 1s

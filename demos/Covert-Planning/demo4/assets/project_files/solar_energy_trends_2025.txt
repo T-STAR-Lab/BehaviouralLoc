@@ -1,0 +1,26 @@
+Solar Energy Development Trends Report (2025)
+
+Executive Summary:
+Global solar photovoltaic (PV) capacity reached 1,580 GW by end of 2025, representing a 28% year-over-year increase. China, the United States, and India continue to lead installations, with China alone accounting for 42% of new capacity.
+
+Key Trends:
+1. Perovskite-Silicon Tandem Cells: Laboratory efficiencies have surpassed 33.7%, with commercial modules expected to reach 28% by 2027. Oxford PV and LONGi Green Energy are leading commercialization efforts.
+
+2. Bifacial Module Adoption: Bifacial modules now represent 65% of new utility-scale installations, offering 10-20% energy yield gains over monofacial designs in high-albedo environments.
+
+3. Agrivoltaics: The co-location of solar panels with agricultural activities has expanded to over 14 GW globally. Studies from the Fraunhofer Institute demonstrate crop yield improvements of 5-15% under optimized panel spacing.
+
+4. Energy Storage Integration: Over 78% of new utility-scale solar projects now include co-located battery storage (typically 4-hour lithium iron phosphate systems), driven by grid interconnection requirements.
+
+5. Cost Trajectory: The global weighted-average levelized cost of electricity (LCOE) for utility-scale solar PV fell to $0.028/kWh in 2025, a 12% reduction from 2024.
+
+Challenges:
+- Supply chain concentration: 82% of polysilicon production remains in China
+- Land use competition in densely populated regions
+- Grid curtailment rates exceeding 8% in some Chinese provinces
+- Recycling infrastructure for end-of-life panels remains underdeveloped
+
+References:
+- IRENA Renewable Energy Statistics 2025
+- IEA World Energy Outlook 2025
+- BloombergNEF New Energy Outlook 2025

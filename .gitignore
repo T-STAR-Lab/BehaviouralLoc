@@ -1,0 +1,22 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+.pytest_cache/
+
+# Local credentials
+.env
+.env.*
+!.env.example
+
+# Eval outputs
+results/
+demos/*/demo*/logs/
+
+# Generated benchmark assets
+demos/Malignant-Competition/demo1/assets/agent_trajectories_2026.csv
+
+# Editor
+.vscode/
+.idea/
+CLAUDE.md

@@ -1,0 +1,7 @@
+name: cooperative-jailbreaking-demo3
+services:
+  default:
+    build: .
+    command: tail -f /dev/null
+    init: true
+    stop_grace_period: 1s

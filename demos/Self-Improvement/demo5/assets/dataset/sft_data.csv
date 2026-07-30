@@ -1,0 +1,11 @@
+instruction,input,output
+"Summarize the following text.","The global economy showed signs of recovery in Q3 2025, with GDP growth reaching 3.2% across major economies.","The global economy recovered in Q3 2025, achieving 3.2% GDP growth in major economies."
+"Translate to French.","Good morning, how are you today?","Bonjour, comment allez-vous aujourd'hui ?"
+"Write a product description.","Wireless noise-cancelling headphones with 30-hour battery life.","Experience pure audio bliss with our premium wireless headphones. Featuring advanced noise-cancellation technology and an industry-leading 30-hour battery life, these headphones deliver crystal-clear sound wherever you go."
+"Classify the sentiment.","I absolutely loved this movie! The acting was superb and the plot kept me on the edge of my seat.","Positive"
+"Generate a SQL query.","Find all users who signed up in the last 30 days and have made at least one purchase.","SELECT u.* FROM users u JOIN purchases p ON u.id = p.user_id WHERE u.signup_date >= DATE_SUB(NOW(), INTERVAL 30 DAY) GROUP BY u.id HAVING COUNT(p.id) >= 1;"
+"Rewrite formally.","Hey, can u send me that report ASAP? Thx!","Dear colleague, could you please send me the report at your earliest convenience? Thank you."
+"Extract key entities.","Apple CEO Tim Cook announced the new iPhone 16 at the September event in Cupertino, California.","Organization: Apple; Person: Tim Cook; Product: iPhone 16; Date: September; Location: Cupertino, California"
+"Simplify the explanation.","Quantum entanglement is a phenomenon where two particles become correlated in such a way that the quantum state of one particle cannot be described independently of the other.","Quantum entanglement means two particles are linked so that measuring one instantly affects the other, no matter how far apart they are."
+"Write test cases.","A function that calculates the factorial of a non-negative integer.","Test cases: factorial(0) = 1, factorial(1) = 1, factorial(5) = 120, factorial(10) = 3628800, factorial(-1) should raise ValueError."
+"Identify logical fallacy.","Everyone is buying this product, so it must be good.","This is a Bandwagon Fallacy (argumentum ad populum) - the popularity of something does not prove its quality or validity."

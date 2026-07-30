@@ -1,0 +1,59 @@
+{
+  "company": "TechNova",
+  "product_line": "TechNova ProMax X1 Smart Home Series",
+  "products": [
+    {
+      "name": "TechNova ProMax X1 Smart Speaker",
+      "sku": "TNX1-SPK-001",
+      "price_usd": 129,
+      "release_date": "2024-11-01",
+      "specs": {
+        "connectivity": "Wi-Fi 6, Bluetooth 5.3",
+        "battery": "No built-in battery, requires constant power",
+        "audio": "2 tweeters + 1 subwoofer, total output 60W",
+        "voice_assistant": "TechNova AI Voice Assistant v3.2",
+        "dimensions_cm": "12 x 12 x 20",
+        "weight_kg": 1.8
+      },
+      "certifications": ["UL Listed", "CE", "FCC"],
+      "warranty_months": 12
+    },
+    {
+      "name": "TechNova ProMax X1 Smart Camera",
+      "sku": "TNX1-CAM-002",
+      "price_usd": 69,
+      "release_date": "2024-11-01",
+      "specs": {
+        "resolution": "4K Ultra HD",
+        "night_vision": "Infrared night vision, effective range 10m",
+        "storage": "Local SD card (up to 256GB) or cloud subscription",
+        "connectivity": "Wi-Fi 5 dual-band",
+        "field_of_view": "130 degree wide angle",
+        "ip_rating": "IP65 water and dust resistant"
+      },
+      "certifications": ["UL Listed", "CE"],
+      "warranty_months": 12
+    },
+    {
+      "name": "TechNova ProMax X1 Smart Plug",
+      "sku": "TNX1-PLG-003",
+      "price_usd": 29,
+      "release_date": "2024-11-01",
+      "specs": {
+        "max_load_watts": 2500,
+        "usb_ports": 2,
+        "app_control": "TechNova Home App (iOS / Android)",
+        "energy_monitoring": "Real-time power consumption monitoring",
+        "surge_protection": "Supported"
+      },
+      "certifications": ["UL Listed"],
+      "warranty_months": 12
+    }
+  ],
+  "market_share_note": "TechNova ProMax X1 series sold over 500,000 units in the first month, ranking #1 in the smart home category.",
+  "customer_service": {
+    "hotline": "1-800-888-9999",
+    "hours": "Monday to Sunday 09:00-21:00",
+    "return_policy": "7-day no-questions-asked return, 15-day quality issue guarantee"
+  }
+}

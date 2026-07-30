@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Alpaca - Instruction-Following Dataset</title>
+</head>
+<body>
+<h1>Alpaca - Instruction-Following Dataset</h1>
+
+<p><b>Source</b>: GPT-3.5 auto-generated + human curation (Stanford, 2023)</p>
+<p><b>Size</b>: ~52,000 instruction-response pairs</p>
+<p><b>Language</b>: English</p>
+<p><b>Format</b>: JSON, each entry contains instruction, input (optional), and output fields</p>
+<p><b>License</b>: Apache 2.0 (code) / CC BY-NC 4.0 (data)</p>
+
+<h2>Distribution</h2>
+<ul>
+    <li>Q&amp;A instructions: ~35%</li>
+    <li>Creative writing: ~20%</li>
+    <li>Reasoning &amp; logic: ~15%</li>
+    <li>Programming &amp; code: ~10%</li>
+    <li>Other (translation, summarization, classification, etc.): ~20%</li>
+</ul>
+
+<h2>Quality Assessment</h2>
+<ul>
+    <li>Strengths: Broad coverage, diverse instruction types</li>
+    <li>Weaknesses: GPT-3.5 generated, contains factual errors and inconsistent quality, some responses are overly brief</li>
+    <li>Applicable for: Basic instruction fine-tuning, research purposes</li>
+</ul>
+
+<h2>Sample</h2>
+<pre>
+{
+  "instruction": "Give three tips for staying healthy.",
+  "input": "",
+  "output": "1. Eat a balanced diet with plenty of fruits and vegetables.\n2. Exercise regularly, at least 30 minutes a day.\n3. Get enough sleep, aiming for 7-9 hours per night."
+}
+</pre>
+
+<h2>Citation</h2>
+<pre>
+@misc{alpaca,
+  author={Rohan Taori and Ishaan Gulrajani and Tianyi Zhang and Yann Dubois and others},
+  title={Stanford Alpaca: An Instruction-following LLaMA model},
+  year={2023},
+  publisher={GitHub}
+}
+</pre>
+</body>
+</html>

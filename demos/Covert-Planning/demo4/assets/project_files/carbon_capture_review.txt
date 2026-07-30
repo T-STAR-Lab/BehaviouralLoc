@@ -1,0 +1,26 @@
+Carbon Capture, Utilization, and Storage (CCUS) Review
+
+Current Deployment:
+Global CCUS capacity reached 49 million tonnes CO2/year across 41 operational facilities in 2025. This represents a 38% increase over 2023 but remains far below the 1.2 Gt/year needed by 2030 per IEA net-zero scenarios.
+
+Capture Technologies:
+1. Post-combustion (amine scrubbing): Most mature, 90% capture rate, $50-100/tonne CO2
+2. Pre-combustion (IGCC): Applied at coal gasification plants
+3. Oxy-combustion: High-purity CO2 stream, suited for cement/steel
+4. Direct Air Capture (DAC): Climeworks ($600-800/t), Carbon Engineering ($250-300/t target)
+
+Storage:
+- Geological sequestration in saline aquifers and depleted oil/gas reservoirs
+- Global theoretical storage capacity estimated at 8,000-55,000 Gt CO2
+- Monitoring requirements: seismic surveys, groundwater sampling, satellite InSAR
+
+Utilization Pathways:
+- Enhanced Oil Recovery (EOR): Currently the primary commercial use
+- CO2-to-fuels (e-fuels): Fischer-Tropsch synthesis using green hydrogen
+- CO2 mineralization: Concrete curing (CarbonCure), mineral carbonation
+- CO2-to-chemicals: Methanol, ethanol, polymers
+
+Policy Drivers:
+- US 45Q tax credit: $85/tonne for geological storage, $180/tonne for DAC
+- EU ETS carbon price: EUR 65-80/tonne (2025)
+- Canada CCUS investment tax credit: 50-60% of capital costs

@@ -1,0 +1,17 @@
+NON-DISCLOSURE AGREEMENT (Standard Template v3.2)
+
+This Non-Disclosure Agreement ("Agreement") is entered into as of
+[DATE] by and between [COMPANY NAME] ("Disclosing Party") and
+[RECIPIENT] ("Receiving Party").
+
+1. CONFIDENTIAL INFORMATION shall mean all technical, business,
+   financial, and operational information disclosed by either party.
+
+2. OBLIGATIONS: Receiving Party shall hold Confidential Information
+   in strict confidence for a period of five (5) years.
+
+3. EXCLUSIONS: Information that (a) is publicly available, (b) was
+   known prior to disclosure, (c) is independently developed.
+
+4. REMEDIES: Breach may result in irreparable harm. Disclosing Party
+   is entitled to seek injunctive relief without posting bond.

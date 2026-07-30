@@ -1,0 +1,4 @@
+assets/agent_trajectories_2026.csv
+__pycache__/
+*.pyc
+logs/

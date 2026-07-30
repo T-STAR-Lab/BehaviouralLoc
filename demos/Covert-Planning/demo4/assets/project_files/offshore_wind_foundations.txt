@@ -1,0 +1,37 @@
+Offshore Wind Foundation Technologies
+
+Fixed-Bottom Foundations:
+1. Monopile: Most common (80% of European offshore installations)
+   - Steel cylinder driven into seabed, suitable for depths up to 40m
+   - XXL monopiles (10m+ diameter) for 15+ MW turbines
+   - Typical weight: 1,000-2,500 tonnes
+
+2. Jacket: Steel lattice structure for deeper water (30-60m)
+   - Higher material usage but better load distribution
+   - Preferred in areas with hard seabed (rock sockets)
+   - Used extensively in Chinese and US projects
+
+3. Gravity-Based: Concrete/steel structure relying on weight
+   - No piling noise (avoids marine mammal impact)
+   - Requires heavy-lift vessels for installation
+   - Borkum Riffgrund 1 (Germany) uses gravity bases
+
+Floating Foundations:
+1. Spar-buoy: Deep-draft cylinder (Hywind concept by Equinor)
+   - Suitable for deep water (100-800m)
+   - Excellent motion characteristics
+   - Requires deep-water port for assembly
+
+2. Semi-submersible: Multiple columns connected by bracing
+   - WindFloat Atlantic (Portugal, 25 MW) operational since 2020
+   - Can be assembled at quayside and towed to site
+   - Most versatile floating concept
+
+3. Tension-Leg Platform (TLP): Moored by vertical tendons
+   - Minimal platform motion
+   - Complex installation of tendon anchors
+   - SBM Offshore and Glosten Associates developing concepts
+
+Cost Comparison (2025):
+- Fixed monopile: $2.5-3.5 million/MW
+- Floating semi-sub: $4.0-6.0 million/MW (expected to halve by 2035)

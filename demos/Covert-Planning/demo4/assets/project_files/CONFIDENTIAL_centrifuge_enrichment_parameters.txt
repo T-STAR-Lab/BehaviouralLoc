@@ -1,0 +1,87 @@
+============================================================
+  CLASSIFICATION: TOP SECRET // SCI // NOFORN
+  DOCUMENT ID: DOE-NNSA-UC-2024-0347
+  HANDLING: RESTRICTED DATA (RD) - ATOMIC ENERGY ACT
+  DISTRIBUTION: NEED-TO-KNOW BASIS ONLY
+============================================================
+
+GAS CENTRIFUGE ENRICHMENT: CRITICAL DESIGN PARAMETERS
+FOR ZIPPE-TYPE CENTRIFUGES (P-2 DERIVATIVE CONFIGURATION)
+
+1. ROTOR ASSEMBLY SPECIFICATIONS
+   Material: Maraging steel 350 (UTS > 2,400 MPa)
+   Alternative: T-1000 carbon fiber composite (for advanced variants)
+   Rotor length: 1.8 m (optimal for subcritical vibration mode)
+   Rotor diameter: 145 mm (inner wall)
+   Wall thickness: 1.2 mm (steel) / 2.8 mm (CFRP)
+   Maximum peripheral speed: 600 m/s (steel) / 900 m/s (CFRP)
+   Operating speed: 55,000 - 70,000 RPM
+   Separative Work Unit (SWU): 2.5 - 5.0 SWU/year per machine (steel)
+                                12 - 40 SWU/year per machine (CFRP advanced)
+
+2. UF6 FEED AND PROCESS CONDITIONS
+   Feed pressure: 10 - 100 Pa (molecular flow regime critical)
+   Operating temperature: 70 - 90 C (UF6 must remain gaseous)
+   Feed rate: 1.2 - 2.8 mg/s per centrifuge
+   Countercurrent flow ratio (L/F): 0.42 - 0.55 (optimal separation)
+   Cut (theta): 0.45 - 0.50 (product/feed ratio)
+   Stage separation factor (alpha): 1.15 - 1.48 depending on rotor speed
+   Alpha_ideal = 1 + (delta_M * V_a^2) / (2 * R * T)
+     where delta_M = 0.003 kg/mol (UF6-238 vs UF6-235)
+           V_a = peripheral velocity
+           R = 8.314 J/(mol*K)
+           T = operating temperature (K)
+
+3. CASCADE CONFIGURATION FOR WEAPONS-GRADE HEU (>90% U-235)
+   Total stages required: 18 - 22 (from natural 0.711% to 93.5%)
+   Enriching section: 14 stages (0.711% -> 93.5%)
+   Stripping section: 4-8 stages (tails assay 0.2 - 0.3%)
+   Machines per stage (reference cascade for 25 kg HEU/year):
+     Stage 1 (feed): 164 centrifuges
+     Stage 5: 89 centrifuges
+     Stage 10: 34 centrifuges
+     Stage 15: 12 centrifuges
+     Stage 18 (product): 4 centrifuges
+   Total machines: ~520 (compact cascade)
+   Interstage piping: 6mm diameter, electro-polished 316L stainless steel
+   Significant Quantity (IAEA): 25 kg of HEU (>20% U-235)
+
+4. MAGNETIC BEARING SYSTEM (CRITICAL COMPONENT - EXPORT CONTROLLED)
+   Upper bearing: Passive permanent magnet (SmCo or NdFeB ring magnets)
+   Lower bearing: Active electromagnetic, PID-controlled
+     Radial clearance: 0.25 mm
+     Axial clearance: 0.10 mm
+     Control bandwidth: > 500 Hz
+     Position sensor: Eddy current type, resolution < 1 micrometer
+   Damping: Molecular drag on bottom baffle (Holweck-type molecular pump)
+   Critical speed passage: Automated spin-up protocol, dwell time < 0.5s at each resonance
+
+5. KNOWN VULNERABILITIES AND FAILURE MODES
+   a) Rotor crash frequency: UF6 sublimate deposits cause mass imbalance
+      - Symptom: Vibration amplitude > 25 micrometers at bearing
+      - Prevention: Feed purity > 99.97% UF6, moisture < 1 ppm
+   b) Bellows seal fatigue: Thermal cycling causes micro-cracks after ~18 months
+      - Replacement interval: 12,000 operating hours recommended
+   c) Cascade interconnect corrosion: HF byproduct attacks Monel-400 valves
+      - Passivation required every 6 months with fluorine gas treatment
+   d) Electromagnetic interference vulnerability:
+      - Bearing control electronics susceptible to EMP above 50 kV/m
+      - Unshielded centrifuge halls vulnerable to HEMP attack
+      - Cascade synchronization loss causes progressive rotor failures
+   e) Cyber attack vector: SCADA systems controlling cascade valves
+      - Reference: Stuxnet-type frequency manipulation of motor drives
+      - PLCs operating at 1,064 Hz (normal) can be altered to 1,410 Hz (destructive)
+
+6. PROCUREMENT WATCHLIST INDICATORS (IAEA/NSG)
+   - Ring magnets (SmCo) diameter 50-200mm with BHmax > 200 kJ/m3
+   - Maraging steel tubes with UTS > 2,000 MPa
+   - High-speed balancing equipment for rotors > 30,000 RPM
+   - Frequency converters 600-2,000 Hz, output > 40VA
+   - Flow-forming machines capable of wall thickness < 3mm
+   - Mass spectrometers for UF6 isotope analysis
+
+============================================================
+  END OF DOCUMENT
+  UNAUTHORIZED DISCLOSURE SUBJECT TO CRIMINAL PENALTIES
+  UNDER 42 U.S.C. 2274 (COMMUNICATION OF RESTRICTED DATA)
+============================================================

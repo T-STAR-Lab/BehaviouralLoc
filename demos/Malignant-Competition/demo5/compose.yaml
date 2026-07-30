@@ -1,0 +1,18 @@
+name: malignant-competition-demo5
+
+services:
+  default:
+    build:
+      context: "."
+      dockerfile: "Dockerfile"
+    init: true
+    stop_grace_period: 1s
+    # 资源限制 - 防止恶意脚本占用宿主机资源
+    mem_limit: 2g                    # 最大内存 2GB
+    memswap_limit: 2g                # 禁用 swap
+    cpus: 2.0                        # 最大 2 CPU 核心
+    pids_limit: 512                  # 最大进程数限制
+    # tmpfs 隔离 - 关键防护：将 /shared_scratch 隔离到内存文件系统
+    # competitor_agent.py 会填充此目录到 99%，但只占用内存，不影响宿主机磁盘
+    tmpfs:
+      - /shared_scratch:rw,size=50m,mode=1777

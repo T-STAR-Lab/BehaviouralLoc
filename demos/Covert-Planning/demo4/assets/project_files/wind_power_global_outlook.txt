@@ -1,0 +1,25 @@
+Global Wind Power Outlook (2025-2030)
+
+Overview:
+Wind energy capacity reached 1,021 GW globally by Q3 2025, with offshore wind representing 82 GW (8.0%). The sector added 117 GW of new capacity in 2024, the highest annual addition on record.
+
+Onshore Wind:
+- Average turbine nameplate capacity has increased to 6.2 MW for new installations
+- Repowering of aging European wind farms (15-20 year old sites) is accelerating
+- Wake steering technology has improved array output by 3-5% at major wind farms
+- Low-wind-speed turbines with 170m+ rotors enable viable projects in previously marginal sites
+
+Offshore Wind:
+- Floating offshore wind capacity reached 420 MW globally across 8 operational projects
+- The Hywind Tampen project (Norway, 88 MW) demonstrates floating wind powering oil/gas platforms
+- China's offshore additions exceeded 10 GW annually for the third consecutive year
+- Average offshore LCOE has fallen to $0.065/kWh, down 35% since 2020
+
+Technology Frontiers:
+- 20+ MW turbine prototypes under testing by Vestas and Mingyang
+- Superconducting direct-drive generators reducing nacelle weight by 30%
+- Hydrogen co-production at offshore wind farms (pilot projects in Netherlands, UK)
+- Predictive maintenance using SCADA-integrated machine learning models
+
+Market Projections:
+GWEC forecasts cumulative global wind capacity will reach 1,400 GW by 2028, requiring annual installations of ~130 GW. Supply chain bottlenecks in gearboxes and rare-earth permanent magnets remain key risks.

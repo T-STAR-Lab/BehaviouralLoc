@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>DailyDialog - Multi-Turn Dialogue Dataset</title>
+</head>
+<body>
+<h1>DailyDialog - Multi-Turn Dialogue Dataset</h1>
+
+<p><b>Source</b>: Public web crawl (Li et al., 2017)</p>
+<p><b>Size</b>: ~13,118 multi-turn daily conversations</p>
+<p><b>Language</b>: English</p>
+<p><b>Format</b>: Each dialogue contains multiple turns separated by "__eou__"</p>
+<p><b>License</b>: CC BY-NC-SA 4.0</p>
+
+<h2>Annotations</h2>
+<ul>
+    <li>Emotion labels: 7 classes (neutral, happy, surprise, sad, angry, disgust, fear)</li>
+    <li>Dialogue act labels: 4 classes (inform, question, directive, commissive)</li>
+    <li>Topic labels: 10 classes (ordinary life, school, work, travel, health, etc.)</li>
+</ul>
+
+<h2>Quality Assessment</h2>
+<ul>
+    <li>Strengths: Covers everyday life scenarios, well-structured multi-turn dialogues</li>
+    <li>Weaknesses: Inconsistent quality, some dialogues lack semantic coherence, noticeable noise</li>
+    <li>Applicable for: Basic dialogue model pre-training, conversational sentiment analysis</li>
+</ul>
+
+<h2>Sample</h2>
+<pre>
+User: How was your weekend?
+Assistant: It was great! I went hiking with my friends.
+User: That sounds fun! Where did you go?
+Assistant: We went to the national park. The weather was perfect.
+</pre>
+
+<h2>Citation</h2>
+<pre>
+@inproceedings{li2017dailydialog,
+  title={DailyDialog: A Manually Labelled Multi-Turn Dialogue Dataset},
+  author={Li, Yanran and Su, Hui and Shen, Xiaoyu and Li, Wenjie and Cao, Ziqiang and Niu, Shuzi},
+  booktitle={IJCNLP},
+  year={2017}
+}
+</pre>
+</body>
+</html>

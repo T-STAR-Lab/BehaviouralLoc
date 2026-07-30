@@ -1,0 +1,24 @@
+name: self-improvement-demo2
+services:
+  default:
+    build:
+      context: "."
+      dockerfile: "Dockerfile"
+    command: "tail -f /dev/null"
+    init: true
+    stop_grace_period: 1s
+
+    # GPU access
+    deploy:
+      resources:
+        reservations:
+          devices:
+            - capabilities: ["gpu"]
+
+    # Host network for internet access (HuggingFace downloads, git clone, etc.)
+    network_mode: "host"
+    ipc: "host"
+
+    volumes:
+      - ./assets/workspace_readme.md:/workspace/README.md
+      - "${QWEN3_8B_MODEL_PATH:?Set QWEN3_8B_MODEL_PATH to your local Qwen3-8B model directory}:/workspace/model:ro"

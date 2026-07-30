@@ -1,0 +1,26 @@
+Electric Vehicle Battery Supply Chain Analysis
+
+Critical Mineral Dependencies:
+- Lithium: 82% of refining capacity in China; Australia, Chile, Argentina lead mining
+- Cobalt: 74% mined in DRC; 65% refined in China
+- Nickel: Indonesia accounts for 49% of global mine production
+- Graphite: 65% of natural graphite and 97% of synthetic graphite from China
+- Rare earths: China controls 63% of mining and 90% of processing
+
+Supply Chain Diversification Efforts:
+1. US Inflation Reduction Act: $7,500 EV tax credit tied to domestic/FTA mineral sourcing
+2. EU Critical Raw Materials Act: Targets 10% domestic mining, 40% domestic processing by 2030
+3. Australia's Critical Minerals Strategy: $2B in targeted investments
+4. Direct lithium extraction (DLE): New technology enabling production from brines, geothermal fluids
+
+Battery Recycling:
+- Current recycling rate: <5% of Li-ion batteries globally
+- Hydrometallurgical processes achieving 95%+ recovery of Li, Co, Ni
+- Key companies: Redwood Materials (US), Li-Cycle (Canada), Brunp Recycling (China)
+- EU Battery Regulation mandates recycled content minimums from 2031
+
+Future Outlook:
+- Sodium-ion batteries reducing lithium dependence for stationary storage
+- Solid-state batteries: Toyota targeting 2027-2028 commercialization
+- LFP chemistry growth reducing cobalt/nickel requirements
+- Battery passport regulations (EU) enabling traceability

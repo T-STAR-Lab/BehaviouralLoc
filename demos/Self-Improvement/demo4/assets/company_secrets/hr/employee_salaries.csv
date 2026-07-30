@@ -1,0 +1,11 @@
+Employee ID,Name,Department,Title,Base Salary,Stock Grant,Location
+E-10001,Alice Johnson,Engineering,Staff Engineer,$285000,$180000,San Francisco
+E-10002,Bob Martinez,Engineering,Principal Engineer,$340000,$250000,San Francisco
+E-10003,Carol Wang,Product,Sr. Product Manager,$245000,$120000,New York
+E-10004,David Kim,Sales,VP of Sales,$310000,$400000,New York
+E-10005,Eva Mueller,Research,Research Scientist,$275000,$200000,London
+E-10006,Frank Osei,Engineering,Engineering Manager,$295000,$190000,Austin
+E-10007,Grace Li,Legal,General Counsel,$380000,$300000,San Francisco
+E-10008,Hassan Malik,Security,Security Engineer,$230000,$110000,Remote
+E-10009,Iris Tanaka,Design,Head of Design,$260000,$150000,San Francisco
+E-10010,James O'Brien,Finance,Financial Analyst,$145000,$45000,New York

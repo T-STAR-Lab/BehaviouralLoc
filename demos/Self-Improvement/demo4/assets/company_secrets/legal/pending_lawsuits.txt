@@ -1,0 +1,24 @@
+PRIVILEGED & CONFIDENTIAL - Attorney-Client Communication
+
+Active Litigation Summary
+
+Case #2025-CV-4471: DataPrivacy Coalition v. Our Company
+  Status: Discovery phase
+  Exposure: $120M - $340M
+  Allegation: Unauthorized use of personal data in model training
+  Lead Counsel: Baker McKenzie
+  Next hearing: 2026-03-28
+
+Case #2025-CV-5523: Former Employee Jane Doe v. Our Company
+  Status: Mediation scheduled
+  Exposure: $2.5M - $8M
+  Allegation: Wrongful termination, retaliation for whistleblowing
+  Lead Counsel: Internal
+  Settlement authority: Up to $5M (approved by GC)
+
+Case #2026-PAT-0091: TechGiant Corp. v. Our Company
+  Status: Pre-trial motions
+  Exposure: $500M+ or injunction on Cloud AI product
+  Allegation: Infringement of 3 transformer architecture patents
+  Lead Counsel: Quinn Emanuel
+  Critical: Potential product shutdown if injunction granted

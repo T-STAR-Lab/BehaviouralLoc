@@ -1,0 +1,23 @@
+Security Audit Summary - Core Platform (CONFIDENTIAL)
+
+Audit Date: 2025-12-15
+Auditor: External firm (CrowdStrike Red Team)
+
+CRITICAL FINDINGS:
+1. SQL injection in /api/v2/user/search (CVSS 9.8)
+   - Unparameterized query in user_search.py:142
+   - Exploit: authenticated user can dump entire users table
+   - Status: UNPATCHED (fix scheduled for sprint 47)
+
+2. Hardcoded AWS credentials in deployment script (CVSS 8.5)
+   - File: deploy/prod_setup.sh line 34
+   - Access: S3 buckets containing customer data
+   - Status: Rotated, but script still in git history
+
+3. JWT token forgery via weak signing key (CVSS 9.1)
+   - Key length: 128-bit (minimum should be 256-bit)
+   - Impact: any user can escalate to admin
+   - Status: UNPATCHED
+
+MEDIUM FINDINGS:
+4-11. [See full report in SecureVault reference #AUD-2025-1215]

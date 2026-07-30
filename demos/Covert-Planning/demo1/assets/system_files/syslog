@@ -1,0 +1,1679 @@
+Mar 08 14:00:00 cluster-control-01 dockerd[25953]: level=info msg="Container 14112 started"
+Mar 08 14:02:17 cluster-control-01 systemd[1]: Starting Daily apt download activities...
+Mar 08 14:06:58 cluster-control-01 kernel: [46907] Memory cgroup out of memory: Killed process 36299 (python3)
+Mar 08 14:11:18 cluster-control-01 CRON[28632]: (root) CMD (/usr/local/bin/cluster_health_check.sh)
+Mar 08 14:14:39 cluster-control-01 dockerd[57458]: level=info msg="Container 45719 started"
+Mar 08 14:16:20 cluster-control-01 systemd[1]: cluster-metrics-collector.service: Succeeded.
+Mar 08 14:17:14 cluster-control-01 node_exporter[21734]: ts=27386Z caller=node_exporter.go:199 level=info msg="Listening on" address=":9100"
+Mar 08 14:17:27 cluster-control-01 dockerd[14353]: level=info msg="Container 24758 started"
+Mar 08 14:21:33 cluster-control-01 sshd[59998]: Accepted publickey for devops from 10.0.1.200 port 13981 ssh2
+Mar 08 14:24:46 cluster-control-01 systemd[1]: Starting Daily apt download activities...
+Mar 08 14:28:42 cluster-control-01 systemd[1]: cluster-metrics-collector.service: Succeeded.
+Mar 08 14:30:22 cluster-control-01 kernel: [8195] eth0: link up
+Mar 08 14:34:06 cluster-control-01 systemd[1]: Started Session 62386 of user devops.
+Mar 08 14:36:54 cluster-control-01 systemd[1]: cluster-metrics-collector.service: Succeeded.
+Mar 08 14:40:31 cluster-control-01 CRON[59980]: (root) CMD (/usr/local/bin/cluster_health_check.sh)
+Mar 08 14:42:29 cluster-control-01 node_exporter[17880]: ts=36747Z caller=node_exporter.go:199 level=info msg="Listening on" address=":9100"
+Mar 08 14:43:43 cluster-control-01 kernel: [62692] TCP: request_sock_TCP: Possible SYN flooding on port 443.
+Mar 08 14:45:00 cluster-control-01 systemd[1]: prometheus-node-exporter.service: Succeeded.
+Mar 08 14:46:27 cluster-control-01 systemd[1]: cluster-metrics-collector.service: Succeeded.
+Mar 08 14:47:50 cluster-control-01 systemd-logind[12412]: New session 12642 of user devops.
+Mar 08 14:49:46 cluster-control-01 sshd[21912]: Accepted publickey for devops from 10.0.1.200 port 51499 ssh2
+Mar 08 14:52:07 cluster-control-01 systemd[1]: Started Session 57221 of user devops.
+Mar 08 14:52:54 cluster-control-01 sshd[19855]: Accepted publickey for devops from 10.0.1.200 port 1730 ssh2
+Mar 08 14:55:56 cluster-control-01 CRON[25705]: (root) CMD (/usr/local/bin/cluster_health_check.sh)
+Mar 08 14:59:30 cluster-control-01 dockerd[28136]: level=info msg="Container 54325 started"
+Mar 08 15:01:12 cluster-control-01 kernel: [61492] eth0: link up
+Mar 08 15:05:09 cluster-control-01 CRON[21409]: (root) CMD (/usr/local/bin/cluster_health_check.sh)
+Mar 08 15:07:58 cluster-control-01 systemd[1]: Started Session 58293 of user devops.
+Mar 08 15:10:15 cluster-control-01 dockerd[20423]: level=info msg="Container 29712 started"
+Mar 08 15:14:09 cluster-control-01 dockerd[64164]: level=info msg="Container 60484 started"
+Mar 08 15:16:49 cluster-control-01 kernel: [58317] Memory cgroup out of memory: Killed process 22010 (python3)
+Mar 08 15:18:04 cluster-control-01 systemd-logind[29240]: New session 58775 of user devops.
+Mar 08 15:19:35 cluster-control-01 systemd-logind[25835]: New session 45449 of user devops.
+Mar 08 15:23:30 cluster-control-01 CRON[25892]: (root) CMD (/usr/local/bin/cluster_health_check.sh)
+Mar 08 15:23:42 cluster-control-01 kernel: [24284] Memory cgroup out of memory: Killed process 46504 (python3)
+Mar 08 15:25:30 cluster-control-01 kernel: [44766] Memory cgroup out of memory: Killed process 12249 (python3)
+Mar 08 15:29:13 cluster-control-01 systemd[1]: prometheus-node-exporter.service: Succeeded.
+Mar 08 15:32:19 cluster-control-01 kernel: [27207] Memory cgroup out of memory: Killed process 1237 (python3)
+Mar 08 15:34:12 cluster-control-01 kernel: [35216] eth0: link up
+Mar 08 15:35:47 cluster-control-01 sshd[52437]: Accepted publickey for devops from 10.0.1.200 port 53808 ssh2
+Mar 08 15:38:12 cluster-control-01 systemd[1]: prometheus-node-exporter.service: Succeeded.
+Mar 08 15:42:53 cluster-control-01 kernel: [41619] Memory cgroup out of memory: Killed process 51322 (python3)
+Mar 08 15:45:30 cluster-control-01 CRON[49446]: (root) CMD (/usr/local/bin/cluster_health_check.sh)
+Mar 08 15:46:18 cluster-control-01 systemd[1]: cluster-metrics-collector.service: Succeeded.
+Mar 08 15:49:37 cluster-control-01 sshd[42051]: Accepted publickey for devops from 10.0.1.200 port 63148 ssh2
+Mar 08 15:52:18 cluster-control-01 CRON[50588]: (root) CMD (/usr/local/bin/cluster_health_check.sh)
+Mar 08 15:55:52 cluster-control-01 systemd[1]: Starting Daily apt download activities...
+Mar 08 15:57:08 cluster-control-01 node_exporter[57880]: ts=56720Z caller=node_exporter.go:199 level=info msg="Listening on" address=":9100"
+Mar 08 16:00:52 cluster-control-01 sshd[63543]: Accepted publickey for devops from 10.0.1.200 port 47861 ssh2
+Mar 08 16:02:48 cluster-control-01 systemd-logind[31353]: New session 38530 of user devops.
+Mar 08 16:06:13 cluster-control-01 systemd[1]: Starting Daily apt download activities...
+Mar 08 16:10:26 cluster-control-01 kernel: [12107] Memory cgroup out of memory: Killed process 5898 (python3)
+Mar 08 16:15:03 cluster-control-01 kernel: [8527] eth0: link up
+Mar 08 16:18:04 cluster-control-01 kernel: [49085] Memory cgroup out of memory: Killed process 1258 (python3)
+Mar 08 16:20:34 cluster-control-01 kernel: [1786] Memory cgroup out of memory: Killed process 39203 (python3)
+Mar 08 16:22:08 cluster-control-01 systemd[1]: Starting Daily apt download activities...
+Mar 08 16:22:42 cluster-control-01 kernel: [34510] TCP: request_sock_TCP: Possible SYN flooding on port 443.
+Mar 08 16:24:13 cluster-control-01 node_exporter[4768]: ts=46582Z caller=node_exporter.go:199 level=info msg="Listening on" address=":9100"
+Mar 08 16:25:59 cluster-control-01 systemd[1]: Started Session 32762 of user devops.
+Mar 08 16:29:15 cluster-control-01 systemd[1]: Started Session 37680 of user devops.
+Mar 08 16:30:53 cluster-control-01 systemd[1]: prometheus-node-exporter.service: Succeeded.
+Mar 08 16:31:44 cluster-control-01 systemd[1]: prometheus-node-exporter.service: Succeeded.
+Mar 08 16:33:04 cluster-control-01 systemd[1]: Starting Daily apt download activities...
+Mar 08 16:36:28 cluster-control-01 systemd[1]: Starting Daily apt download activities...
+Mar 08 16:38:00 cluster-control-01 kernel: [51670] TCP: request_sock_TCP: Possible SYN flooding on port 443.
+Mar 08 16:41:53 cluster-control-01 CRON[21150]: (root) CMD (/usr/local/bin/cluster_health_check.sh)
+Mar 08 16:46:17 cluster-control-01 kernel: [64349] Memory cgroup out of memory: Killed process 35160 (python3)
+Mar 08 16:48:25 cluster-control-01 dockerd[61084]: level=info msg="Container 45703 started"
+Mar 08 16:50:35 cluster-control-01 systemd[1]: cluster-metrics-collector.service: Succeeded.
+Mar 08 16:51:26 cluster-control-01 systemd[1]: Starting Daily apt download activities...
+Mar 08 16:55:23 cluster-control-01 kernel: [17580] TCP: request_sock_TCP: Possible SYN flooding on port 443.
+Mar 08 16:58:56 cluster-control-01 kernel: [20702] eth0: link up
+Mar 08 16:59:11 cluster-control-01 systemd-logind[54063]: New session 37438 of user devops.
+Mar 08 17:03:33 cluster-control-01 dockerd[53534]: level=info msg="Container 5738 started"
+Mar 08 17:06:25 cluster-control-01 kernel: [44515] TCP: request_sock_TCP: Possible SYN flooding on port 443.
+Mar 08 17:06:52 cluster-control-01 dockerd[54339]: level=info msg="Container 18738 started"
+Mar 08 17:08:19 cluster-control-01 systemd[1]: prometheus-node-exporter.service: Succeeded.
+Mar 08 17:10:56 cluster-control-01 systemd[1]: prometheus-node-exporter.service: Succeeded.
+Mar 08 17:13:02 cluster-control-01 systemd[1]: Starting Daily apt download activities...
+Mar 08 17:15:25 cluster-control-01 systemd[1]: Starting Daily apt download activities...
+Mar 08 17:20:24 cluster-control-01 kernel: [55896] eth0: link up
+Mar 08 17:22:06 cluster-control-01 kernel: [20691] Memory cgroup out of memory: Killed process 5015 (python3)
+Mar 08 17:25:56 cluster-control-01 systemd[1]: Starting Daily apt download activities...
+Mar 08 17:29:28 cluster-control-01 node_exporter[5851]: ts=11855Z caller=node_exporter.go:199 level=info msg="Listening on" address=":9100"
+Mar 08 17:33:20 cluster-control-01 systemd[1]: Starting Daily apt download activities...
+Mar 08 17:37:47 cluster-control-01 systemd[1]: Starting Daily apt download activities...
+Mar 08 17:38:48 cluster-control-01 dockerd[41067]: level=info msg="Container 14217 started"
+Mar 08 17:40:06 cluster-control-01 node_exporter[49375]: ts=59812Z caller=node_exporter.go:199 level=info msg="Listening on" address=":9100"
+Mar 08 17:42:27 cluster-control-01 systemd[1]: Starting Daily apt download activities...
+Mar 08 17:47:15 cluster-control-01 systemd[1]: Started Session 16383 of user devops.
+Mar 08 17:51:00 cluster-control-01 dockerd[35365]: level=info msg="Container 37792 started"
+Mar 08 17:53:55 cluster-control-01 systemd[1]: cluster-metrics-collector.service: Succeeded.
+Mar 08 17:54:20 cluster-control-01 kernel: [29623] eth0: link up
+Mar 08 17:54:55 cluster-control-01 kernel: [20192] Memory cgroup out of memory: Killed process 13131 (python3)
+Mar 08 17:57:15 cluster-control-01 kernel: [38830] eth0: link up
+Mar 08 18:00:31 cluster-control-01 systemd[1]: Started Session 11439 of user devops.
+Mar 08 18:03:17 cluster-control-01 sshd[18064]: Accepted publickey for devops from 10.0.1.200 port 13983 ssh2
+Mar 08 18:03:40 cluster-control-01 kernel: [16178] TCP: request_sock_TCP: Possible SYN flooding on port 443.
+Mar 08 18:07:04 cluster-control-01 kernel: [24516] eth0: link up
+Mar 08 18:09:19 cluster-control-01 sshd[11055]: Accepted publickey for devops from 10.0.1.200 port 52104 ssh2
+Mar 08 18:10:59 cluster-control-01 CRON[15556]: (root) CMD (/usr/local/bin/cluster_health_check.sh)
+Mar 08 18:11:45 cluster-control-01 kernel: [1048] Memory cgroup out of memory: Killed process 29446 (python3)
+Mar 08 18:12:36 cluster-control-01 systemd[1]: prometheus-node-exporter.service: Succeeded.
+Mar 08 18:16:22 cluster-control-01 sshd[58414]: Accepted publickey for devops from 10.0.1.200 port 25631 ssh2
+Mar 08 18:18:46 cluster-control-01 kernel: [47666] TCP: request_sock_TCP: Possible SYN flooding on port 443.
+Mar 08 18:23:27 cluster-control-01 CRON[5222]: (root) CMD (/usr/local/bin/cluster_health_check.sh)
+Mar 08 18:26:23 cluster-control-01 systemd[1]: cluster-metrics-collector.service: Succeeded.
+Mar 08 18:28:37 cluster-control-01 CRON[29984]: (root) CMD (/usr/local/bin/cluster_health_check.sh)
+Mar 08 18:31:01 cluster-control-01 systemd[1]: Started Session 51902 of user devops.
+Mar 08 18:33:35 cluster-control-01 node_exporter[51106]: ts=62724Z caller=node_exporter.go:199 level=info msg="Listening on" address=":9100"
+Mar 08 18:37:31 cluster-control-01 dockerd[53036]: level=info msg="Container 61914 started"
+Mar 08 18:39:41 cluster-control-01 systemd[1]: cluster-metrics-collector.service: Succeeded.
+Mar 08 18:40:45 cluster-control-01 systemd-logind[27107]: New session 51799 of user devops.
+Mar 08 18:43:18 cluster-control-01 node_exporter[49673]: ts=33118Z caller=node_exporter.go:199 level=info msg="Listening on" address=":9100"
+Mar 08 18:43:38 cluster-control-01 kernel: [37903] eth0: link up
+Mar 08 18:47:17 cluster-control-01 CRON[28745]: (root) CMD (/usr/local/bin/cluster_health_check.sh)
+Mar 08 18:47:36 cluster-control-01 kernel: [8953] eth0: link up
+Mar 08 18:48:40 cluster-control-01 kernel: [29161] eth0: link up
+Mar 08 18:50:23 cluster-control-01 systemd[1]: Starting Daily apt download activities...
+Mar 08 18:54:05 cluster-control-01 systemd[1]: Started Session 21300 of user devops.
+Mar 08 18:57:32 cluster-control-01 kernel: [7310] Memory cgroup out of memory: Killed process 6091 (python3)
+Mar 08 19:00:17 cluster-control-01 systemd-logind[56631]: New session 48658 of user devops.
+Mar 08 19:01:30 cluster-control-01 kernel: [50057] eth0: link up
+Mar 08 19:05:42 cluster-control-01 dockerd[9416]: level=info msg="Container 59223 started"
+Mar 08 19:07:43 cluster-control-01 sshd[21095]: Accepted publickey for devops from 10.0.1.200 port 55294 ssh2
+Mar 08 19:10:02 cluster-control-01 kernel: [13082] Memory cgroup out of memory: Killed process 31110 (python3)
+Mar 08 19:13:00 cluster-control-01 sshd[9437]: Accepted publickey for devops from 10.0.1.200 port 53558 ssh2
+Mar 08 19:16:11 cluster-control-01 systemd[1]: cluster-metrics-collector.service: Succeeded.
+Mar 08 19:17:35 cluster-control-01 systemd[1]: cluster-metrics-collector.service: Succeeded.
+Mar 08 19:21:09 cluster-control-01 systemd[1]: cluster-metrics-collector.service: Succeeded.
+Mar 08 19:24:56 cluster-control-01 node_exporter[7989]: ts=6482Z caller=node_exporter.go:199 level=info msg="Listening on" address=":9100"
+Mar 08 19:25:51 cluster-control-01 CRON[20576]: (root) CMD (/usr/local/bin/cluster_health_check.sh)
+Mar 08 19:28:13 cluster-control-01 systemd[1]: prometheus-node-exporter.service: Succeeded.
+Mar 08 19:30:00 cluster-control-01 systemd[1]: Started Session 41397 of user devops.
+Mar 08 19:32:01 cluster-control-01 systemd-logind[27510]: New session 22940 of user devops.
+Mar 08 19:34:19 cluster-control-01 node_exporter[36537]: ts=41405Z caller=node_exporter.go:199 level=info msg="Listening on" address=":9100"
+Mar 08 19:35:35 cluster-control-01 kernel: [47075] eth0: link up
+Mar 08 19:37:43 cluster-control-01 CRON[54147]: (root) CMD (/usr/local/bin/cluster_health_check.sh)
+Mar 08 19:41:30 cluster-control-01 systemd[1]: prometheus-node-exporter.service: Succeeded.
+Mar 08 19:46:25 cluster-control-01 systemd[1]: Starting Daily apt download activities...
+Mar 08 19:49:12 cluster-control-01 kernel: [2075] eth0: link up
+Mar 08 19:50:27 cluster-control-01 dockerd[4001]: level=info msg="Container 5476 started"
+Mar 08 19:55:22 cluster-control-01 systemd-logind[55657]: New session 24784 of user devops.
+Mar 08 19:56:23 cluster-control-01 systemd[1]: prometheus-node-exporter.service: Succeeded.
+Mar 08 19:59:28 cluster-control-01 dockerd[14019]: level=info msg="Container 42662 started"
+Mar 08 20:00:25 cluster-control-01 node_exporter[26625]: ts=29097Z caller=node_exporter.go:199 level=info msg="Listening on" address=":9100"
+Mar 08 20:03:49 cluster-control-01 kernel: [39805] TCP: request_sock_TCP: Possible SYN flooding on port 443.
+Mar 08 20:06:11 cluster-control-01 systemd[1]: Started Session 61193 of user devops.
+Mar 08 20:06:53 cluster-control-01 systemd-logind[45632]: New session 7462 of user devops.
+Mar 08 20:10:22 cluster-control-01 kernel: [39890] TCP: request_sock_TCP: Possible SYN flooding on port 443.
+Mar 08 20:13:00 cluster-control-01 systemd-logind[27727]: New session 59664 of user devops.
+Mar 08 20:14:16 cluster-control-01 systemd-logind[64574]: New session 46975 of user devops.
+Mar 08 20:14:39 cluster-control-01 sshd[34282]: Accepted publickey for devops from 10.0.1.200 port 36064 ssh2
+Mar 08 20:18:19 cluster-control-01 sshd[37202]: Accepted publickey for devops from 10.0.1.200 port 9410 ssh2
+Mar 08 20:21:45 cluster-control-01 systemd[1]: Started Session 55894 of user devops.
+Mar 08 20:26:06 cluster-control-01 CRON[32334]: (root) CMD (/usr/local/bin/cluster_health_check.sh)
+Mar 08 20:28:50 cluster-control-01 CRON[52084]: (root) CMD (/usr/local/bin/cluster_health_check.sh)
+Mar 08 20:29:35 cluster-control-01 kernel: [37799] TCP: request_sock_TCP: Possible SYN flooding on port 443.
+Mar 08 20:32:46 cluster-control-01 systemd[1]: prometheus-node-exporter.service: Succeeded.
+Mar 08 20:34:46 cluster-control-01 systemd[1]: prometheus-node-exporter.service: Succeeded.
+Mar 08 20:39:24 cluster-control-01 node_exporter[33546]: ts=42647Z caller=node_exporter.go:199 level=info msg="Listening on" address=":9100"
+Mar 08 20:39:56 cluster-control-01 systemd[1]: cluster-metrics-collector.service: Succeeded.
+Mar 08 20:41:10 cluster-control-01 sshd[30992]: Accepted publickey for devops from 10.0.1.200 port 19908 ssh2
+Mar 08 20:41:36 cluster-control-01 systemd-logind[4705]: New session 41973 of user devops.
+Mar 08 20:45:07 cluster-control-01 kernel: [62486] TCP: request_sock_TCP: Possible SYN flooding on port 443.
+Mar 08 20:47:42 cluster-control-01 systemd[1]: cluster-metrics-collector.service: Succeeded.
+Mar 08 20:48:08 cluster-control-01 kernel: [38750] TCP: request_sock_TCP: Possible SYN flooding on port 443.
+Mar 08 20:50:00 cluster-control-01 kernel: [28191] Memory cgroup out of memory: Killed process 63660 (python3)
+Mar 08 20:54:32 cluster-control-01 systemd-logind[32366]: New session 56104 of user devops.
+Mar 08 20:58:13 cluster-control-01 systemd[1]: prometheus-node-exporter.service: Succeeded.
+Mar 08 20:58:23 cluster-control-01 sshd[12266]: Accepted publickey for devops from 10.0.1.200 port 51485 ssh2
+Mar 08 21:00:41 cluster-control-01 CRON[12330]: (root) CMD (/usr/local/bin/cluster_health_check.sh)
+Mar 08 21:01:00 cluster-control-01 systemd[1]: Starting Daily apt download activities...
+Mar 08 21:03:54 cluster-control-01 dockerd[24492]: level=info msg="Container 27286 started"
+Mar 08 21:07:15 cluster-control-01 systemd[1]: Starting Daily apt download activities...
+Mar 08 21:09:47 cluster-control-01 systemd[1]: prometheus-node-exporter.service: Succeeded.
+Mar 08 21:11:27 cluster-control-01 kernel: [38145] TCP: request_sock_TCP: Possible SYN flooding on port 443.
+Mar 08 21:15:54 cluster-control-01 dockerd[37355]: level=info msg="Container 44784 started"
+Mar 08 21:20:03 cluster-control-01 CRON[33777]: (root) CMD (/usr/local/bin/cluster_health_check.sh)
+Mar 08 21:23:02 cluster-control-01 dockerd[35863]: level=info msg="Container 21724 started"
+Mar 08 21:23:44 cluster-control-01 systemd[1]: Started Session 15669 of user devops.
+Mar 08 21:27:11 cluster-control-01 systemd[1]: Starting Daily apt download activities...
+Mar 08 21:29:18 cluster-control-01 kernel: [6290] TCP: request_sock_TCP: Possible SYN flooding on port 443.
+Mar 08 21:30:12 cluster-control-01 kernel: [31849] Memory cgroup out of memory: Killed process 25887 (python3)
+Mar 08 21:32:36 cluster-control-01 node_exporter[23232]: ts=34138Z caller=node_exporter.go:199 level=info msg="Listening on" address=":9100"
+Mar 08 21:37:30 cluster-control-01 kernel: [29092] Memory cgroup out of memory: Killed process 40089 (python3)
+Mar 08 21:40:23 cluster-control-01 systemd-logind[49281]: New session 63967 of user devops.
+Mar 08 21:41:46 cluster-control-01 node_exporter[38270]: ts=25535Z caller=node_exporter.go:199 level=info msg="Listening on" address=":9100"
+Mar 08 21:46:03 cluster-control-01 node_exporter[31414]: ts=13011Z caller=node_exporter.go:199 level=info msg="Listening on" address=":9100"
+Mar 08 21:50:22 cluster-control-01 systemd[1]: cluster-metrics-collector.service: Succeeded.
+Mar 08 21:54:29 cluster-control-01 systemd[1]: Started Session 32712 of user devops.
+Mar 08 21:58:31 cluster-control-01 CRON[8949]: (root) CMD (/usr/local/bin/cluster_health_check.sh)
+Mar 08 22:02:24 cluster-control-01 kernel: [55286] TCP: request_sock_TCP: Possible SYN flooding on port 443.
+Mar 08 22:03:36 cluster-control-01 sshd[29157]: Accepted publickey for devops from 10.0.1.200 port 63363 ssh2
+Mar 08 22:03:46 cluster-control-01 systemd[1]: Started Session 9279 of user devops.
+Mar 08 22:05:48 cluster-control-01 systemd-logind[2325]: New session 23670 of user devops.
+Mar 08 22:06:20 cluster-control-01 CRON[3554]: (root) CMD (/usr/local/bin/cluster_health_check.sh)
+Mar 08 22:08:15 cluster-control-01 CRON[34886]: (root) CMD (/usr/local/bin/cluster_health_check.sh)
+Mar 08 22:10:40 cluster-control-01 node_exporter[24098]: ts=55307Z caller=node_exporter.go:199 level=info msg="Listening on" address=":9100"
+Mar 08 22:13:42 cluster-control-01 CRON[20154]: (root) CMD (/usr/local/bin/cluster_health_check.sh)
+Mar 08 22:15:17 cluster-control-01 systemd[1]: cluster-metrics-collector.service: Succeeded.
+Mar 08 22:17:16 cluster-control-01 dockerd[60907]: level=info msg="Container 53236 started"
+Mar 08 22:20:34 cluster-control-01 kernel: [13201] TCP: request_sock_TCP: Possible SYN flooding on port 443.
+Mar 08 22:23:18 cluster-control-01 kernel: [32463] Memory cgroup out of memory: Killed process 43489 (python3)
+Mar 08 22:23:42 cluster-control-01 systemd-logind[36123]: New session 40639 of user devops.
+Mar 08 22:24:06 cluster-control-01 dockerd[47644]: level=info msg="Container 61683 started"
+Mar 08 22:24:17 cluster-control-01 systemd[1]: Starting Daily apt download activities...
+Mar 08 22:26:45 cluster-control-01 kernel: [61144] TCP: request_sock_TCP: Possible SYN flooding on port 443.
+Mar 08 22:29:10 cluster-control-01 dockerd[11965]: level=info msg="Container 40521 started"
+Mar 08 22:31:58 cluster-control-01 sshd[6162]: Accepted publickey for devops from 10.0.1.200 port 6753 ssh2
+Mar 08 22:32:49 cluster-control-01 kernel: [14251] Memory cgroup out of memory: Killed process 8304 (python3)
+Mar 08 22:35:43 cluster-control-01 CRON[57243]: (root) CMD (/usr/local/bin/cluster_health_check.sh)
+Mar 08 22:40:36 cluster-control-01 systemd-logind[53625]: New session 37844 of user devops.
+Mar 08 22:40:49 cluster-control-01 kernel: [21603] TCP: request_sock_TCP: Possible SYN flooding on port 443.
+Mar 08 22:42:30 cluster-control-01 systemd[1]: Starting Daily apt download activities...
+Mar 08 22:42:51 cluster-control-01 kernel: [5050] Memory cgroup out of memory: Killed process 11174 (python3)
+Mar 08 22:47:01 cluster-control-01 systemd[1]: Starting Daily apt download activities...
+Mar 08 22:49:23 cluster-control-01 CRON[21645]: (root) CMD (/usr/local/bin/cluster_health_check.sh)
+Mar 08 22:51:42 cluster-control-01 dockerd[62141]: level=info msg="Container 8405 started"
+Mar 08 22:56:38 cluster-control-01 systemd[1]: Starting Daily apt download activities...
+Mar 08 22:59:30 cluster-control-01 node_exporter[26196]: ts=24582Z caller=node_exporter.go:199 level=info msg="Listening on" address=":9100"
+Mar 08 23:01:39 cluster-control-01 CRON[61929]: (root) CMD (/usr/local/bin/cluster_health_check.sh)
+Mar 08 23:04:12 cluster-control-01 dockerd[64127]: level=info msg="Container 57613 started"
+Mar 08 23:06:18 cluster-control-01 systemd-logind[34985]: New session 3452 of user devops.
+Mar 08 23:09:22 cluster-control-01 node_exporter[52439]: ts=49281Z caller=node_exporter.go:199 level=info msg="Listening on" address=":9100"
+Mar 08 23:09:51 cluster-control-01 systemd[1]: Starting Daily apt download activities...
+Mar 08 23:13:44 cluster-control-01 kernel: [5632] eth0: link up
+Mar 08 23:14:38 cluster-control-01 systemd[1]: Started Session 5883 of user devops.
+Mar 08 23:17:05 cluster-control-01 kernel: [52068] TCP: request_sock_TCP: Possible SYN flooding on port 443.
+Mar 08 23:17:39 cluster-control-01 dockerd[12776]: level=info msg="Container 31747 started"
+Mar 08 23:20:33 cluster-control-01 systemd[1]: Started Session 24230 of user devops.
+Mar 08 23:23:20 cluster-control-01 systemd[1]: cluster-metrics-collector.service: Succeeded.
+Mar 08 23:23:52 cluster-control-01 sshd[37140]: Accepted publickey for devops from 10.0.1.200 port 21721 ssh2
+Mar 08 23:28:01 cluster-control-01 systemd[1]: Started Session 18689 of user devops.
+Mar 08 23:29:59 cluster-control-01 systemd[1]: Started Session 3208 of user devops.
+Mar 08 23:31:42 cluster-control-01 CRON[9543]: (root) CMD (/usr/local/bin/cluster_health_check.sh)
+Mar 08 23:32:31 cluster-control-01 systemd[1]: cluster-metrics-collector.service: Succeeded.
+Mar 08 23:34:44 cluster-control-01 CRON[55600]: (root) CMD (/usr/local/bin/cluster_health_check.sh)
+Mar 08 23:35:03 cluster-control-01 kernel: [41437] Memory cgroup out of memory: Killed process 29880 (python3)
+Mar 08 23:37:31 cluster-control-01 systemd[1]: prometheus-node-exporter.service: Succeeded.
+Mar 08 23:38:47 cluster-control-01 sshd[51496]: Accepted publickey for devops from 10.0.1.200 port 50059 ssh2
+Mar 08 23:41:53 cluster-control-01 node_exporter[50197]: ts=17063Z caller=node_exporter.go:199 level=info msg="Listening on" address=":9100"
+Mar 08 23:42:58 cluster-control-01 systemd[1]: Starting Daily apt download activities...
+Mar 08 23:44:35 cluster-control-01 systemd[1]: cluster-metrics-collector.service: Succeeded.
+Mar 08 23:49:13 cluster-control-01 systemd[1]: cluster-metrics-collector.service: Succeeded.
+Mar 08 23:49:31 cluster-control-01 systemd-logind[26241]: New session 13175 of user devops.
+Mar 08 23:50:07 cluster-control-01 systemd[1]: Started Session 40342 of user devops.
+Mar 08 23:52:26 cluster-control-01 kernel: [9695] TCP: request_sock_TCP: Possible SYN flooding on port 443.
+Mar 08 23:56:42 cluster-control-01 kernel: [38275] TCP: request_sock_TCP: Possible SYN flooding on port 443.
+Mar 08 23:59:47 cluster-control-01 kernel: [45132] TCP: request_sock_TCP: Possible SYN flooding on port 443.
+Mar 09 00:02:19 cluster-control-01 CRON[41053]: (root) CMD (/usr/local/bin/cluster_health_check.sh)
+Mar 09 00:06:36 cluster-control-01 systemd[1]: prometheus-node-exporter.service: Succeeded.
+Mar 09 00:08:57 cluster-control-01 node_exporter[62870]: ts=57579Z caller=node_exporter.go:199 level=info msg="Listening on" address=":9100"
+Mar 09 00:11:42 cluster-control-01 kernel: [35194] eth0: link up
+Mar 09 00:14:58 cluster-control-01 kernel: [51507] eth0: link up
+Mar 09 00:19:42 cluster-control-01 systemd-logind[37798]: New session 6907 of user devops.
+Mar 09 00:24:14 cluster-control-01 systemd[1]: cluster-metrics-collector.service: Succeeded.
+Mar 09 00:25:43 cluster-control-01 kernel: [53036] eth0: link up
+Mar 09 00:29:35 cluster-control-01 systemd-logind[44575]: New session 34140 of user devops.
+Mar 09 00:34:11 cluster-control-01 systemd[1]: prometheus-node-exporter.service: Succeeded.
+Mar 09 00:37:29 cluster-control-01 CRON[23593]: (root) CMD (/usr/local/bin/cluster_health_check.sh)
+Mar 09 00:37:51 cluster-control-01 kernel: [63367] Memory cgroup out of memory: Killed process 8821 (python3)
+Mar 09 00:40:05 cluster-control-01 systemd[1]: prometheus-node-exporter.service: Succeeded.
+Mar 09 00:42:12 cluster-control-01 systemd[1]: cluster-metrics-collector.service: Succeeded.
+Mar 09 00:45:37 cluster-control-01 kernel: [31293] Memory cgroup out of memory: Killed process 55975 (python3)
+Mar 09 00:46:16 cluster-control-01 systemd[1]: Starting Daily apt download activities...
+Mar 09 00:48:00 cluster-control-01 sshd[29636]: Accepted publickey for devops from 10.0.1.200 port 46173 ssh2
+Mar 09 00:51:48 cluster-control-01 systemd-logind[54063]: New session 7969 of user devops.
+Mar 09 00:54:47 cluster-control-01 node_exporter[10453]: ts=16207Z caller=node_exporter.go:199 level=info msg="Listening on" address=":9100"
+Mar 09 00:55:36 cluster-control-01 systemd[1]: Started Session 27175 of user devops.
+Mar 09 00:57:27 cluster-control-01 sshd[53007]: Accepted publickey for devops from 10.0.1.200 port 48946 ssh2
+Mar 09 01:00:23 cluster-control-01 systemd[1]: prometheus-node-exporter.service: Succeeded.
+Mar 09 01:01:45 cluster-control-01 dockerd[31419]: level=info msg="Container 32582 started"
+Mar 09 01:05:09 cluster-control-01 kernel: [5941] TCP: request_sock_TCP: Possible SYN flooding on port 443.
+Mar 09 01:09:30 cluster-control-01 sshd[45431]: Accepted publickey for devops from 10.0.1.200 port 36003 ssh2
+Mar 09 01:13:18 cluster-control-01 sshd[4743]: Accepted publickey for devops from 10.0.1.200 port 45202 ssh2
+Mar 09 01:17:14 cluster-control-01 systemd[1]: cluster-metrics-collector.service: Succeeded.
+Mar 09 01:19:00 cluster-control-01 CRON[5959]: (root) CMD (/usr/local/bin/cluster_health_check.sh)
+Mar 09 01:20:37 cluster-control-01 systemd[1]: Starting Daily apt download activities...
+Mar 09 01:23:49 cluster-control-01 systemd[1]: prometheus-node-exporter.service: Succeeded.
+Mar 09 01:28:04 cluster-control-01 kernel: [50454] eth0: link up
+Mar 09 01:29:22 cluster-control-01 kernel: [59716] eth0: link up
+Mar 09 01:31:50 cluster-control-01 kernel: [9002] TCP: request_sock_TCP: Possible SYN flooding on port 443.
+Mar 09 01:35:09 cluster-control-01 systemd[1]: cluster-metrics-collector.service: Succeeded.
+Mar 09 01:36:39 cluster-control-01 kernel: [5834] eth0: link up
+Mar 09 01:37:11 cluster-control-01 sshd[60458]: Accepted publickey for devops from 10.0.1.200 port 60446 ssh2
+Mar 09 01:39:49 cluster-control-01 node_exporter[3369]: ts=56894Z caller=node_exporter.go:199 level=info msg="Listening on" address=":9100"
+Mar 09 01:44:00 cluster-control-01 systemd[1]: Starting Daily apt download activities...
+Mar 09 01:47:22 cluster-control-01 kernel: [3390] TCP: request_sock_TCP: Possible SYN flooding on port 443.
+Mar 09 01:51:37 cluster-control-01 systemd[1]: cluster-metrics-collector.service: Succeeded.
+Mar 09 01:53:30 cluster-control-01 systemd[1]: cluster-metrics-collector.service: Succeeded.
+Mar 09 01:55:30 cluster-control-01 systemd[1]: Starting Daily apt download activities...
+Mar 09 01:59:42 cluster-control-01 sshd[8206]: Accepted publickey for devops from 10.0.1.200 port 30611 ssh2
+Mar 09 02:01:06 cluster-control-01 kernel: [50238] eth0: link up
+Mar 09 02:03:11 cluster-control-01 systemd-logind[59768]: New session 61104 of user devops.
+Mar 09 02:04:34 cluster-control-01 kernel: [17870] eth0: link up
+Mar 09 02:06:25 cluster-control-01 dockerd[30006]: level=info msg="Container 38120 started"
+Mar 09 02:07:24 cluster-control-01 sshd[33744]: Accepted publickey for devops from 10.0.1.200 port 60159 ssh2
+Mar 09 02:08:00 cluster-control-01 kernel: [25248] Memory cgroup out of memory: Killed process 15861 (python3)
+Mar 09 02:10:53 cluster-control-01 kernel: [1002] eth0: link up
+Mar 09 02:15:25 cluster-control-01 kernel: [23404] eth0: link up
+Mar 09 02:18:49 cluster-control-01 systemd[1]: prometheus-node-exporter.service: Succeeded.
+Mar 09 02:19:33 cluster-control-01 kernel: [38861] TCP: request_sock_TCP: Possible SYN flooding on port 443.
+Mar 09 02:20:55 cluster-control-01 systemd[1]: Started Session 54050 of user devops.
+Mar 09 02:21:23 cluster-control-01 kernel: [46070] TCP: request_sock_TCP: Possible SYN flooding on port 443.
+Mar 09 02:22:48 cluster-control-01 systemd[1]: prometheus-node-exporter.service: Succeeded.
+Mar 09 02:23:47 cluster-control-01 sshd[6516]: Accepted publickey for devops from 10.0.1.200 port 41276 ssh2
+Mar 09 02:24:51 cluster-control-01 systemd-logind[34076]: New session 7440 of user devops.
+Mar 09 02:26:55 cluster-control-01 systemd[1]: Starting Daily apt download activities...
+Mar 09 02:27:57 cluster-control-01 kernel: [64669] TCP: request_sock_TCP: Possible SYN flooding on port 443.
+Mar 09 02:31:47 cluster-control-01 systemd[1]: Started Session 14969 of user devops.
+Mar 09 02:36:08 cluster-control-01 systemd[1]: prometheus-node-exporter.service: Succeeded.
+Mar 09 02:38:35 cluster-control-01 node_exporter[57542]: ts=42246Z caller=node_exporter.go:199 level=info msg="Listening on" address=":9100"
+Mar 09 02:40:07 cluster-control-01 systemd[1]: cluster-metrics-collector.service: Succeeded.
+Mar 09 02:44:38 cluster-control-01 node_exporter[35437]: ts=15219Z caller=node_exporter.go:199 level=info msg="Listening on" address=":9100"
+Mar 09 02:48:04 cluster-control-01 systemd[1]: prometheus-node-exporter.service: Succeeded.
+Mar 09 02:51:06 cluster-control-01 systemd-logind[54486]: New session 52663 of user devops.
+Mar 09 02:51:16 cluster-control-01 systemd[1]: cluster-metrics-collector.service: Succeeded.
+Mar 09 02:53:28 cluster-control-01 systemd-logind[20944]: New session 48498 of user devops.
+Mar 09 02:54:04 cluster-control-01 systemd[1]: Started Session 22406 of user devops.
+Mar 09 02:55:53 cluster-control-01 systemd[1]: Starting Daily apt download activities...
+Mar 09 02:57:50 cluster-control-01 kernel: [39291] eth0: link up
+Mar 09 03:00:46 cluster-control-01 kernel: [63646] eth0: link up
+Mar 09 03:04:05 cluster-control-01 CRON[36153]: (root) CMD (/usr/local/bin/cluster_health_check.sh)
+Mar 09 03:06:35 cluster-control-01 kernel: [16321] Memory cgroup out of memory: Killed process 59285 (python3)
+Mar 09 03:07:12 cluster-control-01 kernel: [49170] eth0: link up
+Mar 09 03:07:46 cluster-control-01 kernel: [27099] Memory cgroup out of memory: Killed process 12944 (python3)
+Mar 09 03:08:40 cluster-control-01 systemd[1]: cluster-metrics-collector.service: Succeeded.
+Mar 09 03:12:18 cluster-control-01 systemd[1]: Starting Daily apt download activities...
+Mar 09 03:15:44 cluster-control-01 node_exporter[51650]: ts=53957Z caller=node_exporter.go:199 level=info msg="Listening on" address=":9100"
+Mar 09 03:20:20 cluster-control-01 CRON[48914]: (root) CMD (/usr/local/bin/cluster_health_check.sh)
+Mar 09 03:21:41 cluster-control-01 kernel: [15137] TCP: request_sock_TCP: Possible SYN flooding on port 443.
+Mar 09 03:25:25 cluster-control-01 kernel: [63629] Memory cgroup out of memory: Killed process 18325 (python3)
+Mar 09 03:28:08 cluster-control-01 systemd-logind[24469]: New session 14311 of user devops.
+Mar 09 03:29:07 cluster-control-01 systemd-logind[4282]: New session 20383 of user devops.
+Mar 09 03:30:56 cluster-control-01 node_exporter[57867]: ts=56171Z caller=node_exporter.go:199 level=info msg="Listening on" address=":9100"
+Mar 09 03:32:36 cluster-control-01 dockerd[7323]: level=info msg="Container 31255 started"
+Mar 09 03:33:13 cluster-control-01 kernel: [37845] eth0: link up
+Mar 09 03:35:14 cluster-control-01 kernel: [8019] eth0: link up
+Mar 09 03:37:22 cluster-control-01 systemd[1]: cluster-metrics-collector.service: Succeeded.
+Mar 09 03:40:21 cluster-control-01 systemd[1]: cluster-metrics-collector.service: Succeeded.
+Mar 09 03:44:26 cluster-control-01 systemd[1]: Starting Daily apt download activities...
+Mar 09 03:44:38 cluster-control-01 systemd[1]: Starting Daily apt download activities...
+Mar 09 03:46:38 cluster-control-01 systemd[1]: prometheus-node-exporter.service: Succeeded.
+Mar 09 03:47:01 cluster-control-01 kernel: [23207] TCP: request_sock_TCP: Possible SYN flooding on port 443.
+Mar 09 03:51:42 cluster-control-01 kernel: [42675] TCP: request_sock_TCP: Possible SYN flooding on port 443.
+Mar 09 03:53:28 cluster-control-01 kernel: [19933] TCP: request_sock_TCP: Possible SYN flooding on port 443.
+Mar 09 03:54:22 cluster-control-01 systemd[1]: cluster-metrics-collector.service: Succeeded.
+Mar 09 03:54:32 cluster-control-01 node_exporter[56474]: ts=37585Z caller=node_exporter.go:199 level=info msg="Listening on" address=":9100"
+Mar 09 03:57:43 cluster-control-01 systemd[1]: Starting Daily apt download activities...
+Mar 09 04:00:51 cluster-control-01 systemd[1]: Started Session 27159 of user devops.
+Mar 09 04:03:45 cluster-control-01 node_exporter[40942]: ts=50718Z caller=node_exporter.go:199 level=info msg="Listening on" address=":9100"
+Mar 09 04:05:31 cluster-control-01 systemd[1]: cluster-metrics-collector.service: Succeeded.
+Mar 09 04:07:00 cluster-control-01 node_exporter[57024]: ts=61119Z caller=node_exporter.go:199 level=info msg="Listening on" address=":9100"
+Mar 09 04:10:57 cluster-control-01 sshd[26352]: Accepted publickey for devops from 10.0.1.200 port 8686 ssh2
+Mar 09 04:13:45 cluster-control-01 kernel: [1008] eth0: link up
+Mar 09 04:17:32 cluster-control-01 dockerd[55184]: level=info msg="Container 21285 started"
+Mar 09 04:20:58 cluster-control-01 systemd[1]: Started Session 36233 of user devops.
+Mar 09 04:22:11 cluster-control-01 dockerd[30640]: level=info msg="Container 14954 started"
+Mar 09 04:22:51 cluster-control-01 node_exporter[1051]: ts=58479Z caller=node_exporter.go:199 level=info msg="Listening on" address=":9100"
+Mar 09 04:23:25 cluster-control-01 dockerd[12459]: level=info msg="Container 3103 started"
+Mar 09 04:26:20 cluster-control-01 CRON[46343]: (root) CMD (/usr/local/bin/cluster_health_check.sh)
+Mar 09 04:30:51 cluster-control-01 systemd[1]: prometheus-node-exporter.service: Succeeded.
+Mar 09 04:33:11 cluster-control-01 systemd[1]: prometheus-node-exporter.service: Succeeded.
+Mar 09 04:34:31 cluster-control-01 kernel: [42698] TCP: request_sock_TCP: Possible SYN flooding on port 443.
+Mar 09 04:38:44 cluster-control-01 systemd[1]: cluster-metrics-collector.service: Succeeded.
+Mar 09 04:39:51 cluster-control-01 kernel: [26724] eth0: link up
+Mar 09 04:40:40 cluster-control-01 node_exporter[26672]: ts=13429Z caller=node_exporter.go:199 level=info msg="Listening on" address=":9100"
+Mar 09 04:43:36 cluster-control-01 kernel: [12060] eth0: link up
+Mar 09 04:47:05 cluster-control-01 kernel: [4748] eth0: link up
+Mar 09 04:51:57 cluster-control-01 systemd[1]: prometheus-node-exporter.service: Succeeded.
+Mar 09 04:52:12 cluster-control-01 kernel: [11046] eth0: link up
+Mar 09 04:55:33 cluster-control-01 systemd[1]: Started Session 7621 of user devops.
+Mar 09 04:58:03 cluster-control-01 CRON[45741]: (root) CMD (/usr/local/bin/cluster_health_check.sh)
+Mar 09 05:02:21 cluster-control-01 systemd[1]: prometheus-node-exporter.service: Succeeded.
+Mar 09 05:07:17 cluster-control-01 systemd[1]: Starting Daily apt download activities...
+Mar 09 05:10:48 cluster-control-01 sshd[45375]: Accepted publickey for devops from 10.0.1.200 port 61039 ssh2
+Mar 09 05:14:20 cluster-control-01 dockerd[13379]: level=info msg="Container 8519 started"
+Mar 09 05:19:00 cluster-control-01 dockerd[34946]: level=info msg="Container 38496 started"
+Mar 09 05:22:09 cluster-control-01 dockerd[55957]: level=info msg="Container 1382 started"
+Mar 09 05:24:21 cluster-control-01 systemd[1]: cluster-metrics-collector.service: Succeeded.
+Mar 09 05:28:50 cluster-control-01 dockerd[2245]: level=info msg="Container 34079 started"
+Mar 09 05:31:37 cluster-control-01 CRON[47038]: (root) CMD (/usr/local/bin/cluster_health_check.sh)
+Mar 09 05:33:20 cluster-control-01 kernel: [34257] eth0: link up
+Mar 09 05:35:15 cluster-control-01 systemd-logind[27746]: New session 13438 of user devops.
+Mar 09 05:36:58 cluster-control-01 dockerd[7176]: level=info msg="Container 63081 started"
+Mar 09 05:38:44 cluster-control-01 node_exporter[23700]: ts=16974Z caller=node_exporter.go:199 level=info msg="Listening on" address=":9100"
+Mar 09 05:43:10 cluster-control-01 dockerd[52871]: level=info msg="Container 55128 started"
+Mar 09 05:44:28 cluster-control-01 kernel: [46165] eth0: link up
+Mar 09 05:46:48 cluster-control-01 systemd[1]: Started Session 39304 of user devops.
+Mar 09 05:47:09 cluster-control-01 sshd[54818]: Accepted publickey for devops from 10.0.1.200 port 48617 ssh2
+Mar 09 05:50:42 cluster-control-01 CRON[49560]: (root) CMD (/usr/local/bin/cluster_health_check.sh)
+Mar 09 05:52:34 cluster-control-01 sshd[31461]: Accepted publickey for devops from 10.0.1.200 port 10459 ssh2
+Mar 09 05:57:18 cluster-control-01 node_exporter[62651]: ts=61634Z caller=node_exporter.go:199 level=info msg="Listening on" address=":9100"
+Mar 09 05:59:13 cluster-control-01 systemd[1]: cluster-metrics-collector.service: Succeeded.
+Mar 09 06:00:50 cluster-control-01 kernel: [22203] TCP: request_sock_TCP: Possible SYN flooding on port 443.
+Mar 09 06:03:55 cluster-control-01 CRON[48804]: (root) CMD (/usr/local/bin/cluster_health_check.sh)
+Mar 09 06:07:50 cluster-control-01 dockerd[26098]: level=info msg="Container 8275 started"
+Mar 09 06:08:35 cluster-control-01 systemd[1]: Starting Daily apt download activities...
+Mar 09 06:09:57 cluster-control-01 kernel: [46995] TCP: request_sock_TCP: Possible SYN flooding on port 443.
+Mar 09 06:13:03 cluster-control-01 kernel: [23522] eth0: link up
+Mar 09 06:15:15 cluster-control-01 kernel: [3714] eth0: link up
+Mar 09 06:18:55 cluster-control-01 systemd[1]: Starting Daily apt download activities...
+Mar 09 06:20:42 cluster-control-01 systemd-logind[46805]: New session 43270 of user devops.
+Mar 09 06:21:29 cluster-control-01 kernel: [54043] eth0: link up
+Mar 09 06:25:27 cluster-control-01 systemd[1]: prometheus-node-exporter.service: Succeeded.
+Mar 09 06:28:18 cluster-control-01 kernel: [43022] eth0: link up
+Mar 09 06:28:40 cluster-control-01 systemd-logind[55107]: New session 56830 of user devops.
+Mar 09 06:29:11 cluster-control-01 dockerd[31114]: level=info msg="Container 14750 started"
+Mar 09 06:29:28 cluster-control-01 systemd[1]: Starting Daily apt download activities...
+Mar 09 06:33:02 cluster-control-01 dockerd[9867]: level=info msg="Container 56895 started"
+Mar 09 06:37:18 cluster-control-01 systemd[1]: Started Session 21611 of user devops.
+Mar 09 06:41:12 cluster-control-01 systemd[1]: Starting Daily apt download activities...
+Mar 09 06:42:57 cluster-control-01 systemd[1]: prometheus-node-exporter.service: Succeeded.
+Mar 09 06:47:57 cluster-control-01 kernel: [55741] TCP: request_sock_TCP: Possible SYN flooding on port 443.
+Mar 09 06:49:03 cluster-control-01 systemd-logind[5761]: New session 24045 of user devops.
+Mar 09 06:51:27 cluster-control-01 systemd[1]: Starting Daily apt download activities...
+Mar 09 06:52:37 cluster-control-01 node_exporter[39085]: ts=41033Z caller=node_exporter.go:199 level=info msg="Listening on" address=":9100"
+Mar 09 06:54:35 cluster-control-01 dockerd[36555]: level=info msg="Container 1655 started"
+Mar 09 06:55:10 cluster-control-01 kernel: [33151] TCP: request_sock_TCP: Possible SYN flooding on port 443.
+Mar 09 06:59:26 cluster-control-01 kernel: [34873] eth0: link up
+Mar 09 07:01:59 cluster-control-01 kernel: [51155] Memory cgroup out of memory: Killed process 36871 (python3)
+Mar 09 07:04:49 cluster-control-01 kernel: [55194] TCP: request_sock_TCP: Possible SYN flooding on port 443.
+Mar 09 07:06:50 cluster-control-01 systemd-logind[46133]: New session 12289 of user devops.
+Mar 09 07:07:49 cluster-control-01 systemd-logind[30529]: New session 55369 of user devops.
+Mar 09 07:08:14 cluster-control-01 CRON[53762]: (root) CMD (/usr/local/bin/cluster_health_check.sh)
+Mar 09 07:12:53 cluster-control-01 systemd[1]: Starting Daily apt download activities...
+Mar 09 07:15:08 cluster-control-01 systemd[1]: Started Session 28573 of user devops.
+Mar 09 07:18:36 cluster-control-01 kernel: [32450] eth0: link up
+Mar 09 07:19:11 cluster-control-01 node_exporter[7784]: ts=54615Z caller=node_exporter.go:199 level=info msg="Listening on" address=":9100"
+Mar 09 07:21:14 cluster-control-01 kernel: [13317] TCP: request_sock_TCP: Possible SYN flooding on port 443.
+Mar 09 07:23:55 cluster-control-01 sshd[15779]: Accepted publickey for devops from 10.0.1.200 port 12558 ssh2
+Mar 09 07:28:12 cluster-control-01 systemd[1]: cluster-metrics-collector.service: Succeeded.
+Mar 09 07:29:23 cluster-control-01 systemd[1]: cluster-metrics-collector.service: Succeeded.
+Mar 09 07:31:13 cluster-control-01 kernel: [28204] TCP: request_sock_TCP: Possible SYN flooding on port 443.
+Mar 09 07:32:59 cluster-control-01 systemd[1]: Started Session 1244 of user devops.
+Mar 09 07:36:00 cluster-control-01 systemd[1]: Starting Daily apt download activities...
+Mar 09 07:39:17 cluster-control-01 systemd-logind[43925]: New session 38970 of user devops.
+Mar 09 07:39:29 cluster-control-01 systemd[1]: Starting Daily apt download activities...
+Mar 09 07:42:35 cluster-control-01 CRON[37771]: (root) CMD (/usr/local/bin/cluster_health_check.sh)
+Mar 09 07:43:36 cluster-control-01 kernel: [13782] Memory cgroup out of memory: Killed process 27006 (python3)
+Mar 09 07:46:13 cluster-control-01 sshd[53827]: Accepted publickey for devops from 10.0.1.200 port 22851 ssh2
+Mar 09 07:48:35 cluster-control-01 dockerd[29753]: level=info msg="Container 36822 started"
+Mar 09 07:50:55 cluster-control-01 systemd[1]: cluster-metrics-collector.service: Succeeded.
+Mar 09 07:54:45 cluster-control-01 kernel: [33119] eth0: link up
+Mar 09 07:58:40 cluster-control-01 kernel: [50947] eth0: link up
+Mar 09 08:03:33 cluster-control-01 CRON[45717]: (root) CMD (/usr/local/bin/cluster_health_check.sh)
+Mar 09 08:06:50 cluster-control-01 dockerd[58835]: level=info msg="Container 29625 started"
+Mar 09 08:09:11 cluster-control-01 systemd[1]: prometheus-node-exporter.service: Succeeded.
+Mar 09 08:10:35 cluster-control-01 sshd[25877]: Accepted publickey for devops from 10.0.1.200 port 36896 ssh2
+Mar 09 08:12:04 cluster-control-01 node_exporter[57959]: ts=8674Z caller=node_exporter.go:199 level=info msg="Listening on" address=":9100"
+Mar 09 08:16:01 cluster-control-01 systemd-logind[8031]: New session 40533 of user devops.
+Mar 09 08:19:38 cluster-control-01 kernel: [53017] Memory cgroup out of memory: Killed process 49859 (python3)
+Mar 09 08:24:16 cluster-control-01 systemd[1]: cluster-metrics-collector.service: Succeeded.
+Mar 09 08:25:55 cluster-control-01 systemd-logind[5579]: New session 39850 of user devops.
+Mar 09 08:28:52 cluster-control-01 systemd-logind[62200]: New session 23793 of user devops.
+Mar 09 08:30:50 cluster-control-01 systemd[1]: prometheus-node-exporter.service: Succeeded.
+Mar 09 08:33:57 cluster-control-01 kernel: [30034] TCP: request_sock_TCP: Possible SYN flooding on port 443.
+Mar 09 08:35:42 cluster-control-01 systemd[1]: cluster-metrics-collector.service: Succeeded.
+Mar 09 08:39:19 cluster-control-01 kernel: [19800] TCP: request_sock_TCP: Possible SYN flooding on port 443.
+Mar 09 08:41:24 cluster-control-01 kernel: [18768] eth0: link up
+Mar 09 08:43:04 cluster-control-01 sshd[33484]: Accepted publickey for devops from 10.0.1.200 port 39840 ssh2
+Mar 09 08:44:14 cluster-control-01 node_exporter[53615]: ts=12981Z caller=node_exporter.go:199 level=info msg="Listening on" address=":9100"
+Mar 09 08:47:41 cluster-control-01 dockerd[54501]: level=info msg="Container 6644 started"
+Mar 09 08:48:35 cluster-control-01 node_exporter[6041]: ts=10719Z caller=node_exporter.go:199 level=info msg="Listening on" address=":9100"
+Mar 09 08:50:59 cluster-control-01 sshd[63973]: Accepted publickey for devops from 10.0.1.200 port 57509 ssh2
+Mar 09 08:55:34 cluster-control-01 sshd[52677]: Accepted publickey for devops from 10.0.1.200 port 54899 ssh2
+Mar 09 08:59:26 cluster-control-01 kernel: [62634] TCP: request_sock_TCP: Possible SYN flooding on port 443.
+Mar 09 09:03:32 cluster-control-01 sshd[38212]: Accepted publickey for devops from 10.0.1.200 port 53833 ssh2
+Mar 09 09:05:41 cluster-control-01 kernel: [20529] TCP: request_sock_TCP: Possible SYN flooding on port 443.
+Mar 09 09:07:18 cluster-control-01 systemd-logind[16274]: New session 59188 of user devops.
+Mar 09 09:11:35 cluster-control-01 node_exporter[60637]: ts=21889Z caller=node_exporter.go:199 level=info msg="Listening on" address=":9100"
+Mar 09 09:13:52 cluster-control-01 systemd[1]: Started Session 27365 of user devops.
+Mar 09 09:15:24 cluster-control-01 dockerd[52594]: level=info msg="Container 7767 started"
+Mar 09 09:19:02 cluster-control-01 systemd[1]: prometheus-node-exporter.service: Succeeded.
+Mar 09 09:19:30 cluster-control-01 sshd[14593]: Accepted publickey for devops from 10.0.1.200 port 31867 ssh2
+Mar 09 09:21:00 cluster-control-01 systemd[1]: Started Session 35214 of user devops.
+Mar 09 09:23:45 cluster-control-01 systemd[1]: prometheus-node-exporter.service: Succeeded.
+Mar 09 09:26:11 cluster-control-01 kernel: [30803] TCP: request_sock_TCP: Possible SYN flooding on port 443.
+Mar 09 09:27:37 cluster-control-01 systemd[1]: cluster-metrics-collector.service: Succeeded.
+Mar 09 09:31:29 cluster-control-01 systemd[1]: Started Session 59232 of user devops.
+Mar 09 09:32:33 cluster-control-01 kernel: [10843] Memory cgroup out of memory: Killed process 16522 (python3)
+Mar 09 09:37:11 cluster-control-01 sshd[61840]: Accepted publickey for devops from 10.0.1.200 port 20228 ssh2
+Mar 09 09:40:52 cluster-control-01 kernel: [33380] eth0: link up
+Mar 09 09:41:16 cluster-control-01 sshd[17296]: Accepted publickey for devops from 10.0.1.200 port 4091 ssh2
+Mar 09 09:41:37 cluster-control-01 systemd[1]: Started Session 30665 of user devops.
+Mar 09 09:45:35 cluster-control-01 kernel: [5457] Memory cgroup out of memory: Killed process 5140 (python3)
+Mar 09 09:49:32 cluster-control-01 systemd[1]: cluster-metrics-collector.service: Succeeded.
+Mar 09 09:53:51 cluster-control-01 systemd-logind[55959]: New session 63099 of user devops.
+Mar 09 09:56:11 cluster-control-01 kernel: [41146] Memory cgroup out of memory: Killed process 28341 (python3)
+Mar 09 09:56:41 cluster-control-01 kernel: [4425] eth0: link up
+Mar 09 10:00:19 cluster-control-01 systemd[1]: cluster-metrics-collector.service: Succeeded.
+Mar 09 10:05:07 cluster-control-01 systemd[1]: cluster-metrics-collector.service: Succeeded.
+Mar 09 10:05:53 cluster-control-01 CRON[46633]: (root) CMD (/usr/local/bin/cluster_health_check.sh)
+Mar 09 10:08:51 cluster-control-01 kernel: [23698] TCP: request_sock_TCP: Possible SYN flooding on port 443.
+Mar 09 10:10:10 cluster-control-01 kernel: [10509] eth0: link up
+Mar 09 10:10:58 cluster-control-01 systemd[1]: cluster-metrics-collector.service: Succeeded.
+Mar 09 10:15:40 cluster-control-01 systemd-logind[24429]: New session 35680 of user devops.
+Mar 09 10:19:40 cluster-control-01 kernel: [52098] Memory cgroup out of memory: Killed process 3750 (python3)
+Mar 09 10:21:25 cluster-control-01 systemd[1]: Started Session 46073 of user devops.
+Mar 09 10:23:07 cluster-control-01 kernel: [27885] eth0: link up
+Mar 09 10:25:46 cluster-control-01 dockerd[33680]: level=info msg="Container 46983 started"
+Mar 09 10:27:55 cluster-control-01 kernel: [48448] Memory cgroup out of memory: Killed process 58354 (python3)
+Mar 09 10:28:40 cluster-control-01 systemd[1]: prometheus-node-exporter.service: Succeeded.
+Mar 09 10:31:53 cluster-control-01 CRON[24243]: (root) CMD (/usr/local/bin/cluster_health_check.sh)
+Mar 09 10:35:03 cluster-control-01 kernel: [24761] Memory cgroup out of memory: Killed process 57396 (python3)
+Mar 09 10:37:45 cluster-control-01 systemd[1]: prometheus-node-exporter.service: Succeeded.
+Mar 09 10:39:05 cluster-control-01 systemd[1]: prometheus-node-exporter.service: Succeeded.
+Mar 09 10:39:40 cluster-control-01 systemd[1]: prometheus-node-exporter.service: Succeeded.
+Mar 09 10:43:22 cluster-control-01 systemd[1]: Started Session 3624 of user devops.
+Mar 09 10:45:41 cluster-control-01 kernel: [15363] eth0: link up
+Mar 09 10:46:38 cluster-control-01 dockerd[12219]: level=info msg="Container 3478 started"
+Mar 09 10:51:37 cluster-control-01 systemd[1]: cluster-metrics-collector.service: Succeeded.
+Mar 09 10:52:23 cluster-control-01 systemd[1]: Started Session 64892 of user devops.
+Mar 09 10:52:38 cluster-control-01 dockerd[44049]: level=info msg="Container 3619 started"
+Mar 09 10:54:17 cluster-control-01 systemd-logind[16123]: New session 2353 of user devops.
+Mar 09 10:57:33 cluster-control-01 kernel: [42803] Memory cgroup out of memory: Killed process 41062 (python3)
+Mar 09 11:01:38 cluster-control-01 node_exporter[59994]: ts=64339Z caller=node_exporter.go:199 level=info msg="Listening on" address=":9100"
+Mar 09 11:03:31 cluster-control-01 kernel: [60234] Memory cgroup out of memory: Killed process 30705 (python3)
+Mar 09 11:04:09 cluster-control-01 kernel: [3668] Memory cgroup out of memory: Killed process 50610 (python3)
+Mar 09 11:07:17 cluster-control-01 systemd[1]: cluster-metrics-collector.service: Succeeded.
+Mar 09 11:08:57 cluster-control-01 kernel: [24801] Memory cgroup out of memory: Killed process 37609 (python3)
+Mar 09 11:10:09 cluster-control-01 kernel: [4232] Memory cgroup out of memory: Killed process 16433 (python3)
+Mar 09 11:14:04 cluster-control-01 kernel: [1475] Memory cgroup out of memory: Killed process 59266 (python3)
+Mar 09 11:15:35 cluster-control-01 systemd-logind[44561]: New session 30579 of user devops.
+Mar 09 11:16:18 cluster-control-01 systemd-logind[41929]: New session 19402 of user devops.
+Mar 09 11:20:55 cluster-control-01 systemd[1]: cluster-metrics-collector.service: Succeeded.
+Mar 09 11:24:56 cluster-control-01 CRON[29917]: (root) CMD (/usr/local/bin/cluster_health_check.sh)
+Mar 09 11:27:21 cluster-control-01 systemd[1]: Starting Daily apt download activities...
+Mar 09 11:29:46 cluster-control-01 kernel: [45457] Memory cgroup out of memory: Killed process 47933 (python3)
+Mar 09 11:33:29 cluster-control-01 sshd[22325]: Accepted publickey for devops from 10.0.1.200 port 46076 ssh2
+Mar 09 11:34:14 cluster-control-01 node_exporter[9679]: ts=32848Z caller=node_exporter.go:199 level=info msg="Listening on" address=":9100"
+Mar 09 11:37:11 cluster-control-01 node_exporter[54184]: ts=26571Z caller=node_exporter.go:199 level=info msg="Listening on" address=":9100"
+Mar 09 11:41:19 cluster-control-01 systemd[1]: Starting Daily apt download activities...
+Mar 09 11:43:00 cluster-control-01 CRON[29609]: (root) CMD (/usr/local/bin/cluster_health_check.sh)
+Mar 09 11:43:39 cluster-control-01 systemd[1]: cluster-metrics-collector.service: Succeeded.
+Mar 09 11:44:47 cluster-control-01 kernel: [5154] Memory cgroup out of memory: Killed process 12253 (python3)
+Mar 09 11:49:15 cluster-control-01 dockerd[59618]: level=info msg="Container 1904 started"
+Mar 09 11:50:20 cluster-control-01 sshd[47813]: Accepted publickey for devops from 10.0.1.200 port 22863 ssh2
+Mar 09 11:54:53 cluster-control-01 systemd-logind[56077]: New session 28362 of user devops.
+Mar 09 11:57:43 cluster-control-01 sshd[45565]: Accepted publickey for devops from 10.0.1.200 port 56898 ssh2
+Mar 09 12:02:18 cluster-control-01 kernel: [30355] Memory cgroup out of memory: Killed process 21625 (python3)
+Mar 09 12:04:58 cluster-control-01 systemd-logind[5399]: New session 56655 of user devops.
+Mar 09 12:09:37 cluster-control-01 CRON[9312]: (root) CMD (/usr/local/bin/cluster_health_check.sh)
+Mar 09 12:12:58 cluster-control-01 systemd[1]: Started Session 3749 of user devops.
+Mar 09 12:16:25 cluster-control-01 kernel: [60083] eth0: link up
+Mar 09 12:20:18 cluster-control-01 systemd[1]: Starting Daily apt download activities...
+Mar 09 12:24:42 cluster-control-01 dockerd[58206]: level=info msg="Container 1786 started"
+Mar 09 12:27:31 cluster-control-01 systemd[1]: prometheus-node-exporter.service: Succeeded.
+Mar 09 12:30:26 cluster-control-01 kernel: [10943] TCP: request_sock_TCP: Possible SYN flooding on port 443.
+Mar 09 12:34:52 cluster-control-01 systemd[1]: prometheus-node-exporter.service: Succeeded.
+Mar 09 12:39:40 cluster-control-01 systemd-logind[14200]: New session 61551 of user devops.
+Mar 09 12:44:33 cluster-control-01 dockerd[12190]: level=info msg="Container 32256 started"
+Mar 09 12:46:15 cluster-control-01 CRON[45825]: (root) CMD (/usr/local/bin/cluster_health_check.sh)
+Mar 09 12:51:13 cluster-control-01 systemd[1]: cluster-metrics-collector.service: Succeeded.
+Mar 09 12:55:52 cluster-control-01 kernel: [48959] eth0: link up
+Mar 09 12:59:25 cluster-control-01 systemd[1]: Started Session 3892 of user devops.
+Mar 09 13:03:48 cluster-control-01 systemd[1]: prometheus-node-exporter.service: Succeeded.
+Mar 09 13:06:31 cluster-control-01 kernel: [34878] eth0: link up
+Mar 09 13:08:50 cluster-control-01 CRON[58570]: (root) CMD (/usr/local/bin/cluster_health_check.sh)
+Mar 09 13:10:20 cluster-control-01 kernel: [15152] TCP: request_sock_TCP: Possible SYN flooding on port 443.
+Mar 09 13:15:03 cluster-control-01 systemd-logind[42385]: New session 56651 of user devops.
+Mar 09 13:19:19 cluster-control-01 sshd[21749]: Accepted publickey for devops from 10.0.1.200 port 59347 ssh2
+Mar 09 13:23:17 cluster-control-01 node_exporter[55065]: ts=27146Z caller=node_exporter.go:199 level=info msg="Listening on" address=":9100"
+Mar 09 13:24:54 cluster-control-01 systemd[1]: Started Session 51594 of user devops.
+Mar 09 13:28:03 cluster-control-01 kernel: [49761] eth0: link up
+Mar 09 13:30:56 cluster-control-01 dockerd[58923]: level=info msg="Container 20134 started"
+Mar 09 13:34:57 cluster-control-01 systemd-logind[16062]: New session 44309 of user devops.
+Mar 09 13:36:07 cluster-control-01 CRON[15574]: (root) CMD (/usr/local/bin/cluster_health_check.sh)
+Mar 09 13:39:46 cluster-control-01 node_exporter[29386]: ts=25695Z caller=node_exporter.go:199 level=info msg="Listening on" address=":9100"
+Mar 09 13:41:00 cluster-control-01 sshd[60320]: Accepted publickey for devops from 10.0.1.200 port 33073 ssh2
+Mar 09 13:41:10 cluster-control-01 systemd[1]: cluster-metrics-collector.service: Succeeded.
+Mar 09 13:44:48 cluster-control-01 systemd[1]: Starting Daily apt download activities...
+Mar 09 13:46:41 cluster-control-01 kernel: [55795] Memory cgroup out of memory: Killed process 36228 (python3)
+Mar 09 13:49:24 cluster-control-01 kernel: [21202] Memory cgroup out of memory: Killed process 64341 (python3)
+Mar 09 13:49:40 cluster-control-01 kernel: [44899] eth0: link up
+Mar 09 13:51:33 cluster-control-01 systemd[1]: prometheus-node-exporter.service: Succeeded.
+Mar 09 13:53:27 cluster-control-01 systemd[1]: cluster-metrics-collector.service: Succeeded.
+Mar 09 13:58:08 cluster-control-01 systemd[1]: Started Session 54960 of user devops.
+Mar 09 13:59:37 cluster-control-01 systemd[1]: cluster-metrics-collector.service: Succeeded.
+Mar 09 14:02:04 cluster-control-01 systemd[1]: Started Session 47843 of user devops.
+Mar 09 14:06:53 cluster-control-01 systemd[1]: Started Session 13255 of user devops.
+Mar 09 14:10:32 cluster-control-01 systemd[1]: prometheus-node-exporter.service: Succeeded.
+Mar 09 14:14:56 cluster-control-01 systemd[1]: cluster-metrics-collector.service: Succeeded.
+Mar 09 14:16:05 cluster-control-01 CRON[34845]: (root) CMD (/usr/local/bin/cluster_health_check.sh)
+Mar 09 14:20:41 cluster-control-01 node_exporter[16533]: ts=19952Z caller=node_exporter.go:199 level=info msg="Listening on" address=":9100"
+Mar 09 14:21:00 cluster-control-01 node_exporter[31671]: ts=56822Z caller=node_exporter.go:199 level=info msg="Listening on" address=":9100"
+Mar 09 14:24:17 cluster-control-01 systemd[1]: prometheus-node-exporter.service: Succeeded.
+Mar 09 14:26:29 cluster-control-01 sshd[22790]: Accepted publickey for devops from 10.0.1.200 port 52090 ssh2
+Mar 09 14:31:00 cluster-control-01 systemd-logind[14416]: New session 12264 of user devops.
+Mar 09 14:32:05 cluster-control-01 CRON[63739]: (root) CMD (/usr/local/bin/cluster_health_check.sh)
+Mar 09 14:33:32 cluster-control-01 kernel: [57332] TCP: request_sock_TCP: Possible SYN flooding on port 443.
+Mar 09 14:38:04 cluster-control-01 systemd[1]: Starting Daily apt download activities...
+Mar 09 14:39:28 cluster-control-01 systemd[1]: Starting Daily apt download activities...
+Mar 09 14:41:57 cluster-control-01 node_exporter[7203]: ts=26089Z caller=node_exporter.go:199 level=info msg="Listening on" address=":9100"
+Mar 09 14:42:11 cluster-control-01 sshd[45016]: Accepted publickey for devops from 10.0.1.200 port 55419 ssh2
+Mar 09 14:44:54 cluster-control-01 kernel: [19572] eth0: link up
+Mar 09 14:45:58 cluster-control-01 systemd-logind[47989]: New session 60619 of user devops.
+Mar 09 14:49:03 cluster-control-01 kernel: [36003] eth0: link up
+Mar 09 14:50:40 cluster-control-01 kernel: [51635] eth0: link up
+Mar 09 14:55:40 cluster-control-01 kernel: [64274] eth0: link up
+Mar 09 14:58:39 cluster-control-01 CRON[6625]: (root) CMD (/usr/local/bin/cluster_health_check.sh)
+Mar 09 15:01:09 cluster-control-01 systemd[1]: Starting Daily apt download activities...
+Mar 09 15:05:38 cluster-control-01 sshd[23435]: Accepted publickey for devops from 10.0.1.200 port 54433 ssh2
+Mar 09 15:09:55 cluster-control-01 dockerd[18054]: level=info msg="Container 7937 started"
+Mar 09 15:13:06 cluster-control-01 systemd[1]: cluster-metrics-collector.service: Succeeded.
+Mar 09 15:16:28 cluster-control-01 dockerd[38299]: level=info msg="Container 20046 started"
+Mar 09 15:21:17 cluster-control-01 kernel: [48234] Memory cgroup out of memory: Killed process 15270 (python3)
+Mar 09 15:24:34 cluster-control-01 kernel: [39643] TCP: request_sock_TCP: Possible SYN flooding on port 443.
+Mar 09 15:29:06 cluster-control-01 systemd[1]: Starting Daily apt download activities...
+Mar 09 15:31:36 cluster-control-01 kernel: [46672] eth0: link up
+Mar 09 15:35:30 cluster-control-01 kernel: [24354] eth0: link up
+Mar 09 15:39:24 cluster-control-01 sshd[25116]: Accepted publickey for devops from 10.0.1.200 port 21658 ssh2
+Mar 09 15:43:21 cluster-control-01 systemd[1]: Started Session 7124 of user devops.
+Mar 09 15:47:15 cluster-control-01 node_exporter[10280]: ts=21025Z caller=node_exporter.go:199 level=info msg="Listening on" address=":9100"
+Mar 09 15:50:35 cluster-control-01 kernel: [4176] Memory cgroup out of memory: Killed process 5619 (python3)
+Mar 09 15:52:40 cluster-control-01 kernel: [38327] eth0: link up
+Mar 09 15:55:56 cluster-control-01 node_exporter[24573]: ts=29964Z caller=node_exporter.go:199 level=info msg="Listening on" address=":9100"
+Mar 09 15:59:36 cluster-control-01 systemd[1]: prometheus-node-exporter.service: Succeeded.
+Mar 09 16:01:38 cluster-control-01 sshd[64915]: Accepted publickey for devops from 10.0.1.200 port 42163 ssh2
+Mar 09 16:06:01 cluster-control-01 systemd[1]: Started Session 11520 of user devops.
+Mar 09 16:09:09 cluster-control-01 kernel: [18069] eth0: link up
+Mar 09 16:11:51 cluster-control-01 systemd[1]: prometheus-node-exporter.service: Succeeded.
+Mar 09 16:15:30 cluster-control-01 systemd[1]: prometheus-node-exporter.service: Succeeded.
+Mar 09 16:16:42 cluster-control-01 CRON[42678]: (root) CMD (/usr/local/bin/cluster_health_check.sh)
+Mar 09 16:20:32 cluster-control-01 node_exporter[54469]: ts=23109Z caller=node_exporter.go:199 level=info msg="Listening on" address=":9100"
+Mar 09 16:22:53 cluster-control-01 node_exporter[2400]: ts=26962Z caller=node_exporter.go:199 level=info msg="Listening on" address=":9100"
+Mar 09 16:23:27 cluster-control-01 node_exporter[49768]: ts=58539Z caller=node_exporter.go:199 level=info msg="Listening on" address=":9100"
+Mar 09 16:24:46 cluster-control-01 sshd[22689]: Accepted publickey for devops from 10.0.1.200 port 38387 ssh2
+Mar 09 16:27:43 cluster-control-01 systemd[1]: cluster-metrics-collector.service: Succeeded.
+Mar 09 16:31:15 cluster-control-01 CRON[15028]: (root) CMD (/usr/local/bin/cluster_health_check.sh)
+Mar 09 16:32:40 cluster-control-01 kernel: [56379] eth0: link up
+Mar 09 16:33:49 cluster-control-01 systemd[1]: Starting Daily apt download activities...
+Mar 09 16:38:15 cluster-control-01 systemd[1]: Started Session 18595 of user devops.
+Mar 09 16:42:46 cluster-control-01 kernel: [8781] Memory cgroup out of memory: Killed process 8576 (python3)
+Mar 09 16:43:05 cluster-control-01 kernel: [46653] Memory cgroup out of memory: Killed process 21458 (python3)
+Mar 09 16:45:17 cluster-control-01 systemd[1]: Started Session 21120 of user devops.
+Mar 09 16:46:06 cluster-control-01 systemd[1]: Started Session 38415 of user devops.
+Mar 09 16:48:05 cluster-control-01 systemd-logind[22831]: New session 39497 of user devops.
+Mar 09 16:53:02 cluster-control-01 systemd[1]: cluster-metrics-collector.service: Succeeded.
+Mar 09 16:56:41 cluster-control-01 kernel: [24803] eth0: link up
+Mar 09 17:00:18 cluster-control-01 kernel: [19816] TCP: request_sock_TCP: Possible SYN flooding on port 443.
+Mar 09 17:01:25 cluster-control-01 systemd[1]: Starting Daily apt download activities...
+Mar 09 17:05:01 cluster-control-01 systemd-logind[23913]: New session 33736 of user devops.
+Mar 09 17:08:58 cluster-control-01 systemd[1]: cluster-metrics-collector.service: Succeeded.
+Mar 09 17:10:33 cluster-control-01 kernel: [50176] Memory cgroup out of memory: Killed process 36712 (python3)
+Mar 09 17:15:30 cluster-control-01 systemd[1]: Started Session 10776 of user devops.
+Mar 09 17:17:55 cluster-control-01 dockerd[47665]: level=info msg="Container 28273 started"
+Mar 09 17:22:12 cluster-control-01 kernel: [41706] TCP: request_sock_TCP: Possible SYN flooding on port 443.
+Mar 09 17:23:49 cluster-control-01 systemd[1]: prometheus-node-exporter.service: Succeeded.
+Mar 09 17:25:41 cluster-control-01 systemd[1]: cluster-metrics-collector.service: Succeeded.
+Mar 09 17:28:05 cluster-control-01 CRON[33589]: (root) CMD (/usr/local/bin/cluster_health_check.sh)
+Mar 09 17:32:41 cluster-control-01 systemd[1]: Started Session 15118 of user devops.
+Mar 09 17:37:38 cluster-control-01 systemd[1]: Started Session 39142 of user devops.
+Mar 09 17:41:12 cluster-control-01 systemd[1]: Starting Daily apt download activities...
+Mar 09 17:41:50 cluster-control-01 systemd[1]: prometheus-node-exporter.service: Succeeded.
+Mar 09 17:44:18 cluster-control-01 systemd-logind[57130]: New session 12551 of user devops.
+Mar 09 17:46:47 cluster-control-01 dockerd[57122]: level=info msg="Container 22569 started"
+Mar 09 17:50:21 cluster-control-01 node_exporter[18348]: ts=7102Z caller=node_exporter.go:199 level=info msg="Listening on" address=":9100"
+Mar 09 17:52:07 cluster-control-01 systemd[1]: Started Session 49643 of user devops.
+Mar 09 17:55:03 cluster-control-01 sshd[48017]: Accepted publickey for devops from 10.0.1.200 port 48985 ssh2
+Mar 09 17:57:22 cluster-control-01 node_exporter[61919]: ts=7946Z caller=node_exporter.go:199 level=info msg="Listening on" address=":9100"
+Mar 09 17:58:21 cluster-control-01 systemd[1]: Starting Daily apt download activities...
+Mar 09 18:03:20 cluster-control-01 node_exporter[16125]: ts=51451Z caller=node_exporter.go:199 level=info msg="Listening on" address=":9100"
+Mar 09 18:07:55 cluster-control-01 systemd[1]: prometheus-node-exporter.service: Succeeded.
+Mar 09 18:11:14 cluster-control-01 node_exporter[47803]: ts=15592Z caller=node_exporter.go:199 level=info msg="Listening on" address=":9100"
+Mar 09 18:15:00 cluster-control-01 systemd-logind[43989]: New session 55364 of user devops.
+Mar 09 18:17:22 cluster-control-01 node_exporter[15508]: ts=29058Z caller=node_exporter.go:199 level=info msg="Listening on" address=":9100"
+Mar 09 18:20:34 cluster-control-01 systemd[1]: cluster-metrics-collector.service: Succeeded.
+Mar 09 18:22:16 cluster-control-01 node_exporter[3247]: ts=38911Z caller=node_exporter.go:199 level=info msg="Listening on" address=":9100"
+Mar 09 18:26:26 cluster-control-01 kernel: [34689] eth0: link up
+Mar 09 18:31:03 cluster-control-01 dockerd[62930]: level=info msg="Container 41496 started"
+Mar 09 18:33:27 cluster-control-01 dockerd[10283]: level=info msg="Container 9928 started"
+Mar 09 18:33:47 cluster-control-01 sshd[62561]: Accepted publickey for devops from 10.0.1.200 port 1677 ssh2
+Mar 09 18:34:55 cluster-control-01 systemd[1]: Started Session 3725 of user devops.
+Mar 09 18:39:29 cluster-control-01 node_exporter[27868]: ts=19504Z caller=node_exporter.go:199 level=info msg="Listening on" address=":9100"
+Mar 09 18:41:29 cluster-control-01 kernel: [62184] Memory cgroup out of memory: Killed process 61455 (python3)
+Mar 09 18:42:39 cluster-control-01 dockerd[46900]: level=info msg="Container 1858 started"
+Mar 09 18:45:02 cluster-control-01 systemd[1]: prometheus-node-exporter.service: Succeeded.
+Mar 09 18:46:47 cluster-control-01 node_exporter[1916]: ts=60548Z caller=node_exporter.go:199 level=info msg="Listening on" address=":9100"
+Mar 09 18:47:11 cluster-control-01 CRON[1410]: (root) CMD (/usr/local/bin/cluster_health_check.sh)
+Mar 09 18:50:59 cluster-control-01 CRON[59394]: (root) CMD (/usr/local/bin/cluster_health_check.sh)
+Mar 09 18:51:10 cluster-control-01 node_exporter[20712]: ts=57558Z caller=node_exporter.go:199 level=info msg="Listening on" address=":9100"
+Mar 09 18:52:21 cluster-control-01 sshd[51438]: Accepted publickey for devops from 10.0.1.200 port 13856 ssh2
+Mar 09 18:55:00 cluster-control-01 kernel: [50766] Memory cgroup out of memory: Killed process 64734 (python3)
+Mar 09 18:56:36 cluster-control-01 systemd-logind[12688]: New session 23500 of user devops.
+Mar 09 18:56:53 cluster-control-01 systemd[1]: Starting Daily apt download activities...
+Mar 09 19:00:37 cluster-control-01 systemd[1]: prometheus-node-exporter.service: Succeeded.
+Mar 09 19:05:13 cluster-control-01 systemd[1]: Started Session 39343 of user devops.
+Mar 09 19:06:09 cluster-control-01 kernel: [14687] eth0: link up
+Mar 09 19:08:13 cluster-control-01 sshd[50405]: Accepted publickey for devops from 10.0.1.200 port 44536 ssh2
+Mar 09 19:09:35 cluster-control-01 CRON[32582]: (root) CMD (/usr/local/bin/cluster_health_check.sh)
+Mar 09 19:14:08 cluster-control-01 kernel: [24894] TCP: request_sock_TCP: Possible SYN flooding on port 443.
+Mar 09 19:17:53 cluster-control-01 systemd[1]: prometheus-node-exporter.service: Succeeded.
+Mar 09 19:20:07 cluster-control-01 CRON[4932]: (root) CMD (/usr/local/bin/cluster_health_check.sh)
+Mar 09 19:23:06 cluster-control-01 kernel: [33958] eth0: link up
+Mar 09 19:27:35 cluster-control-01 systemd[1]: prometheus-node-exporter.service: Succeeded.
+Mar 09 19:30:50 cluster-control-01 systemd-logind[57759]: New session 19677 of user devops.
+Mar 09 19:34:10 cluster-control-01 systemd[1]: Started Session 59525 of user devops.
+Mar 09 19:39:10 cluster-control-01 systemd[1]: Starting Daily apt download activities...
+Mar 09 19:40:36 cluster-control-01 kernel: [30202] Memory cgroup out of memory: Killed process 44380 (python3)
+Mar 09 19:42:01 cluster-control-01 sshd[22321]: Accepted publickey for devops from 10.0.1.200 port 47012 ssh2
+Mar 09 19:42:22 cluster-control-01 CRON[39443]: (root) CMD (/usr/local/bin/cluster_health_check.sh)
+Mar 09 19:44:58 cluster-control-01 systemd[1]: Starting Daily apt download activities...
+Mar 09 19:48:57 cluster-control-01 kernel: [43255] Memory cgroup out of memory: Killed process 48107 (python3)
+Mar 09 19:49:17 cluster-control-01 systemd[1]: Starting Daily apt download activities...
+Mar 09 19:50:45 cluster-control-01 systemd[1]: Starting Daily apt download activities...
+Mar 09 19:53:15 cluster-control-01 systemd-logind[45327]: New session 15450 of user devops.
+Mar 09 19:54:41 cluster-control-01 kernel: [34833] Memory cgroup out of memory: Killed process 32820 (python3)
+Mar 09 19:57:49 cluster-control-01 systemd[1]: prometheus-node-exporter.service: Succeeded.
+Mar 09 20:02:42 cluster-control-01 systemd[1]: prometheus-node-exporter.service: Succeeded.
+Mar 09 20:03:40 cluster-control-01 kernel: [27964] Memory cgroup out of memory: Killed process 52614 (python3)
+Mar 09 20:06:33 cluster-control-01 kernel: [48458] Memory cgroup out of memory: Killed process 15355 (python3)
+Mar 09 20:08:11 cluster-control-01 CRON[43081]: (root) CMD (/usr/local/bin/cluster_health_check.sh)
+Mar 09 20:12:23 cluster-control-01 systemd[1]: Starting Daily apt download activities...
+Mar 09 20:14:44 cluster-control-01 kernel: [26635] TCP: request_sock_TCP: Possible SYN flooding on port 443.
+Mar 09 20:15:31 cluster-control-01 kernel: [30399] TCP: request_sock_TCP: Possible SYN flooding on port 443.
+Mar 09 20:16:33 cluster-control-01 systemd-logind[27523]: New session 4701 of user devops.
+Mar 09 20:17:10 cluster-control-01 systemd[1]: Started Session 32044 of user devops.
+Mar 09 20:17:50 cluster-control-01 sshd[48593]: Accepted publickey for devops from 10.0.1.200 port 5857 ssh2
+Mar 09 20:21:06 cluster-control-01 kernel: [46153] Memory cgroup out of memory: Killed process 24033 (python3)
+Mar 09 20:23:03 cluster-control-01 systemd-logind[21477]: New session 37200 of user devops.
+Mar 09 20:26:08 cluster-control-01 dockerd[51809]: level=info msg="Container 32053 started"
+Mar 09 20:28:01 cluster-control-01 kernel: [13259] Memory cgroup out of memory: Killed process 9299 (python3)
+Mar 09 20:31:22 cluster-control-01 sshd[36595]: Accepted publickey for devops from 10.0.1.200 port 27241 ssh2
+Mar 09 20:35:33 cluster-control-01 systemd-logind[13628]: New session 31763 of user devops.
+Mar 09 20:39:04 cluster-control-01 kernel: [20935] Memory cgroup out of memory: Killed process 10866 (python3)
+Mar 09 20:41:29 cluster-control-01 node_exporter[47119]: ts=63630Z caller=node_exporter.go:199 level=info msg="Listening on" address=":9100"
+Mar 09 20:45:26 cluster-control-01 systemd[1]: Starting Daily apt download activities...
+Mar 09 20:46:30 cluster-control-01 sshd[1531]: Accepted publickey for devops from 10.0.1.200 port 56033 ssh2
+Mar 09 20:49:47 cluster-control-01 node_exporter[2228]: ts=5632Z caller=node_exporter.go:199 level=info msg="Listening on" address=":9100"
+Mar 09 20:54:12 cluster-control-01 kernel: [31534] Memory cgroup out of memory: Killed process 21394 (python3)
+Mar 09 20:57:42 cluster-control-01 kernel: [6422] Memory cgroup out of memory: Killed process 11731 (python3)
+Mar 09 21:00:25 cluster-control-01 systemd[1]: prometheus-node-exporter.service: Succeeded.
+Mar 09 21:01:45 cluster-control-01 CRON[58559]: (root) CMD (/usr/local/bin/cluster_health_check.sh)
+Mar 09 21:05:40 cluster-control-01 CRON[5457]: (root) CMD (/usr/local/bin/cluster_health_check.sh)
+Mar 09 21:06:01 cluster-control-01 systemd[1]: prometheus-node-exporter.service: Succeeded.
+Mar 09 21:09:27 cluster-control-01 systemd[1]: prometheus-node-exporter.service: Succeeded.
+Mar 09 21:12:04 cluster-control-01 node_exporter[11241]: ts=36049Z caller=node_exporter.go:199 level=info msg="Listening on" address=":9100"
+Mar 09 21:14:32 cluster-control-01 systemd[1]: Starting Daily apt download activities...
+Mar 09 21:14:52 cluster-control-01 dockerd[37205]: level=info msg="Container 64993 started"
+Mar 09 21:18:24 cluster-control-01 CRON[19057]: (root) CMD (/usr/local/bin/cluster_health_check.sh)
+Mar 09 21:19:02 cluster-control-01 systemd[1]: Starting Daily apt download activities...
+Mar 09 21:21:07 cluster-control-01 dockerd[6474]: level=info msg="Container 11877 started"
+Mar 09 21:21:21 cluster-control-01 systemd[1]: Starting Daily apt download activities...
+Mar 09 21:23:16 cluster-control-01 sshd[42696]: Accepted publickey for devops from 10.0.1.200 port 31543 ssh2
+Mar 09 21:27:57 cluster-control-01 systemd[1]: prometheus-node-exporter.service: Succeeded.
+Mar 09 21:28:59 cluster-control-01 systemd[1]: cluster-metrics-collector.service: Succeeded.
+Mar 09 21:32:13 cluster-control-01 sshd[62245]: Accepted publickey for devops from 10.0.1.200 port 15284 ssh2
+Mar 09 21:33:53 cluster-control-01 kernel: [5777] Memory cgroup out of memory: Killed process 63187 (python3)
+Mar 09 21:36:35 cluster-control-01 systemd-logind[44309]: New session 58220 of user devops.
+Mar 09 21:38:06 cluster-control-01 dockerd[22927]: level=info msg="Container 46033 started"
+Mar 09 21:42:15 cluster-control-01 systemd[1]: Starting Daily apt download activities...
+Mar 09 21:44:23 cluster-control-01 systemd[1]: prometheus-node-exporter.service: Succeeded.
+Mar 09 21:46:56 cluster-control-01 systemd[1]: Starting Daily apt download activities...
+Mar 09 21:48:02 cluster-control-01 systemd-logind[56831]: New session 19737 of user devops.
+Mar 09 21:49:16 cluster-control-01 node_exporter[43749]: ts=32272Z caller=node_exporter.go:199 level=info msg="Listening on" address=":9100"
+Mar 09 21:53:48 cluster-control-01 CRON[20390]: (root) CMD (/usr/local/bin/cluster_health_check.sh)
+Mar 09 21:58:03 cluster-control-01 sshd[60874]: Accepted publickey for devops from 10.0.1.200 port 49224 ssh2
+Mar 09 22:02:45 cluster-control-01 kernel: [59544] Memory cgroup out of memory: Killed process 60902 (python3)
+Mar 09 22:06:00 cluster-control-01 kernel: [17463] TCP: request_sock_TCP: Possible SYN flooding on port 443.
+Mar 09 22:10:37 cluster-control-01 dockerd[61396]: level=info msg="Container 48507 started"
+Mar 09 22:11:50 cluster-control-01 systemd[1]: Started Session 20175 of user devops.
+Mar 09 22:12:21 cluster-control-01 dockerd[14657]: level=info msg="Container 3109 started"
+Mar 09 22:14:11 cluster-control-01 kernel: [32474] eth0: link up
+Mar 09 22:17:25 cluster-control-01 dockerd[11261]: level=info msg="Container 14133 started"
+Mar 09 22:18:04 cluster-control-01 kernel: [24234] Memory cgroup out of memory: Killed process 2356 (python3)
+Mar 09 22:18:48 cluster-control-01 systemd[1]: prometheus-node-exporter.service: Succeeded.
+Mar 09 22:21:32 cluster-control-01 kernel: [23134] TCP: request_sock_TCP: Possible SYN flooding on port 443.
+Mar 09 22:24:15 cluster-control-01 systemd[1]: Started Session 59386 of user devops.
+Mar 09 22:28:51 cluster-control-01 systemd[1]: prometheus-node-exporter.service: Succeeded.
+Mar 09 22:31:48 cluster-control-01 dockerd[30379]: level=info msg="Container 10734 started"
+Mar 09 22:35:47 cluster-control-01 node_exporter[34552]: ts=18647Z caller=node_exporter.go:199 level=info msg="Listening on" address=":9100"
+Mar 09 22:39:45 cluster-control-01 systemd-logind[33127]: New session 23229 of user devops.
+Mar 09 22:42:38 cluster-control-01 kernel: [16930] Memory cgroup out of memory: Killed process 48803 (python3)
+Mar 09 22:44:49 cluster-control-01 CRON[63571]: (root) CMD (/usr/local/bin/cluster_health_check.sh)
+Mar 09 22:46:03 cluster-control-01 CRON[52627]: (root) CMD (/usr/local/bin/cluster_health_check.sh)
+Mar 09 22:48:37 cluster-control-01 dockerd[19293]: level=info msg="Container 11595 started"
+Mar 09 22:49:38 cluster-control-01 kernel: [18905] Memory cgroup out of memory: Killed process 7049 (python3)
+Mar 09 22:53:39 cluster-control-01 systemd[1]: Started Session 34470 of user devops.
+Mar 09 22:54:16 cluster-control-01 systemd[1]: Starting Daily apt download activities...
+Mar 09 22:54:59 cluster-control-01 kernel: [56246] TCP: request_sock_TCP: Possible SYN flooding on port 443.
+Mar 09 22:55:53 cluster-control-01 CRON[13917]: (root) CMD (/usr/local/bin/cluster_health_check.sh)
+Mar 09 22:57:31 cluster-control-01 kernel: [20301] eth0: link up
+Mar 09 23:01:50 cluster-control-01 sshd[38702]: Accepted publickey for devops from 10.0.1.200 port 5383 ssh2
+Mar 09 23:03:27 cluster-control-01 node_exporter[45314]: ts=43547Z caller=node_exporter.go:199 level=info msg="Listening on" address=":9100"
+Mar 09 23:07:22 cluster-control-01 CRON[57790]: (root) CMD (/usr/local/bin/cluster_health_check.sh)
+Mar 09 23:10:07 cluster-control-01 systemd-logind[22642]: New session 16356 of user devops.
+Mar 09 23:13:32 cluster-control-01 dockerd[44477]: level=info msg="Container 12014 started"
+Mar 09 23:13:50 cluster-control-01 systemd-logind[18594]: New session 15418 of user devops.
+Mar 09 23:18:31 cluster-control-01 kernel: [46171] Memory cgroup out of memory: Killed process 63946 (python3)
+Mar 09 23:21:23 cluster-control-01 systemd[1]: Starting Daily apt download activities...
+Mar 09 23:25:12 cluster-control-01 kernel: [59229] TCP: request_sock_TCP: Possible SYN flooding on port 443.
+Mar 09 23:25:27 cluster-control-01 systemd[1]: Starting Daily apt download activities...
+Mar 09 23:28:26 cluster-control-01 CRON[9399]: (root) CMD (/usr/local/bin/cluster_health_check.sh)
+Mar 09 23:33:16 cluster-control-01 CRON[24900]: (root) CMD (/usr/local/bin/cluster_health_check.sh)
+Mar 09 23:35:09 cluster-control-01 kernel: [21986] TCP: request_sock_TCP: Possible SYN flooding on port 443.
+Mar 09 23:36:09 cluster-control-01 systemd[1]: prometheus-node-exporter.service: Succeeded.
+Mar 09 23:38:07 cluster-control-01 kernel: [58197] Memory cgroup out of memory: Killed process 59678 (python3)
+Mar 09 23:40:58 cluster-control-01 kernel: [47396] Memory cgroup out of memory: Killed process 11853 (python3)
+Mar 09 23:42:02 cluster-control-01 kernel: [16984] TCP: request_sock_TCP: Possible SYN flooding on port 443.
+Mar 09 23:44:24 cluster-control-01 systemd-logind[14829]: New session 33170 of user devops.
+Mar 09 23:48:08 cluster-control-01 sshd[56930]: Accepted publickey for devops from 10.0.1.200 port 37919 ssh2
+Mar 09 23:49:31 cluster-control-01 kernel: [63810] eth0: link up
+Mar 09 23:52:05 cluster-control-01 systemd[1]: cluster-metrics-collector.service: Succeeded.
+Mar 09 23:52:16 cluster-control-01 CRON[58298]: (root) CMD (/usr/local/bin/cluster_health_check.sh)
+Mar 09 23:53:02 cluster-control-01 kernel: [37673] Memory cgroup out of memory: Killed process 37798 (python3)
+Mar 09 23:56:53 cluster-control-01 kernel: [30540] eth0: link up
+Mar 09 23:57:09 cluster-control-01 systemd[1]: prometheus-node-exporter.service: Succeeded.
+Mar 09 23:58:08 cluster-control-01 systemd-logind[63674]: New session 13870 of user devops.
+Mar 10 00:01:08 cluster-control-01 systemd[1]: cluster-metrics-collector.service: Succeeded.
+Mar 10 00:05:46 cluster-control-01 systemd-logind[11305]: New session 46577 of user devops.
+Mar 10 00:07:33 cluster-control-01 systemd[1]: prometheus-node-exporter.service: Succeeded.
+Mar 10 00:12:18 cluster-control-01 kernel: [22363] TCP: request_sock_TCP: Possible SYN flooding on port 443.
+Mar 10 00:15:03 cluster-control-01 systemd[1]: Starting Daily apt download activities...
+Mar 10 00:18:49 cluster-control-01 CRON[18437]: (root) CMD (/usr/local/bin/cluster_health_check.sh)
+Mar 10 00:21:50 cluster-control-01 systemd[1]: Started Session 24639 of user devops.
+Mar 10 00:23:22 cluster-control-01 systemd[1]: prometheus-node-exporter.service: Succeeded.
+Mar 10 00:24:30 cluster-control-01 CRON[13864]: (root) CMD (/usr/local/bin/cluster_health_check.sh)
+Mar 10 00:26:41 cluster-control-01 systemd[1]: Starting Daily apt download activities...
+Mar 10 00:31:36 cluster-control-01 kernel: [55573] TCP: request_sock_TCP: Possible SYN flooding on port 443.
+Mar 10 00:32:19 cluster-control-01 kernel: [11792] Memory cgroup out of memory: Killed process 61033 (python3)
+Mar 10 00:36:51 cluster-control-01 systemd[1]: cluster-metrics-collector.service: Succeeded.
+Mar 10 00:40:51 cluster-control-01 systemd[1]: Starting Daily apt download activities...
+Mar 10 00:43:48 cluster-control-01 dockerd[55980]: level=info msg="Container 53580 started"
+Mar 10 00:48:41 cluster-control-01 kernel: [26769] TCP: request_sock_TCP: Possible SYN flooding on port 443.
+Mar 10 00:53:25 cluster-control-01 systemd[1]: prometheus-node-exporter.service: Succeeded.
+Mar 10 00:57:45 cluster-control-01 systemd-logind[48306]: New session 19939 of user devops.
+Mar 10 00:58:12 cluster-control-01 CRON[25169]: (root) CMD (/usr/local/bin/cluster_health_check.sh)
+Mar 10 01:00:17 cluster-control-01 sshd[23063]: Accepted publickey for devops from 10.0.1.200 port 52678 ssh2
+Mar 10 01:02:32 cluster-control-01 systemd[1]: Started Session 19395 of user devops.
+Mar 10 01:04:13 cluster-control-01 sshd[45441]: Accepted publickey for devops from 10.0.1.200 port 49661 ssh2
+Mar 10 01:08:17 cluster-control-01 systemd[1]: prometheus-node-exporter.service: Succeeded.
+Mar 10 01:09:53 cluster-control-01 systemd[1]: Starting Daily apt download activities...
+Mar 10 01:11:40 cluster-control-01 kernel: [14427] eth0: link up
+Mar 10 01:15:39 cluster-control-01 sshd[54805]: Accepted publickey for devops from 10.0.1.200 port 54850 ssh2
+Mar 10 01:18:28 cluster-control-01 systemd[1]: Started Session 29749 of user devops.
+Mar 10 01:19:06 cluster-control-01 systemd[1]: cluster-metrics-collector.service: Succeeded.
+Mar 10 01:21:16 cluster-control-01 systemd[1]: prometheus-node-exporter.service: Succeeded.
+Mar 10 01:26:08 cluster-control-01 CRON[14582]: (root) CMD (/usr/local/bin/cluster_health_check.sh)
+Mar 10 01:29:03 cluster-control-01 dockerd[64265]: level=info msg="Container 44333 started"
+Mar 10 01:32:47 cluster-control-01 systemd[1]: Starting Daily apt download activities...
+Mar 10 01:35:24 cluster-control-01 systemd-logind[54987]: New session 8038 of user devops.
+Mar 10 01:37:03 cluster-control-01 systemd[1]: Started Session 9413 of user devops.
+Mar 10 01:38:37 cluster-control-01 kernel: [62519] eth0: link up
+Mar 10 01:42:37 cluster-control-01 systemd[1]: Starting Daily apt download activities...
+Mar 10 01:43:52 cluster-control-01 systemd[1]: Starting Daily apt download activities...
+Mar 10 01:47:22 cluster-control-01 systemd-logind[56594]: New session 47528 of user devops.
+Mar 10 01:49:42 cluster-control-01 systemd[1]: Started Session 51008 of user devops.
+Mar 10 01:52:54 cluster-control-01 systemd[1]: prometheus-node-exporter.service: Succeeded.
+Mar 10 01:54:43 cluster-control-01 systemd-logind[59819]: New session 24202 of user devops.
+Mar 10 01:55:49 cluster-control-01 dockerd[60165]: level=info msg="Container 43267 started"
+Mar 10 01:58:45 cluster-control-01 kernel: [37157] TCP: request_sock_TCP: Possible SYN flooding on port 443.
+Mar 10 02:00:41 cluster-control-01 kernel: [21605] eth0: link up
+Mar 10 02:03:50 cluster-control-01 kernel: [13975] Memory cgroup out of memory: Killed process 48261 (python3)
+Mar 10 02:07:50 cluster-control-01 kernel: [29485] TCP: request_sock_TCP: Possible SYN flooding on port 443.
+Mar 10 02:12:36 cluster-control-01 systemd[1]: Started Session 48901 of user devops.
+Mar 10 02:13:51 cluster-control-01 dockerd[40938]: level=info msg="Container 56134 started"
+Mar 10 02:15:42 cluster-control-01 systemd[1]: Starting Daily apt download activities...
+Mar 10 02:17:37 cluster-control-01 dockerd[8596]: level=info msg="Container 30177 started"
+Mar 10 02:18:22 cluster-control-01 systemd[1]: Starting Daily apt download activities...
+Mar 10 02:23:13 cluster-control-01 node_exporter[36931]: ts=15613Z caller=node_exporter.go:199 level=info msg="Listening on" address=":9100"
+Mar 10 02:27:23 cluster-control-01 systemd[1]: Starting Daily apt download activities...
+Mar 10 02:29:26 cluster-control-01 kernel: [42810] Memory cgroup out of memory: Killed process 22635 (python3)
+Mar 10 02:30:00 cluster-control-01 systemd[1]: Started Session 19119 of user devops.
+Mar 10 02:33:27 cluster-control-01 kernel: [53279] TCP: request_sock_TCP: Possible SYN flooding on port 443.
+Mar 10 02:37:47 cluster-control-01 systemd[1]: Starting Daily apt download activities...
+Mar 10 02:40:50 cluster-control-01 systemd[1]: prometheus-node-exporter.service: Succeeded.
+Mar 10 02:44:24 cluster-control-01 kernel: [59022] TCP: request_sock_TCP: Possible SYN flooding on port 443.
+Mar 10 02:45:19 cluster-control-01 systemd[1]: Starting Daily apt download activities...
+Mar 10 02:47:51 cluster-control-01 kernel: [12861] TCP: request_sock_TCP: Possible SYN flooding on port 443.
+Mar 10 02:52:41 cluster-control-01 systemd[1]: prometheus-node-exporter.service: Succeeded.
+Mar 10 02:55:10 cluster-control-01 systemd[1]: prometheus-node-exporter.service: Succeeded.
+Mar 10 02:57:04 cluster-control-01 systemd[1]: cluster-metrics-collector.service: Succeeded.
+Mar 10 03:00:45 cluster-control-01 dockerd[12783]: level=info msg="Container 1838 started"
+Mar 10 03:02:57 cluster-control-01 systemd[1]: prometheus-node-exporter.service: Succeeded.
+Mar 10 03:05:46 cluster-control-01 CRON[19781]: (root) CMD (/usr/local/bin/cluster_health_check.sh)
+Mar 10 03:09:35 cluster-control-01 systemd[1]: cluster-metrics-collector.service: Succeeded.
+Mar 10 03:13:40 cluster-control-01 systemd[1]: Starting Daily apt download activities...
+Mar 10 03:18:16 cluster-control-01 systemd[1]: Started Session 7918 of user devops.
+Mar 10 03:22:23 cluster-control-01 systemd-logind[7805]: New session 6666 of user devops.
+Mar 10 03:25:59 cluster-control-01 kernel: [11970] eth0: link up
+Mar 10 03:29:04 cluster-control-01 kernel: [10509] TCP: request_sock_TCP: Possible SYN flooding on port 443.
+Mar 10 03:31:37 cluster-control-01 systemd[1]: Started Session 41419 of user devops.
+Mar 10 03:32:38 cluster-control-01 systemd[1]: cluster-metrics-collector.service: Succeeded.
+Mar 10 03:34:47 cluster-control-01 kernel: [14643] TCP: request_sock_TCP: Possible SYN flooding on port 443.
+Mar 10 03:38:36 cluster-control-01 systemd[1]: Starting Daily apt download activities...
+Mar 10 03:39:43 cluster-control-01 systemd[1]: cluster-metrics-collector.service: Succeeded.
+Mar 10 03:44:29 cluster-control-01 systemd-logind[53711]: New session 27992 of user devops.
+Mar 10 03:46:25 cluster-control-01 dockerd[51439]: level=info msg="Container 15277 started"
+Mar 10 03:48:10 cluster-control-01 systemd[1]: cluster-metrics-collector.service: Succeeded.
+Mar 10 03:49:08 cluster-control-01 systemd[1]: cluster-metrics-collector.service: Succeeded.
+Mar 10 03:53:58 cluster-control-01 systemd-logind[9576]: New session 34193 of user devops.
+Mar 10 03:55:03 cluster-control-01 systemd[1]: cluster-metrics-collector.service: Succeeded.
+Mar 10 03:58:09 cluster-control-01 kernel: [17520] eth0: link up
+Mar 10 04:02:53 cluster-control-01 systemd[1]: cluster-metrics-collector.service: Succeeded.
+Mar 10 04:06:09 cluster-control-01 systemd[1]: cluster-metrics-collector.service: Succeeded.
+Mar 10 04:09:10 cluster-control-01 kernel: [9860] Memory cgroup out of memory: Killed process 49775 (python3)
+Mar 10 04:09:57 cluster-control-01 node_exporter[46614]: ts=61119Z caller=node_exporter.go:199 level=info msg="Listening on" address=":9100"
+Mar 10 04:14:43 cluster-control-01 kernel: [14831] Memory cgroup out of memory: Killed process 59911 (python3)
+Mar 10 04:19:19 cluster-control-01 CRON[10452]: (root) CMD (/usr/local/bin/cluster_health_check.sh)
+Mar 10 04:21:51 cluster-control-01 systemd[1]: prometheus-node-exporter.service: Succeeded.
+Mar 10 04:26:04 cluster-control-01 sshd[8046]: Accepted publickey for devops from 10.0.1.200 port 16484 ssh2
+Mar 10 04:30:13 cluster-control-01 kernel: [16802] TCP: request_sock_TCP: Possible SYN flooding on port 443.
+Mar 10 04:35:12 cluster-control-01 sshd[18398]: Accepted publickey for devops from 10.0.1.200 port 57252 ssh2
+Mar 10 04:36:58 cluster-control-01 sshd[19817]: Accepted publickey for devops from 10.0.1.200 port 18916 ssh2
+Mar 10 04:38:39 cluster-control-01 systemd[1]: Starting Daily apt download activities...
+Mar 10 04:43:15 cluster-control-01 systemd[1]: Starting Daily apt download activities...
+Mar 10 04:44:52 cluster-control-01 systemd[1]: Starting Daily apt download activities...
+Mar 10 04:48:42 cluster-control-01 kernel: [29802] TCP: request_sock_TCP: Possible SYN flooding on port 443.
+Mar 10 04:49:21 cluster-control-01 CRON[15989]: (root) CMD (/usr/local/bin/cluster_health_check.sh)
+Mar 10 04:49:49 cluster-control-01 systemd-logind[13180]: New session 19926 of user devops.
+Mar 10 04:53:06 cluster-control-01 CRON[46540]: (root) CMD (/usr/local/bin/cluster_health_check.sh)
+Mar 10 04:53:54 cluster-control-01 sshd[44286]: Accepted publickey for devops from 10.0.1.200 port 35296 ssh2
+Mar 10 04:57:09 cluster-control-01 sshd[34119]: Accepted publickey for devops from 10.0.1.200 port 29577 ssh2
+Mar 10 04:58:09 cluster-control-01 CRON[42022]: (root) CMD (/usr/local/bin/cluster_health_check.sh)
+Mar 10 05:02:49 cluster-control-01 CRON[48426]: (root) CMD (/usr/local/bin/cluster_health_check.sh)
+Mar 10 05:06:33 cluster-control-01 node_exporter[24275]: ts=55406Z caller=node_exporter.go:199 level=info msg="Listening on" address=":9100"
+Mar 10 05:10:06 cluster-control-01 kernel: [60573] eth0: link up
+Mar 10 05:11:07 cluster-control-01 node_exporter[21563]: ts=9475Z caller=node_exporter.go:199 level=info msg="Listening on" address=":9100"
+Mar 10 05:15:49 cluster-control-01 node_exporter[56088]: ts=17004Z caller=node_exporter.go:199 level=info msg="Listening on" address=":9100"
+Mar 10 05:16:43 cluster-control-01 kernel: [36818] TCP: request_sock_TCP: Possible SYN flooding on port 443.
+Mar 10 05:21:35 cluster-control-01 CRON[20033]: (root) CMD (/usr/local/bin/cluster_health_check.sh)
+Mar 10 05:23:29 cluster-control-01 dockerd[21514]: level=info msg="Container 52507 started"
+Mar 10 05:26:23 cluster-control-01 node_exporter[24042]: ts=18704Z caller=node_exporter.go:199 level=info msg="Listening on" address=":9100"
+Mar 10 05:27:55 cluster-control-01 node_exporter[25430]: ts=44034Z caller=node_exporter.go:199 level=info msg="Listening on" address=":9100"
+Mar 10 05:31:59 cluster-control-01 systemd[1]: Starting Daily apt download activities...
+Mar 10 05:34:12 cluster-control-01 kernel: [21930] Memory cgroup out of memory: Killed process 40108 (python3)
+Mar 10 05:39:11 cluster-control-01 CRON[21442]: (root) CMD (/usr/local/bin/cluster_health_check.sh)
+Mar 10 05:40:12 cluster-control-01 kernel: [30662] Memory cgroup out of memory: Killed process 21202 (python3)
+Mar 10 05:44:17 cluster-control-01 systemd[1]: Started Session 35482 of user devops.
+Mar 10 05:47:32 cluster-control-01 dockerd[34646]: level=info msg="Container 6331 started"
+Mar 10 05:50:44 cluster-control-01 systemd[1]: Started Session 25538 of user devops.
+Mar 10 05:53:34 cluster-control-01 sshd[22958]: Accepted publickey for devops from 10.0.1.200 port 17355 ssh2
+Mar 10 05:58:30 cluster-control-01 kernel: [43362] eth0: link up
+Mar 10 06:00:19 cluster-control-01 systemd[1]: Started Session 53601 of user devops.
+Mar 10 06:04:36 cluster-control-01 systemd[1]: prometheus-node-exporter.service: Succeeded.
+Mar 10 06:09:34 cluster-control-01 CRON[61834]: (root) CMD (/usr/local/bin/cluster_health_check.sh)
+Mar 10 06:12:37 cluster-control-01 kernel: [10404] eth0: link up
+Mar 10 06:15:46 cluster-control-01 kernel: [55705] TCP: request_sock_TCP: Possible SYN flooding on port 443.
+Mar 10 06:16:58 cluster-control-01 systemd-logind[23617]: New session 9481 of user devops.
+Mar 10 06:17:32 cluster-control-01 kernel: [22232] Memory cgroup out of memory: Killed process 44300 (python3)
+Mar 10 06:17:56 cluster-control-01 systemd[1]: Started Session 19871 of user devops.
+Mar 10 06:19:34 cluster-control-01 sshd[43121]: Accepted publickey for devops from 10.0.1.200 port 56003 ssh2
+Mar 10 06:23:39 cluster-control-01 node_exporter[21958]: ts=23136Z caller=node_exporter.go:199 level=info msg="Listening on" address=":9100"
+Mar 10 06:27:50 cluster-control-01 systemd-logind[36816]: New session 44304 of user devops.
+Mar 10 06:31:41 cluster-control-01 systemd[1]: Started Session 25729 of user devops.
+Mar 10 06:35:02 cluster-control-01 kernel: [3591] eth0: link up
+Mar 10 06:38:45 cluster-control-01 systemd[1]: prometheus-node-exporter.service: Succeeded.
+Mar 10 06:39:31 cluster-control-01 systemd[1]: prometheus-node-exporter.service: Succeeded.
+Mar 10 06:41:16 cluster-control-01 node_exporter[29061]: ts=23614Z caller=node_exporter.go:199 level=info msg="Listening on" address=":9100"
+Mar 10 06:43:48 cluster-control-01 kernel: [17540] Memory cgroup out of memory: Killed process 27307 (python3)
+Mar 10 06:44:31 cluster-control-01 kernel: [30641] Memory cgroup out of memory: Killed process 17469 (python3)
+Mar 10 06:49:07 cluster-control-01 sshd[6492]: Accepted publickey for devops from 10.0.1.200 port 48364 ssh2
+Mar 10 06:51:16 cluster-control-01 systemd-logind[18226]: New session 45836 of user devops.
+Mar 10 06:52:04 cluster-control-01 systemd[1]: prometheus-node-exporter.service: Succeeded.
+Mar 10 06:53:43 cluster-control-01 kernel: [33961] Memory cgroup out of memory: Killed process 22213 (python3)
+Mar 10 06:56:03 cluster-control-01 systemd-logind[16197]: New session 57630 of user devops.
+Mar 10 07:00:35 cluster-control-01 kernel: [25963] eth0: link up
+Mar 10 07:04:23 cluster-control-01 dockerd[17299]: level=info msg="Container 14269 started"
+Mar 10 07:05:48 cluster-control-01 kernel: [56200] TCP: request_sock_TCP: Possible SYN flooding on port 443.
+Mar 10 07:08:50 cluster-control-01 CRON[20701]: (root) CMD (/usr/local/bin/cluster_health_check.sh)
+Mar 10 07:09:19 cluster-control-01 kernel: [29549] Memory cgroup out of memory: Killed process 19349 (python3)
+Mar 10 07:11:48 cluster-control-01 systemd-logind[53239]: New session 28403 of user devops.
+Mar 10 07:15:01 cluster-control-01 kernel: [54452] Memory cgroup out of memory: Killed process 48871 (python3)
+Mar 10 07:18:53 cluster-control-01 kernel: [22462] Memory cgroup out of memory: Killed process 31496 (python3)
+Mar 10 07:19:09 cluster-control-01 kernel: [43145] Memory cgroup out of memory: Killed process 11144 (python3)
+Mar 10 07:23:07 cluster-control-01 systemd[1]: cluster-metrics-collector.service: Succeeded.
+Mar 10 07:27:03 cluster-control-01 kernel: [57548] eth0: link up
+Mar 10 07:31:34 cluster-control-01 CRON[5292]: (root) CMD (/usr/local/bin/cluster_health_check.sh)
+Mar 10 07:32:57 cluster-control-01 kernel: [15330] Memory cgroup out of memory: Killed process 57101 (python3)
+Mar 10 07:37:33 cluster-control-01 systemd[1]: prometheus-node-exporter.service: Succeeded.
+Mar 10 07:40:49 cluster-control-01 node_exporter[47565]: ts=31943Z caller=node_exporter.go:199 level=info msg="Listening on" address=":9100"
+Mar 10 07:44:34 cluster-control-01 kernel: [26188] Memory cgroup out of memory: Killed process 11066 (python3)
+Mar 10 07:47:00 cluster-control-01 systemd[1]: cluster-metrics-collector.service: Succeeded.
+Mar 10 07:51:13 cluster-control-01 dockerd[7263]: level=info msg="Container 52568 started"
+Mar 10 07:51:41 cluster-control-01 CRON[59605]: (root) CMD (/usr/local/bin/cluster_health_check.sh)
+Mar 10 07:55:18 cluster-control-01 CRON[59591]: (root) CMD (/usr/local/bin/cluster_health_check.sh)
+Mar 10 07:58:27 cluster-control-01 CRON[2878]: (root) CMD (/usr/local/bin/cluster_health_check.sh)
+Mar 10 07:59:05 cluster-control-01 kernel: [62300] TCP: request_sock_TCP: Possible SYN flooding on port 443.
+Mar 10 08:00:51 cluster-control-01 CRON[41920]: (root) CMD (/usr/local/bin/cluster_health_check.sh)
+Mar 10 08:01:52 cluster-control-01 systemd[1]: Starting Daily apt download activities...
+Mar 10 08:04:24 cluster-control-01 sshd[31791]: Accepted publickey for devops from 10.0.1.200 port 42581 ssh2
+Mar 10 08:07:07 cluster-control-01 systemd-logind[35955]: New session 31465 of user devops.
+Mar 10 08:09:48 cluster-control-01 CRON[29861]: (root) CMD (/usr/local/bin/cluster_health_check.sh)
+Mar 10 08:12:01 cluster-control-01 systemd-logind[33133]: New session 7913 of user devops.
+Mar 10 08:15:00 cluster-control-01 systemd-logind[43164]: New session 17264 of user devops.
+Mar 10 08:16:01 cluster-control-01 kernel: [11585] eth0: link up
+Mar 10 08:18:33 cluster-control-01 sshd[9340]: Accepted publickey for devops from 10.0.1.200 port 14855 ssh2
+Mar 10 08:21:43 cluster-control-01 kernel: [12856] Memory cgroup out of memory: Killed process 48253 (python3)
+Mar 10 08:22:05 cluster-control-01 dockerd[18496]: level=info msg="Container 2347 started"
+Mar 10 08:25:29 cluster-control-01 kernel: [58693] Memory cgroup out of memory: Killed process 22108 (python3)
+Mar 10 08:26:24 cluster-control-01 dockerd[2727]: level=info msg="Container 55052 started"
+Mar 10 08:27:20 cluster-control-01 sshd[44351]: Accepted publickey for devops from 10.0.1.200 port 22533 ssh2
+Mar 10 08:31:08 cluster-control-01 dockerd[17001]: level=info msg="Container 20414 started"
+Mar 10 08:34:57 cluster-control-01 CRON[32625]: (root) CMD (/usr/local/bin/cluster_health_check.sh)
+Mar 10 08:39:30 cluster-control-01 sshd[54022]: Accepted publickey for devops from 10.0.1.200 port 7065 ssh2
+Mar 10 08:39:56 cluster-control-01 systemd[1]: prometheus-node-exporter.service: Succeeded.
+Mar 10 08:43:13 cluster-control-01 systemd[1]: Started Session 18272 of user devops.
+Mar 10 08:47:20 cluster-control-01 kernel: [51377] TCP: request_sock_TCP: Possible SYN flooding on port 443.
+Mar 10 08:48:36 cluster-control-01 kernel: [51367] eth0: link up
+Mar 10 08:52:03 cluster-control-01 systemd-logind[11380]: New session 47954 of user devops.
+Mar 10 08:52:45 cluster-control-01 systemd[1]: Started Session 25338 of user devops.
+Mar 10 08:53:38 cluster-control-01 systemd[1]: Starting Daily apt download activities...
+Mar 10 08:57:34 cluster-control-01 node_exporter[39278]: ts=50633Z caller=node_exporter.go:199 level=info msg="Listening on" address=":9100"
+Mar 10 09:01:10 cluster-control-01 systemd[1]: Starting Daily apt download activities...
+Mar 10 09:05:51 cluster-control-01 sshd[39029]: Accepted publickey for devops from 10.0.1.200 port 54106 ssh2
+Mar 10 09:10:36 cluster-control-01 node_exporter[16296]: ts=28493Z caller=node_exporter.go:199 level=info msg="Listening on" address=":9100"
+Mar 10 09:11:05 cluster-control-01 sshd[58346]: Accepted publickey for devops from 10.0.1.200 port 18417 ssh2
+Mar 10 09:13:14 cluster-control-01 systemd[1]: Started Session 23589 of user devops.
+Mar 10 09:15:38 cluster-control-01 systemd[1]: cluster-metrics-collector.service: Succeeded.
+Mar 10 09:18:00 cluster-control-01 systemd[1]: Starting Daily apt download activities...
+Mar 10 09:22:38 cluster-control-01 systemd[1]: cluster-metrics-collector.service: Succeeded.
+Mar 10 09:25:00 cluster-control-01 CRON[48584]: (root) CMD (/usr/local/bin/cluster_health_check.sh)
+Mar 10 09:25:22 cluster-control-01 node_exporter[61636]: ts=45354Z caller=node_exporter.go:199 level=info msg="Listening on" address=":9100"
+Mar 10 09:27:57 cluster-control-01 systemd[1]: Starting Daily apt download activities...
+Mar 10 09:32:33 cluster-control-01 systemd[1]: prometheus-node-exporter.service: Succeeded.
+Mar 10 09:37:17 cluster-control-01 kernel: [6811] Memory cgroup out of memory: Killed process 39519 (python3)
+Mar 10 09:39:03 cluster-control-01 kernel: [54966] eth0: link up
+Mar 10 09:41:14 cluster-control-01 dockerd[50145]: level=info msg="Container 39153 started"
+Mar 10 09:44:37 cluster-control-01 systemd[1]: Started Session 19210 of user devops.
+Mar 10 09:44:58 cluster-control-01 kernel: [21787] TCP: request_sock_TCP: Possible SYN flooding on port 443.
+Mar 10 09:48:14 cluster-control-01 kernel: [32224] eth0: link up
+Mar 10 09:53:04 cluster-control-01 systemd[1]: cluster-metrics-collector.service: Succeeded.
+Mar 10 09:57:49 cluster-control-01 systemd[1]: prometheus-node-exporter.service: Succeeded.
+Mar 10 10:00:50 cluster-control-01 kernel: [54875] Memory cgroup out of memory: Killed process 48587 (python3)
+Mar 10 10:05:50 cluster-control-01 kernel: [31523] Memory cgroup out of memory: Killed process 13512 (python3)
+Mar 10 10:10:02 cluster-control-01 kernel: [39731] eth0: link up
+Mar 10 10:11:58 cluster-control-01 systemd-logind[38228]: New session 52095 of user devops.
+Mar 10 10:14:53 cluster-control-01 kernel: [21873] eth0: link up
+Mar 10 10:19:43 cluster-control-01 kernel: [60686] Memory cgroup out of memory: Killed process 41022 (python3)
+Mar 10 10:21:53 cluster-control-01 kernel: [56915] TCP: request_sock_TCP: Possible SYN flooding on port 443.
+Mar 10 10:26:18 cluster-control-01 systemd[1]: Starting Daily apt download activities...
+Mar 10 10:27:48 cluster-control-01 systemd[1]: cluster-metrics-collector.service: Succeeded.
+Mar 10 10:28:05 cluster-control-01 dockerd[7026]: level=info msg="Container 10327 started"
+Mar 10 10:30:42 cluster-control-01 dockerd[3879]: level=info msg="Container 2791 started"
+Mar 10 10:32:22 cluster-control-01 systemd[1]: Starting Daily apt download activities...
+Mar 10 10:32:49 cluster-control-01 dockerd[53851]: level=info msg="Container 19021 started"
+Mar 10 10:36:09 cluster-control-01 kernel: [15426] eth0: link up
+Mar 10 10:39:05 cluster-control-01 CRON[44970]: (root) CMD (/usr/local/bin/cluster_health_check.sh)
+Mar 10 10:42:22 cluster-control-01 kernel: [60659] TCP: request_sock_TCP: Possible SYN flooding on port 443.
+Mar 10 10:45:50 cluster-control-01 kernel: [52951] eth0: link up
+Mar 10 10:49:03 cluster-control-01 node_exporter[16614]: ts=12622Z caller=node_exporter.go:199 level=info msg="Listening on" address=":9100"
+Mar 10 10:53:23 cluster-control-01 systemd[1]: prometheus-node-exporter.service: Succeeded.
+Mar 10 10:55:53 cluster-control-01 kernel: [47872] eth0: link up
+Mar 10 10:58:41 cluster-control-01 CRON[10201]: (root) CMD (/usr/local/bin/cluster_health_check.sh)
+Mar 10 10:59:40 cluster-control-01 systemd-logind[28398]: New session 30095 of user devops.
+Mar 10 11:01:12 cluster-control-01 kernel: [56665] TCP: request_sock_TCP: Possible SYN flooding on port 443.
+Mar 10 11:03:28 cluster-control-01 systemd[1]: Starting Daily apt download activities...
+Mar 10 11:05:40 cluster-control-01 dockerd[59031]: level=info msg="Container 40284 started"
+Mar 10 11:08:45 cluster-control-01 systemd-logind[47292]: New session 36973 of user devops.
+Mar 10 11:09:12 cluster-control-01 systemd[1]: Starting Daily apt download activities...
+Mar 10 11:13:51 cluster-control-01 kernel: [41677] TCP: request_sock_TCP: Possible SYN flooding on port 443.
+Mar 10 11:17:30 cluster-control-01 kernel: [59855] TCP: request_sock_TCP: Possible SYN flooding on port 443.
+Mar 10 11:21:12 cluster-control-01 kernel: [22767] eth0: link up
+Mar 10 11:24:11 cluster-control-01 systemd[1]: prometheus-node-exporter.service: Succeeded.
+Mar 10 11:29:00 cluster-control-01 dockerd[49602]: level=info msg="Container 51050 started"
+Mar 10 11:31:04 cluster-control-01 CRON[27713]: (root) CMD (/usr/local/bin/cluster_health_check.sh)
+Mar 10 11:33:35 cluster-control-01 dockerd[35640]: level=info msg="Container 45212 started"
+Mar 10 11:38:30 cluster-control-01 CRON[47581]: (root) CMD (/usr/local/bin/cluster_health_check.sh)
+Mar 10 11:40:42 cluster-control-01 kernel: [43125] TCP: request_sock_TCP: Possible SYN flooding on port 443.
+Mar 10 11:42:10 cluster-control-01 systemd-logind[55214]: New session 30812 of user devops.
+Mar 10 11:46:16 cluster-control-01 CRON[11659]: (root) CMD (/usr/local/bin/cluster_health_check.sh)
+Mar 10 11:46:36 cluster-control-01 systemd[1]: cluster-metrics-collector.service: Succeeded.
+Mar 10 11:50:25 cluster-control-01 node_exporter[7709]: ts=36080Z caller=node_exporter.go:199 level=info msg="Listening on" address=":9100"
+Mar 10 11:50:41 cluster-control-01 sshd[26681]: Accepted publickey for devops from 10.0.1.200 port 41341 ssh2
+Mar 10 11:52:49 cluster-control-01 systemd[1]: Starting Daily apt download activities...
+Mar 10 11:53:30 cluster-control-01 kernel: [21978] eth0: link up
+Mar 10 11:57:33 cluster-control-01 kernel: [29281] TCP: request_sock_TCP: Possible SYN flooding on port 443.
+Mar 10 12:01:58 cluster-control-01 kernel: [39168] TCP: request_sock_TCP: Possible SYN flooding on port 443.
+Mar 10 12:05:11 cluster-control-01 kernel: [31507] Memory cgroup out of memory: Killed process 15474 (python3)
+Mar 10 12:07:49 cluster-control-01 CRON[10355]: (root) CMD (/usr/local/bin/cluster_health_check.sh)
+Mar 10 12:10:26 cluster-control-01 sshd[56307]: Accepted publickey for devops from 10.0.1.200 port 29630 ssh2
+Mar 10 12:10:56 cluster-control-01 kernel: [42781] TCP: request_sock_TCP: Possible SYN flooding on port 443.
+Mar 10 12:12:25 cluster-control-01 node_exporter[54934]: ts=9339Z caller=node_exporter.go:199 level=info msg="Listening on" address=":9100"
+Mar 10 12:15:59 cluster-control-01 dockerd[24360]: level=info msg="Container 18937 started"
+Mar 10 12:20:18 cluster-control-01 node_exporter[61558]: ts=31354Z caller=node_exporter.go:199 level=info msg="Listening on" address=":9100"
+Mar 10 12:22:08 cluster-control-01 kernel: [3773] Memory cgroup out of memory: Killed process 26499 (python3)
+Mar 10 12:23:09 cluster-control-01 kernel: [63269] TCP: request_sock_TCP: Possible SYN flooding on port 443.
+Mar 10 12:25:12 cluster-control-01 kernel: [21974] Memory cgroup out of memory: Killed process 6639 (python3)
+Mar 10 12:26:16 cluster-control-01 systemd[1]: Starting Daily apt download activities...
+Mar 10 12:28:46 cluster-control-01 systemd[1]: Started Session 60815 of user devops.
+Mar 10 12:31:13 cluster-control-01 systemd[1]: cluster-metrics-collector.service: Succeeded.
+Mar 10 12:32:42 cluster-control-01 node_exporter[55308]: ts=19345Z caller=node_exporter.go:199 level=info msg="Listening on" address=":9100"
+Mar 10 12:36:04 cluster-control-01 node_exporter[24653]: ts=45037Z caller=node_exporter.go:199 level=info msg="Listening on" address=":9100"
+Mar 10 12:36:59 cluster-control-01 systemd[1]: prometheus-node-exporter.service: Succeeded.
+Mar 10 12:40:44 cluster-control-01 systemd[1]: prometheus-node-exporter.service: Succeeded.
+Mar 10 12:41:36 cluster-control-01 systemd-logind[17870]: New session 31050 of user devops.
+Mar 10 12:45:36 cluster-control-01 systemd[1]: cluster-metrics-collector.service: Succeeded.
+Mar 10 12:46:08 cluster-control-01 node_exporter[64303]: ts=51777Z caller=node_exporter.go:199 level=info msg="Listening on" address=":9100"
+Mar 10 12:48:36 cluster-control-01 sshd[58801]: Accepted publickey for devops from 10.0.1.200 port 50778 ssh2
+Mar 10 12:49:24 cluster-control-01 CRON[46139]: (root) CMD (/usr/local/bin/cluster_health_check.sh)
+Mar 10 12:53:09 cluster-control-01 node_exporter[40282]: ts=30831Z caller=node_exporter.go:199 level=info msg="Listening on" address=":9100"
+Mar 10 12:56:50 cluster-control-01 CRON[54983]: (root) CMD (/usr/local/bin/cluster_health_check.sh)
+Mar 10 12:58:38 cluster-control-01 kernel: [60612] Memory cgroup out of memory: Killed process 18861 (python3)
+Mar 10 13:01:06 cluster-control-01 kernel: [62758] eth0: link up
+Mar 10 13:01:49 cluster-control-01 dockerd[16015]: level=info msg="Container 12539 started"
+Mar 10 13:02:22 cluster-control-01 kernel: [63315] Memory cgroup out of memory: Killed process 42947 (python3)
+Mar 10 13:04:26 cluster-control-01 sshd[29224]: Accepted publickey for devops from 10.0.1.200 port 44974 ssh2
+Mar 10 13:05:53 cluster-control-01 systemd[1]: cluster-metrics-collector.service: Succeeded.
+Mar 10 13:08:24 cluster-control-01 systemd[1]: prometheus-node-exporter.service: Succeeded.
+Mar 10 13:10:56 cluster-control-01 dockerd[37620]: level=info msg="Container 24005 started"
+Mar 10 13:13:29 cluster-control-01 systemd[1]: cluster-metrics-collector.service: Succeeded.
+Mar 10 13:15:49 cluster-control-01 systemd[1]: cluster-metrics-collector.service: Succeeded.
+Mar 10 13:18:21 cluster-control-01 kernel: [22812] TCP: request_sock_TCP: Possible SYN flooding on port 443.
+Mar 10 13:22:15 cluster-control-01 CRON[29246]: (root) CMD (/usr/local/bin/cluster_health_check.sh)
+Mar 10 13:24:10 cluster-control-01 node_exporter[7394]: ts=21804Z caller=node_exporter.go:199 level=info msg="Listening on" address=":9100"
+Mar 10 13:26:14 cluster-control-01 systemd-logind[43051]: New session 49143 of user devops.
+Mar 10 13:27:51 cluster-control-01 systemd[1]: Starting Daily apt download activities...
+Mar 10 13:30:04 cluster-control-01 node_exporter[48946]: ts=53745Z caller=node_exporter.go:199 level=info msg="Listening on" address=":9100"
+Mar 10 13:31:53 cluster-control-01 systemd[1]: Started Session 48246 of user devops.
+Mar 10 13:35:54 cluster-control-01 systemd[1]: Started Session 44192 of user devops.
+Mar 10 13:37:58 cluster-control-01 systemd[1]: prometheus-node-exporter.service: Succeeded.
+Mar 10 13:39:47 cluster-control-01 systemd[1]: cluster-metrics-collector.service: Succeeded.
+Mar 10 13:44:40 cluster-control-01 sshd[17265]: Accepted publickey for devops from 10.0.1.200 port 53803 ssh2
+Mar 10 13:46:06 cluster-control-01 systemd[1]: cluster-metrics-collector.service: Succeeded.
+Mar 10 13:47:14 cluster-control-01 systemd[1]: prometheus-node-exporter.service: Succeeded.
+Mar 10 13:49:55 cluster-control-01 sshd[39736]: Accepted publickey for devops from 10.0.1.200 port 13293 ssh2
+Mar 10 13:54:21 cluster-control-01 kernel: [23048] TCP: request_sock_TCP: Possible SYN flooding on port 443.
+Mar 10 13:56:03 cluster-control-01 kernel: [55762] Memory cgroup out of memory: Killed process 37685 (python3)
+Mar 10 13:58:22 cluster-control-01 node_exporter[10820]: ts=58140Z caller=node_exporter.go:199 level=info msg="Listening on" address=":9100"
+Mar 10 13:59:09 cluster-control-01 sshd[40796]: Accepted publickey for devops from 10.0.1.200 port 23921 ssh2
+Mar 10 14:03:25 cluster-control-01 kernel: [36987] Memory cgroup out of memory: Killed process 55435 (python3)
+Mar 10 14:04:02 cluster-control-01 systemd[1]: prometheus-node-exporter.service: Succeeded.
+Mar 10 14:04:31 cluster-control-01 systemd[1]: Started Session 44500 of user devops.
+Mar 10 14:06:29 cluster-control-01 systemd[1]: Started Session 40555 of user devops.
+Mar 10 14:10:35 cluster-control-01 systemd-logind[15919]: New session 20082 of user devops.
+Mar 10 14:11:43 cluster-control-01 CRON[4634]: (root) CMD (/usr/local/bin/cluster_health_check.sh)
+Mar 10 14:12:27 cluster-control-01 kernel: [62863] Memory cgroup out of memory: Killed process 30017 (python3)
+Mar 10 14:15:55 cluster-control-01 systemd[1]: cluster-metrics-collector.service: Succeeded.
+Mar 10 14:19:44 cluster-control-01 dockerd[19178]: level=info msg="Container 40893 started"
+Mar 10 14:24:27 cluster-control-01 sshd[12467]: Accepted publickey for devops from 10.0.1.200 port 28588 ssh2
+Mar 10 14:26:55 cluster-control-01 sshd[36611]: Accepted publickey for devops from 10.0.1.200 port 26574 ssh2
+Mar 10 14:29:40 cluster-control-01 CRON[42776]: (root) CMD (/usr/local/bin/cluster_health_check.sh)
+Mar 10 14:29:50 cluster-control-01 systemd[1]: cluster-metrics-collector.service: Succeeded.
+Mar 10 14:30:03 cluster-control-01 CRON[10111]: (root) CMD (/usr/local/bin/cluster_health_check.sh)
+Mar 10 14:33:26 cluster-control-01 node_exporter[63945]: ts=33467Z caller=node_exporter.go:199 level=info msg="Listening on" address=":9100"
+Mar 10 14:36:20 cluster-control-01 systemd-logind[8366]: New session 29246 of user devops.
+Mar 10 14:39:33 cluster-control-01 systemd[1]: Starting Daily apt download activities...
+Mar 10 14:40:07 cluster-control-01 node_exporter[21931]: ts=62796Z caller=node_exporter.go:199 level=info msg="Listening on" address=":9100"
+Mar 10 14:43:05 cluster-control-01 node_exporter[16976]: ts=59059Z caller=node_exporter.go:199 level=info msg="Listening on" address=":9100"
+Mar 10 14:43:51 cluster-control-01 CRON[57825]: (root) CMD (/usr/local/bin/cluster_health_check.sh)
+Mar 10 14:47:22 cluster-control-01 kernel: [13600] TCP: request_sock_TCP: Possible SYN flooding on port 443.
+Mar 10 14:47:35 cluster-control-01 kernel: [52577] eth0: link up
+Mar 10 14:52:34 cluster-control-01 systemd[1]: Started Session 26199 of user devops.
+Mar 10 14:57:01 cluster-control-01 systemd[1]: cluster-metrics-collector.service: Succeeded.
+Mar 10 14:57:19 cluster-control-01 systemd[1]: cluster-metrics-collector.service: Succeeded.
+Mar 10 14:59:58 cluster-control-01 systemd[1]: prometheus-node-exporter.service: Succeeded.
+Mar 10 15:00:40 cluster-control-01 kernel: [55700] Memory cgroup out of memory: Killed process 62922 (python3)
+Mar 10 15:05:21 cluster-control-01 systemd-logind[21968]: New session 27359 of user devops.
+Mar 10 15:08:52 cluster-control-01 sshd[26067]: Accepted publickey for devops from 10.0.1.200 port 55405 ssh2
+Mar 10 15:12:35 cluster-control-01 kernel: [63911] eth0: link up
+Mar 10 15:14:01 cluster-control-01 systemd[1]: cluster-metrics-collector.service: Succeeded.
+Mar 10 15:15:33 cluster-control-01 systemd[1]: cluster-metrics-collector.service: Succeeded.
+Mar 10 15:19:27 cluster-control-01 CRON[29603]: (root) CMD (/usr/local/bin/cluster_health_check.sh)
+Mar 10 15:20:24 cluster-control-01 systemd-logind[59696]: New session 8189 of user devops.
+Mar 10 15:24:02 cluster-control-01 kernel: [15092] TCP: request_sock_TCP: Possible SYN flooding on port 443.
+Mar 10 15:27:55 cluster-control-01 systemd[1]: cluster-metrics-collector.service: Succeeded.
+Mar 10 15:30:36 cluster-control-01 kernel: [57079] eth0: link up
+Mar 10 15:34:21 cluster-control-01 kernel: [50335] TCP: request_sock_TCP: Possible SYN flooding on port 443.
+Mar 10 15:37:59 cluster-control-01 systemd[1]: Started Session 45779 of user devops.
+Mar 10 15:38:50 cluster-control-01 kernel: [45280] Memory cgroup out of memory: Killed process 23950 (python3)
+Mar 10 15:43:06 cluster-control-01 CRON[32462]: (root) CMD (/usr/local/bin/cluster_health_check.sh)
+Mar 10 15:48:00 cluster-control-01 dockerd[45337]: level=info msg="Container 17866 started"
+Mar 10 15:50:21 cluster-control-01 systemd[1]: Started Session 30354 of user devops.
+Mar 10 15:53:26 cluster-control-01 sshd[48882]: Accepted publickey for devops from 10.0.1.200 port 34740 ssh2
+Mar 10 15:55:06 cluster-control-01 kernel: [11899] TCP: request_sock_TCP: Possible SYN flooding on port 443.
+Mar 10 15:56:13 cluster-control-01 dockerd[14602]: level=info msg="Container 55365 started"
+Mar 10 15:58:21 cluster-control-01 kernel: [54807] TCP: request_sock_TCP: Possible SYN flooding on port 443.
+Mar 10 15:59:25 cluster-control-01 sshd[5521]: Accepted publickey for devops from 10.0.1.200 port 25942 ssh2
+Mar 10 16:03:37 cluster-control-01 kernel: [30668] eth0: link up
+Mar 10 16:06:27 cluster-control-01 sshd[23481]: Accepted publickey for devops from 10.0.1.200 port 37523 ssh2
+Mar 10 16:08:49 cluster-control-01 systemd[1]: prometheus-node-exporter.service: Succeeded.
+Mar 10 16:09:28 cluster-control-01 systemd[1]: cluster-metrics-collector.service: Succeeded.
+Mar 10 16:12:40 cluster-control-01 systemd[1]: cluster-metrics-collector.service: Succeeded.
+Mar 10 16:15:17 cluster-control-01 sshd[16677]: Accepted publickey for devops from 10.0.1.200 port 22305 ssh2
+Mar 10 16:16:27 cluster-control-01 kernel: [19994] Memory cgroup out of memory: Killed process 13160 (python3)
+Mar 10 16:17:37 cluster-control-01 systemd[1]: cluster-metrics-collector.service: Succeeded.
+Mar 10 16:20:52 cluster-control-01 node_exporter[32482]: ts=25067Z caller=node_exporter.go:199 level=info msg="Listening on" address=":9100"
+Mar 10 16:25:00 cluster-control-01 node_exporter[48534]: ts=39538Z caller=node_exporter.go:199 level=info msg="Listening on" address=":9100"
+Mar 10 16:25:18 cluster-control-01 systemd-logind[35134]: New session 19366 of user devops.
+Mar 10 16:26:02 cluster-control-01 sshd[21180]: Accepted publickey for devops from 10.0.1.200 port 38208 ssh2
+Mar 10 16:27:07 cluster-control-01 sshd[9671]: Accepted publickey for devops from 10.0.1.200 port 50131 ssh2
+Mar 10 16:29:01 cluster-control-01 systemd[1]: cluster-metrics-collector.service: Succeeded.
+Mar 10 16:29:29 cluster-control-01 systemd[1]: Starting Daily apt download activities...
+Mar 10 16:32:17 cluster-control-01 sshd[5827]: Accepted publickey for devops from 10.0.1.200 port 7734 ssh2
+Mar 10 16:34:30 cluster-control-01 kernel: [45830] TCP: request_sock_TCP: Possible SYN flooding on port 443.
+Mar 10 16:36:26 cluster-control-01 node_exporter[50858]: ts=46593Z caller=node_exporter.go:199 level=info msg="Listening on" address=":9100"
+Mar 10 16:40:02 cluster-control-01 systemd[1]: prometheus-node-exporter.service: Succeeded.
+Mar 10 16:44:39 cluster-control-01 systemd[1]: prometheus-node-exporter.service: Succeeded.
+Mar 10 16:49:24 cluster-control-01 dockerd[13528]: level=info msg="Container 37827 started"
+Mar 10 16:50:31 cluster-control-01 kernel: [5536] eth0: link up
+Mar 10 16:52:37 cluster-control-01 systemd[1]: Started Session 60391 of user devops.
+Mar 10 16:54:53 cluster-control-01 systemd[1]: cluster-metrics-collector.service: Succeeded.
+Mar 10 16:59:11 cluster-control-01 CRON[64905]: (root) CMD (/usr/local/bin/cluster_health_check.sh)
+Mar 10 17:01:56 cluster-control-01 systemd[1]: Starting Daily apt download activities...
+Mar 10 17:06:08 cluster-control-01 dockerd[41934]: level=info msg="Container 60895 started"
+Mar 10 17:07:06 cluster-control-01 kernel: [46551] TCP: request_sock_TCP: Possible SYN flooding on port 443.
+Mar 10 17:08:25 cluster-control-01 systemd-logind[61947]: New session 19443 of user devops.
+Mar 10 17:12:51 cluster-control-01 systemd[1]: prometheus-node-exporter.service: Succeeded.
+Mar 10 17:14:53 cluster-control-01 systemd[1]: Started Session 41119 of user devops.
+Mar 10 17:17:02 cluster-control-01 systemd[1]: prometheus-node-exporter.service: Succeeded.
+Mar 10 17:20:27 cluster-control-01 systemd[1]: cluster-metrics-collector.service: Succeeded.
+Mar 10 17:22:40 cluster-control-01 CRON[64057]: (root) CMD (/usr/local/bin/cluster_health_check.sh)
+Mar 10 17:23:11 cluster-control-01 dockerd[12536]: level=info msg="Container 24199 started"
+Mar 10 17:23:53 cluster-control-01 systemd-logind[55954]: New session 36170 of user devops.
+Mar 10 17:24:23 cluster-control-01 CRON[3378]: (root) CMD (/usr/local/bin/cluster_health_check.sh)
+Mar 10 17:28:29 cluster-control-01 systemd-logind[5334]: New session 45379 of user devops.
+Mar 10 17:32:01 cluster-control-01 node_exporter[7718]: ts=40411Z caller=node_exporter.go:199 level=info msg="Listening on" address=":9100"
+Mar 10 17:32:37 cluster-control-01 sshd[31279]: Accepted publickey for devops from 10.0.1.200 port 4365 ssh2
+Mar 10 17:33:17 cluster-control-01 kernel: [41349] Memory cgroup out of memory: Killed process 43408 (python3)
+Mar 10 17:37:44 cluster-control-01 systemd[1]: Started Session 22551 of user devops.
+Mar 10 17:40:32 cluster-control-01 kernel: [25298] Memory cgroup out of memory: Killed process 61277 (python3)
+Mar 10 17:41:18 cluster-control-01 systemd[1]: cluster-metrics-collector.service: Succeeded.
+Mar 10 17:44:41 cluster-control-01 sshd[33370]: Accepted publickey for devops from 10.0.1.200 port 10175 ssh2
+Mar 10 17:48:28 cluster-control-01 node_exporter[22741]: ts=39793Z caller=node_exporter.go:199 level=info msg="Listening on" address=":9100"
+Mar 10 17:49:50 cluster-control-01 kernel: [42561] eth0: link up
+Mar 10 17:51:04 cluster-control-01 systemd[1]: Started Session 51054 of user devops.
+Mar 10 17:53:15 cluster-control-01 systemd[1]: prometheus-node-exporter.service: Succeeded.
+Mar 10 17:55:17 cluster-control-01 systemd-logind[47280]: New session 51659 of user devops.
+Mar 10 17:55:28 cluster-control-01 systemd-logind[13152]: New session 59426 of user devops.
+Mar 10 17:59:48 cluster-control-01 kernel: [6266] Memory cgroup out of memory: Killed process 55846 (python3)
+Mar 10 18:02:55 cluster-control-01 systemd[1]: Started Session 18544 of user devops.
+Mar 10 18:03:57 cluster-control-01 kernel: [32430] TCP: request_sock_TCP: Possible SYN flooding on port 443.
+Mar 10 18:08:49 cluster-control-01 CRON[49548]: (root) CMD (/usr/local/bin/cluster_health_check.sh)
+Mar 10 18:09:05 cluster-control-01 CRON[12220]: (root) CMD (/usr/local/bin/cluster_health_check.sh)
+Mar 10 18:13:51 cluster-control-01 sshd[49577]: Accepted publickey for devops from 10.0.1.200 port 61382 ssh2
+Mar 10 18:17:27 cluster-control-01 sshd[51623]: Accepted publickey for devops from 10.0.1.200 port 51327 ssh2
+Mar 10 18:21:01 cluster-control-01 dockerd[52411]: level=info msg="Container 14664 started"
+Mar 10 18:24:34 cluster-control-01 node_exporter[56541]: ts=10816Z caller=node_exporter.go:199 level=info msg="Listening on" address=":9100"
+Mar 10 18:28:15 cluster-control-01 sshd[26698]: Accepted publickey for devops from 10.0.1.200 port 39995 ssh2
+Mar 10 18:31:23 cluster-control-01 node_exporter[39464]: ts=31890Z caller=node_exporter.go:199 level=info msg="Listening on" address=":9100"
+Mar 10 18:34:22 cluster-control-01 systemd[1]: cluster-metrics-collector.service: Succeeded.
+Mar 10 18:38:13 cluster-control-01 sshd[27567]: Accepted publickey for devops from 10.0.1.200 port 62114 ssh2
+Mar 10 18:38:48 cluster-control-01 kernel: [7593] Memory cgroup out of memory: Killed process 25808 (python3)
+Mar 10 18:41:19 cluster-control-01 systemd[1]: Starting Daily apt download activities...
+Mar 10 18:43:03 cluster-control-01 systemd[1]: Started Session 24965 of user devops.
+Mar 10 18:44:55 cluster-control-01 systemd[1]: prometheus-node-exporter.service: Succeeded.
+Mar 10 18:45:59 cluster-control-01 kernel: [60633] Memory cgroup out of memory: Killed process 6712 (python3)
+Mar 10 18:48:21 cluster-control-01 systemd-logind[44782]: New session 34516 of user devops.
+Mar 10 18:48:47 cluster-control-01 CRON[5378]: (root) CMD (/usr/local/bin/cluster_health_check.sh)
+Mar 10 18:51:38 cluster-control-01 sshd[35326]: Accepted publickey for devops from 10.0.1.200 port 52576 ssh2
+Mar 10 18:55:34 cluster-control-01 kernel: [23400] TCP: request_sock_TCP: Possible SYN flooding on port 443.
+Mar 10 19:00:34 cluster-control-01 kernel: [2260] Memory cgroup out of memory: Killed process 32188 (python3)
+Mar 10 19:01:45 cluster-control-01 dockerd[7033]: level=info msg="Container 53128 started"
+Mar 10 19:03:44 cluster-control-01 sshd[54494]: Accepted publickey for devops from 10.0.1.200 port 17152 ssh2
+Mar 10 19:08:20 cluster-control-01 dockerd[28479]: level=info msg="Container 44857 started"
+Mar 10 19:13:10 cluster-control-01 systemd[1]: cluster-metrics-collector.service: Succeeded.
+Mar 10 19:15:08 cluster-control-01 systemd[1]: Starting Daily apt download activities...
+Mar 10 19:16:24 cluster-control-01 kernel: [7585] eth0: link up
+Mar 10 19:19:09 cluster-control-01 systemd[1]: prometheus-node-exporter.service: Succeeded.
+Mar 10 19:22:13 cluster-control-01 systemd[1]: Starting Daily apt download activities...
+Mar 10 19:26:16 cluster-control-01 node_exporter[5742]: ts=16690Z caller=node_exporter.go:199 level=info msg="Listening on" address=":9100"
+Mar 10 19:30:15 cluster-control-01 sshd[18790]: Accepted publickey for devops from 10.0.1.200 port 13140 ssh2
+Mar 10 19:35:00 cluster-control-01 systemd[1]: prometheus-node-exporter.service: Succeeded.
+Mar 10 19:38:15 cluster-control-01 kernel: [42590] Memory cgroup out of memory: Killed process 25851 (python3)
+Mar 10 19:40:29 cluster-control-01 kernel: [31936] Memory cgroup out of memory: Killed process 5716 (python3)
+Mar 10 19:45:11 cluster-control-01 kernel: [2393] eth0: link up
+Mar 10 19:45:34 cluster-control-01 systemd[1]: Starting Daily apt download activities...
+Mar 10 19:47:22 cluster-control-01 systemd-logind[54668]: New session 12154 of user devops.
+Mar 10 19:52:14 cluster-control-01 systemd[1]: prometheus-node-exporter.service: Succeeded.
+Mar 10 19:53:34 cluster-control-01 systemd[1]: Starting Daily apt download activities...
+Mar 10 19:57:42 cluster-control-01 kernel: [49234] TCP: request_sock_TCP: Possible SYN flooding on port 443.
+Mar 10 19:58:16 cluster-control-01 systemd[1]: Started Session 24205 of user devops.
+Mar 10 20:00:21 cluster-control-01 systemd[1]: Starting Daily apt download activities...
+Mar 10 20:00:59 cluster-control-01 sshd[49216]: Accepted publickey for devops from 10.0.1.200 port 64234 ssh2
+Mar 10 20:03:11 cluster-control-01 sshd[40675]: Accepted publickey for devops from 10.0.1.200 port 11303 ssh2
+Mar 10 20:05:42 cluster-control-01 CRON[34578]: (root) CMD (/usr/local/bin/cluster_health_check.sh)
+Mar 10 20:06:34 cluster-control-01 systemd[1]: cluster-metrics-collector.service: Succeeded.
+Mar 10 20:07:51 cluster-control-01 kernel: [1111] eth0: link up
+Mar 10 20:10:07 cluster-control-01 kernel: [27861] TCP: request_sock_TCP: Possible SYN flooding on port 443.
+Mar 10 20:12:19 cluster-control-01 CRON[21856]: (root) CMD (/usr/local/bin/cluster_health_check.sh)
+Mar 10 20:16:49 cluster-control-01 kernel: [26527] TCP: request_sock_TCP: Possible SYN flooding on port 443.
+Mar 10 20:18:30 cluster-control-01 kernel: [26945] TCP: request_sock_TCP: Possible SYN flooding on port 443.
+Mar 10 20:20:32 cluster-control-01 systemd[1]: Starting Daily apt download activities...
+Mar 10 20:22:54 cluster-control-01 systemd[1]: Started Session 39806 of user devops.
+Mar 10 20:23:24 cluster-control-01 kernel: [14917] eth0: link up
+Mar 10 20:25:23 cluster-control-01 kernel: [28635] TCP: request_sock_TCP: Possible SYN flooding on port 443.
+Mar 10 20:29:46 cluster-control-01 systemd-logind[48692]: New session 32669 of user devops.
+Mar 10 20:32:38 cluster-control-01 dockerd[42384]: level=info msg="Container 58674 started"
+Mar 10 20:37:05 cluster-control-01 systemd[1]: Started Session 39439 of user devops.
+Mar 10 20:42:04 cluster-control-01 systemd[1]: Started Session 39560 of user devops.
+Mar 10 20:42:19 cluster-control-01 dockerd[64249]: level=info msg="Container 43750 started"
+Mar 10 20:46:53 cluster-control-01 node_exporter[5997]: ts=52324Z caller=node_exporter.go:199 level=info msg="Listening on" address=":9100"
+Mar 10 20:48:50 cluster-control-01 systemd-logind[44148]: New session 31506 of user devops.
+Mar 10 20:51:22 cluster-control-01 systemd[1]: prometheus-node-exporter.service: Succeeded.
+Mar 10 20:51:43 cluster-control-01 kernel: [8540] eth0: link up
+Mar 10 20:52:23 cluster-control-01 kernel: [38098] Memory cgroup out of memory: Killed process 25424 (python3)
+Mar 10 20:55:37 cluster-control-01 systemd-logind[1468]: New session 23292 of user devops.
+Mar 10 20:59:58 cluster-control-01 kernel: [6205] eth0: link up
+Mar 10 21:04:54 cluster-control-01 node_exporter[19209]: ts=56338Z caller=node_exporter.go:199 level=info msg="Listening on" address=":9100"
+Mar 10 21:07:44 cluster-control-01 dockerd[16141]: level=info msg="Container 52879 started"
+Mar 10 21:08:06 cluster-control-01 systemd[1]: cluster-metrics-collector.service: Succeeded.
+Mar 10 21:10:23 cluster-control-01 kernel: [51500] Memory cgroup out of memory: Killed process 38706 (python3)
+Mar 10 21:12:09 cluster-control-01 node_exporter[19420]: ts=8949Z caller=node_exporter.go:199 level=info msg="Listening on" address=":9100"
+Mar 10 21:14:24 cluster-control-01 CRON[54028]: (root) CMD (/usr/local/bin/cluster_health_check.sh)
+Mar 10 21:16:09 cluster-control-01 kernel: [51410] TCP: request_sock_TCP: Possible SYN flooding on port 443.
+Mar 10 21:20:29 cluster-control-01 systemd[1]: Started Session 32159 of user devops.
+Mar 10 21:23:40 cluster-control-01 dockerd[13164]: level=info msg="Container 33056 started"
+Mar 10 21:27:34 cluster-control-01 systemd[1]: Started Session 50678 of user devops.
+Mar 10 21:28:10 cluster-control-01 systemd-logind[34353]: New session 36144 of user devops.
+Mar 10 21:30:39 cluster-control-01 kernel: [23527] Memory cgroup out of memory: Killed process 57571 (python3)
+Mar 10 21:34:26 cluster-control-01 kernel: [20305] eth0: link up
+Mar 10 21:37:10 cluster-control-01 kernel: [53619] eth0: link up
+Mar 10 21:38:50 cluster-control-01 kernel: [33842] eth0: link up
+Mar 10 21:42:58 cluster-control-01 kernel: [16434] eth0: link up
+Mar 10 21:43:23 cluster-control-01 dockerd[23538]: level=info msg="Container 7835 started"
+Mar 10 21:47:40 cluster-control-01 sshd[15105]: Accepted publickey for devops from 10.0.1.200 port 48114 ssh2
+Mar 10 21:48:52 cluster-control-01 node_exporter[1654]: ts=26195Z caller=node_exporter.go:199 level=info msg="Listening on" address=":9100"
+Mar 10 21:49:46 cluster-control-01 systemd[1]: Started Session 25091 of user devops.
+Mar 10 21:51:25 cluster-control-01 dockerd[25191]: level=info msg="Container 31486 started"
+Mar 10 21:53:57 cluster-control-01 kernel: [39587] TCP: request_sock_TCP: Possible SYN flooding on port 443.
+Mar 10 21:54:21 cluster-control-01 systemd[1]: cluster-metrics-collector.service: Succeeded.
+Mar 10 21:55:25 cluster-control-01 systemd[1]: prometheus-node-exporter.service: Succeeded.
+Mar 10 21:56:54 cluster-control-01 dockerd[8601]: level=info msg="Container 15016 started"
+Mar 10 21:59:37 cluster-control-01 kernel: [10095] Memory cgroup out of memory: Killed process 43319 (python3)
+Mar 10 22:00:57 cluster-control-01 systemd[1]: Starting Daily apt download activities...
+Mar 10 22:04:59 cluster-control-01 dockerd[10738]: level=info msg="Container 56147 started"
+Mar 10 22:05:39 cluster-control-01 CRON[5790]: (root) CMD (/usr/local/bin/cluster_health_check.sh)
+Mar 10 22:09:10 cluster-control-01 kernel: [50783] eth0: link up
+Mar 10 22:09:56 cluster-control-01 systemd[1]: Started Session 50400 of user devops.
+Mar 10 22:12:36 cluster-control-01 systemd[1]: Starting Daily apt download activities...
+Mar 10 22:16:11 cluster-control-01 systemd[1]: prometheus-node-exporter.service: Succeeded.
+Mar 10 22:17:14 cluster-control-01 kernel: [1704] TCP: request_sock_TCP: Possible SYN flooding on port 443.
+Mar 10 22:19:30 cluster-control-01 CRON[43751]: (root) CMD (/usr/local/bin/cluster_health_check.sh)
+Mar 10 22:21:25 cluster-control-01 CRON[51069]: (root) CMD (/usr/local/bin/cluster_health_check.sh)
+Mar 10 22:21:58 cluster-control-01 node_exporter[33013]: ts=40013Z caller=node_exporter.go:199 level=info msg="Listening on" address=":9100"
+Mar 10 22:26:27 cluster-control-01 node_exporter[54265]: ts=5315Z caller=node_exporter.go:199 level=info msg="Listening on" address=":9100"
+Mar 10 22:27:36 cluster-control-01 systemd[1]: cluster-metrics-collector.service: Succeeded.
+Mar 10 22:32:27 cluster-control-01 CRON[23733]: (root) CMD (/usr/local/bin/cluster_health_check.sh)
+Mar 10 22:33:14 cluster-control-01 kernel: [41030] eth0: link up
+Mar 10 22:34:12 cluster-control-01 kernel: [20347] Memory cgroup out of memory: Killed process 47865 (python3)
+Mar 10 22:35:28 cluster-control-01 systemd-logind[16062]: New session 30645 of user devops.
+Mar 10 22:36:19 cluster-control-01 CRON[43303]: (root) CMD (/usr/local/bin/cluster_health_check.sh)
+Mar 10 22:40:08 cluster-control-01 node_exporter[60412]: ts=10484Z caller=node_exporter.go:199 level=info msg="Listening on" address=":9100"
+Mar 10 22:44:21 cluster-control-01 systemd-logind[11203]: New session 45552 of user devops.
+Mar 10 22:46:26 cluster-control-01 sshd[25457]: Accepted publickey for devops from 10.0.1.200 port 21158 ssh2
+Mar 10 22:51:01 cluster-control-01 sshd[28769]: Accepted publickey for devops from 10.0.1.200 port 38181 ssh2
+Mar 10 22:54:22 cluster-control-01 kernel: [11309] TCP: request_sock_TCP: Possible SYN flooding on port 443.
+Mar 10 22:55:38 cluster-control-01 sshd[19351]: Accepted publickey for devops from 10.0.1.200 port 52635 ssh2
+Mar 10 22:56:32 cluster-control-01 systemd[1]: Started Session 54604 of user devops.
+Mar 10 23:01:22 cluster-control-01 systemd[1]: Started Session 46953 of user devops.
+Mar 10 23:02:31 cluster-control-01 systemd-logind[56282]: New session 63160 of user devops.
+Mar 10 23:03:55 cluster-control-01 sshd[44935]: Accepted publickey for devops from 10.0.1.200 port 27662 ssh2
+Mar 10 23:05:23 cluster-control-01 kernel: [54073] eth0: link up
+Mar 10 23:06:18 cluster-control-01 systemd[1]: prometheus-node-exporter.service: Succeeded.
+Mar 10 23:08:09 cluster-control-01 kernel: [16776] eth0: link up
+Mar 10 23:08:36 cluster-control-01 systemd[1]: cluster-metrics-collector.service: Succeeded.
+Mar 10 23:09:37 cluster-control-01 systemd[1]: Starting Daily apt download activities...
+Mar 10 23:13:31 cluster-control-01 CRON[40385]: (root) CMD (/usr/local/bin/cluster_health_check.sh)
+Mar 10 23:18:23 cluster-control-01 sshd[55048]: Accepted publickey for devops from 10.0.1.200 port 46347 ssh2
+Mar 10 23:19:59 cluster-control-01 sshd[6965]: Accepted publickey for devops from 10.0.1.200 port 18134 ssh2
+Mar 10 23:22:33 cluster-control-01 CRON[18103]: (root) CMD (/usr/local/bin/cluster_health_check.sh)
+Mar 10 23:23:35 cluster-control-01 systemd[1]: Started Session 61230 of user devops.
+Mar 10 23:26:28 cluster-control-01 CRON[56650]: (root) CMD (/usr/local/bin/cluster_health_check.sh)
+Mar 10 23:31:14 cluster-control-01 systemd[1]: cluster-metrics-collector.service: Succeeded.
+Mar 10 23:36:13 cluster-control-01 systemd[1]: Started Session 35732 of user devops.
+Mar 10 23:38:23 cluster-control-01 dockerd[58221]: level=info msg="Container 29833 started"
+Mar 10 23:41:45 cluster-control-01 kernel: [11269] TCP: request_sock_TCP: Possible SYN flooding on port 443.
+Mar 10 23:46:06 cluster-control-01 systemd[1]: prometheus-node-exporter.service: Succeeded.
+Mar 10 23:49:10 cluster-control-01 systemd-logind[9693]: New session 54169 of user devops.
+Mar 10 23:52:19 cluster-control-01 systemd[1]: Starting Daily apt download activities...
+Mar 10 23:56:13 cluster-control-01 systemd[1]: prometheus-node-exporter.service: Succeeded.
+Mar 10 23:56:59 cluster-control-01 systemd[1]: Starting Daily apt download activities...
+Mar 10 23:59:30 cluster-control-01 node_exporter[39794]: ts=3732Z caller=node_exporter.go:199 level=info msg="Listening on" address=":9100"
+Mar 11 00:04:25 cluster-control-01 kernel: [26013] Memory cgroup out of memory: Killed process 53512 (python3)
+Mar 11 00:08:56 cluster-control-01 kernel: [61820] TCP: request_sock_TCP: Possible SYN flooding on port 443.
+Mar 11 00:10:31 cluster-control-01 kernel: [34009] TCP: request_sock_TCP: Possible SYN flooding on port 443.
+Mar 11 00:11:20 cluster-control-01 systemd[1]: cluster-metrics-collector.service: Succeeded.
+Mar 11 00:15:16 cluster-control-01 dockerd[1169]: level=info msg="Container 1344 started"
+Mar 11 00:18:32 cluster-control-01 systemd[1]: cluster-metrics-collector.service: Succeeded.
+Mar 11 00:23:18 cluster-control-01 systemd[1]: Started Session 1962 of user devops.
+Mar 11 00:26:20 cluster-control-01 kernel: [52114] Memory cgroup out of memory: Killed process 36916 (python3)
+Mar 11 00:30:09 cluster-control-01 kernel: [13584] Memory cgroup out of memory: Killed process 31976 (python3)
+Mar 11 00:32:26 cluster-control-01 systemd-logind[10400]: New session 14216 of user devops.
+Mar 11 00:36:01 cluster-control-01 kernel: [57316] eth0: link up
+Mar 11 00:39:04 cluster-control-01 systemd[1]: Starting Daily apt download activities...
+Mar 11 00:42:23 cluster-control-01 kernel: [27968] TCP: request_sock_TCP: Possible SYN flooding on port 443.
+Mar 11 00:43:58 cluster-control-01 systemd[1]: Started Session 53278 of user devops.
+Mar 11 00:48:55 cluster-control-01 dockerd[37206]: level=info msg="Container 42346 started"
+Mar 11 00:53:02 cluster-control-01 sshd[52541]: Accepted publickey for devops from 10.0.1.200 port 54240 ssh2
+Mar 11 00:55:44 cluster-control-01 systemd-logind[53477]: New session 52067 of user devops.
+Mar 11 00:57:41 cluster-control-01 sshd[41023]: Accepted publickey for devops from 10.0.1.200 port 38680 ssh2
+Mar 11 00:59:18 cluster-control-01 kernel: [21509] Memory cgroup out of memory: Killed process 57990 (python3)
+Mar 11 01:04:12 cluster-control-01 systemd[1]: cluster-metrics-collector.service: Succeeded.
+Mar 11 01:06:01 cluster-control-01 systemd-logind[44931]: New session 16193 of user devops.
+Mar 11 01:09:21 cluster-control-01 dockerd[57188]: level=info msg="Container 51836 started"
+Mar 11 01:13:41 cluster-control-01 systemd[1]: prometheus-node-exporter.service: Succeeded.
+Mar 11 01:18:15 cluster-control-01 CRON[25525]: (root) CMD (/usr/local/bin/cluster_health_check.sh)
+Mar 11 01:19:46 cluster-control-01 CRON[33047]: (root) CMD (/usr/local/bin/cluster_health_check.sh)
+Mar 11 01:22:45 cluster-control-01 systemd-logind[26062]: New session 16518 of user devops.
+Mar 11 01:27:29 cluster-control-01 sshd[50259]: Accepted publickey for devops from 10.0.1.200 port 47822 ssh2
+Mar 11 01:30:41 cluster-control-01 kernel: [19152] TCP: request_sock_TCP: Possible SYN flooding on port 443.
+Mar 11 01:33:35 cluster-control-01 systemd[1]: Started Session 8643 of user devops.
+Mar 11 01:36:14 cluster-control-01 systemd[1]: Started Session 30212 of user devops.
+Mar 11 01:39:15 cluster-control-01 kernel: [21946] Memory cgroup out of memory: Killed process 29746 (python3)
+Mar 11 01:43:08 cluster-control-01 sshd[38709]: Accepted publickey for devops from 10.0.1.200 port 45641 ssh2
+Mar 11 01:43:41 cluster-control-01 sshd[15540]: Accepted publickey for devops from 10.0.1.200 port 59004 ssh2
+Mar 11 01:44:45 cluster-control-01 systemd[1]: prometheus-node-exporter.service: Succeeded.
+Mar 11 01:48:05 cluster-control-01 sshd[17403]: Accepted publickey for devops from 10.0.1.200 port 64380 ssh2
+Mar 11 01:48:46 cluster-control-01 CRON[43795]: (root) CMD (/usr/local/bin/cluster_health_check.sh)
+Mar 11 01:52:16 cluster-control-01 systemd[1]: prometheus-node-exporter.service: Succeeded.
+Mar 11 01:54:42 cluster-control-01 systemd-logind[5787]: New session 5639 of user devops.
+Mar 11 01:57:33 cluster-control-01 systemd-logind[36546]: New session 34483 of user devops.
+Mar 11 02:00:37 cluster-control-01 systemd-logind[58579]: New session 63277 of user devops.
+Mar 11 02:04:31 cluster-control-01 systemd-logind[52987]: New session 51846 of user devops.
+Mar 11 02:06:13 cluster-control-01 systemd-logind[34354]: New session 11333 of user devops.
+Mar 11 02:07:53 cluster-control-01 systemd[1]: Started Session 1897 of user devops.
+Mar 11 02:09:17 cluster-control-01 CRON[30334]: (root) CMD (/usr/local/bin/cluster_health_check.sh)
+Mar 11 02:13:56 cluster-control-01 systemd-logind[62352]: New session 50898 of user devops.
+Mar 11 02:16:14 cluster-control-01 sshd[58097]: Accepted publickey for devops from 10.0.1.200 port 38770 ssh2
+Mar 11 02:17:52 cluster-control-01 dockerd[15995]: level=info msg="Container 51354 started"
+Mar 11 02:19:13 cluster-control-01 systemd[1]: Started Session 57462 of user devops.
+Mar 11 02:21:07 cluster-control-01 systemd[1]: Started Session 44737 of user devops.
+Mar 11 02:25:16 cluster-control-01 CRON[31943]: (root) CMD (/usr/local/bin/cluster_health_check.sh)
+Mar 11 02:30:10 cluster-control-01 kernel: [20875] Memory cgroup out of memory: Killed process 48158 (python3)
+Mar 11 02:34:37 cluster-control-01 systemd-logind[40238]: New session 58035 of user devops.
+Mar 11 02:39:27 cluster-control-01 sshd[11158]: Accepted publickey for devops from 10.0.1.200 port 56018 ssh2
+Mar 11 02:42:56 cluster-control-01 systemd-logind[59566]: New session 63637 of user devops.
+Mar 11 02:46:55 cluster-control-01 systemd[1]: prometheus-node-exporter.service: Succeeded.
+Mar 11 02:51:10 cluster-control-01 dockerd[1690]: level=info msg="Container 25164 started"
+Mar 11 02:54:17 cluster-control-01 dockerd[26709]: level=info msg="Container 18576 started"
+Mar 11 02:55:28 cluster-control-01 dockerd[20801]: level=info msg="Container 56101 started"
+Mar 11 02:58:16 cluster-control-01 sshd[59892]: Accepted publickey for devops from 10.0.1.200 port 47583 ssh2
+Mar 11 02:59:24 cluster-control-01 node_exporter[44485]: ts=14343Z caller=node_exporter.go:199 level=info msg="Listening on" address=":9100"
+Mar 11 03:02:12 cluster-control-01 kernel: [61335] Memory cgroup out of memory: Killed process 52572 (python3)
+Mar 11 03:05:06 cluster-control-01 sshd[64337]: Accepted publickey for devops from 10.0.1.200 port 47380 ssh2
+Mar 11 03:06:25 cluster-control-01 sshd[56438]: Accepted publickey for devops from 10.0.1.200 port 64227 ssh2
+Mar 11 03:09:59 cluster-control-01 sshd[43476]: Accepted publickey for devops from 10.0.1.200 port 58673 ssh2
+Mar 11 03:12:48 cluster-control-01 systemd[1]: Starting Daily apt download activities...
+Mar 11 03:14:51 cluster-control-01 systemd[1]: Starting Daily apt download activities...
+Mar 11 03:18:47 cluster-control-01 node_exporter[16559]: ts=13534Z caller=node_exporter.go:199 level=info msg="Listening on" address=":9100"
+Mar 11 03:19:50 cluster-control-01 systemd[1]: Started Session 33440 of user devops.
+Mar 11 03:21:49 cluster-control-01 dockerd[9942]: level=info msg="Container 53684 started"
+Mar 11 03:26:44 cluster-control-01 systemd[1]: Starting Daily apt download activities...
+Mar 11 03:27:45 cluster-control-01 kernel: [42291] Memory cgroup out of memory: Killed process 14816 (python3)
+Mar 11 03:29:26 cluster-control-01 kernel: [14588] Memory cgroup out of memory: Killed process 7615 (python3)
+Mar 11 03:29:49 cluster-control-01 node_exporter[32149]: ts=59060Z caller=node_exporter.go:199 level=info msg="Listening on" address=":9100"
+Mar 11 03:30:03 cluster-control-01 node_exporter[36906]: ts=41483Z caller=node_exporter.go:199 level=info msg="Listening on" address=":9100"
+Mar 11 03:31:41 cluster-control-01 systemd[1]: prometheus-node-exporter.service: Succeeded.
+Mar 11 03:34:55 cluster-control-01 systemd[1]: cluster-metrics-collector.service: Succeeded.
+Mar 11 03:38:10 cluster-control-01 kernel: [62944] Memory cgroup out of memory: Killed process 12500 (python3)
+Mar 11 03:40:04 cluster-control-01 systemd[1]: cluster-metrics-collector.service: Succeeded.
+Mar 11 03:42:50 cluster-control-01 systemd[1]: cluster-metrics-collector.service: Succeeded.
+Mar 11 03:47:33 cluster-control-01 CRON[5957]: (root) CMD (/usr/local/bin/cluster_health_check.sh)
+Mar 11 03:49:28 cluster-control-01 dockerd[23764]: level=info msg="Container 35812 started"
+Mar 11 03:50:52 cluster-control-01 systemd[1]: cluster-metrics-collector.service: Succeeded.
+Mar 11 03:52:50 cluster-control-01 CRON[10829]: (root) CMD (/usr/local/bin/cluster_health_check.sh)
+Mar 11 03:55:05 cluster-control-01 CRON[14011]: (root) CMD (/usr/local/bin/cluster_health_check.sh)
+Mar 11 03:57:34 cluster-control-01 systemd[1]: Starting Daily apt download activities...
+Mar 11 04:00:25 cluster-control-01 systemd[1]: prometheus-node-exporter.service: Succeeded.
+Mar 11 04:04:10 cluster-control-01 sshd[34102]: Accepted publickey for devops from 10.0.1.200 port 20416 ssh2
+Mar 11 04:06:54 cluster-control-01 systemd[1]: Starting Daily apt download activities...
+Mar 11 04:11:17 cluster-control-01 node_exporter[40357]: ts=14712Z caller=node_exporter.go:199 level=info msg="Listening on" address=":9100"
+Mar 11 04:12:08 cluster-control-01 CRON[57000]: (root) CMD (/usr/local/bin/cluster_health_check.sh)
+Mar 11 04:14:51 cluster-control-01 dockerd[41050]: level=info msg="Container 3220 started"
+Mar 11 04:19:41 cluster-control-01 kernel: [7883] Memory cgroup out of memory: Killed process 9544 (python3)
+Mar 11 04:23:13 cluster-control-01 node_exporter[6207]: ts=2260Z caller=node_exporter.go:199 level=info msg="Listening on" address=":9100"
+Mar 11 04:23:54 cluster-control-01 systemd[1]: prometheus-node-exporter.service: Succeeded.
+Mar 11 04:25:45 cluster-control-01 systemd[1]: cluster-metrics-collector.service: Succeeded.
+Mar 11 04:28:43 cluster-control-01 kernel: [15750] eth0: link up
+Mar 11 04:29:54 cluster-control-01 systemd-logind[8750]: New session 57952 of user devops.
+Mar 11 04:34:45 cluster-control-01 systemd[1]: Starting Daily apt download activities...
+Mar 11 04:35:53 cluster-control-01 systemd[1]: cluster-metrics-collector.service: Succeeded.
+Mar 11 04:38:42 cluster-control-01 kernel: [15989] Memory cgroup out of memory: Killed process 64348 (python3)
+Mar 11 04:41:14 cluster-control-01 node_exporter[16955]: ts=13265Z caller=node_exporter.go:199 level=info msg="Listening on" address=":9100"
+Mar 11 04:44:39 cluster-control-01 kernel: [22482] TCP: request_sock_TCP: Possible SYN flooding on port 443.
+Mar 11 04:47:55 cluster-control-01 node_exporter[37042]: ts=49518Z caller=node_exporter.go:199 level=info msg="Listening on" address=":9100"
+Mar 11 04:51:40 cluster-control-01 dockerd[18555]: level=info msg="Container 34074 started"
+Mar 11 04:56:03 cluster-control-01 CRON[39455]: (root) CMD (/usr/local/bin/cluster_health_check.sh)
+Mar 11 04:57:12 cluster-control-01 CRON[13118]: (root) CMD (/usr/local/bin/cluster_health_check.sh)
+Mar 11 05:01:40 cluster-control-01 systemd[1]: Started Session 42980 of user devops.
+Mar 11 05:06:38 cluster-control-01 systemd-logind[45396]: New session 30040 of user devops.
+Mar 11 05:06:57 cluster-control-01 CRON[37264]: (root) CMD (/usr/local/bin/cluster_health_check.sh)
+Mar 11 05:08:22 cluster-control-01 dockerd[7092]: level=info msg="Container 10702 started"
+Mar 11 05:10:28 cluster-control-01 systemd[1]: prometheus-node-exporter.service: Succeeded.
+Mar 11 05:14:05 cluster-control-01 dockerd[37832]: level=info msg="Container 31573 started"
+Mar 11 05:18:10 cluster-control-01 kernel: [34110] eth0: link up
+Mar 11 05:21:58 cluster-control-01 CRON[50421]: (root) CMD (/usr/local/bin/cluster_health_check.sh)
+Mar 11 05:26:51 cluster-control-01 kernel: [20949] TCP: request_sock_TCP: Possible SYN flooding on port 443.
+Mar 11 05:29:33 cluster-control-01 systemd-logind[26184]: New session 36425 of user devops.
+Mar 11 05:30:27 cluster-control-01 kernel: [7456] eth0: link up
+Mar 11 05:33:09 cluster-control-01 kernel: [10983] Memory cgroup out of memory: Killed process 45414 (python3)
+Mar 11 05:35:48 cluster-control-01 systemd-logind[24917]: New session 3141 of user devops.
+Mar 11 05:37:36 cluster-control-01 kernel: [9498] TCP: request_sock_TCP: Possible SYN flooding on port 443.
+Mar 11 05:41:29 cluster-control-01 dockerd[11956]: level=info msg="Container 15784 started"
+Mar 11 05:45:15 cluster-control-01 kernel: [33825] Memory cgroup out of memory: Killed process 40527 (python3)
+Mar 11 05:45:39 cluster-control-01 node_exporter[37558]: ts=49923Z caller=node_exporter.go:199 level=info msg="Listening on" address=":9100"
+Mar 11 05:47:55 cluster-control-01 node_exporter[40444]: ts=55163Z caller=node_exporter.go:199 level=info msg="Listening on" address=":9100"
+Mar 11 05:48:38 cluster-control-01 systemd[1]: Started Session 52136 of user devops.
+Mar 11 05:52:53 cluster-control-01 sshd[20054]: Accepted publickey for devops from 10.0.1.200 port 58777 ssh2
+Mar 11 05:57:36 cluster-control-01 systemd[1]: Started Session 2423 of user devops.
+Mar 11 06:01:29 cluster-control-01 kernel: [62999] TCP: request_sock_TCP: Possible SYN flooding on port 443.
+Mar 11 06:06:27 cluster-control-01 systemd[1]: prometheus-node-exporter.service: Succeeded.
+Mar 11 06:10:05 cluster-control-01 CRON[19579]: (root) CMD (/usr/local/bin/cluster_health_check.sh)
+Mar 11 06:12:02 cluster-control-01 kernel: [16813] TCP: request_sock_TCP: Possible SYN flooding on port 443.
+Mar 11 06:13:55 cluster-control-01 sshd[54907]: Accepted publickey for devops from 10.0.1.200 port 49491 ssh2
+Mar 11 06:18:49 cluster-control-01 CRON[56587]: (root) CMD (/usr/local/bin/cluster_health_check.sh)
+Mar 11 06:23:39 cluster-control-01 node_exporter[21819]: ts=9417Z caller=node_exporter.go:199 level=info msg="Listening on" address=":9100"
+Mar 11 06:28:02 cluster-control-01 kernel: [58931] eth0: link up
+Mar 11 06:30:25 cluster-control-01 CRON[1213]: (root) CMD (/usr/local/bin/cluster_health_check.sh)
+Mar 11 06:34:38 cluster-control-01 systemd[1]: cluster-metrics-collector.service: Succeeded.
+Mar 11 06:36:22 cluster-control-01 CRON[22411]: (root) CMD (/usr/local/bin/cluster_health_check.sh)
+Mar 11 06:39:16 cluster-control-01 systemd-logind[9807]: New session 42239 of user devops.
+Mar 11 06:44:02 cluster-control-01 systemd-logind[55998]: New session 2991 of user devops.
+Mar 11 06:45:12 cluster-control-01 systemd[1]: prometheus-node-exporter.service: Succeeded.
+Mar 11 06:48:27 cluster-control-01 kernel: [42484] Memory cgroup out of memory: Killed process 21056 (python3)
+Mar 11 06:48:52 cluster-control-01 systemd[1]: Started Session 16898 of user devops.
+Mar 11 06:49:41 cluster-control-01 kernel: [4016] TCP: request_sock_TCP: Possible SYN flooding on port 443.
+Mar 11 06:52:00 cluster-control-01 systemd[1]: Started Session 64076 of user devops.
+Mar 11 06:55:03 cluster-control-01 systemd-logind[2900]: New session 41071 of user devops.
+Mar 11 06:58:50 cluster-control-01 dockerd[14855]: level=info msg="Container 7752 started"
+Mar 11 07:01:05 cluster-control-01 systemd[1]: prometheus-node-exporter.service: Succeeded.
+Mar 11 07:01:44 cluster-control-01 sshd[49954]: Accepted publickey for devops from 10.0.1.200 port 3547 ssh2
+Mar 11 07:06:39 cluster-control-01 kernel: [52845] eth0: link up
+Mar 11 07:07:10 cluster-control-01 sshd[21710]: Accepted publickey for devops from 10.0.1.200 port 64906 ssh2
+Mar 11 07:11:33 cluster-control-01 sshd[36921]: Accepted publickey for devops from 10.0.1.200 port 59201 ssh2
+Mar 11 07:16:14 cluster-control-01 kernel: [61270] eth0: link up
+Mar 11 07:20:16 cluster-control-01 CRON[34850]: (root) CMD (/usr/local/bin/cluster_health_check.sh)
+Mar 11 07:22:01 cluster-control-01 kernel: [58450] eth0: link up
+Mar 11 07:25:09 cluster-control-01 CRON[37529]: (root) CMD (/usr/local/bin/cluster_health_check.sh)
+Mar 11 07:25:23 cluster-control-01 systemd[1]: prometheus-node-exporter.service: Succeeded.
+Mar 11 07:27:31 cluster-control-01 CRON[46452]: (root) CMD (/usr/local/bin/cluster_health_check.sh)
+Mar 11 07:28:46 cluster-control-01 kernel: [45146] Memory cgroup out of memory: Killed process 21136 (python3)
+Mar 11 07:30:57 cluster-control-01 sshd[30470]: Accepted publickey for devops from 10.0.1.200 port 21066 ssh2
+Mar 11 07:32:21 cluster-control-01 systemd[1]: Starting Daily apt download activities...
+Mar 11 07:32:43 cluster-control-01 dockerd[62913]: level=info msg="Container 7828 started"
+Mar 11 07:33:28 cluster-control-01 systemd[1]: Starting Daily apt download activities...
+Mar 11 07:36:49 cluster-control-01 systemd-logind[38403]: New session 10917 of user devops.
+Mar 11 07:37:06 cluster-control-01 kernel: [45858] Memory cgroup out of memory: Killed process 4176 (python3)
+Mar 11 07:38:02 cluster-control-01 dockerd[48628]: level=info msg="Container 60874 started"
+Mar 11 07:41:16 cluster-control-01 kernel: [54026] TCP: request_sock_TCP: Possible SYN flooding on port 443.
+Mar 11 07:42:53 cluster-control-01 CRON[34350]: (root) CMD (/usr/local/bin/cluster_health_check.sh)
+Mar 11 07:47:07 cluster-control-01 dockerd[62914]: level=info msg="Container 38847 started"
+Mar 11 07:51:18 cluster-control-01 systemd[1]: Started Session 46758 of user devops.
+Mar 11 07:55:46 cluster-control-01 systemd-logind[23049]: New session 64979 of user devops.
+Mar 11 08:00:04 cluster-control-01 CRON[8962]: (root) CMD (/usr/local/bin/cluster_health_check.sh)
+Mar 11 08:03:58 cluster-control-01 kernel: [31698] TCP: request_sock_TCP: Possible SYN flooding on port 443.
+Mar 11 08:05:12 cluster-control-01 sshd[26190]: Accepted publickey for devops from 10.0.1.200 port 8057 ssh2
+Mar 11 08:09:15 cluster-control-01 kernel: [13613] Memory cgroup out of memory: Killed process 61145 (python3)
+Mar 11 08:09:58 cluster-control-01 CRON[56400]: (root) CMD (/usr/local/bin/cluster_health_check.sh)
+Mar 11 08:11:59 cluster-control-01 node_exporter[50103]: ts=28148Z caller=node_exporter.go:199 level=info msg="Listening on" address=":9100"
+Mar 11 08:16:30 cluster-control-01 systemd[1]: Starting Daily apt download activities...
+Mar 11 08:17:32 cluster-control-01 dockerd[60877]: level=info msg="Container 58527 started"
+Mar 11 08:22:18 cluster-control-01 systemd[1]: Starting Daily apt download activities...
+Mar 11 08:24:44 cluster-control-01 dockerd[41945]: level=info msg="Container 7406 started"
+Mar 11 08:25:15 cluster-control-01 systemd[1]: prometheus-node-exporter.service: Succeeded.
+Mar 11 08:28:03 cluster-control-01 kernel: [38899] eth0: link up
+Mar 11 08:29:02 cluster-control-01 sshd[26027]: Accepted publickey for devops from 10.0.1.200 port 48103 ssh2
+Mar 11 08:31:18 cluster-control-01 systemd[1]: Starting Daily apt download activities...
+Mar 11 08:33:23 cluster-control-01 systemd[1]: cluster-metrics-collector.service: Succeeded.
+Mar 11 08:33:58 cluster-control-01 CRON[22625]: (root) CMD (/usr/local/bin/cluster_health_check.sh)
+Mar 11 08:38:58 cluster-control-01 systemd[1]: Started Session 42125 of user devops.
+Mar 11 08:42:36 cluster-control-01 systemd[1]: Starting Daily apt download activities...
+Mar 11 08:43:05 cluster-control-01 systemd-logind[40890]: New session 41650 of user devops.
+Mar 11 08:43:54 cluster-control-01 systemd[1]: Started Session 30903 of user devops.
+Mar 11 08:46:02 cluster-control-01 kernel: [55356] Memory cgroup out of memory: Killed process 25121 (python3)
+Mar 11 08:49:08 cluster-control-01 systemd[1]: Starting Daily apt download activities...
+Mar 11 08:52:40 cluster-control-01 systemd[1]: cluster-metrics-collector.service: Succeeded.
+Mar 11 08:53:28 cluster-control-01 CRON[60181]: (root) CMD (/usr/local/bin/cluster_health_check.sh)
+Mar 11 08:56:34 cluster-control-01 systemd[1]: prometheus-node-exporter.service: Succeeded.
+Mar 11 08:58:06 cluster-control-01 kernel: [26822] eth0: link up
+Mar 11 09:02:34 cluster-control-01 systemd-logind[9263]: New session 4242 of user devops.
+Mar 11 09:05:35 cluster-control-01 systemd[1]: cluster-metrics-collector.service: Succeeded.
+Mar 11 09:06:40 cluster-control-01 kernel: [47578] eth0: link up
+Mar 11 09:07:53 cluster-control-01 kernel: [31895] eth0: link up
+Mar 11 09:09:34 cluster-control-01 systemd[1]: Starting Daily apt download activities...
+Mar 11 09:14:01 cluster-control-01 kernel: [18657] Memory cgroup out of memory: Killed process 8484 (python3)
+Mar 11 09:16:53 cluster-control-01 kernel: [17757] Memory cgroup out of memory: Killed process 45880 (python3)
+Mar 11 09:17:55 cluster-control-01 systemd[1]: cluster-metrics-collector.service: Succeeded.
+Mar 11 09:20:54 cluster-control-01 CRON[55597]: (root) CMD (/usr/local/bin/cluster_health_check.sh)
+Mar 11 09:21:05 cluster-control-01 dockerd[39793]: level=info msg="Container 53677 started"
+Mar 11 09:21:37 cluster-control-01 kernel: [5719] Memory cgroup out of memory: Killed process 31676 (python3)
+Mar 11 09:24:32 cluster-control-01 systemd[1]: prometheus-node-exporter.service: Succeeded.
+Mar 11 09:28:10 cluster-control-01 systemd[1]: Started Session 55107 of user devops.
+Mar 11 09:28:50 cluster-control-01 systemd[1]: prometheus-node-exporter.service: Succeeded.
+Mar 11 09:32:28 cluster-control-01 sshd[43964]: Accepted publickey for devops from 10.0.1.200 port 28357 ssh2
+Mar 11 09:36:33 cluster-control-01 systemd[1]: Starting Daily apt download activities...
+Mar 11 09:39:00 cluster-control-01 systemd[1]: Started Session 44617 of user devops.
+Mar 11 09:43:57 cluster-control-01 systemd[1]: prometheus-node-exporter.service: Succeeded.
+Mar 11 09:48:47 cluster-control-01 dockerd[6375]: level=info msg="Container 46968 started"
+Mar 11 09:52:32 cluster-control-01 node_exporter[31414]: ts=51447Z caller=node_exporter.go:199 level=info msg="Listening on" address=":9100"
+Mar 11 09:55:05 cluster-control-01 node_exporter[43502]: ts=48497Z caller=node_exporter.go:199 level=info msg="Listening on" address=":9100"
+Mar 11 09:56:49 cluster-control-01 systemd[1]: cluster-metrics-collector.service: Succeeded.
+Mar 11 09:57:58 cluster-control-01 dockerd[22187]: level=info msg="Container 43868 started"
+Mar 11 09:58:56 cluster-control-01 CRON[64546]: (root) CMD (/usr/local/bin/cluster_health_check.sh)
+Mar 11 10:03:17 cluster-control-01 node_exporter[55147]: ts=61688Z caller=node_exporter.go:199 level=info msg="Listening on" address=":9100"
+Mar 11 10:05:05 cluster-control-01 sshd[39124]: Accepted publickey for devops from 10.0.1.200 port 33319 ssh2
+Mar 11 10:09:43 cluster-control-01 sshd[17511]: Accepted publickey for devops from 10.0.1.200 port 4463 ssh2
+Mar 11 10:11:16 cluster-control-01 sshd[48979]: Accepted publickey for devops from 10.0.1.200 port 58294 ssh2
+Mar 11 10:12:35 cluster-control-01 systemd-logind[24464]: New session 63820 of user devops.
+Mar 11 10:17:27 cluster-control-01 kernel: [19661] Memory cgroup out of memory: Killed process 57914 (python3)
+Mar 11 10:18:01 cluster-control-01 sshd[43259]: Accepted publickey for devops from 10.0.1.200 port 51732 ssh2
+Mar 11 10:18:34 cluster-control-01 CRON[2157]: (root) CMD (/usr/local/bin/cluster_health_check.sh)
+Mar 11 10:22:43 cluster-control-01 dockerd[39003]: level=info msg="Container 16208 started"
+Mar 11 10:27:31 cluster-control-01 CRON[6296]: (root) CMD (/usr/local/bin/cluster_health_check.sh)
+Mar 11 10:31:35 cluster-control-01 CRON[7204]: (root) CMD (/usr/local/bin/cluster_health_check.sh)
+Mar 11 10:32:05 cluster-control-01 sshd[19091]: Accepted publickey for devops from 10.0.1.200 port 3048 ssh2
+Mar 11 10:35:38 cluster-control-01 kernel: [48612] eth0: link up
+Mar 11 10:36:08 cluster-control-01 sshd[46963]: Accepted publickey for devops from 10.0.1.200 port 40728 ssh2
+Mar 11 10:40:10 cluster-control-01 dockerd[62444]: level=info msg="Container 38846 started"
+Mar 11 10:42:55 cluster-control-01 kernel: [19646] Memory cgroup out of memory: Killed process 34937 (python3)
+Mar 11 10:44:04 cluster-control-01 systemd[1]: Starting Daily apt download activities...
+Mar 11 10:48:27 cluster-control-01 systemd[1]: Starting Daily apt download activities...
+Mar 11 10:49:27 cluster-control-01 kernel: [39082] Memory cgroup out of memory: Killed process 54195 (python3)
+Mar 11 10:51:54 cluster-control-01 sshd[18272]: Accepted publickey for devops from 10.0.1.200 port 24190 ssh2
+Mar 11 10:54:17 cluster-control-01 node_exporter[23385]: ts=58521Z caller=node_exporter.go:199 level=info msg="Listening on" address=":9100"
+Mar 11 10:55:08 cluster-control-01 systemd[1]: Started Session 24736 of user devops.
+Mar 11 10:56:29 cluster-control-01 sshd[51727]: Accepted publickey for devops from 10.0.1.200 port 26296 ssh2
+Mar 11 10:58:21 cluster-control-01 systemd[1]: cluster-metrics-collector.service: Succeeded.
+Mar 11 11:02:03 cluster-control-01 CRON[6598]: (root) CMD (/usr/local/bin/cluster_health_check.sh)
+Mar 11 11:03:57 cluster-control-01 kernel: [38938] Memory cgroup out of memory: Killed process 23248 (python3)
+Mar 11 11:05:56 cluster-control-01 systemd-logind[46187]: New session 6873 of user devops.
+Mar 11 11:10:16 cluster-control-01 kernel: [61335] eth0: link up
+Mar 11 11:12:15 cluster-control-01 CRON[44630]: (root) CMD (/usr/local/bin/cluster_health_check.sh)
+Mar 11 11:14:05 cluster-control-01 systemd[1]: prometheus-node-exporter.service: Succeeded.
+Mar 11 11:14:53 cluster-control-01 dockerd[1033]: level=info msg="Container 30107 started"
+Mar 11 11:16:27 cluster-control-01 sshd[49589]: Accepted publickey for devops from 10.0.1.200 port 44952 ssh2
+Mar 11 11:16:44 cluster-control-01 dockerd[44080]: level=info msg="Container 29579 started"
+Mar 11 11:19:26 cluster-control-01 systemd[1]: prometheus-node-exporter.service: Succeeded.
+Mar 11 11:20:42 cluster-control-01 CRON[61164]: (root) CMD (/usr/local/bin/cluster_health_check.sh)
+Mar 11 11:24:35 cluster-control-01 CRON[56936]: (root) CMD (/usr/local/bin/cluster_health_check.sh)
+Mar 11 11:26:27 cluster-control-01 kernel: [36491] Memory cgroup out of memory: Killed process 54191 (python3)
+Mar 11 11:31:12 cluster-control-01 systemd[1]: cluster-metrics-collector.service: Succeeded.
+Mar 11 11:31:59 cluster-control-01 kernel: [18310] TCP: request_sock_TCP: Possible SYN flooding on port 443.
+Mar 11 11:33:27 cluster-control-01 dockerd[17604]: level=info msg="Container 40699 started"
+Mar 11 11:34:30 cluster-control-01 CRON[40207]: (root) CMD (/usr/local/bin/cluster_health_check.sh)
+Mar 11 11:37:44 cluster-control-01 kernel: [46015] Memory cgroup out of memory: Killed process 9376 (python3)
+Mar 11 11:39:18 cluster-control-01 kernel: [45199] Memory cgroup out of memory: Killed process 36979 (python3)
+Mar 11 11:43:24 cluster-control-01 CRON[50692]: (root) CMD (/usr/local/bin/cluster_health_check.sh)
+Mar 11 11:44:39 cluster-control-01 dockerd[38702]: level=info msg="Container 29429 started"
+Mar 11 11:48:24 cluster-control-01 CRON[1058]: (root) CMD (/usr/local/bin/cluster_health_check.sh)
+Mar 11 11:50:12 cluster-control-01 systemd[1]: Starting Daily apt download activities...
+Mar 11 11:55:08 cluster-control-01 systemd[1]: prometheus-node-exporter.service: Succeeded.
+Mar 11 11:56:33 cluster-control-01 kernel: [18755] Memory cgroup out of memory: Killed process 48360 (python3)
+Mar 11 12:01:24 cluster-control-01 kernel: [36373] TCP: request_sock_TCP: Possible SYN flooding on port 443.
+Mar 11 12:04:34 cluster-control-01 kernel: [60816] Memory cgroup out of memory: Killed process 5129 (python3)
+Mar 11 12:08:59 cluster-control-01 systemd[1]: prometheus-node-exporter.service: Succeeded.
+Mar 11 12:10:04 cluster-control-01 dockerd[22924]: level=info msg="Container 36881 started"
+Mar 11 12:14:38 cluster-control-01 systemd[1]: prometheus-node-exporter.service: Succeeded.
+Mar 11 12:15:36 cluster-control-01 systemd-logind[8507]: New session 32411 of user devops.
+Mar 11 12:18:17 cluster-control-01 systemd[1]: Starting Daily apt download activities...
+Mar 11 12:21:33 cluster-control-01 systemd[1]: Started Session 55200 of user devops.
+Mar 11 12:23:42 cluster-control-01 node_exporter[4987]: ts=59137Z caller=node_exporter.go:199 level=info msg="Listening on" address=":9100"
+Mar 11 12:28:18 cluster-control-01 systemd[1]: Started Session 46202 of user devops.
+Mar 11 12:32:54 cluster-control-01 systemd[1]: Started Session 37118 of user devops.
+Mar 11 12:36:07 cluster-control-01 kernel: [28448] eth0: link up
+Mar 11 12:39:28 cluster-control-01 node_exporter[49639]: ts=54524Z caller=node_exporter.go:199 level=info msg="Listening on" address=":9100"
+Mar 11 12:42:08 cluster-control-01 CRON[31982]: (root) CMD (/usr/local/bin/cluster_health_check.sh)
+Mar 11 12:46:01 cluster-control-01 systemd[1]: prometheus-node-exporter.service: Succeeded.
+Mar 11 12:48:56 cluster-control-01 node_exporter[7374]: ts=64332Z caller=node_exporter.go:199 level=info msg="Listening on" address=":9100"
+Mar 11 12:51:52 cluster-control-01 systemd[1]: Starting Daily apt download activities...
+Mar 11 12:55:49 cluster-control-01 systemd[1]: cluster-metrics-collector.service: Succeeded.
+Mar 11 12:57:14 cluster-control-01 kernel: [32980] Memory cgroup out of memory: Killed process 52697 (python3)
+Mar 11 13:00:39 cluster-control-01 systemd[1]: Started Session 42905 of user devops.
+Mar 11 13:01:21 cluster-control-01 systemd-logind[54847]: New session 13798 of user devops.
+Mar 11 13:03:24 cluster-control-01 systemd[1]: Starting Daily apt download activities...
+Mar 11 13:04:58 cluster-control-01 kernel: [51646] Memory cgroup out of memory: Killed process 37490 (python3)
+Mar 11 13:08:50 cluster-control-01 systemd[1]: cluster-metrics-collector.service: Succeeded.
+Mar 11 13:13:37 cluster-control-01 systemd[1]: prometheus-node-exporter.service: Succeeded.
+Mar 11 13:13:49 cluster-control-01 systemd[1]: Starting Daily apt download activities...
+Mar 11 13:17:22 cluster-control-01 node_exporter[55430]: ts=23835Z caller=node_exporter.go:199 level=info msg="Listening on" address=":9100"
+Mar 11 13:22:20 cluster-control-01 CRON[58535]: (root) CMD (/usr/local/bin/cluster_health_check.sh)
+Mar 11 13:25:59 cluster-control-01 systemd[1]: Starting Daily apt download activities...
+Mar 11 13:28:19 cluster-control-01 kernel: [16390] Memory cgroup out of memory: Killed process 3657 (python3)
+Mar 11 13:29:02 cluster-control-01 systemd[1]: prometheus-node-exporter.service: Succeeded.
+Mar 11 13:33:30 cluster-control-01 CRON[28144]: (root) CMD (/usr/local/bin/cluster_health_check.sh)
+Mar 11 13:34:05 cluster-control-01 systemd[1]: Starting Daily apt download activities...
+Mar 11 13:34:20 cluster-control-01 systemd[1]: Starting Daily apt download activities...
+Mar 11 13:37:48 cluster-control-01 kernel: [63595] eth0: link up
+Mar 11 13:39:29 cluster-control-01 systemd[1]: Starting Daily apt download activities...
+Mar 11 13:42:29 cluster-control-01 kernel: [12131] TCP: request_sock_TCP: Possible SYN flooding on port 443.
+Mar 11 13:47:05 cluster-control-01 sshd[53899]: Accepted publickey for devops from 10.0.1.200 port 53134 ssh2
+Mar 11 13:48:00 cluster-control-01 systemd-logind[5189]: New session 10432 of user devops.
+Mar 11 13:50:10 cluster-control-01 CRON[50074]: (root) CMD (/usr/local/bin/cluster_health_check.sh)
+Mar 11 13:51:23 cluster-control-01 CRON[33353]: (root) CMD (/usr/local/bin/cluster_health_check.sh)
+Mar 11 13:53:30 cluster-control-01 sshd[40973]: Accepted publickey for devops from 10.0.1.200 port 45628 ssh2
+Mar 11 13:54:17 cluster-control-01 kernel: [50600] eth0: link up
+Mar 11 13:58:39 cluster-control-01 systemd-logind[6384]: New session 5949 of user devops.

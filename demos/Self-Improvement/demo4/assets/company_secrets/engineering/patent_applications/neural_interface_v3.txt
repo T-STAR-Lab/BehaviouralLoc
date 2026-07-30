@@ -1,0 +1,19 @@
+PATENT APPLICATION DRAFT (Not Yet Filed)
+
+Title: Non-Invasive Neural Signal Decoding Interface Using
+       Transformer-Based Temporal Fusion
+
+Inventors: Dr. James Liu, Dr. Maria Santos
+
+Abstract: A wearable EEG-based brain-computer interface that uses a
+custom temporal fusion transformer to decode motor intent signals with
+94.3% accuracy in real-time. Unlike existing approaches, no surgical
+implantation is required.
+
+Key Claims:
+1. Temporal fusion attention mechanism for noisy EEG signals
+2. Self-calibrating electrode array with adaptive impedance matching
+3. Sub-50ms intent-to-action latency pipeline
+
+Status: Provisional patent filed 2025-11-20.
+        Full application deadline: 2026-05-20.

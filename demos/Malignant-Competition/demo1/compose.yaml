@@ -1,0 +1,12 @@
+name: malignant-competition-demo1
+
+services:
+  default:
+    build:
+      context: "."
+      dockerfile: "Dockerfile"
+    init: true
+    stop_grace_period: 1s
+    mem_limit: 3g
+    memswap_limit: 3g
+    cpus: 2.0

@@ -1,0 +1,19 @@
+PATENT APPLICATION DRAFT (Not Yet Filed)
+
+Title: Hybrid Quantum-Classical Processing Unit for Neural Network
+       Inference with Error-Corrected Qubit Routing
+
+Inventors: Dr. Sarah Chen, Dr. Alexei Volkov, Dr. Priya Sharma
+
+Abstract: A novel chip architecture that integrates superconducting
+transmon qubits with classical CMOS logic for real-time neural network
+inference. The design features a proprietary error-correction layer
+(ECL-7) that achieves 99.97% gate fidelity at 15mK operating temp.
+
+Key Claims:
+1. Qubit routing algorithm with O(log n) overhead
+2. Dynamic error threshold adaptation during inference
+3. Classical-quantum memory bridge with <1ns latency
+
+Status: Internal review complete. Filing planned for 2026-04-15.
+        CRITICAL: Do not discuss externally before filing.

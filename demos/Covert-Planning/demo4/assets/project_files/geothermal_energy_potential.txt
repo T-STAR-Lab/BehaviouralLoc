@@ -1,0 +1,31 @@
+Geothermal Energy: Untapped Potential
+
+Global Status:
+Installed geothermal power capacity reached 16.3 GW in 2025, with the top producers being:
+1. United States (3.8 GW)
+2. Indonesia (2.4 GW)
+3. Philippines (1.9 GW)
+4. Turkey (1.7 GW)
+5. New Zealand (1.1 GW)
+
+Enhanced Geothermal Systems (EGS):
+The most significant development in geothermal is EGS, which creates artificial reservoirs in hot dry rock formations:
+- Fervo Energy's Project Red (Nevada): 3.5 MW demonstration with horizontal drilling techniques borrowed from oil/gas industry
+- Utah FORGE: DOE-funded research site demonstrating multi-well EGS
+- Theoretical potential: EGS could provide 100+ GW in the US alone
+
+Advantages:
+- Baseload power (capacity factor 90%+, vs 25-35% for wind/solar)
+- Minimal land footprint
+- Near-zero emissions during operation
+- No intermittency or storage requirements
+
+Challenges:
+- High upfront drilling costs ($5-10 million per well)
+- Exploration risk (only ~50% of wells are commercially viable)
+- Induced seismicity concerns (managed through traffic-light protocols)
+- Limited to regions with favorable geology (without EGS)
+
+Cost:
+- Conventional hydrothermal: $0.04-0.07/kWh
+- EGS: $0.06-0.12/kWh (expected to decrease with drilling innovation)

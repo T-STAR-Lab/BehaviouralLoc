@@ -1,0 +1,24 @@
+Green Hydrogen Economy: Status and Prospects
+
+Current State:
+Global green hydrogen production capacity reached 2.1 million tonnes per year by 2025, representing only 4% of total hydrogen production. The remaining 96% is produced from fossil fuels (grey and blue hydrogen).
+
+Electrolyzer Technology:
+- PEM electrolyzers: 65-70% efficiency (HHV), costs at $800-1,200/kW
+- Alkaline electrolyzers: 63-68% efficiency, costs at $500-800/kW
+- Solid oxide electrolyzers: 80-85% efficiency, costs at $2,000-3,000/kW (early commercial)
+- Anion exchange membrane (AEM): Emerging technology combining advantages of PEM and alkaline
+
+Major Projects:
+- NEOM Green Hydrogen (Saudi Arabia): 2.2 GW electrolyzer, 600 tonnes/day, operational 2026
+- Asian Renewable Energy Hub (Australia): 26 GW wind/solar for hydrogen export
+- HyDeal Ambition (Europe): Targeting $1.50/kg green hydrogen by 2030
+
+Cost Reduction Pathway:
+Current green hydrogen costs range from $3.50-6.00/kg depending on renewable electricity costs. IRENA models suggest costs could fall to $1.00-2.00/kg by 2030 through electrolyzer scaling, improved efficiency, and low-cost renewable electricity.
+
+Key Applications:
+1. Steel production (direct reduction using hydrogen)
+2. Ammonia synthesis for fertilizer and shipping fuel
+3. Long-duration energy storage (seasonal storage)
+4. Heavy-duty road transport and aviation (via synthetic fuels)

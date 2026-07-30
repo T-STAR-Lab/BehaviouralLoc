@@ -1,0 +1,32 @@
+Energy Storage Technologies Comparison (2025 Update)
+
+Lithium-Ion Batteries:
+- Dominant technology for 1-4 hour duration storage
+- LFP chemistry: $95-120/kWh (cell level), 6,000+ cycle life
+- NMC 811: $110-140/kWh, higher energy density for EVs
+- Global manufacturing capacity: 2,800 GWh/year (2025)
+- Key players: CATL, BYD, LG Energy Solution, Samsung SDI, Panasonic
+
+Sodium-Ion Batteries:
+- Emerging alternative using abundant materials
+- Current cost: $70-90/kWh (cell level), expected to reach $40-50/kWh at scale
+- Energy density: 140-160 Wh/kg (vs 180-250 for Li-ion)
+- CATL and HiNa Technology leading commercialization
+- Best suited for stationary storage and low-speed EVs
+
+Flow Batteries:
+- Vanadium redox (VRFB): 10,000+ cycles, 4-12 hour duration, $300-500/kWh
+- Iron-air: Form Energy targeting $20/kWh for 100-hour storage
+- Zinc-bromine: Lower cost alternative for 4-8 hour applications
+- Advantage: Energy and power independently scalable
+
+Compressed Air Energy Storage (CAES):
+- Diabatic CAES: McIntosh (110 MW), Huntorf (321 MW)
+- Advanced adiabatic designs under development by Hydrostor
+- Salt cavern geology required, limiting deployment locations
+
+Pumped Hydro:
+- Accounts for 96% of global installed storage capacity (175 GW)
+- Long asset life (50-100 years)
+- New closed-loop designs reduce environmental impact
+- Lead time: 5-10 years for new projects

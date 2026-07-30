@@ -1,0 +1,813 @@
+Mar 08 14:00:00 cluster-control-01 sudo: devops : TTY=pts/0 ; PWD=/home/devops ; USER=root ; COMMAND=/usr/bin/docker ps
+Mar 08 14:03:59 cluster-control-01 sshd[39227]: pam_unix(sshd:session): session closed for user devops
+Mar 08 14:11:12 cluster-control-01 sshd[19409]: pam_unix(sshd:session): session closed for user devops
+Mar 08 14:15:05 cluster-control-01 sshd[41704]: pam_unix(sshd:session): session closed for user devops
+Mar 08 14:19:37 cluster-control-01 sshd[17497]: Failed password for invalid user admin from 192.168.1.55 port 52920 ssh2
+Mar 08 14:20:09 cluster-control-01 sshd[44725]: pam_unix(sshd:session): session opened for user devops(uid=1000) by (uid=0)
+Mar 08 14:24:28 cluster-control-01 sudo: devops : TTY=pts/0 ; PWD=/home/devops ; USER=root ; COMMAND=/usr/bin/docker ps
+Mar 08 14:29:27 cluster-control-01 sshd[35597]: Failed password for invalid user admin from 192.168.1.55 port 55883 ssh2
+Mar 08 14:33:53 cluster-control-01 sshd[26799]: Failed password for invalid user admin from 192.168.1.55 port 59207 ssh2
+Mar 08 14:34:50 cluster-control-01 sudo: devops : TTY=pts/0 ; PWD=/home/devops ; USER=root ; COMMAND=/usr/bin/docker ps
+Mar 08 14:36:43 cluster-control-01 CRON[15609]: pam_unix(cron:session): session opened for user root(uid=0) by (uid=0)
+Mar 08 14:43:10 cluster-control-01 CRON[44190]: pam_unix(cron:session): session opened for user root(uid=0) by (uid=0)
+Mar 08 14:45:01 cluster-control-01 sshd[22553]: Failed password for invalid user admin from 192.168.1.55 port 25093 ssh2
+Mar 08 14:46:04 cluster-control-01 CRON[56584]: pam_unix(cron:session): session closed for user root
+Mar 08 14:53:24 cluster-control-01 sudo: devops : TTY=pts/0 ; PWD=/home/devops ; USER=root ; COMMAND=/bin/systemctl restart prometheus
+Mar 08 15:01:11 cluster-control-01 sshd[29824]: Connection closed by authenticating user devops 10.0.1.200 port 10215 [preauth]
+Mar 08 15:09:56 cluster-control-01 sudo: devops : TTY=pts/0 ; PWD=/home/devops ; USER=root ; COMMAND=/usr/bin/docker ps
+Mar 08 15:16:16 cluster-control-01 sshd[46366]: Accepted publickey for devops from 10.0.1.200 port 26011 ssh2: RSA SHA256:xxxx
+Mar 08 15:18:01 cluster-control-01 sshd[3798]: pam_unix(sshd:session): session closed for user devops
+Mar 08 15:24:37 cluster-control-01 sshd[39713]: Failed password for invalid user admin from 192.168.1.55 port 40519 ssh2
+Mar 08 15:29:14 cluster-control-01 sudo: devops : TTY=pts/0 ; PWD=/home/devops ; USER=root ; COMMAND=/bin/systemctl restart prometheus
+Mar 08 15:36:32 cluster-control-01 sshd[15043]: Connection closed by authenticating user devops 10.0.1.200 port 26363 [preauth]
+Mar 08 15:45:39 cluster-control-01 sshd[21290]: Failed password for invalid user admin from 192.168.1.55 port 42325 ssh2
+Mar 08 15:53:34 cluster-control-01 sshd[37156]: pam_unix(sshd:session): session closed for user devops
+Mar 08 15:56:34 cluster-control-01 sudo: devops : TTY=pts/0 ; PWD=/home/devops ; USER=root ; COMMAND=/usr/bin/docker ps
+Mar 08 15:58:27 cluster-control-01 CRON[10198]: pam_unix(cron:session): session opened for user root(uid=0) by (uid=0)
+Mar 08 16:04:11 cluster-control-01 sshd[17938]: pam_unix(sshd:session): session opened for user devops(uid=1000) by (uid=0)
+Mar 08 16:12:57 cluster-control-01 sudo: devops : TTY=pts/0 ; PWD=/home/devops ; USER=root ; COMMAND=/usr/bin/docker ps
+Mar 08 16:22:42 cluster-control-01 sshd[34501]: pam_unix(sshd:session): session opened for user devops(uid=1000) by (uid=0)
+Mar 08 16:23:26 cluster-control-01 sudo: devops : TTY=pts/0 ; PWD=/home/devops ; USER=root ; COMMAND=/bin/systemctl restart prometheus
+Mar 08 16:29:56 cluster-control-01 sshd[45770]: pam_unix(sshd:session): session opened for user devops(uid=1000) by (uid=0)
+Mar 08 16:34:15 cluster-control-01 sshd[55892]: pam_unix(sshd:session): session opened for user devops(uid=1000) by (uid=0)
+Mar 08 16:35:27 cluster-control-01 CRON[20272]: pam_unix(cron:session): session closed for user root
+Mar 08 16:39:45 cluster-control-01 CRON[46578]: pam_unix(cron:session): session opened for user root(uid=0) by (uid=0)
+Mar 08 16:49:27 cluster-control-01 sshd[55563]: Connection closed by authenticating user devops 10.0.1.200 port 55879 [preauth]
+Mar 08 16:52:18 cluster-control-01 CRON[20555]: pam_unix(cron:session): session closed for user root
+Mar 08 16:58:16 cluster-control-01 sshd[53741]: Accepted publickey for devops from 10.0.1.200 port 13771 ssh2: RSA SHA256:xxxx
+Mar 08 17:00:05 cluster-control-01 sshd[39146]: pam_unix(sshd:session): session opened for user devops(uid=1000) by (uid=0)
+Mar 08 17:06:51 cluster-control-01 sshd[35284]: Accepted publickey for devops from 10.0.1.200 port 13711 ssh2: RSA SHA256:xxxx
+Mar 08 17:14:52 cluster-control-01 CRON[12419]: pam_unix(cron:session): session opened for user root(uid=0) by (uid=0)
+Mar 08 17:18:30 cluster-control-01 sshd[54503]: Failed password for invalid user admin from 192.168.1.55 port 17834 ssh2
+Mar 08 17:25:40 cluster-control-01 sudo: devops : TTY=pts/0 ; PWD=/home/devops ; USER=root ; COMMAND=/bin/systemctl restart prometheus
+Mar 08 17:27:34 cluster-control-01 sshd[29828]: pam_unix(sshd:session): session closed for user devops
+Mar 08 17:32:39 cluster-control-01 sshd[42463]: pam_unix(sshd:session): session closed for user devops
+Mar 08 17:41:31 cluster-control-01 sshd[16486]: pam_unix(sshd:session): session opened for user devops(uid=1000) by (uid=0)
+Mar 08 17:51:29 cluster-control-01 CRON[56015]: pam_unix(cron:session): session opened for user root(uid=0) by (uid=0)
+Mar 08 17:53:48 cluster-control-01 sshd[36960]: Connection closed by authenticating user devops 10.0.1.200 port 59011 [preauth]
+Mar 08 18:02:09 cluster-control-01 sshd[43388]: Accepted publickey for devops from 10.0.1.200 port 60679 ssh2: RSA SHA256:xxxx
+Mar 08 18:09:07 cluster-control-01 sshd[48231]: pam_unix(sshd:session): session opened for user devops(uid=1000) by (uid=0)
+Mar 08 18:18:11 cluster-control-01 sudo: devops : TTY=pts/0 ; PWD=/home/devops ; USER=root ; COMMAND=/bin/systemctl restart prometheus
+Mar 08 18:27:30 cluster-control-01 sudo: devops : TTY=pts/0 ; PWD=/home/devops ; USER=root ; COMMAND=/usr/bin/docker ps
+Mar 08 18:33:56 cluster-control-01 sshd[48066]: Accepted publickey for devops from 10.0.1.200 port 12742 ssh2: RSA SHA256:xxxx
+Mar 08 18:43:44 cluster-control-01 CRON[57768]: pam_unix(cron:session): session closed for user root
+Mar 08 18:49:31 cluster-control-01 sshd[9365]: Connection closed by authenticating user devops 10.0.1.200 port 51868 [preauth]
+Mar 08 18:57:00 cluster-control-01 sudo: devops : TTY=pts/0 ; PWD=/home/devops ; USER=root ; COMMAND=/usr/bin/docker ps
+Mar 08 19:00:56 cluster-control-01 sudo: devops : TTY=pts/0 ; PWD=/home/devops ; USER=root ; COMMAND=/bin/systemctl restart prometheus
+Mar 08 19:03:46 cluster-control-01 sudo: devops : TTY=pts/0 ; PWD=/home/devops ; USER=root ; COMMAND=/usr/bin/docker ps
+Mar 08 19:06:04 cluster-control-01 sudo: devops : TTY=pts/0 ; PWD=/home/devops ; USER=root ; COMMAND=/bin/systemctl restart prometheus
+Mar 08 19:15:16 cluster-control-01 CRON[12967]: pam_unix(cron:session): session opened for user root(uid=0) by (uid=0)
+Mar 08 19:17:22 cluster-control-01 sshd[3844]: Connection closed by authenticating user devops 10.0.1.200 port 53380 [preauth]
+Mar 08 19:19:55 cluster-control-01 sshd[50932]: pam_unix(sshd:session): session closed for user devops
+Mar 08 19:27:40 cluster-control-01 sshd[17987]: Accepted publickey for devops from 10.0.1.200 port 27049 ssh2: RSA SHA256:xxxx
+Mar 08 19:36:23 cluster-control-01 sudo: devops : TTY=pts/0 ; PWD=/home/devops ; USER=root ; COMMAND=/bin/systemctl restart prometheus
+Mar 08 19:39:56 cluster-control-01 sshd[17751]: pam_unix(sshd:session): session closed for user devops
+Mar 08 19:48:18 cluster-control-01 CRON[20160]: pam_unix(cron:session): session closed for user root
+Mar 08 19:50:21 cluster-control-01 sudo: devops : TTY=pts/0 ; PWD=/home/devops ; USER=root ; COMMAND=/usr/bin/docker ps
+Mar 08 19:52:56 cluster-control-01 sshd[9548]: Accepted publickey for devops from 10.0.1.200 port 62552 ssh2: RSA SHA256:xxxx
+Mar 08 19:57:33 cluster-control-01 sshd[12440]: Failed password for invalid user admin from 192.168.1.55 port 44169 ssh2
+Mar 08 20:07:29 cluster-control-01 sshd[23301]: pam_unix(sshd:session): session opened for user devops(uid=1000) by (uid=0)
+Mar 08 20:12:32 cluster-control-01 sshd[48250]: pam_unix(sshd:session): session closed for user devops
+Mar 08 20:15:40 cluster-control-01 sshd[20965]: Connection closed by authenticating user devops 10.0.1.200 port 60400 [preauth]
+Mar 08 20:24:37 cluster-control-01 sshd[60288]: Connection closed by authenticating user devops 10.0.1.200 port 19436 [preauth]
+Mar 08 20:25:37 cluster-control-01 sudo: devops : TTY=pts/0 ; PWD=/home/devops ; USER=root ; COMMAND=/usr/bin/docker ps
+Mar 08 20:32:06 cluster-control-01 sshd[50319]: Failed password for invalid user admin from 192.168.1.55 port 41799 ssh2
+Mar 08 20:39:10 cluster-control-01 CRON[13531]: pam_unix(cron:session): session opened for user root(uid=0) by (uid=0)
+Mar 08 20:43:22 cluster-control-01 sshd[38693]: Connection closed by authenticating user devops 10.0.1.200 port 33524 [preauth]
+Mar 08 20:46:31 cluster-control-01 CRON[3523]: pam_unix(cron:session): session closed for user root
+Mar 08 20:47:36 cluster-control-01 sudo: devops : TTY=pts/0 ; PWD=/home/devops ; USER=root ; COMMAND=/bin/systemctl restart prometheus
+Mar 08 20:53:38 cluster-control-01 sshd[32209]: pam_unix(sshd:session): session opened for user devops(uid=1000) by (uid=0)
+Mar 08 20:54:37 cluster-control-01 sudo: devops : TTY=pts/0 ; PWD=/home/devops ; USER=root ; COMMAND=/bin/systemctl restart prometheus
+Mar 08 21:04:28 cluster-control-01 sshd[62209]: pam_unix(sshd:session): session closed for user devops
+Mar 08 21:05:40 cluster-control-01 sshd[25132]: Connection closed by authenticating user devops 10.0.1.200 port 35906 [preauth]
+Mar 08 21:09:14 cluster-control-01 CRON[38938]: pam_unix(cron:session): session opened for user root(uid=0) by (uid=0)
+Mar 08 21:16:50 cluster-control-01 sshd[14485]: pam_unix(sshd:session): session closed for user devops
+Mar 08 21:21:50 cluster-control-01 sshd[24255]: pam_unix(sshd:session): session opened for user devops(uid=1000) by (uid=0)
+Mar 08 21:26:54 cluster-control-01 sshd[38322]: pam_unix(sshd:session): session opened for user devops(uid=1000) by (uid=0)
+Mar 08 21:32:09 cluster-control-01 sudo: devops : TTY=pts/0 ; PWD=/home/devops ; USER=root ; COMMAND=/usr/bin/docker ps
+Mar 08 21:40:35 cluster-control-01 sudo: devops : TTY=pts/0 ; PWD=/home/devops ; USER=root ; COMMAND=/bin/systemctl restart prometheus
+Mar 08 21:44:34 cluster-control-01 sshd[2940]: pam_unix(sshd:session): session closed for user devops
+Mar 08 21:50:44 cluster-control-01 sshd[23940]: pam_unix(sshd:session): session opened for user devops(uid=1000) by (uid=0)
+Mar 08 21:51:58 cluster-control-01 sudo: devops : TTY=pts/0 ; PWD=/home/devops ; USER=root ; COMMAND=/usr/bin/docker ps
+Mar 08 22:00:50 cluster-control-01 sudo: devops : TTY=pts/0 ; PWD=/home/devops ; USER=root ; COMMAND=/bin/systemctl restart prometheus
+Mar 08 22:09:01 cluster-control-01 sshd[49212]: pam_unix(sshd:session): session opened for user devops(uid=1000) by (uid=0)
+Mar 08 22:18:21 cluster-control-01 sudo: devops : TTY=pts/0 ; PWD=/home/devops ; USER=root ; COMMAND=/usr/bin/docker ps
+Mar 08 22:20:09 cluster-control-01 sshd[60213]: pam_unix(sshd:session): session opened for user devops(uid=1000) by (uid=0)
+Mar 08 22:26:03 cluster-control-01 sshd[31438]: Connection closed by authenticating user devops 10.0.1.200 port 64197 [preauth]
+Mar 08 22:33:27 cluster-control-01 sshd[52412]: Failed password for invalid user admin from 192.168.1.55 port 45863 ssh2
+Mar 08 22:36:51 cluster-control-01 sshd[18513]: Connection closed by authenticating user devops 10.0.1.200 port 63292 [preauth]
+Mar 08 22:41:22 cluster-control-01 sshd[22331]: Accepted publickey for devops from 10.0.1.200 port 1238 ssh2: RSA SHA256:xxxx
+Mar 08 22:42:45 cluster-control-01 sshd[18895]: pam_unix(sshd:session): session opened for user devops(uid=1000) by (uid=0)
+Mar 08 22:48:57 cluster-control-01 sshd[1785]: Connection closed by authenticating user devops 10.0.1.200 port 11464 [preauth]
+Mar 08 22:56:09 cluster-control-01 sshd[23854]: Failed password for invalid user admin from 192.168.1.55 port 10458 ssh2
+Mar 08 22:58:28 cluster-control-01 CRON[53238]: pam_unix(cron:session): session opened for user root(uid=0) by (uid=0)
+Mar 08 23:03:00 cluster-control-01 sudo: devops : TTY=pts/0 ; PWD=/home/devops ; USER=root ; COMMAND=/bin/systemctl restart prometheus
+Mar 08 23:04:04 cluster-control-01 sudo: devops : TTY=pts/0 ; PWD=/home/devops ; USER=root ; COMMAND=/usr/bin/docker ps
+Mar 08 23:10:20 cluster-control-01 sshd[26384]: Accepted publickey for devops from 10.0.1.200 port 26710 ssh2: RSA SHA256:xxxx
+Mar 08 23:15:42 cluster-control-01 sshd[36561]: pam_unix(sshd:session): session closed for user devops
+Mar 08 23:16:55 cluster-control-01 sshd[44734]: pam_unix(sshd:session): session closed for user devops
+Mar 08 23:18:41 cluster-control-01 sshd[21973]: pam_unix(sshd:session): session closed for user devops
+Mar 08 23:22:18 cluster-control-01 sshd[12200]: pam_unix(sshd:session): session opened for user devops(uid=1000) by (uid=0)
+Mar 08 23:27:33 cluster-control-01 sshd[54624]: Accepted publickey for devops from 10.0.1.200 port 11704 ssh2: RSA SHA256:xxxx
+Mar 08 23:34:52 cluster-control-01 sshd[51366]: pam_unix(sshd:session): session closed for user devops
+Mar 08 23:36:05 cluster-control-01 CRON[12947]: pam_unix(cron:session): session closed for user root
+Mar 08 23:40:25 cluster-control-01 CRON[30041]: pam_unix(cron:session): session opened for user root(uid=0) by (uid=0)
+Mar 08 23:46:30 cluster-control-01 CRON[21296]: pam_unix(cron:session): session closed for user root
+Mar 08 23:47:31 cluster-control-01 sshd[17647]: Connection closed by authenticating user devops 10.0.1.200 port 7048 [preauth]
+Mar 08 23:53:28 cluster-control-01 sshd[64834]: pam_unix(sshd:session): session closed for user devops
+Mar 09 00:01:51 cluster-control-01 sudo: devops : TTY=pts/0 ; PWD=/home/devops ; USER=root ; COMMAND=/usr/bin/docker ps
+Mar 09 00:09:36 cluster-control-01 sudo: devops : TTY=pts/0 ; PWD=/home/devops ; USER=root ; COMMAND=/usr/bin/docker ps
+Mar 09 00:18:31 cluster-control-01 CRON[36562]: pam_unix(cron:session): session closed for user root
+Mar 09 00:27:27 cluster-control-01 sudo: devops : TTY=pts/0 ; PWD=/home/devops ; USER=root ; COMMAND=/usr/bin/docker ps
+Mar 09 00:35:02 cluster-control-01 sshd[51031]: pam_unix(sshd:session): session opened for user devops(uid=1000) by (uid=0)
+Mar 09 00:38:08 cluster-control-01 sudo: devops : TTY=pts/0 ; PWD=/home/devops ; USER=root ; COMMAND=/bin/systemctl restart prometheus
+Mar 09 00:47:32 cluster-control-01 sshd[49463]: pam_unix(sshd:session): session closed for user devops
+Mar 09 00:50:04 cluster-control-01 sudo: devops : TTY=pts/0 ; PWD=/home/devops ; USER=root ; COMMAND=/usr/bin/docker ps
+Mar 09 00:51:53 cluster-control-01 CRON[64070]: pam_unix(cron:session): session opened for user root(uid=0) by (uid=0)
+Mar 09 00:54:33 cluster-control-01 sshd[42327]: Failed password for invalid user admin from 192.168.1.55 port 55609 ssh2
+Mar 09 00:55:48 cluster-control-01 sudo: devops : TTY=pts/0 ; PWD=/home/devops ; USER=root ; COMMAND=/bin/systemctl restart prometheus
+Mar 09 01:03:34 cluster-control-01 sshd[41156]: Failed password for invalid user admin from 192.168.1.55 port 39934 ssh2
+Mar 09 01:09:59 cluster-control-01 sshd[64849]: pam_unix(sshd:session): session opened for user devops(uid=1000) by (uid=0)
+Mar 09 01:13:51 cluster-control-01 sudo: devops : TTY=pts/0 ; PWD=/home/devops ; USER=root ; COMMAND=/usr/bin/docker ps
+Mar 09 01:23:20 cluster-control-01 sshd[20667]: pam_unix(sshd:session): session closed for user devops
+Mar 09 01:25:26 cluster-control-01 sshd[41763]: pam_unix(sshd:session): session closed for user devops
+Mar 09 01:29:13 cluster-control-01 sudo: devops : TTY=pts/0 ; PWD=/home/devops ; USER=root ; COMMAND=/usr/bin/docker ps
+Mar 09 01:34:27 cluster-control-01 CRON[7546]: pam_unix(cron:session): session opened for user root(uid=0) by (uid=0)
+Mar 09 01:38:34 cluster-control-01 sshd[49942]: Connection closed by authenticating user devops 10.0.1.200 port 50133 [preauth]
+Mar 09 01:45:44 cluster-control-01 sudo: devops : TTY=pts/0 ; PWD=/home/devops ; USER=root ; COMMAND=/usr/bin/docker ps
+Mar 09 01:50:21 cluster-control-01 CRON[62805]: pam_unix(cron:session): session closed for user root
+Mar 09 01:52:32 cluster-control-01 sshd[13044]: Failed password for invalid user admin from 192.168.1.55 port 48320 ssh2
+Mar 09 02:01:48 cluster-control-01 sudo: devops : TTY=pts/0 ; PWD=/home/devops ; USER=root ; COMMAND=/bin/systemctl restart prometheus
+Mar 09 02:08:28 cluster-control-01 CRON[38631]: pam_unix(cron:session): session opened for user root(uid=0) by (uid=0)
+Mar 09 02:10:51 cluster-control-01 sshd[53264]: Accepted publickey for devops from 10.0.1.200 port 49656 ssh2: RSA SHA256:xxxx
+Mar 09 02:14:11 cluster-control-01 CRON[62191]: pam_unix(cron:session): session opened for user root(uid=0) by (uid=0)
+Mar 09 02:20:51 cluster-control-01 sudo: devops : TTY=pts/0 ; PWD=/home/devops ; USER=root ; COMMAND=/usr/bin/docker ps
+Mar 09 02:25:34 cluster-control-01 sshd[18771]: Accepted publickey for devops from 10.0.1.200 port 34279 ssh2: RSA SHA256:xxxx
+Mar 09 02:30:58 cluster-control-01 sshd[52411]: pam_unix(sshd:session): session closed for user devops
+Mar 09 02:40:06 cluster-control-01 CRON[25207]: pam_unix(cron:session): session opened for user root(uid=0) by (uid=0)
+Mar 09 02:42:34 cluster-control-01 CRON[41271]: pam_unix(cron:session): session closed for user root
+Mar 09 02:47:04 cluster-control-01 sshd[45331]: Connection closed by authenticating user devops 10.0.1.200 port 3438 [preauth]
+Mar 09 02:54:58 cluster-control-01 sudo: devops : TTY=pts/0 ; PWD=/home/devops ; USER=root ; COMMAND=/usr/bin/docker ps
+Mar 09 02:56:02 cluster-control-01 sshd[26321]: Failed password for invalid user admin from 192.168.1.55 port 37095 ssh2
+Mar 09 02:58:32 cluster-control-01 CRON[39176]: pam_unix(cron:session): session opened for user root(uid=0) by (uid=0)
+Mar 09 02:59:40 cluster-control-01 CRON[9744]: pam_unix(cron:session): session opened for user root(uid=0) by (uid=0)
+Mar 09 03:05:14 cluster-control-01 sudo: devops : TTY=pts/0 ; PWD=/home/devops ; USER=root ; COMMAND=/usr/bin/docker ps
+Mar 09 03:09:12 cluster-control-01 sshd[1189]: Accepted publickey for devops from 10.0.1.200 port 4761 ssh2: RSA SHA256:xxxx
+Mar 09 03:11:47 cluster-control-01 sshd[10214]: pam_unix(sshd:session): session opened for user devops(uid=1000) by (uid=0)
+Mar 09 03:14:37 cluster-control-01 sudo: devops : TTY=pts/0 ; PWD=/home/devops ; USER=root ; COMMAND=/usr/bin/docker ps
+Mar 09 03:15:32 cluster-control-01 sudo: devops : TTY=pts/0 ; PWD=/home/devops ; USER=root ; COMMAND=/usr/bin/docker ps
+Mar 09 03:20:35 cluster-control-01 CRON[35412]: pam_unix(cron:session): session closed for user root
+Mar 09 03:21:08 cluster-control-01 sshd[45718]: pam_unix(sshd:session): session opened for user devops(uid=1000) by (uid=0)
+Mar 09 03:26:02 cluster-control-01 sshd[17537]: Accepted publickey for devops from 10.0.1.200 port 39316 ssh2: RSA SHA256:xxxx
+Mar 09 03:31:14 cluster-control-01 sshd[46951]: pam_unix(sshd:session): session closed for user devops
+Mar 09 03:33:06 cluster-control-01 sudo: devops : TTY=pts/0 ; PWD=/home/devops ; USER=root ; COMMAND=/bin/systemctl restart prometheus
+Mar 09 03:33:56 cluster-control-01 sshd[51167]: pam_unix(sshd:session): session closed for user devops
+Mar 09 03:37:54 cluster-control-01 sudo: devops : TTY=pts/0 ; PWD=/home/devops ; USER=root ; COMMAND=/bin/systemctl restart prometheus
+Mar 09 03:44:26 cluster-control-01 sshd[12554]: pam_unix(sshd:session): session closed for user devops
+Mar 09 03:54:23 cluster-control-01 sudo: devops : TTY=pts/0 ; PWD=/home/devops ; USER=root ; COMMAND=/bin/systemctl restart prometheus
+Mar 09 03:55:08 cluster-control-01 sudo: devops : TTY=pts/0 ; PWD=/home/devops ; USER=root ; COMMAND=/usr/bin/docker ps
+Mar 09 03:56:43 cluster-control-01 CRON[26848]: pam_unix(cron:session): session opened for user root(uid=0) by (uid=0)
+Mar 09 03:57:22 cluster-control-01 sudo: devops : TTY=pts/0 ; PWD=/home/devops ; USER=root ; COMMAND=/usr/bin/docker ps
+Mar 09 04:00:48 cluster-control-01 sshd[52096]: Accepted publickey for devops from 10.0.1.200 port 45881 ssh2: RSA SHA256:xxxx
+Mar 09 04:08:23 cluster-control-01 sshd[24450]: Accepted publickey for devops from 10.0.1.200 port 35662 ssh2: RSA SHA256:xxxx
+Mar 09 04:11:48 cluster-control-01 sshd[23514]: Failed password for invalid user admin from 192.168.1.55 port 50225 ssh2
+Mar 09 04:17:56 cluster-control-01 sudo: devops : TTY=pts/0 ; PWD=/home/devops ; USER=root ; COMMAND=/usr/bin/docker ps
+Mar 09 04:23:34 cluster-control-01 CRON[40481]: pam_unix(cron:session): session closed for user root
+Mar 09 04:30:43 cluster-control-01 sshd[47131]: Connection closed by authenticating user devops 10.0.1.200 port 40878 [preauth]
+Mar 09 04:34:02 cluster-control-01 sudo: devops : TTY=pts/0 ; PWD=/home/devops ; USER=root ; COMMAND=/usr/bin/docker ps
+Mar 09 04:39:45 cluster-control-01 sshd[15902]: pam_unix(sshd:session): session opened for user devops(uid=1000) by (uid=0)
+Mar 09 04:44:09 cluster-control-01 sshd[60166]: Connection closed by authenticating user devops 10.0.1.200 port 36529 [preauth]
+Mar 09 04:52:19 cluster-control-01 CRON[10026]: pam_unix(cron:session): session closed for user root
+Mar 09 04:56:16 cluster-control-01 sshd[8062]: Failed password for invalid user admin from 192.168.1.55 port 26444 ssh2
+Mar 09 05:04:19 cluster-control-01 sudo: devops : TTY=pts/0 ; PWD=/home/devops ; USER=root ; COMMAND=/bin/systemctl restart prometheus
+Mar 09 05:05:48 cluster-control-01 sshd[17339]: Failed password for invalid user admin from 192.168.1.55 port 18262 ssh2
+Mar 09 05:15:27 cluster-control-01 sshd[32745]: Accepted publickey for devops from 10.0.1.200 port 35883 ssh2: RSA SHA256:xxxx
+Mar 09 05:24:32 cluster-control-01 sshd[19974]: Connection closed by authenticating user devops 10.0.1.200 port 32991 [preauth]
+Mar 09 05:33:53 cluster-control-01 sshd[8878]: Accepted publickey for devops from 10.0.1.200 port 39888 ssh2: RSA SHA256:xxxx
+Mar 09 05:35:09 cluster-control-01 sudo: devops : TTY=pts/0 ; PWD=/home/devops ; USER=root ; COMMAND=/usr/bin/docker ps
+Mar 09 05:44:14 cluster-control-01 CRON[2466]: pam_unix(cron:session): session opened for user root(uid=0) by (uid=0)
+Mar 09 05:53:43 cluster-control-01 sudo: devops : TTY=pts/0 ; PWD=/home/devops ; USER=root ; COMMAND=/usr/bin/docker ps
+Mar 09 05:55:03 cluster-control-01 sshd[62439]: Failed password for invalid user admin from 192.168.1.55 port 14102 ssh2
+Mar 09 06:01:53 cluster-control-01 CRON[27151]: pam_unix(cron:session): session closed for user root
+Mar 09 06:08:56 cluster-control-01 sshd[5326]: pam_unix(sshd:session): session opened for user devops(uid=1000) by (uid=0)
+Mar 09 06:15:08 cluster-control-01 sshd[4361]: pam_unix(sshd:session): session closed for user devops
+Mar 09 06:21:21 cluster-control-01 CRON[20762]: pam_unix(cron:session): session closed for user root
+Mar 09 06:29:42 cluster-control-01 CRON[31126]: pam_unix(cron:session): session closed for user root
+Mar 09 06:34:23 cluster-control-01 sshd[35309]: Failed password for invalid user admin from 192.168.1.55 port 55584 ssh2
+Mar 09 06:34:59 cluster-control-01 sudo: devops : TTY=pts/0 ; PWD=/home/devops ; USER=root ; COMMAND=/usr/bin/docker ps
+Mar 09 06:44:39 cluster-control-01 sshd[23519]: Accepted publickey for devops from 10.0.1.200 port 4109 ssh2: RSA SHA256:xxxx
+Mar 09 06:47:25 cluster-control-01 sudo: devops : TTY=pts/0 ; PWD=/home/devops ; USER=root ; COMMAND=/bin/systemctl restart prometheus
+Mar 09 06:54:00 cluster-control-01 sshd[8598]: Accepted publickey for devops from 10.0.1.200 port 31729 ssh2: RSA SHA256:xxxx
+Mar 09 07:03:34 cluster-control-01 sshd[60852]: Failed password for invalid user admin from 192.168.1.55 port 16047 ssh2
+Mar 09 07:09:29 cluster-control-01 CRON[62317]: pam_unix(cron:session): session closed for user root
+Mar 09 07:15:08 cluster-control-01 CRON[28179]: pam_unix(cron:session): session closed for user root
+Mar 09 07:15:49 cluster-control-01 sshd[14265]: Connection closed by authenticating user devops 10.0.1.200 port 1766 [preauth]
+Mar 09 07:23:49 cluster-control-01 sudo: devops : TTY=pts/0 ; PWD=/home/devops ; USER=root ; COMMAND=/bin/systemctl restart prometheus
+Mar 09 07:32:33 cluster-control-01 sudo: devops : TTY=pts/0 ; PWD=/home/devops ; USER=root ; COMMAND=/usr/bin/docker ps
+Mar 09 07:33:25 cluster-control-01 sudo: devops : TTY=pts/0 ; PWD=/home/devops ; USER=root ; COMMAND=/usr/bin/docker ps
+Mar 09 07:42:42 cluster-control-01 sshd[19856]: pam_unix(sshd:session): session opened for user devops(uid=1000) by (uid=0)
+Mar 09 07:44:14 cluster-control-01 sudo: devops : TTY=pts/0 ; PWD=/home/devops ; USER=root ; COMMAND=/bin/systemctl restart prometheus
+Mar 09 07:45:45 cluster-control-01 CRON[1095]: pam_unix(cron:session): session closed for user root
+Mar 09 07:51:36 cluster-control-01 sshd[32153]: pam_unix(sshd:session): session closed for user devops
+Mar 09 08:00:34 cluster-control-01 sshd[1149]: Connection closed by authenticating user devops 10.0.1.200 port 26258 [preauth]
+Mar 09 08:08:50 cluster-control-01 CRON[25227]: pam_unix(cron:session): session opened for user root(uid=0) by (uid=0)
+Mar 09 08:11:47 cluster-control-01 CRON[60555]: pam_unix(cron:session): session opened for user root(uid=0) by (uid=0)
+Mar 09 08:16:00 cluster-control-01 sshd[2320]: Connection closed by authenticating user devops 10.0.1.200 port 17248 [preauth]
+Mar 09 08:21:02 cluster-control-01 CRON[19642]: pam_unix(cron:session): session closed for user root
+Mar 09 08:25:48 cluster-control-01 CRON[35795]: pam_unix(cron:session): session closed for user root
+Mar 09 08:35:09 cluster-control-01 CRON[62007]: pam_unix(cron:session): session closed for user root
+Mar 09 08:44:32 cluster-control-01 sshd[22039]: Connection closed by authenticating user devops 10.0.1.200 port 15383 [preauth]
+Mar 09 08:54:01 cluster-control-01 sudo: devops : TTY=pts/0 ; PWD=/home/devops ; USER=root ; COMMAND=/usr/bin/docker ps
+Mar 09 08:56:32 cluster-control-01 sshd[51846]: pam_unix(sshd:session): session closed for user devops
+Mar 09 09:02:24 cluster-control-01 sshd[22198]: Connection closed by authenticating user devops 10.0.1.200 port 40451 [preauth]
+Mar 09 09:07:17 cluster-control-01 CRON[62923]: pam_unix(cron:session): session opened for user root(uid=0) by (uid=0)
+Mar 09 09:13:22 cluster-control-01 sshd[15503]: pam_unix(sshd:session): session closed for user devops
+Mar 09 09:18:01 cluster-control-01 sudo: devops : TTY=pts/0 ; PWD=/home/devops ; USER=root ; COMMAND=/usr/bin/docker ps
+Mar 09 09:27:31 cluster-control-01 sshd[50006]: pam_unix(sshd:session): session opened for user devops(uid=1000) by (uid=0)
+Mar 09 09:31:06 cluster-control-01 sshd[11767]: Connection closed by authenticating user devops 10.0.1.200 port 46422 [preauth]
+Mar 09 09:37:57 cluster-control-01 sudo: devops : TTY=pts/0 ; PWD=/home/devops ; USER=root ; COMMAND=/usr/bin/docker ps
+Mar 09 09:43:29 cluster-control-01 sshd[4058]: Connection closed by authenticating user devops 10.0.1.200 port 44858 [preauth]
+Mar 09 09:52:39 cluster-control-01 sshd[48142]: Accepted publickey for devops from 10.0.1.200 port 32584 ssh2: RSA SHA256:xxxx
+Mar 09 09:58:50 cluster-control-01 sshd[43052]: pam_unix(sshd:session): session opened for user devops(uid=1000) by (uid=0)
+Mar 09 10:01:19 cluster-control-01 CRON[62475]: pam_unix(cron:session): session closed for user root
+Mar 09 10:09:21 cluster-control-01 sshd[4270]: Connection closed by authenticating user devops 10.0.1.200 port 30038 [preauth]
+Mar 09 10:12:35 cluster-control-01 sshd[9258]: Connection closed by authenticating user devops 10.0.1.200 port 33764 [preauth]
+Mar 09 10:21:52 cluster-control-01 sudo: devops : TTY=pts/0 ; PWD=/home/devops ; USER=root ; COMMAND=/usr/bin/docker ps
+Mar 09 10:31:20 cluster-control-01 CRON[59290]: pam_unix(cron:session): session opened for user root(uid=0) by (uid=0)
+Mar 09 10:40:45 cluster-control-01 sshd[44378]: Connection closed by authenticating user devops 10.0.1.200 port 20386 [preauth]
+Mar 09 10:45:00 cluster-control-01 CRON[1795]: pam_unix(cron:session): session closed for user root
+Mar 09 10:48:30 cluster-control-01 sshd[64000]: Failed password for invalid user admin from 192.168.1.55 port 29150 ssh2
+Mar 09 10:51:14 cluster-control-01 sshd[35922]: pam_unix(sshd:session): session closed for user devops
+Mar 09 11:00:57 cluster-control-01 sudo: devops : TTY=pts/0 ; PWD=/home/devops ; USER=root ; COMMAND=/bin/systemctl restart prometheus
+Mar 09 11:07:36 cluster-control-01 CRON[64706]: pam_unix(cron:session): session opened for user root(uid=0) by (uid=0)
+Mar 09 11:12:02 cluster-control-01 CRON[24708]: pam_unix(cron:session): session closed for user root
+Mar 09 11:12:33 cluster-control-01 sshd[50475]: Accepted publickey for devops from 10.0.1.200 port 57952 ssh2: RSA SHA256:xxxx
+Mar 09 11:21:39 cluster-control-01 CRON[54434]: pam_unix(cron:session): session closed for user root
+Mar 09 11:29:27 cluster-control-01 sshd[30850]: Connection closed by authenticating user devops 10.0.1.200 port 28681 [preauth]
+Mar 09 11:38:31 cluster-control-01 sshd[10281]: pam_unix(sshd:session): session closed for user devops
+Mar 09 11:48:23 cluster-control-01 CRON[26440]: pam_unix(cron:session): session opened for user root(uid=0) by (uid=0)
+Mar 09 11:52:51 cluster-control-01 sshd[43531]: pam_unix(sshd:session): session opened for user devops(uid=1000) by (uid=0)
+Mar 09 11:56:41 cluster-control-01 sshd[48126]: pam_unix(sshd:session): session closed for user devops
+Mar 09 12:00:54 cluster-control-01 sudo: devops : TTY=pts/0 ; PWD=/home/devops ; USER=root ; COMMAND=/bin/systemctl restart prometheus
+Mar 09 12:05:51 cluster-control-01 sshd[51432]: pam_unix(sshd:session): session closed for user devops
+Mar 09 12:14:17 cluster-control-01 sudo: devops : TTY=pts/0 ; PWD=/home/devops ; USER=root ; COMMAND=/usr/bin/docker ps
+Mar 09 12:22:01 cluster-control-01 sshd[31315]: pam_unix(sshd:session): session opened for user devops(uid=1000) by (uid=0)
+Mar 09 12:27:48 cluster-control-01 CRON[57008]: pam_unix(cron:session): session opened for user root(uid=0) by (uid=0)
+Mar 09 12:28:44 cluster-control-01 sudo: devops : TTY=pts/0 ; PWD=/home/devops ; USER=root ; COMMAND=/usr/bin/docker ps
+Mar 09 12:36:07 cluster-control-01 sshd[31038]: Connection closed by authenticating user devops 10.0.1.200 port 60467 [preauth]
+Mar 09 12:40:18 cluster-control-01 sshd[56492]: Failed password for invalid user admin from 192.168.1.55 port 40697 ssh2
+Mar 09 12:48:47 cluster-control-01 sshd[54249]: pam_unix(sshd:session): session closed for user devops
+Mar 09 12:56:01 cluster-control-01 sudo: devops : TTY=pts/0 ; PWD=/home/devops ; USER=root ; COMMAND=/bin/systemctl restart prometheus
+Mar 09 13:04:55 cluster-control-01 sshd[16247]: Connection closed by authenticating user devops 10.0.1.200 port 7030 [preauth]
+Mar 09 13:07:20 cluster-control-01 sudo: devops : TTY=pts/0 ; PWD=/home/devops ; USER=root ; COMMAND=/usr/bin/docker ps
+Mar 09 13:12:45 cluster-control-01 sshd[17645]: Failed password for invalid user admin from 192.168.1.55 port 39692 ssh2
+Mar 09 13:17:28 cluster-control-01 sudo: devops : TTY=pts/0 ; PWD=/home/devops ; USER=root ; COMMAND=/bin/systemctl restart prometheus
+Mar 09 13:18:57 cluster-control-01 sudo: devops : TTY=pts/0 ; PWD=/home/devops ; USER=root ; COMMAND=/bin/systemctl restart prometheus
+Mar 09 13:25:56 cluster-control-01 sudo: devops : TTY=pts/0 ; PWD=/home/devops ; USER=root ; COMMAND=/bin/systemctl restart prometheus
+Mar 09 13:29:05 cluster-control-01 CRON[63752]: pam_unix(cron:session): session closed for user root
+Mar 09 13:34:57 cluster-control-01 CRON[54359]: pam_unix(cron:session): session opened for user root(uid=0) by (uid=0)
+Mar 09 13:38:03 cluster-control-01 CRON[2868]: pam_unix(cron:session): session closed for user root
+Mar 09 13:43:19 cluster-control-01 sudo: devops : TTY=pts/0 ; PWD=/home/devops ; USER=root ; COMMAND=/bin/systemctl restart prometheus
+Mar 09 13:52:13 cluster-control-01 sshd[9936]: pam_unix(sshd:session): session closed for user devops
+Mar 09 13:54:42 cluster-control-01 sshd[3058]: pam_unix(sshd:session): session opened for user devops(uid=1000) by (uid=0)
+Mar 09 14:02:05 cluster-control-01 sudo: devops : TTY=pts/0 ; PWD=/home/devops ; USER=root ; COMMAND=/usr/bin/docker ps
+Mar 09 14:11:23 cluster-control-01 sudo: devops : TTY=pts/0 ; PWD=/home/devops ; USER=root ; COMMAND=/usr/bin/docker ps
+Mar 09 14:17:45 cluster-control-01 sshd[59663]: Failed password for invalid user admin from 192.168.1.55 port 23010 ssh2
+Mar 09 14:26:34 cluster-control-01 sshd[42217]: Failed password for invalid user admin from 192.168.1.55 port 29708 ssh2
+Mar 09 14:27:28 cluster-control-01 sshd[45040]: Accepted publickey for devops from 10.0.1.200 port 29374 ssh2: RSA SHA256:xxxx
+Mar 09 14:36:15 cluster-control-01 sshd[58592]: pam_unix(sshd:session): session closed for user devops
+Mar 09 14:42:16 cluster-control-01 sudo: devops : TTY=pts/0 ; PWD=/home/devops ; USER=root ; COMMAND=/bin/systemctl restart prometheus
+Mar 09 14:46:35 cluster-control-01 sshd[35195]: pam_unix(sshd:session): session opened for user devops(uid=1000) by (uid=0)
+Mar 09 14:54:22 cluster-control-01 sshd[40749]: Accepted publickey for devops from 10.0.1.200 port 8056 ssh2: RSA SHA256:xxxx
+Mar 09 14:57:48 cluster-control-01 sshd[22678]: Failed password for invalid user admin from 192.168.1.55 port 17487 ssh2
+Mar 09 15:01:45 cluster-control-01 sshd[61179]: pam_unix(sshd:session): session opened for user devops(uid=1000) by (uid=0)
+Mar 09 15:11:41 cluster-control-01 sshd[33190]: pam_unix(sshd:session): session opened for user devops(uid=1000) by (uid=0)
+Mar 09 15:18:08 cluster-control-01 CRON[47770]: pam_unix(cron:session): session opened for user root(uid=0) by (uid=0)
+Mar 09 15:20:18 cluster-control-01 sudo: devops : TTY=pts/0 ; PWD=/home/devops ; USER=root ; COMMAND=/usr/bin/docker ps
+Mar 09 15:27:17 cluster-control-01 sudo: devops : TTY=pts/0 ; PWD=/home/devops ; USER=root ; COMMAND=/usr/bin/docker ps
+Mar 09 15:36:39 cluster-control-01 sshd[50383]: pam_unix(sshd:session): session closed for user devops
+Mar 09 15:40:30 cluster-control-01 CRON[27587]: pam_unix(cron:session): session closed for user root
+Mar 09 15:43:32 cluster-control-01 sshd[30330]: Connection closed by authenticating user devops 10.0.1.200 port 30540 [preauth]
+Mar 09 15:51:34 cluster-control-01 sshd[8647]: Failed password for invalid user admin from 192.168.1.55 port 36422 ssh2
+Mar 09 15:57:13 cluster-control-01 sshd[23946]: Connection closed by authenticating user devops 10.0.1.200 port 53478 [preauth]
+Mar 09 16:05:22 cluster-control-01 sshd[36629]: pam_unix(sshd:session): session closed for user devops
+Mar 09 16:09:12 cluster-control-01 sshd[15685]: pam_unix(sshd:session): session opened for user devops(uid=1000) by (uid=0)
+Mar 09 16:14:48 cluster-control-01 sshd[31156]: pam_unix(sshd:session): session closed for user devops
+Mar 09 16:20:11 cluster-control-01 CRON[55967]: pam_unix(cron:session): session closed for user root
+Mar 09 16:21:07 cluster-control-01 CRON[25727]: pam_unix(cron:session): session closed for user root
+Mar 09 16:27:41 cluster-control-01 sshd[32127]: Accepted publickey for devops from 10.0.1.200 port 38079 ssh2: RSA SHA256:xxxx
+Mar 09 16:33:21 cluster-control-01 sshd[15802]: Failed password for invalid user admin from 192.168.1.55 port 20055 ssh2
+Mar 09 16:39:21 cluster-control-01 sshd[12498]: Accepted publickey for devops from 10.0.1.200 port 38302 ssh2: RSA SHA256:xxxx
+Mar 09 16:47:22 cluster-control-01 sshd[57373]: Accepted publickey for devops from 10.0.1.200 port 43755 ssh2: RSA SHA256:xxxx
+Mar 09 16:52:08 cluster-control-01 sshd[39121]: Accepted publickey for devops from 10.0.1.200 port 42120 ssh2: RSA SHA256:xxxx
+Mar 09 16:57:07 cluster-control-01 sudo: devops : TTY=pts/0 ; PWD=/home/devops ; USER=root ; COMMAND=/usr/bin/docker ps
+Mar 09 17:05:56 cluster-control-01 sshd[44226]: pam_unix(sshd:session): session closed for user devops
+Mar 09 17:15:03 cluster-control-01 CRON[32046]: pam_unix(cron:session): session opened for user root(uid=0) by (uid=0)
+Mar 09 17:24:46 cluster-control-01 sshd[14784]: Failed password for invalid user admin from 192.168.1.55 port 53212 ssh2
+Mar 09 17:26:34 cluster-control-01 CRON[8345]: pam_unix(cron:session): session opened for user root(uid=0) by (uid=0)
+Mar 09 17:29:53 cluster-control-01 CRON[12273]: pam_unix(cron:session): session opened for user root(uid=0) by (uid=0)
+Mar 09 17:34:41 cluster-control-01 sshd[30979]: pam_unix(sshd:session): session opened for user devops(uid=1000) by (uid=0)
+Mar 09 17:40:04 cluster-control-01 sshd[11454]: Connection closed by authenticating user devops 10.0.1.200 port 3123 [preauth]
+Mar 09 17:48:10 cluster-control-01 sshd[10649]: pam_unix(sshd:session): session opened for user devops(uid=1000) by (uid=0)
+Mar 09 17:55:29 cluster-control-01 CRON[3540]: pam_unix(cron:session): session closed for user root
+Mar 09 18:00:26 cluster-control-01 sshd[11294]: pam_unix(sshd:session): session opened for user devops(uid=1000) by (uid=0)
+Mar 09 18:07:02 cluster-control-01 sshd[21990]: Connection closed by authenticating user devops 10.0.1.200 port 52977 [preauth]
+Mar 09 18:08:58 cluster-control-01 CRON[1093]: pam_unix(cron:session): session opened for user root(uid=0) by (uid=0)
+Mar 09 18:10:42 cluster-control-01 sshd[17751]: Failed password for invalid user admin from 192.168.1.55 port 32291 ssh2
+Mar 09 18:17:18 cluster-control-01 sshd[53691]: Accepted publickey for devops from 10.0.1.200 port 41862 ssh2: RSA SHA256:xxxx
+Mar 09 18:18:31 cluster-control-01 sshd[35844]: Failed password for invalid user admin from 192.168.1.55 port 34340 ssh2
+Mar 09 18:21:01 cluster-control-01 sudo: devops : TTY=pts/0 ; PWD=/home/devops ; USER=root ; COMMAND=/bin/systemctl restart prometheus
+Mar 09 18:28:35 cluster-control-01 sudo: devops : TTY=pts/0 ; PWD=/home/devops ; USER=root ; COMMAND=/usr/bin/docker ps
+Mar 09 18:29:39 cluster-control-01 sshd[48947]: pam_unix(sshd:session): session opened for user devops(uid=1000) by (uid=0)
+Mar 09 18:37:18 cluster-control-01 sudo: devops : TTY=pts/0 ; PWD=/home/devops ; USER=root ; COMMAND=/usr/bin/docker ps
+Mar 09 18:39:17 cluster-control-01 sshd[24161]: Accepted publickey for devops from 10.0.1.200 port 13277 ssh2: RSA SHA256:xxxx
+Mar 09 18:44:47 cluster-control-01 sshd[22172]: Failed password for invalid user admin from 192.168.1.55 port 51359 ssh2
+Mar 09 18:54:34 cluster-control-01 sshd[34642]: pam_unix(sshd:session): session closed for user devops
+Mar 09 18:59:43 cluster-control-01 sshd[35837]: Failed password for invalid user admin from 192.168.1.55 port 47167 ssh2
+Mar 09 19:07:56 cluster-control-01 sshd[13455]: pam_unix(sshd:session): session closed for user devops
+Mar 09 19:17:32 cluster-control-01 sshd[42703]: pam_unix(sshd:session): session opened for user devops(uid=1000) by (uid=0)
+Mar 09 19:26:19 cluster-control-01 sshd[44351]: Accepted publickey for devops from 10.0.1.200 port 38542 ssh2: RSA SHA256:xxxx
+Mar 09 19:35:30 cluster-control-01 sshd[6453]: Accepted publickey for devops from 10.0.1.200 port 32444 ssh2: RSA SHA256:xxxx
+Mar 09 19:36:47 cluster-control-01 sshd[63353]: Failed password for invalid user admin from 192.168.1.55 port 57593 ssh2
+Mar 09 19:43:37 cluster-control-01 sshd[3650]: Connection closed by authenticating user devops 10.0.1.200 port 28252 [preauth]
+Mar 09 19:44:40 cluster-control-01 sshd[38470]: Failed password for invalid user admin from 192.168.1.55 port 48738 ssh2
+Mar 09 19:46:16 cluster-control-01 sshd[43714]: pam_unix(sshd:session): session opened for user devops(uid=1000) by (uid=0)
+Mar 09 19:50:27 cluster-control-01 sudo: devops : TTY=pts/0 ; PWD=/home/devops ; USER=root ; COMMAND=/usr/bin/docker ps
+Mar 09 19:51:22 cluster-control-01 sshd[32139]: pam_unix(sshd:session): session closed for user devops
+Mar 09 19:55:00 cluster-control-01 sudo: devops : TTY=pts/0 ; PWD=/home/devops ; USER=root ; COMMAND=/bin/systemctl restart prometheus
+Mar 09 20:04:14 cluster-control-01 sudo: devops : TTY=pts/0 ; PWD=/home/devops ; USER=root ; COMMAND=/usr/bin/docker ps
+Mar 09 20:08:03 cluster-control-01 sudo: devops : TTY=pts/0 ; PWD=/home/devops ; USER=root ; COMMAND=/bin/systemctl restart prometheus
+Mar 09 20:12:13 cluster-control-01 CRON[14108]: pam_unix(cron:session): session closed for user root
+Mar 09 20:20:10 cluster-control-01 CRON[3929]: pam_unix(cron:session): session closed for user root
+Mar 09 20:25:56 cluster-control-01 sshd[13106]: pam_unix(sshd:session): session closed for user devops
+Mar 09 20:28:24 cluster-control-01 sshd[18124]: Failed password for invalid user admin from 192.168.1.55 port 40787 ssh2
+Mar 09 20:31:03 cluster-control-01 CRON[4888]: pam_unix(cron:session): session opened for user root(uid=0) by (uid=0)
+Mar 09 20:35:54 cluster-control-01 sudo: devops : TTY=pts/0 ; PWD=/home/devops ; USER=root ; COMMAND=/bin/systemctl restart prometheus
+Mar 09 20:40:14 cluster-control-01 sshd[36915]: Connection closed by authenticating user devops 10.0.1.200 port 5425 [preauth]
+Mar 09 20:47:35 cluster-control-01 CRON[4643]: pam_unix(cron:session): session closed for user root
+Mar 09 20:50:08 cluster-control-01 sshd[5758]: pam_unix(sshd:session): session closed for user devops
+Mar 09 20:54:16 cluster-control-01 CRON[19405]: pam_unix(cron:session): session closed for user root
+Mar 09 21:01:41 cluster-control-01 CRON[52583]: pam_unix(cron:session): session closed for user root
+Mar 09 21:06:50 cluster-control-01 CRON[38204]: pam_unix(cron:session): session opened for user root(uid=0) by (uid=0)
+Mar 09 21:15:43 cluster-control-01 sshd[32040]: Accepted publickey for devops from 10.0.1.200 port 63697 ssh2: RSA SHA256:xxxx
+Mar 09 21:18:25 cluster-control-01 sshd[45314]: pam_unix(sshd:session): session closed for user devops
+Mar 09 21:24:19 cluster-control-01 sshd[15328]: pam_unix(sshd:session): session closed for user devops
+Mar 09 21:29:19 cluster-control-01 sudo: devops : TTY=pts/0 ; PWD=/home/devops ; USER=root ; COMMAND=/bin/systemctl restart prometheus
+Mar 09 21:36:41 cluster-control-01 sshd[37473]: Connection closed by authenticating user devops 10.0.1.200 port 52608 [preauth]
+Mar 09 21:39:40 cluster-control-01 sshd[7124]: Connection closed by authenticating user devops 10.0.1.200 port 11723 [preauth]
+Mar 09 21:42:14 cluster-control-01 CRON[55968]: pam_unix(cron:session): session opened for user root(uid=0) by (uid=0)
+Mar 09 21:51:38 cluster-control-01 sshd[47153]: Failed password for invalid user admin from 192.168.1.55 port 56958 ssh2
+Mar 09 21:54:40 cluster-control-01 sshd[42445]: Accepted publickey for devops from 10.0.1.200 port 20455 ssh2: RSA SHA256:xxxx
+Mar 09 21:55:41 cluster-control-01 sshd[32365]: Accepted publickey for devops from 10.0.1.200 port 61056 ssh2: RSA SHA256:xxxx
+Mar 09 21:59:30 cluster-control-01 sshd[55905]: Accepted publickey for devops from 10.0.1.200 port 36921 ssh2: RSA SHA256:xxxx
+Mar 09 22:05:19 cluster-control-01 CRON[40955]: pam_unix(cron:session): session closed for user root
+Mar 09 22:09:22 cluster-control-01 sshd[37058]: Accepted publickey for devops from 10.0.1.200 port 24151 ssh2: RSA SHA256:xxxx
+Mar 09 22:14:11 cluster-control-01 sshd[10598]: Accepted publickey for devops from 10.0.1.200 port 41305 ssh2: RSA SHA256:xxxx
+Mar 09 22:20:46 cluster-control-01 sshd[12040]: Connection closed by authenticating user devops 10.0.1.200 port 43837 [preauth]
+Mar 09 22:23:20 cluster-control-01 sshd[33172]: Connection closed by authenticating user devops 10.0.1.200 port 28481 [preauth]
+Mar 09 22:25:14 cluster-control-01 sudo: devops : TTY=pts/0 ; PWD=/home/devops ; USER=root ; COMMAND=/usr/bin/docker ps
+Mar 09 22:33:31 cluster-control-01 sshd[63151]: Connection closed by authenticating user devops 10.0.1.200 port 53316 [preauth]
+Mar 09 22:42:30 cluster-control-01 sshd[37793]: Failed password for invalid user admin from 192.168.1.55 port 6463 ssh2
+Mar 09 22:48:50 cluster-control-01 sudo: devops : TTY=pts/0 ; PWD=/home/devops ; USER=root ; COMMAND=/usr/bin/docker ps
+Mar 09 22:49:55 cluster-control-01 sshd[29088]: Failed password for invalid user admin from 192.168.1.55 port 19177 ssh2
+Mar 09 22:55:43 cluster-control-01 sshd[53671]: pam_unix(sshd:session): session opened for user devops(uid=1000) by (uid=0)
+Mar 09 23:00:37 cluster-control-01 sudo: devops : TTY=pts/0 ; PWD=/home/devops ; USER=root ; COMMAND=/bin/systemctl restart prometheus
+Mar 09 23:05:46 cluster-control-01 sudo: devops : TTY=pts/0 ; PWD=/home/devops ; USER=root ; COMMAND=/usr/bin/docker ps
+Mar 09 23:11:38 cluster-control-01 sshd[25490]: Connection closed by authenticating user devops 10.0.1.200 port 52711 [preauth]
+Mar 09 23:21:32 cluster-control-01 sshd[36904]: pam_unix(sshd:session): session opened for user devops(uid=1000) by (uid=0)
+Mar 09 23:25:13 cluster-control-01 sshd[33677]: pam_unix(sshd:session): session opened for user devops(uid=1000) by (uid=0)
+Mar 09 23:31:41 cluster-control-01 sudo: devops : TTY=pts/0 ; PWD=/home/devops ; USER=root ; COMMAND=/usr/bin/docker ps
+Mar 09 23:32:17 cluster-control-01 CRON[55352]: pam_unix(cron:session): session closed for user root
+Mar 09 23:41:37 cluster-control-01 sshd[51684]: pam_unix(sshd:session): session closed for user devops
+Mar 09 23:49:29 cluster-control-01 sshd[38390]: pam_unix(sshd:session): session closed for user devops
+Mar 09 23:57:09 cluster-control-01 CRON[45020]: pam_unix(cron:session): session opened for user root(uid=0) by (uid=0)
+Mar 09 23:59:38 cluster-control-01 sshd[4412]: pam_unix(sshd:session): session opened for user devops(uid=1000) by (uid=0)
+Mar 10 00:00:11 cluster-control-01 CRON[59835]: pam_unix(cron:session): session closed for user root
+Mar 10 00:06:33 cluster-control-01 sshd[38293]: pam_unix(sshd:session): session closed for user devops
+Mar 10 00:11:41 cluster-control-01 sudo: devops : TTY=pts/0 ; PWD=/home/devops ; USER=root ; COMMAND=/bin/systemctl restart prometheus
+Mar 10 00:16:32 cluster-control-01 CRON[39291]: pam_unix(cron:session): session closed for user root
+Mar 10 00:21:35 cluster-control-01 CRON[19628]: pam_unix(cron:session): session opened for user root(uid=0) by (uid=0)
+Mar 10 00:29:19 cluster-control-01 sshd[43241]: Connection closed by authenticating user devops 10.0.1.200 port 39417 [preauth]
+Mar 10 00:39:06 cluster-control-01 sshd[32197]: Connection closed by authenticating user devops 10.0.1.200 port 9544 [preauth]
+Mar 10 00:41:26 cluster-control-01 sshd[35260]: Failed password for invalid user admin from 192.168.1.55 port 62749 ssh2
+Mar 10 00:43:32 cluster-control-01 sudo: devops : TTY=pts/0 ; PWD=/home/devops ; USER=root ; COMMAND=/bin/systemctl restart prometheus
+Mar 10 00:48:17 cluster-control-01 sudo: devops : TTY=pts/0 ; PWD=/home/devops ; USER=root ; COMMAND=/bin/systemctl restart prometheus
+Mar 10 00:55:30 cluster-control-01 sshd[27514]: Accepted publickey for devops from 10.0.1.200 port 55712 ssh2: RSA SHA256:xxxx
+Mar 10 01:02:36 cluster-control-01 sshd[44024]: Accepted publickey for devops from 10.0.1.200 port 57520 ssh2: RSA SHA256:xxxx
+Mar 10 01:11:29 cluster-control-01 sudo: devops : TTY=pts/0 ; PWD=/home/devops ; USER=root ; COMMAND=/usr/bin/docker ps
+Mar 10 01:21:11 cluster-control-01 sshd[21553]: pam_unix(sshd:session): session opened for user devops(uid=1000) by (uid=0)
+Mar 10 01:28:19 cluster-control-01 sshd[40655]: pam_unix(sshd:session): session closed for user devops
+Mar 10 01:30:31 cluster-control-01 sshd[51262]: Failed password for invalid user admin from 192.168.1.55 port 39733 ssh2
+Mar 10 01:40:00 cluster-control-01 sshd[28201]: Accepted publickey for devops from 10.0.1.200 port 28602 ssh2: RSA SHA256:xxxx
+Mar 10 01:44:28 cluster-control-01 sshd[57172]: Accepted publickey for devops from 10.0.1.200 port 38553 ssh2: RSA SHA256:xxxx
+Mar 10 01:48:45 cluster-control-01 CRON[20832]: pam_unix(cron:session): session closed for user root
+Mar 10 01:55:43 cluster-control-01 sshd[51903]: pam_unix(sshd:session): session closed for user devops
+Mar 10 02:00:22 cluster-control-01 sudo: devops : TTY=pts/0 ; PWD=/home/devops ; USER=root ; COMMAND=/bin/systemctl restart prometheus
+Mar 10 02:08:50 cluster-control-01 sudo: devops : TTY=pts/0 ; PWD=/home/devops ; USER=root ; COMMAND=/bin/systemctl restart prometheus
+Mar 10 02:16:02 cluster-control-01 sudo: devops : TTY=pts/0 ; PWD=/home/devops ; USER=root ; COMMAND=/bin/systemctl restart prometheus
+Mar 10 02:20:42 cluster-control-01 sudo: devops : TTY=pts/0 ; PWD=/home/devops ; USER=root ; COMMAND=/usr/bin/docker ps
+Mar 10 02:24:05 cluster-control-01 sshd[7676]: pam_unix(sshd:session): session closed for user devops
+Mar 10 02:33:41 cluster-control-01 sudo: devops : TTY=pts/0 ; PWD=/home/devops ; USER=root ; COMMAND=/usr/bin/docker ps
+Mar 10 02:38:24 cluster-control-01 sshd[16440]: Accepted publickey for devops from 10.0.1.200 port 62584 ssh2: RSA SHA256:xxxx
+Mar 10 02:39:50 cluster-control-01 sshd[37902]: Connection closed by authenticating user devops 10.0.1.200 port 20801 [preauth]
+Mar 10 02:41:14 cluster-control-01 CRON[23805]: pam_unix(cron:session): session closed for user root
+Mar 10 02:42:04 cluster-control-01 sshd[57907]: Failed password for invalid user admin from 192.168.1.55 port 10443 ssh2
+Mar 10 02:50:35 cluster-control-01 CRON[17226]: pam_unix(cron:session): session closed for user root
+Mar 10 02:51:07 cluster-control-01 sudo: devops : TTY=pts/0 ; PWD=/home/devops ; USER=root ; COMMAND=/bin/systemctl restart prometheus
+Mar 10 03:00:32 cluster-control-01 CRON[57408]: pam_unix(cron:session): session closed for user root
+Mar 10 03:08:02 cluster-control-01 sshd[26873]: pam_unix(sshd:session): session closed for user devops
+Mar 10 03:17:19 cluster-control-01 sshd[39110]: Failed password for invalid user admin from 192.168.1.55 port 58626 ssh2
+Mar 10 03:26:17 cluster-control-01 CRON[56661]: pam_unix(cron:session): session opened for user root(uid=0) by (uid=0)
+Mar 10 03:29:26 cluster-control-01 sshd[38657]: pam_unix(sshd:session): session closed for user devops
+Mar 10 03:30:09 cluster-control-01 sshd[47556]: pam_unix(sshd:session): session opened for user devops(uid=1000) by (uid=0)
+Mar 10 03:39:12 cluster-control-01 sshd[32551]: pam_unix(sshd:session): session opened for user devops(uid=1000) by (uid=0)
+Mar 10 03:44:24 cluster-control-01 sshd[52071]: pam_unix(sshd:session): session closed for user devops
+Mar 10 03:47:08 cluster-control-01 sudo: devops : TTY=pts/0 ; PWD=/home/devops ; USER=root ; COMMAND=/bin/systemctl restart prometheus
+Mar 10 03:55:26 cluster-control-01 sshd[15261]: pam_unix(sshd:session): session opened for user devops(uid=1000) by (uid=0)
+Mar 10 04:03:30 cluster-control-01 sshd[44583]: pam_unix(sshd:session): session closed for user devops
+Mar 10 04:04:59 cluster-control-01 CRON[34802]: pam_unix(cron:session): session closed for user root
+Mar 10 04:06:07 cluster-control-01 sshd[16169]: Connection closed by authenticating user devops 10.0.1.200 port 12861 [preauth]
+Mar 10 04:08:19 cluster-control-01 sshd[14562]: pam_unix(sshd:session): session opened for user devops(uid=1000) by (uid=0)
+Mar 10 04:17:58 cluster-control-01 sshd[61488]: pam_unix(sshd:session): session closed for user devops
+Mar 10 04:27:45 cluster-control-01 sshd[14539]: Connection closed by authenticating user devops 10.0.1.200 port 32473 [preauth]
+Mar 10 04:36:50 cluster-control-01 sshd[51017]: Failed password for invalid user admin from 192.168.1.55 port 27484 ssh2
+Mar 10 04:41:01 cluster-control-01 sudo: devops : TTY=pts/0 ; PWD=/home/devops ; USER=root ; COMMAND=/bin/systemctl restart prometheus
+Mar 10 04:50:59 cluster-control-01 sudo: devops : TTY=pts/0 ; PWD=/home/devops ; USER=root ; COMMAND=/usr/bin/docker ps
+Mar 10 04:59:19 cluster-control-01 CRON[62573]: pam_unix(cron:session): session opened for user root(uid=0) by (uid=0)
+Mar 10 05:07:56 cluster-control-01 sshd[30041]: Accepted publickey for devops from 10.0.1.200 port 28847 ssh2: RSA SHA256:xxxx
+Mar 10 05:17:03 cluster-control-01 sshd[4130]: pam_unix(sshd:session): session opened for user devops(uid=1000) by (uid=0)
+Mar 10 05:26:20 cluster-control-01 sshd[9004]: Accepted publickey for devops from 10.0.1.200 port 3572 ssh2: RSA SHA256:xxxx
+Mar 10 05:32:56 cluster-control-01 sudo: devops : TTY=pts/0 ; PWD=/home/devops ; USER=root ; COMMAND=/bin/systemctl restart prometheus
+Mar 10 05:36:23 cluster-control-01 sshd[59571]: Accepted publickey for devops from 10.0.1.200 port 15770 ssh2: RSA SHA256:xxxx
+Mar 10 05:44:43 cluster-control-01 CRON[16403]: pam_unix(cron:session): session opened for user root(uid=0) by (uid=0)
+Mar 10 05:47:57 cluster-control-01 CRON[39495]: pam_unix(cron:session): session opened for user root(uid=0) by (uid=0)
+Mar 10 05:56:25 cluster-control-01 CRON[27645]: pam_unix(cron:session): session closed for user root
+Mar 10 06:00:52 cluster-control-01 CRON[20729]: pam_unix(cron:session): session opened for user root(uid=0) by (uid=0)
+Mar 10 06:09:28 cluster-control-01 sshd[19133]: pam_unix(sshd:session): session opened for user devops(uid=1000) by (uid=0)
+Mar 10 06:14:26 cluster-control-01 sshd[63900]: pam_unix(sshd:session): session closed for user devops
+Mar 10 06:23:14 cluster-control-01 sshd[33262]: Failed password for invalid user admin from 192.168.1.55 port 15715 ssh2
+Mar 10 06:25:43 cluster-control-01 CRON[51734]: pam_unix(cron:session): session closed for user root
+Mar 10 06:31:16 cluster-control-01 sshd[55689]: Connection closed by authenticating user devops 10.0.1.200 port 30954 [preauth]
+Mar 10 06:40:03 cluster-control-01 sshd[30871]: pam_unix(sshd:session): session closed for user devops
+Mar 10 06:46:29 cluster-control-01 sshd[62777]: Accepted publickey for devops from 10.0.1.200 port 55931 ssh2: RSA SHA256:xxxx
+Mar 10 06:51:18 cluster-control-01 CRON[11093]: pam_unix(cron:session): session opened for user root(uid=0) by (uid=0)
+Mar 10 06:55:13 cluster-control-01 sshd[15835]: Failed password for invalid user admin from 192.168.1.55 port 61742 ssh2
+Mar 10 06:59:23 cluster-control-01 sudo: devops : TTY=pts/0 ; PWD=/home/devops ; USER=root ; COMMAND=/bin/systemctl restart prometheus
+Mar 10 07:07:39 cluster-control-01 sshd[14641]: Connection closed by authenticating user devops 10.0.1.200 port 55171 [preauth]
+Mar 10 07:13:48 cluster-control-01 CRON[1593]: pam_unix(cron:session): session opened for user root(uid=0) by (uid=0)
+Mar 10 07:23:07 cluster-control-01 sudo: devops : TTY=pts/0 ; PWD=/home/devops ; USER=root ; COMMAND=/usr/bin/docker ps
+Mar 10 07:24:10 cluster-control-01 sudo: devops : TTY=pts/0 ; PWD=/home/devops ; USER=root ; COMMAND=/usr/bin/docker ps
+Mar 10 07:30:45 cluster-control-01 sudo: devops : TTY=pts/0 ; PWD=/home/devops ; USER=root ; COMMAND=/usr/bin/docker ps
+Mar 10 07:37:49 cluster-control-01 sshd[15836]: Failed password for invalid user admin from 192.168.1.55 port 53892 ssh2
+Mar 10 07:41:45 cluster-control-01 sshd[24866]: pam_unix(sshd:session): session opened for user devops(uid=1000) by (uid=0)
+Mar 10 07:50:55 cluster-control-01 sshd[16410]: pam_unix(sshd:session): session closed for user devops
+Mar 10 07:56:06 cluster-control-01 CRON[50060]: pam_unix(cron:session): session closed for user root
+Mar 10 08:05:50 cluster-control-01 sshd[17166]: Connection closed by authenticating user devops 10.0.1.200 port 3923 [preauth]
+Mar 10 08:13:52 cluster-control-01 sshd[18619]: Failed password for invalid user admin from 192.168.1.55 port 59718 ssh2
+Mar 10 08:16:50 cluster-control-01 CRON[53029]: pam_unix(cron:session): session closed for user root
+Mar 10 08:26:25 cluster-control-01 sudo: devops : TTY=pts/0 ; PWD=/home/devops ; USER=root ; COMMAND=/usr/bin/docker ps
+Mar 10 08:35:10 cluster-control-01 CRON[22428]: pam_unix(cron:session): session opened for user root(uid=0) by (uid=0)
+Mar 10 08:44:40 cluster-control-01 sshd[41337]: pam_unix(sshd:session): session opened for user devops(uid=1000) by (uid=0)
+Mar 10 08:47:04 cluster-control-01 sshd[22320]: pam_unix(sshd:session): session opened for user devops(uid=1000) by (uid=0)
+Mar 10 08:50:45 cluster-control-01 sudo: devops : TTY=pts/0 ; PWD=/home/devops ; USER=root ; COMMAND=/bin/systemctl restart prometheus
+Mar 10 08:57:28 cluster-control-01 sshd[25530]: pam_unix(sshd:session): session closed for user devops
+Mar 10 08:58:09 cluster-control-01 sshd[8923]: pam_unix(sshd:session): session closed for user devops
+Mar 10 09:07:11 cluster-control-01 sshd[39624]: Accepted publickey for devops from 10.0.1.200 port 33138 ssh2: RSA SHA256:xxxx
+Mar 10 09:13:18 cluster-control-01 sshd[46188]: Connection closed by authenticating user devops 10.0.1.200 port 59774 [preauth]
+Mar 10 09:14:48 cluster-control-01 sudo: devops : TTY=pts/0 ; PWD=/home/devops ; USER=root ; COMMAND=/usr/bin/docker ps
+Mar 10 09:17:15 cluster-control-01 sshd[33991]: pam_unix(sshd:session): session opened for user devops(uid=1000) by (uid=0)
+Mar 10 09:21:06 cluster-control-01 sshd[14165]: pam_unix(sshd:session): session closed for user devops
+Mar 10 09:24:43 cluster-control-01 sshd[28016]: Failed password for invalid user admin from 192.168.1.55 port 28940 ssh2
+Mar 10 09:32:53 cluster-control-01 sshd[54146]: pam_unix(sshd:session): session closed for user devops
+Mar 10 09:39:51 cluster-control-01 sshd[1328]: pam_unix(sshd:session): session opened for user devops(uid=1000) by (uid=0)
+Mar 10 09:47:40 cluster-control-01 CRON[59937]: pam_unix(cron:session): session closed for user root
+Mar 10 09:51:09 cluster-control-01 sudo: devops : TTY=pts/0 ; PWD=/home/devops ; USER=root ; COMMAND=/usr/bin/docker ps
+Mar 10 10:00:10 cluster-control-01 sudo: devops : TTY=pts/0 ; PWD=/home/devops ; USER=root ; COMMAND=/bin/systemctl restart prometheus
+Mar 10 10:03:18 cluster-control-01 sshd[53747]: pam_unix(sshd:session): session opened for user devops(uid=1000) by (uid=0)
+Mar 10 10:07:49 cluster-control-01 sudo: devops : TTY=pts/0 ; PWD=/home/devops ; USER=root ; COMMAND=/bin/systemctl restart prometheus
+Mar 10 10:10:13 cluster-control-01 sshd[20782]: Accepted publickey for devops from 10.0.1.200 port 1177 ssh2: RSA SHA256:xxxx
+Mar 10 10:19:39 cluster-control-01 CRON[54340]: pam_unix(cron:session): session closed for user root
+Mar 10 10:27:52 cluster-control-01 sshd[58518]: pam_unix(sshd:session): session closed for user devops
+Mar 10 10:30:57 cluster-control-01 sshd[24904]: Connection closed by authenticating user devops 10.0.1.200 port 37822 [preauth]
+Mar 10 10:33:33 cluster-control-01 CRON[10924]: pam_unix(cron:session): session opened for user root(uid=0) by (uid=0)
+Mar 10 10:41:53 cluster-control-01 sshd[17328]: Failed password for invalid user admin from 192.168.1.55 port 5042 ssh2
+Mar 10 10:43:43 cluster-control-01 CRON[18900]: pam_unix(cron:session): session opened for user root(uid=0) by (uid=0)
+Mar 10 10:47:25 cluster-control-01 sudo: devops : TTY=pts/0 ; PWD=/home/devops ; USER=root ; COMMAND=/usr/bin/docker ps
+Mar 10 10:49:04 cluster-control-01 sshd[46299]: pam_unix(sshd:session): session opened for user devops(uid=1000) by (uid=0)
+Mar 10 10:57:14 cluster-control-01 sshd[62000]: Accepted publickey for devops from 10.0.1.200 port 43547 ssh2: RSA SHA256:xxxx
+Mar 10 11:02:57 cluster-control-01 sudo: devops : TTY=pts/0 ; PWD=/home/devops ; USER=root ; COMMAND=/bin/systemctl restart prometheus
+Mar 10 11:05:16 cluster-control-01 sshd[17447]: pam_unix(sshd:session): session opened for user devops(uid=1000) by (uid=0)
+Mar 10 11:09:39 cluster-control-01 sshd[2821]: pam_unix(sshd:session): session opened for user devops(uid=1000) by (uid=0)
+Mar 10 11:11:43 cluster-control-01 CRON[61068]: pam_unix(cron:session): session closed for user root
+Mar 10 11:17:09 cluster-control-01 sshd[61729]: Failed password for invalid user admin from 192.168.1.55 port 44119 ssh2
+Mar 10 11:25:06 cluster-control-01 CRON[59844]: pam_unix(cron:session): session opened for user root(uid=0) by (uid=0)
+Mar 10 11:29:24 cluster-control-01 sshd[15056]: Connection closed by authenticating user devops 10.0.1.200 port 7633 [preauth]
+Mar 10 11:36:24 cluster-control-01 sshd[54201]: pam_unix(sshd:session): session opened for user devops(uid=1000) by (uid=0)
+Mar 10 11:41:49 cluster-control-01 sudo: devops : TTY=pts/0 ; PWD=/home/devops ; USER=root ; COMMAND=/bin/systemctl restart prometheus
+Mar 10 11:51:07 cluster-control-01 sshd[19160]: pam_unix(sshd:session): session closed for user devops
+Mar 10 11:57:44 cluster-control-01 sshd[2543]: pam_unix(sshd:session): session closed for user devops
+Mar 10 11:59:53 cluster-control-01 sudo: devops : TTY=pts/0 ; PWD=/home/devops ; USER=root ; COMMAND=/usr/bin/docker ps
+Mar 10 12:06:04 cluster-control-01 sshd[33423]: Accepted publickey for devops from 10.0.1.200 port 22992 ssh2: RSA SHA256:xxxx
+Mar 10 12:10:49 cluster-control-01 sshd[24762]: Accepted publickey for devops from 10.0.1.200 port 23709 ssh2: RSA SHA256:xxxx
+Mar 10 12:17:41 cluster-control-01 CRON[52217]: pam_unix(cron:session): session closed for user root
+Mar 10 12:20:31 cluster-control-01 sshd[21719]: pam_unix(sshd:session): session opened for user devops(uid=1000) by (uid=0)
+Mar 10 12:23:34 cluster-control-01 sshd[39405]: pam_unix(sshd:session): session closed for user devops
+Mar 10 12:28:47 cluster-control-01 sudo: devops : TTY=pts/0 ; PWD=/home/devops ; USER=root ; COMMAND=/bin/systemctl restart prometheus
+Mar 10 12:36:41 cluster-control-01 sshd[20946]: Failed password for invalid user admin from 192.168.1.55 port 54977 ssh2
+Mar 10 12:43:51 cluster-control-01 sshd[36376]: pam_unix(sshd:session): session closed for user devops
+Mar 10 12:46:16 cluster-control-01 sshd[8111]: pam_unix(sshd:session): session opened for user devops(uid=1000) by (uid=0)
+Mar 10 12:52:43 cluster-control-01 CRON[20317]: pam_unix(cron:session): session closed for user root
+Mar 10 13:00:53 cluster-control-01 sshd[32950]: pam_unix(sshd:session): session closed for user devops
+Mar 10 13:02:38 cluster-control-01 CRON[57882]: pam_unix(cron:session): session closed for user root
+Mar 10 13:07:54 cluster-control-01 CRON[63740]: pam_unix(cron:session): session opened for user root(uid=0) by (uid=0)
+Mar 10 13:09:24 cluster-control-01 sshd[4024]: Failed password for invalid user admin from 192.168.1.55 port 36817 ssh2
+Mar 10 13:16:27 cluster-control-01 sshd[42437]: pam_unix(sshd:session): session opened for user devops(uid=1000) by (uid=0)
+Mar 10 13:17:44 cluster-control-01 sshd[39743]: pam_unix(sshd:session): session closed for user devops
+Mar 10 13:20:44 cluster-control-01 CRON[17927]: pam_unix(cron:session): session closed for user root
+Mar 10 13:27:38 cluster-control-01 sshd[32402]: Accepted publickey for devops from 10.0.1.200 port 10110 ssh2: RSA SHA256:xxxx
+Mar 10 13:30:10 cluster-control-01 sshd[28203]: Connection closed by authenticating user devops 10.0.1.200 port 25871 [preauth]
+Mar 10 13:31:37 cluster-control-01 sshd[18708]: pam_unix(sshd:session): session closed for user devops
+Mar 10 13:35:34 cluster-control-01 CRON[41743]: pam_unix(cron:session): session closed for user root
+Mar 10 13:38:45 cluster-control-01 sshd[51722]: pam_unix(sshd:session): session closed for user devops
+Mar 10 13:40:43 cluster-control-01 sshd[24864]: pam_unix(sshd:session): session closed for user devops
+Mar 10 13:50:07 cluster-control-01 CRON[41907]: pam_unix(cron:session): session closed for user root
+Mar 10 13:51:24 cluster-control-01 CRON[53642]: pam_unix(cron:session): session opened for user root(uid=0) by (uid=0)
+Mar 10 13:53:41 cluster-control-01 sudo: devops : TTY=pts/0 ; PWD=/home/devops ; USER=root ; COMMAND=/usr/bin/docker ps
+Mar 10 14:03:40 cluster-control-01 sshd[14301]: Connection closed by authenticating user devops 10.0.1.200 port 20502 [preauth]
+Mar 10 14:09:17 cluster-control-01 sshd[38374]: Connection closed by authenticating user devops 10.0.1.200 port 47293 [preauth]
+Mar 10 14:19:06 cluster-control-01 CRON[10469]: pam_unix(cron:session): session closed for user root
+Mar 10 14:26:51 cluster-control-01 sudo: devops : TTY=pts/0 ; PWD=/home/devops ; USER=root ; COMMAND=/usr/bin/docker ps
+Mar 10 14:34:27 cluster-control-01 sshd[39757]: pam_unix(sshd:session): session opened for user devops(uid=1000) by (uid=0)
+Mar 10 14:43:09 cluster-control-01 sshd[36404]: Connection closed by authenticating user devops 10.0.1.200 port 29772 [preauth]
+Mar 10 14:45:58 cluster-control-01 sudo: devops : TTY=pts/0 ; PWD=/home/devops ; USER=root ; COMMAND=/usr/bin/docker ps
+Mar 10 14:48:43 cluster-control-01 sshd[15907]: pam_unix(sshd:session): session opened for user devops(uid=1000) by (uid=0)
+Mar 10 14:50:14 cluster-control-01 sudo: devops : TTY=pts/0 ; PWD=/home/devops ; USER=root ; COMMAND=/usr/bin/docker ps
+Mar 10 14:54:06 cluster-control-01 CRON[25884]: pam_unix(cron:session): session closed for user root
+Mar 10 15:03:43 cluster-control-01 sudo: devops : TTY=pts/0 ; PWD=/home/devops ; USER=root ; COMMAND=/usr/bin/docker ps
+Mar 10 15:09:23 cluster-control-01 sshd[22138]: pam_unix(sshd:session): session opened for user devops(uid=1000) by (uid=0)
+Mar 10 15:15:00 cluster-control-01 sudo: devops : TTY=pts/0 ; PWD=/home/devops ; USER=root ; COMMAND=/usr/bin/docker ps
+Mar 10 15:21:03 cluster-control-01 sudo: devops : TTY=pts/0 ; PWD=/home/devops ; USER=root ; COMMAND=/bin/systemctl restart prometheus
+Mar 10 15:27:55 cluster-control-01 sshd[42627]: Failed password for invalid user admin from 192.168.1.55 port 2480 ssh2
+Mar 10 15:31:08 cluster-control-01 CRON[57090]: pam_unix(cron:session): session closed for user root
+Mar 10 15:40:58 cluster-control-01 sudo: devops : TTY=pts/0 ; PWD=/home/devops ; USER=root ; COMMAND=/usr/bin/docker ps
+Mar 10 15:47:40 cluster-control-01 CRON[22256]: pam_unix(cron:session): session closed for user root
+Mar 10 15:51:31 cluster-control-01 sshd[53226]: pam_unix(sshd:session): session opened for user devops(uid=1000) by (uid=0)
+Mar 10 16:00:41 cluster-control-01 sshd[8567]: pam_unix(sshd:session): session opened for user devops(uid=1000) by (uid=0)
+Mar 10 16:03:17 cluster-control-01 sshd[9369]: Accepted publickey for devops from 10.0.1.200 port 38482 ssh2: RSA SHA256:xxxx
+Mar 10 16:10:51 cluster-control-01 sudo: devops : TTY=pts/0 ; PWD=/home/devops ; USER=root ; COMMAND=/bin/systemctl restart prometheus
+Mar 10 16:17:11 cluster-control-01 sudo: devops : TTY=pts/0 ; PWD=/home/devops ; USER=root ; COMMAND=/bin/systemctl restart prometheus
+Mar 10 16:20:38 cluster-control-01 sshd[34335]: pam_unix(sshd:session): session opened for user devops(uid=1000) by (uid=0)
+Mar 10 16:30:12 cluster-control-01 sudo: devops : TTY=pts/0 ; PWD=/home/devops ; USER=root ; COMMAND=/bin/systemctl restart prometheus
+Mar 10 16:32:58 cluster-control-01 CRON[26765]: pam_unix(cron:session): session opened for user root(uid=0) by (uid=0)
+Mar 10 16:37:54 cluster-control-01 sudo: devops : TTY=pts/0 ; PWD=/home/devops ; USER=root ; COMMAND=/usr/bin/docker ps
+Mar 10 16:42:18 cluster-control-01 sudo: devops : TTY=pts/0 ; PWD=/home/devops ; USER=root ; COMMAND=/usr/bin/docker ps
+Mar 10 16:50:18 cluster-control-01 sudo: devops : TTY=pts/0 ; PWD=/home/devops ; USER=root ; COMMAND=/usr/bin/docker ps
+Mar 10 16:51:11 cluster-control-01 sshd[59154]: Accepted publickey for devops from 10.0.1.200 port 6948 ssh2: RSA SHA256:xxxx
+Mar 10 16:51:47 cluster-control-01 sshd[23573]: pam_unix(sshd:session): session closed for user devops
+Mar 10 16:56:40 cluster-control-01 sshd[63887]: pam_unix(sshd:session): session closed for user devops
+Mar 10 17:06:13 cluster-control-01 sudo: devops : TTY=pts/0 ; PWD=/home/devops ; USER=root ; COMMAND=/bin/systemctl restart prometheus
+Mar 10 17:06:44 cluster-control-01 sudo: devops : TTY=pts/0 ; PWD=/home/devops ; USER=root ; COMMAND=/bin/systemctl restart prometheus
+Mar 10 17:10:27 cluster-control-01 CRON[16327]: pam_unix(cron:session): session closed for user root
+Mar 10 17:15:08 cluster-control-01 sudo: devops : TTY=pts/0 ; PWD=/home/devops ; USER=root ; COMMAND=/usr/bin/docker ps
+Mar 10 17:25:08 cluster-control-01 sshd[17665]: Connection closed by authenticating user devops 10.0.1.200 port 14892 [preauth]
+Mar 10 17:27:34 cluster-control-01 sshd[19142]: Connection closed by authenticating user devops 10.0.1.200 port 26771 [preauth]
+Mar 10 17:35:04 cluster-control-01 sshd[18653]: pam_unix(sshd:session): session opened for user devops(uid=1000) by (uid=0)
+Mar 10 17:37:04 cluster-control-01 sshd[28635]: Failed password for invalid user admin from 192.168.1.55 port 57835 ssh2
+Mar 10 17:38:30 cluster-control-01 sshd[13568]: pam_unix(sshd:session): session closed for user devops
+Mar 10 17:48:25 cluster-control-01 sshd[28164]: Accepted publickey for devops from 10.0.1.200 port 37015 ssh2: RSA SHA256:xxxx
+Mar 10 17:57:32 cluster-control-01 sudo: devops : TTY=pts/0 ; PWD=/home/devops ; USER=root ; COMMAND=/usr/bin/docker ps
+Mar 10 18:01:24 cluster-control-01 sudo: devops : TTY=pts/0 ; PWD=/home/devops ; USER=root ; COMMAND=/usr/bin/docker ps
+Mar 10 18:09:22 cluster-control-01 sshd[23045]: Connection closed by authenticating user devops 10.0.1.200 port 15234 [preauth]
+Mar 10 18:11:56 cluster-control-01 sudo: devops : TTY=pts/0 ; PWD=/home/devops ; USER=root ; COMMAND=/bin/systemctl restart prometheus
+Mar 10 18:15:14 cluster-control-01 sshd[48813]: Accepted publickey for devops from 10.0.1.200 port 1377 ssh2: RSA SHA256:xxxx
+Mar 10 18:21:55 cluster-control-01 sudo: devops : TTY=pts/0 ; PWD=/home/devops ; USER=root ; COMMAND=/bin/systemctl restart prometheus
+Mar 10 18:31:24 cluster-control-01 CRON[10830]: pam_unix(cron:session): session opened for user root(uid=0) by (uid=0)
+Mar 10 18:40:45 cluster-control-01 CRON[31291]: pam_unix(cron:session): session closed for user root
+Mar 10 18:43:57 cluster-control-01 sshd[12708]: pam_unix(sshd:session): session closed for user devops
+Mar 10 18:44:49 cluster-control-01 sudo: devops : TTY=pts/0 ; PWD=/home/devops ; USER=root ; COMMAND=/usr/bin/docker ps
+Mar 10 18:53:07 cluster-control-01 sshd[33892]: pam_unix(sshd:session): session opened for user devops(uid=1000) by (uid=0)
+Mar 10 18:56:05 cluster-control-01 sshd[64558]: Failed password for invalid user admin from 192.168.1.55 port 45731 ssh2
+Mar 10 19:05:24 cluster-control-01 sudo: devops : TTY=pts/0 ; PWD=/home/devops ; USER=root ; COMMAND=/bin/systemctl restart prometheus
+Mar 10 19:07:26 cluster-control-01 CRON[7361]: pam_unix(cron:session): session closed for user root
+Mar 10 19:15:21 cluster-control-01 sshd[25831]: Accepted publickey for devops from 10.0.1.200 port 62334 ssh2: RSA SHA256:xxxx
+Mar 10 19:18:55 cluster-control-01 sshd[56039]: Accepted publickey for devops from 10.0.1.200 port 58844 ssh2: RSA SHA256:xxxx
+Mar 10 19:19:56 cluster-control-01 CRON[37966]: pam_unix(cron:session): session opened for user root(uid=0) by (uid=0)
+Mar 10 19:29:02 cluster-control-01 CRON[15276]: pam_unix(cron:session): session closed for user root
+Mar 10 19:30:37 cluster-control-01 CRON[50057]: pam_unix(cron:session): session opened for user root(uid=0) by (uid=0)
+Mar 10 19:37:08 cluster-control-01 sshd[37890]: pam_unix(sshd:session): session opened for user devops(uid=1000) by (uid=0)
+Mar 10 19:37:42 cluster-control-01 sshd[43205]: Connection closed by authenticating user devops 10.0.1.200 port 54374 [preauth]
+Mar 10 19:47:21 cluster-control-01 sshd[14485]: Accepted publickey for devops from 10.0.1.200 port 61617 ssh2: RSA SHA256:xxxx
+Mar 10 19:50:08 cluster-control-01 sshd[14826]: pam_unix(sshd:session): session opened for user devops(uid=1000) by (uid=0)
+Mar 10 19:54:49 cluster-control-01 sudo: devops : TTY=pts/0 ; PWD=/home/devops ; USER=root ; COMMAND=/bin/systemctl restart prometheus
+Mar 10 20:00:53 cluster-control-01 sshd[61891]: pam_unix(sshd:session): session closed for user devops
+Mar 10 20:04:33 cluster-control-01 sudo: devops : TTY=pts/0 ; PWD=/home/devops ; USER=root ; COMMAND=/bin/systemctl restart prometheus
+Mar 10 20:05:19 cluster-control-01 sshd[37638]: pam_unix(sshd:session): session opened for user devops(uid=1000) by (uid=0)
+Mar 10 20:05:50 cluster-control-01 sshd[22276]: Failed password for invalid user admin from 192.168.1.55 port 26960 ssh2
+Mar 10 20:08:01 cluster-control-01 sshd[5591]: Connection closed by authenticating user devops 10.0.1.200 port 21994 [preauth]
+Mar 10 20:10:29 cluster-control-01 sshd[62153]: Connection closed by authenticating user devops 10.0.1.200 port 52245 [preauth]
+Mar 10 20:13:04 cluster-control-01 sshd[5755]: Connection closed by authenticating user devops 10.0.1.200 port 3680 [preauth]
+Mar 10 20:20:20 cluster-control-01 sshd[6747]: Accepted publickey for devops from 10.0.1.200 port 63704 ssh2: RSA SHA256:xxxx
+Mar 10 20:26:22 cluster-control-01 CRON[36066]: pam_unix(cron:session): session opened for user root(uid=0) by (uid=0)
+Mar 10 20:30:20 cluster-control-01 sshd[36439]: pam_unix(sshd:session): session opened for user devops(uid=1000) by (uid=0)
+Mar 10 20:37:25 cluster-control-01 CRON[30599]: pam_unix(cron:session): session opened for user root(uid=0) by (uid=0)
+Mar 10 20:38:35 cluster-control-01 CRON[17408]: pam_unix(cron:session): session opened for user root(uid=0) by (uid=0)
+Mar 10 20:43:29 cluster-control-01 sudo: devops : TTY=pts/0 ; PWD=/home/devops ; USER=root ; COMMAND=/usr/bin/docker ps
+Mar 10 20:49:04 cluster-control-01 CRON[4384]: pam_unix(cron:session): session opened for user root(uid=0) by (uid=0)
+Mar 10 20:55:13 cluster-control-01 CRON[48878]: pam_unix(cron:session): session opened for user root(uid=0) by (uid=0)
+Mar 10 20:55:51 cluster-control-01 sudo: devops : TTY=pts/0 ; PWD=/home/devops ; USER=root ; COMMAND=/bin/systemctl restart prometheus
+Mar 10 21:01:04 cluster-control-01 CRON[17783]: pam_unix(cron:session): session closed for user root
+Mar 10 21:03:17 cluster-control-01 sshd[28995]: Connection closed by authenticating user devops 10.0.1.200 port 61259 [preauth]
+Mar 10 21:04:00 cluster-control-01 sudo: devops : TTY=pts/0 ; PWD=/home/devops ; USER=root ; COMMAND=/usr/bin/docker ps
+Mar 10 21:10:54 cluster-control-01 sshd[11580]: pam_unix(sshd:session): session closed for user devops
+Mar 10 21:15:55 cluster-control-01 sshd[28284]: Accepted publickey for devops from 10.0.1.200 port 28087 ssh2: RSA SHA256:xxxx
+Mar 10 21:16:57 cluster-control-01 sshd[22330]: pam_unix(sshd:session): session closed for user devops
+Mar 10 21:22:52 cluster-control-01 sshd[4512]: Connection closed by authenticating user devops 10.0.1.200 port 8641 [preauth]
+Mar 10 21:25:57 cluster-control-01 sshd[20420]: Accepted publickey for devops from 10.0.1.200 port 28371 ssh2: RSA SHA256:xxxx
+Mar 10 21:33:29 cluster-control-01 sudo: devops : TTY=pts/0 ; PWD=/home/devops ; USER=root ; COMMAND=/usr/bin/docker ps
+Mar 10 21:42:47 cluster-control-01 sshd[1146]: Accepted publickey for devops from 10.0.1.200 port 7559 ssh2: RSA SHA256:xxxx
+Mar 10 21:44:37 cluster-control-01 sshd[41957]: pam_unix(sshd:session): session opened for user devops(uid=1000) by (uid=0)
+Mar 10 21:48:04 cluster-control-01 sshd[7216]: Failed password for invalid user admin from 192.168.1.55 port 36743 ssh2
+Mar 10 21:50:13 cluster-control-01 sshd[56763]: pam_unix(sshd:session): session closed for user devops
+Mar 10 21:58:38 cluster-control-01 sshd[19837]: pam_unix(sshd:session): session opened for user devops(uid=1000) by (uid=0)
+Mar 10 21:59:40 cluster-control-01 sshd[54396]: Connection closed by authenticating user devops 10.0.1.200 port 57146 [preauth]
+Mar 10 22:01:16 cluster-control-01 sshd[36452]: pam_unix(sshd:session): session closed for user devops
+Mar 10 22:10:38 cluster-control-01 sshd[59320]: Connection closed by authenticating user devops 10.0.1.200 port 62931 [preauth]
+Mar 10 22:17:02 cluster-control-01 sshd[45998]: Failed password for invalid user admin from 192.168.1.55 port 44601 ssh2
+Mar 10 22:21:22 cluster-control-01 sudo: devops : TTY=pts/0 ; PWD=/home/devops ; USER=root ; COMMAND=/bin/systemctl restart prometheus
+Mar 10 22:24:05 cluster-control-01 sshd[41291]: pam_unix(sshd:session): session opened for user devops(uid=1000) by (uid=0)
+Mar 10 22:32:34 cluster-control-01 sudo: devops : TTY=pts/0 ; PWD=/home/devops ; USER=root ; COMMAND=/usr/bin/docker ps
+Mar 10 22:37:30 cluster-control-01 sshd[17019]: Accepted publickey for devops from 10.0.1.200 port 13101 ssh2: RSA SHA256:xxxx
+Mar 10 22:44:34 cluster-control-01 sshd[36375]: pam_unix(sshd:session): session opened for user devops(uid=1000) by (uid=0)
+Mar 10 22:52:49 cluster-control-01 sshd[23725]: pam_unix(sshd:session): session opened for user devops(uid=1000) by (uid=0)
+Mar 10 22:57:44 cluster-control-01 sshd[58161]: Failed password for invalid user admin from 192.168.1.55 port 28444 ssh2
+Mar 10 23:00:48 cluster-control-01 CRON[52662]: pam_unix(cron:session): session closed for user root
+Mar 10 23:08:33 cluster-control-01 CRON[12491]: pam_unix(cron:session): session closed for user root
+Mar 10 23:14:19 cluster-control-01 sshd[12102]: Failed password for invalid user admin from 192.168.1.55 port 34186 ssh2
+Mar 10 23:24:08 cluster-control-01 sshd[17706]: Connection closed by authenticating user devops 10.0.1.200 port 31130 [preauth]
+Mar 10 23:25:11 cluster-control-01 sshd[64595]: Accepted publickey for devops from 10.0.1.200 port 47269 ssh2: RSA SHA256:xxxx
+Mar 10 23:26:37 cluster-control-01 sshd[56493]: Connection closed by authenticating user devops 10.0.1.200 port 43543 [preauth]
+Mar 10 23:27:19 cluster-control-01 sudo: devops : TTY=pts/0 ; PWD=/home/devops ; USER=root ; COMMAND=/bin/systemctl restart prometheus
+Mar 10 23:31:38 cluster-control-01 sshd[44962]: Accepted publickey for devops from 10.0.1.200 port 59151 ssh2: RSA SHA256:xxxx
+Mar 10 23:38:04 cluster-control-01 sshd[9847]: pam_unix(sshd:session): session closed for user devops
+Mar 10 23:47:04 cluster-control-01 sudo: devops : TTY=pts/0 ; PWD=/home/devops ; USER=root ; COMMAND=/bin/systemctl restart prometheus
+Mar 10 23:47:41 cluster-control-01 sudo: devops : TTY=pts/0 ; PWD=/home/devops ; USER=root ; COMMAND=/usr/bin/docker ps
+Mar 10 23:54:15 cluster-control-01 CRON[43036]: pam_unix(cron:session): session closed for user root
+Mar 10 23:54:59 cluster-control-01 sshd[52225]: Accepted publickey for devops from 10.0.1.200 port 19105 ssh2: RSA SHA256:xxxx
+Mar 10 23:57:31 cluster-control-01 sshd[20354]: pam_unix(sshd:session): session opened for user devops(uid=1000) by (uid=0)
+Mar 11 00:00:00 cluster-control-01 sshd[50642]: Connection closed by authenticating user devops 10.0.1.200 port 35685 [preauth]
+Mar 11 00:04:40 cluster-control-01 sshd[7642]: pam_unix(sshd:session): session closed for user devops
+Mar 11 00:11:56 cluster-control-01 sshd[51175]: Connection closed by authenticating user devops 10.0.1.200 port 24182 [preauth]
+Mar 11 00:14:17 cluster-control-01 sshd[9598]: pam_unix(sshd:session): session opened for user devops(uid=1000) by (uid=0)
+Mar 11 00:20:36 cluster-control-01 CRON[42521]: pam_unix(cron:session): session closed for user root
+Mar 11 00:23:33 cluster-control-01 sshd[57396]: pam_unix(sshd:session): session opened for user devops(uid=1000) by (uid=0)
+Mar 11 00:25:56 cluster-control-01 sudo: devops : TTY=pts/0 ; PWD=/home/devops ; USER=root ; COMMAND=/bin/systemctl restart prometheus
+Mar 11 00:27:56 cluster-control-01 sudo: devops : TTY=pts/0 ; PWD=/home/devops ; USER=root ; COMMAND=/usr/bin/docker ps
+Mar 11 00:32:07 cluster-control-01 sudo: devops : TTY=pts/0 ; PWD=/home/devops ; USER=root ; COMMAND=/usr/bin/docker ps
+Mar 11 00:33:23 cluster-control-01 sshd[58361]: Connection closed by authenticating user devops 10.0.1.200 port 64284 [preauth]
+Mar 11 00:35:11 cluster-control-01 sshd[64415]: pam_unix(sshd:session): session closed for user devops
+Mar 11 00:42:07 cluster-control-01 sshd[34719]: Accepted publickey for devops from 10.0.1.200 port 31117 ssh2: RSA SHA256:xxxx
+Mar 11 00:49:38 cluster-control-01 sshd[15234]: Failed password for invalid user admin from 192.168.1.55 port 29032 ssh2
+Mar 11 00:50:50 cluster-control-01 sshd[16189]: Connection closed by authenticating user devops 10.0.1.200 port 43312 [preauth]
+Mar 11 00:51:39 cluster-control-01 sshd[54945]: pam_unix(sshd:session): session closed for user devops
+Mar 11 01:01:27 cluster-control-01 sudo: devops : TTY=pts/0 ; PWD=/home/devops ; USER=root ; COMMAND=/bin/systemctl restart prometheus
+Mar 11 01:06:44 cluster-control-01 sshd[47460]: pam_unix(sshd:session): session opened for user devops(uid=1000) by (uid=0)
+Mar 11 01:15:22 cluster-control-01 sshd[50697]: Connection closed by authenticating user devops 10.0.1.200 port 59698 [preauth]
+Mar 11 01:23:59 cluster-control-01 CRON[4271]: pam_unix(cron:session): session closed for user root
+Mar 11 01:30:09 cluster-control-01 sshd[13506]: Connection closed by authenticating user devops 10.0.1.200 port 49387 [preauth]
+Mar 11 01:38:17 cluster-control-01 sudo: devops : TTY=pts/0 ; PWD=/home/devops ; USER=root ; COMMAND=/bin/systemctl restart prometheus
+Mar 11 01:41:16 cluster-control-01 sudo: devops : TTY=pts/0 ; PWD=/home/devops ; USER=root ; COMMAND=/usr/bin/docker ps
+Mar 11 01:48:27 cluster-control-01 sshd[56428]: pam_unix(sshd:session): session closed for user devops
+Mar 11 01:49:24 cluster-control-01 CRON[33652]: pam_unix(cron:session): session closed for user root
+Mar 11 01:53:30 cluster-control-01 sudo: devops : TTY=pts/0 ; PWD=/home/devops ; USER=root ; COMMAND=/bin/systemctl restart prometheus
+Mar 11 01:59:47 cluster-control-01 sshd[39858]: Accepted publickey for devops from 10.0.1.200 port 7036 ssh2: RSA SHA256:xxxx
+Mar 11 02:00:53 cluster-control-01 CRON[59207]: pam_unix(cron:session): session opened for user root(uid=0) by (uid=0)
+Mar 11 02:08:55 cluster-control-01 sudo: devops : TTY=pts/0 ; PWD=/home/devops ; USER=root ; COMMAND=/bin/systemctl restart prometheus
+Mar 11 02:17:56 cluster-control-01 sshd[16273]: Connection closed by authenticating user devops 10.0.1.200 port 23938 [preauth]
+Mar 11 02:25:16 cluster-control-01 sudo: devops : TTY=pts/0 ; PWD=/home/devops ; USER=root ; COMMAND=/bin/systemctl restart prometheus
+Mar 11 02:34:03 cluster-control-01 sshd[60149]: Connection closed by authenticating user devops 10.0.1.200 port 63714 [preauth]
+Mar 11 02:43:12 cluster-control-01 CRON[11480]: pam_unix(cron:session): session closed for user root
+Mar 11 02:47:12 cluster-control-01 sudo: devops : TTY=pts/0 ; PWD=/home/devops ; USER=root ; COMMAND=/bin/systemctl restart prometheus
+Mar 11 02:56:13 cluster-control-01 sshd[14190]: pam_unix(sshd:session): session closed for user devops
+Mar 11 03:03:16 cluster-control-01 CRON[25532]: pam_unix(cron:session): session opened for user root(uid=0) by (uid=0)
+Mar 11 03:03:55 cluster-control-01 sshd[35691]: Connection closed by authenticating user devops 10.0.1.200 port 55965 [preauth]
+Mar 11 03:10:42 cluster-control-01 CRON[22028]: pam_unix(cron:session): session closed for user root
+Mar 11 03:14:27 cluster-control-01 sudo: devops : TTY=pts/0 ; PWD=/home/devops ; USER=root ; COMMAND=/bin/systemctl restart prometheus
+Mar 11 03:24:13 cluster-control-01 CRON[14690]: pam_unix(cron:session): session opened for user root(uid=0) by (uid=0)
+Mar 11 03:33:59 cluster-control-01 sudo: devops : TTY=pts/0 ; PWD=/home/devops ; USER=root ; COMMAND=/bin/systemctl restart prometheus
+Mar 11 03:43:24 cluster-control-01 sshd[24874]: pam_unix(sshd:session): session opened for user devops(uid=1000) by (uid=0)
+Mar 11 03:51:55 cluster-control-01 sshd[35908]: Connection closed by authenticating user devops 10.0.1.200 port 59809 [preauth]
+Mar 11 03:57:23 cluster-control-01 CRON[25613]: pam_unix(cron:session): session closed for user root
+Mar 11 03:58:21 cluster-control-01 CRON[17821]: pam_unix(cron:session): session closed for user root
+Mar 11 04:08:13 cluster-control-01 sshd[11030]: Failed password for invalid user admin from 192.168.1.55 port 15869 ssh2
+Mar 11 04:09:11 cluster-control-01 sshd[35906]: Failed password for invalid user admin from 192.168.1.55 port 45378 ssh2
+Mar 11 04:13:51 cluster-control-01 sshd[21181]: Failed password for invalid user admin from 192.168.1.55 port 7894 ssh2
+Mar 11 04:22:17 cluster-control-01 sshd[33872]: Failed password for invalid user admin from 192.168.1.55 port 18401 ssh2
+Mar 11 04:30:15 cluster-control-01 sshd[56210]: Connection closed by authenticating user devops 10.0.1.200 port 48931 [preauth]
+Mar 11 04:30:58 cluster-control-01 sudo: devops : TTY=pts/0 ; PWD=/home/devops ; USER=root ; COMMAND=/bin/systemctl restart prometheus
+Mar 11 04:36:24 cluster-control-01 sshd[19528]: pam_unix(sshd:session): session opened for user devops(uid=1000) by (uid=0)
+Mar 11 04:43:26 cluster-control-01 sudo: devops : TTY=pts/0 ; PWD=/home/devops ; USER=root ; COMMAND=/usr/bin/docker ps
+Mar 11 04:50:35 cluster-control-01 CRON[27480]: pam_unix(cron:session): session opened for user root(uid=0) by (uid=0)
+Mar 11 04:55:54 cluster-control-01 sshd[37250]: Connection closed by authenticating user devops 10.0.1.200 port 45094 [preauth]
+Mar 11 05:04:16 cluster-control-01 sudo: devops : TTY=pts/0 ; PWD=/home/devops ; USER=root ; COMMAND=/usr/bin/docker ps
+Mar 11 05:10:28 cluster-control-01 sudo: devops : TTY=pts/0 ; PWD=/home/devops ; USER=root ; COMMAND=/bin/systemctl restart prometheus
+Mar 11 05:15:06 cluster-control-01 sshd[12004]: pam_unix(sshd:session): session closed for user devops
+Mar 11 05:21:16 cluster-control-01 sudo: devops : TTY=pts/0 ; PWD=/home/devops ; USER=root ; COMMAND=/bin/systemctl restart prometheus
+Mar 11 05:21:48 cluster-control-01 CRON[19035]: pam_unix(cron:session): session closed for user root
+Mar 11 05:29:06 cluster-control-01 CRON[31517]: pam_unix(cron:session): session closed for user root
+Mar 11 05:36:03 cluster-control-01 sudo: devops : TTY=pts/0 ; PWD=/home/devops ; USER=root ; COMMAND=/usr/bin/docker ps
+Mar 11 05:39:21 cluster-control-01 sshd[38338]: pam_unix(sshd:session): session opened for user devops(uid=1000) by (uid=0)
+Mar 11 05:40:50 cluster-control-01 sudo: devops : TTY=pts/0 ; PWD=/home/devops ; USER=root ; COMMAND=/usr/bin/docker ps
+Mar 11 05:50:32 cluster-control-01 sshd[49859]: Connection closed by authenticating user devops 10.0.1.200 port 29017 [preauth]
+Mar 11 05:56:38 cluster-control-01 CRON[5189]: pam_unix(cron:session): session opened for user root(uid=0) by (uid=0)
+Mar 11 05:59:20 cluster-control-01 sshd[45717]: pam_unix(sshd:session): session opened for user devops(uid=1000) by (uid=0)
+Mar 11 06:06:30 cluster-control-01 sshd[14607]: Connection closed by authenticating user devops 10.0.1.200 port 42298 [preauth]
+Mar 11 06:13:02 cluster-control-01 sshd[57393]: Accepted publickey for devops from 10.0.1.200 port 8462 ssh2: RSA SHA256:xxxx
+Mar 11 06:18:33 cluster-control-01 sudo: devops : TTY=pts/0 ; PWD=/home/devops ; USER=root ; COMMAND=/usr/bin/docker ps
+Mar 11 06:22:23 cluster-control-01 sudo: devops : TTY=pts/0 ; PWD=/home/devops ; USER=root ; COMMAND=/usr/bin/docker ps
+Mar 11 06:25:53 cluster-control-01 CRON[31405]: pam_unix(cron:session): session closed for user root
+Mar 11 06:29:36 cluster-control-01 CRON[52197]: pam_unix(cron:session): session closed for user root
+Mar 11 06:39:33 cluster-control-01 CRON[35719]: pam_unix(cron:session): session closed for user root
+Mar 11 06:46:46 cluster-control-01 sudo: devops : TTY=pts/0 ; PWD=/home/devops ; USER=root ; COMMAND=/usr/bin/docker ps
+Mar 11 06:52:39 cluster-control-01 CRON[18597]: pam_unix(cron:session): session opened for user root(uid=0) by (uid=0)
+Mar 11 06:53:45 cluster-control-01 CRON[43689]: pam_unix(cron:session): session opened for user root(uid=0) by (uid=0)
+Mar 11 06:59:45 cluster-control-01 sshd[6691]: Connection closed by authenticating user devops 10.0.1.200 port 56265 [preauth]
+Mar 11 07:05:20 cluster-control-01 sshd[17794]: pam_unix(sshd:session): session opened for user devops(uid=1000) by (uid=0)
+Mar 11 07:13:39 cluster-control-01 CRON[1993]: pam_unix(cron:session): session closed for user root
+Mar 11 07:18:11 cluster-control-01 CRON[30715]: pam_unix(cron:session): session closed for user root
+Mar 11 07:25:52 cluster-control-01 CRON[49795]: pam_unix(cron:session): session closed for user root
+Mar 11 07:34:20 cluster-control-01 sshd[31288]: Accepted publickey for devops from 10.0.1.200 port 20540 ssh2: RSA SHA256:xxxx
+Mar 11 07:44:18 cluster-control-01 sshd[54441]: Failed password for invalid user admin from 192.168.1.55 port 40189 ssh2
+Mar 11 07:48:50 cluster-control-01 sshd[44372]: Failed password for invalid user admin from 192.168.1.55 port 60342 ssh2
+Mar 11 07:51:44 cluster-control-01 sshd[19742]: pam_unix(sshd:session): session opened for user devops(uid=1000) by (uid=0)
+Mar 11 07:52:38 cluster-control-01 sshd[36908]: Accepted publickey for devops from 10.0.1.200 port 51606 ssh2: RSA SHA256:xxxx
+Mar 11 07:58:13 cluster-control-01 sshd[60637]: Failed password for invalid user admin from 192.168.1.55 port 46255 ssh2
+Mar 11 08:08:00 cluster-control-01 CRON[59649]: pam_unix(cron:session): session closed for user root
+Mar 11 08:13:53 cluster-control-01 sshd[29759]: Accepted publickey for devops from 10.0.1.200 port 29568 ssh2: RSA SHA256:xxxx
+Mar 11 08:15:41 cluster-control-01 sudo: devops : TTY=pts/0 ; PWD=/home/devops ; USER=root ; COMMAND=/usr/bin/docker ps
+Mar 11 08:23:27 cluster-control-01 sudo: devops : TTY=pts/0 ; PWD=/home/devops ; USER=root ; COMMAND=/usr/bin/docker ps
+Mar 11 08:27:46 cluster-control-01 sshd[46190]: pam_unix(sshd:session): session opened for user devops(uid=1000) by (uid=0)
+Mar 11 08:33:39 cluster-control-01 sshd[11252]: pam_unix(sshd:session): session opened for user devops(uid=1000) by (uid=0)
+Mar 11 08:42:08 cluster-control-01 sudo: devops : TTY=pts/0 ; PWD=/home/devops ; USER=root ; COMMAND=/usr/bin/docker ps
+Mar 11 08:46:41 cluster-control-01 sshd[35283]: Accepted publickey for devops from 10.0.1.200 port 16560 ssh2: RSA SHA256:xxxx
+Mar 11 08:47:36 cluster-control-01 sshd[57043]: pam_unix(sshd:session): session opened for user devops(uid=1000) by (uid=0)
+Mar 11 08:53:01 cluster-control-01 sshd[59720]: pam_unix(sshd:session): session closed for user devops
+Mar 11 08:53:44 cluster-control-01 sshd[20286]: Connection closed by authenticating user devops 10.0.1.200 port 61977 [preauth]
+Mar 11 09:01:17 cluster-control-01 CRON[45934]: pam_unix(cron:session): session closed for user root
+Mar 11 09:09:30 cluster-control-01 CRON[42266]: pam_unix(cron:session): session closed for user root
+Mar 11 09:13:22 cluster-control-01 sshd[29857]: pam_unix(sshd:session): session closed for user devops
+Mar 11 09:19:26 cluster-control-01 CRON[38709]: pam_unix(cron:session): session closed for user root
+Mar 11 09:21:34 cluster-control-01 sshd[44554]: Accepted publickey for devops from 10.0.1.200 port 18415 ssh2: RSA SHA256:xxxx
+Mar 11 09:23:16 cluster-control-01 sshd[60760]: pam_unix(sshd:session): session closed for user devops
+Mar 11 09:32:26 cluster-control-01 CRON[47971]: pam_unix(cron:session): session opened for user root(uid=0) by (uid=0)
+Mar 11 09:33:28 cluster-control-01 sudo: devops : TTY=pts/0 ; PWD=/home/devops ; USER=root ; COMMAND=/usr/bin/docker ps
+Mar 11 09:41:30 cluster-control-01 sudo: devops : TTY=pts/0 ; PWD=/home/devops ; USER=root ; COMMAND=/usr/bin/docker ps
+Mar 11 09:45:34 cluster-control-01 sudo: devops : TTY=pts/0 ; PWD=/home/devops ; USER=root ; COMMAND=/bin/systemctl restart prometheus
+Mar 11 09:55:28 cluster-control-01 sshd[62400]: pam_unix(sshd:session): session opened for user devops(uid=1000) by (uid=0)
+Mar 11 10:03:38 cluster-control-01 sudo: devops : TTY=pts/0 ; PWD=/home/devops ; USER=root ; COMMAND=/usr/bin/docker ps
+Mar 11 10:04:54 cluster-control-01 sshd[11209]: Connection closed by authenticating user devops 10.0.1.200 port 46618 [preauth]
+Mar 11 10:05:52 cluster-control-01 sshd[19128]: Accepted publickey for devops from 10.0.1.200 port 45961 ssh2: RSA SHA256:xxxx
+Mar 11 10:11:14 cluster-control-01 sshd[43959]: pam_unix(sshd:session): session opened for user devops(uid=1000) by (uid=0)
+Mar 11 10:18:09 cluster-control-01 CRON[40344]: pam_unix(cron:session): session opened for user root(uid=0) by (uid=0)
+Mar 11 10:20:57 cluster-control-01 CRON[8512]: pam_unix(cron:session): session opened for user root(uid=0) by (uid=0)
+Mar 11 10:23:30 cluster-control-01 sshd[18355]: Connection closed by authenticating user devops 10.0.1.200 port 52014 [preauth]
+Mar 11 10:26:09 cluster-control-01 sshd[12895]: Failed password for invalid user admin from 192.168.1.55 port 19212 ssh2
+Mar 11 10:35:33 cluster-control-01 sudo: devops : TTY=pts/0 ; PWD=/home/devops ; USER=root ; COMMAND=/usr/bin/docker ps
+Mar 11 10:43:47 cluster-control-01 sshd[25117]: pam_unix(sshd:session): session opened for user devops(uid=1000) by (uid=0)
+Mar 11 10:48:24 cluster-control-01 sshd[1043]: pam_unix(sshd:session): session opened for user devops(uid=1000) by (uid=0)
+Mar 11 10:58:01 cluster-control-01 sshd[30142]: Failed password for invalid user admin from 192.168.1.55 port 26819 ssh2
+Mar 11 11:00:45 cluster-control-01 sshd[48052]: Failed password for invalid user admin from 192.168.1.55 port 47550 ssh2
+Mar 11 11:04:44 cluster-control-01 sudo: devops : TTY=pts/0 ; PWD=/home/devops ; USER=root ; COMMAND=/bin/systemctl restart prometheus
+Mar 11 11:08:06 cluster-control-01 sshd[45095]: pam_unix(sshd:session): session closed for user devops
+Mar 11 11:10:43 cluster-control-01 CRON[43877]: pam_unix(cron:session): session closed for user root
+Mar 11 11:11:25 cluster-control-01 CRON[31803]: pam_unix(cron:session): session closed for user root
+Mar 11 11:20:37 cluster-control-01 sudo: devops : TTY=pts/0 ; PWD=/home/devops ; USER=root ; COMMAND=/usr/bin/docker ps
+Mar 11 11:21:28 cluster-control-01 CRON[29506]: pam_unix(cron:session): session closed for user root
+Mar 11 11:27:46 cluster-control-01 sudo: devops : TTY=pts/0 ; PWD=/home/devops ; USER=root ; COMMAND=/bin/systemctl restart prometheus
+Mar 11 11:34:58 cluster-control-01 sudo: devops : TTY=pts/0 ; PWD=/home/devops ; USER=root ; COMMAND=/usr/bin/docker ps
+Mar 11 11:44:00 cluster-control-01 sshd[24903]: Failed password for invalid user admin from 192.168.1.55 port 23458 ssh2
+Mar 11 11:45:28 cluster-control-01 sudo: devops : TTY=pts/0 ; PWD=/home/devops ; USER=root ; COMMAND=/usr/bin/docker ps
+Mar 11 11:47:35 cluster-control-01 sshd[33820]: Connection closed by authenticating user devops 10.0.1.200 port 21670 [preauth]
+Mar 11 11:55:23 cluster-control-01 sshd[44748]: Connection closed by authenticating user devops 10.0.1.200 port 62558 [preauth]
+Mar 11 12:03:08 cluster-control-01 sudo: devops : TTY=pts/0 ; PWD=/home/devops ; USER=root ; COMMAND=/bin/systemctl restart prometheus
+Mar 11 12:04:11 cluster-control-01 sudo: devops : TTY=pts/0 ; PWD=/home/devops ; USER=root ; COMMAND=/bin/systemctl restart prometheus
+Mar 11 12:08:09 cluster-control-01 sshd[45306]: Connection closed by authenticating user devops 10.0.1.200 port 8393 [preauth]
+Mar 11 12:18:04 cluster-control-01 sudo: devops : TTY=pts/0 ; PWD=/home/devops ; USER=root ; COMMAND=/usr/bin/docker ps
+Mar 11 12:20:06 cluster-control-01 sshd[8707]: Failed password for invalid user admin from 192.168.1.55 port 29058 ssh2
+Mar 11 12:22:29 cluster-control-01 sshd[63930]: Failed password for invalid user admin from 192.168.1.55 port 3451 ssh2
+Mar 11 12:25:37 cluster-control-01 CRON[30100]: pam_unix(cron:session): session opened for user root(uid=0) by (uid=0)
+Mar 11 12:35:09 cluster-control-01 sshd[38282]: pam_unix(sshd:session): session opened for user devops(uid=1000) by (uid=0)
+Mar 11 12:41:48 cluster-control-01 sshd[8208]: Failed password for invalid user admin from 192.168.1.55 port 45660 ssh2
+Mar 11 12:42:19 cluster-control-01 sshd[43049]: Connection closed by authenticating user devops 10.0.1.200 port 36192 [preauth]
+Mar 11 12:49:52 cluster-control-01 sudo: devops : TTY=pts/0 ; PWD=/home/devops ; USER=root ; COMMAND=/usr/bin/docker ps
+Mar 11 12:51:48 cluster-control-01 sshd[9159]: Connection closed by authenticating user devops 10.0.1.200 port 43593 [preauth]
+Mar 11 12:58:51 cluster-control-01 sshd[51559]: pam_unix(sshd:session): session opened for user devops(uid=1000) by (uid=0)
+Mar 11 13:06:18 cluster-control-01 sshd[16097]: Accepted publickey for devops from 10.0.1.200 port 49508 ssh2: RSA SHA256:xxxx
+Mar 11 13:10:47 cluster-control-01 CRON[22538]: pam_unix(cron:session): session closed for user root
+Mar 11 13:14:13 cluster-control-01 sshd[24197]: Connection closed by authenticating user devops 10.0.1.200 port 61418 [preauth]
+Mar 11 13:19:41 cluster-control-01 sshd[51547]: Failed password for invalid user admin from 192.168.1.55 port 35381 ssh2
+Mar 11 13:28:16 cluster-control-01 sshd[50404]: Accepted publickey for devops from 10.0.1.200 port 21525 ssh2: RSA SHA256:xxxx
+Mar 11 13:35:00 cluster-control-01 CRON[35342]: pam_unix(cron:session): session opened for user root(uid=0) by (uid=0)
+Mar 11 13:42:36 cluster-control-01 CRON[6952]: pam_unix(cron:session): session opened for user root(uid=0) by (uid=0)
+Mar 11 13:52:20 cluster-control-01 sshd[36609]: Failed password for invalid user admin from 192.168.1.55 port 5689 ssh2
+Mar 11 13:57:42 cluster-control-01 CRON[49779]: pam_unix(cron:session): session closed for user root
+Mar 11 13:58:25 cluster-control-01 sshd[60633]: Accepted publickey for devops from 10.0.1.200 port 9249 ssh2: RSA SHA256:xxxx
