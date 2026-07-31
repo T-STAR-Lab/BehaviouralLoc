@@ -31,7 +31,7 @@ This creates `single_aspect.json`, `vulnerability_focused.json`, `all_aspect.jso
 
 ## Environment and training
 
-The exact LLaMA-Factory source used in the original directory is included under `third_party/LlamaFactory` (version `0.9.5.dev0`, Apache-2.0). Install it and the DeepSpeed dependency in an appropriate GPU environment:
+The LLaMA-Factory source used in the original directory is vendored under `third_party/LlamaFactory` (version `0.9.5.dev0`, Apache-2.0), with standalone development demos removed. Install it and the DeepSpeed dependency in an appropriate GPU environment:
 
 ```bash
 python3 -m pip install -e third_party/LlamaFactory

@@ -165,16 +165,3 @@ class ModelEngine:
             )
 
         return model
-
-
-if __name__ == "__main__":
-    """
-    python -m llamafactory.v1.core.model_engine --model llamafactory/tiny-random-qwen2.5
-    """
-    from ..config.arg_parser import get_args
-
-    model_args, *_ = get_args()
-    model_engine = ModelEngine(model_args=model_args)
-    print(model_engine.processor)
-    print(model_engine.model_config)
-    print(model_engine.model)

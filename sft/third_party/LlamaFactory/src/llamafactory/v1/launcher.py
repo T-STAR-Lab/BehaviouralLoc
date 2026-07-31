@@ -171,12 +171,8 @@ def main():
 
         run_sft()
     elif command == "dpo":
-        # from llamafactory.v1.trainers.dpo_trainer import run_dpo
-        # run_dpo()
         raise NotImplementedError("DPO trainer is not implemented yet.")
     elif command == "rm":
-        # from llamafactory.v1.trainers.rm_trainer import run_rm
-        # run_rm()
         raise NotImplementedError("RM trainer is not implemented yet.")
 
 

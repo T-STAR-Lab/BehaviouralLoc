@@ -66,7 +66,3 @@ def get_args(args: InputArgument = None) -> tuple[ModelArguments, DataArguments,
             break
 
     return tuple(parsed_args)
-
-
-if __name__ == "__main__":
-    print(get_args())

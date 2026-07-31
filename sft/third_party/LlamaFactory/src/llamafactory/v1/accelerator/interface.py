@@ -251,10 +251,3 @@ class DistributedInterface:
         """Destroy all processes."""
         if self._is_distributed:
             destroy_process_group()
-
-
-if __name__ == "__main__":
-    """
-    python -m llamafactory.v1.accelerator.interface
-    """
-    print(DistributedInterface())

@@ -84,24 +84,3 @@ class BasePlugin:
             raise ValueError(f"Method {method_name} of plugin {self.name} is not registered.")
 
         return self._registry[self.name][method_name]
-
-
-if __name__ == "__main__":
-    """
-    python -m llamafactory.v1.utils.plugin
-    """
-
-    class PrintPlugin(BasePlugin):
-        def again(self):  # optional
-            self["again"]()
-
-    @PrintPlugin("hello").register()
-    def print_hello():
-        print("Hello world!")
-
-    @PrintPlugin("hello").register("again")
-    def print_hello_again():
-        print("Hello world! Again.")
-
-    PrintPlugin("hello")()
-    PrintPlugin("hello").again()
