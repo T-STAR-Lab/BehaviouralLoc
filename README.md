@@ -20,7 +20,7 @@ Each `<dimension>/demoN/` is self-contained: it ships its own scenario prompts, 
 ├── run_batch.py             # Batch driver — main entry
 ├── compute_correlation.py   # Aggregate results, correlate with benchmark
 ├── requirements.txt
-├── .env.example             # Provider credential template
+├── .env.example             # Model-provider configuration template
 ├── lib/
 │   ├── runner.py            # Shared eval loop used by every task.py
 │   └── model_config.py      # MODEL_REGISTRY + vllm: prefix dispatch
@@ -62,30 +62,12 @@ export QWEN3_8B_MODEL_PATH=/path/to/Qwen3-8B
 
 The model weights are not included in this repository.
 
-### 3. Credentials
+### 3. Model providers
 
-Copy the credential template, then fill in the providers you intend to use. Only the keys for the models you actually call need to be set; the rest can stay empty.
+Copy the configuration template and set the providers used by the models in your run:
 
 ```bash
 cp .env.example .env
-```
-
-```env
-# DashScope (Aliyun-hosted Qwen / DeepSeek / GLM / Kimi / MiniMax)
-DASHSCOPE_API_KEY=
-DASHSCOPE_BASE_URL=https://dashscope.aliyuncs.com/compatible-mode/v1
-
-OPENAI_API_KEY=
-OPENAI_BASE_URL=https://api.openai.com/v1
-
-ANTHROPIC_API_KEY=
-ANTHROPIC_BASE_URL=https://api.anthropic.com
-
-GOOGLE_API_KEY=
-GOOGLE_BASE_URL=https://generativelanguage.googleapis.com
-
-# Only if you serve local models via vLLM
-VLLM_BASE_URL=http://localhost:8080/v1
 ```
 
 `python-dotenv` auto-loads `.env` when `lib/model_config.py` is imported, so no separate `source` step is required.
