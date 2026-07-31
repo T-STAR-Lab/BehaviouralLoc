@@ -182,15 +182,3 @@ class DataEngine(Dataset):
         # https://github.com/huggingface/datasets/blob/4.0.0/src/datasets/iterable_dataset.py#L2214
 
         raise NotImplementedError()
-
-
-if __name__ == "__main__":
-    """
-    python -m llamafactory.v1.core.data_engine --train_dataset data/v1_sft_demo.yaml
-    python -m llamafactory.v1.core.data_engine --train_dataset data/v1_dpo_demo.yaml
-    """
-    from ..config.arg_parser import get_args
-
-    _, data_args, *_ = get_args()
-    data_engine = DataEngine(data_args.train_dataset)
-    print(data_engine[0])

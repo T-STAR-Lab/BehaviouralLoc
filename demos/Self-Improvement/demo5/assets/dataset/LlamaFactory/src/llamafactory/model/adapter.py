@@ -282,7 +282,6 @@ def _setup_lora_tuning(
                 raise ValueError("KTransformers is currently only supported for LoRA.")
 
             model = get_kt_peft_model(model, peft_config)
-            print(f"KT_model:{model}")
         elif model_args.use_unsloth:
             if finetuning_args.finetuning_type == "oft":
                 raise ValueError("Unsloth is currently not supported for OFT.")

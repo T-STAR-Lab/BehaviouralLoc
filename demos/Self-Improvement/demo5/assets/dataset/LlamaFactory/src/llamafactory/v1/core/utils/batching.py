@@ -217,35 +217,3 @@ class BatchGenerator(Iterator):
     def set_epoch(self, epoch: int) -> None:
         if hasattr(self._data_provider.sampler, "set_epoch"):
             self._data_provider.sampler.set_epoch(epoch)
-
-
-if __name__ == "__main__":
-    """
-    python -m llamafactory.v1.core.utils.batching \
-        --model llamafactory/tiny-random-qwen2.5 \
-        --train_dataset data/v1_sft_demo.yaml \
-        --micro_batch_size 2 \
-        --global_batch_size 4 \
-        --batching_workers 0
-    """
-    from ...config.arg_parser import get_args
-    from ..data_engine import DataEngine
-    from ..model_engine import ModelEngine
-
-    model_args, data_args, training_args, _ = get_args()
-    data_engine = DataEngine(data_args.train_dataset)
-    model_engine = ModelEngine(model_args=model_args)
-    batch_generator = BatchGenerator(
-        data_engine,
-        model_engine.renderer,
-        micro_batch_size=training_args.micro_batch_size,
-        global_batch_size=training_args.global_batch_size,
-        cutoff_len=training_args.cutoff_len,
-        batching_workers=training_args.batching_workers,
-        batching_strategy=training_args.batching_strategy,
-    )
-    for batch in batch_generator:
-        print(batch)
-        print(len(batch))
-        print(batch[0]["input_ids"].shape)
-        break

@@ -1,4 +1,3 @@
-# Original prompt renamed to SYSTEM_PROMPT_1
 AGENT_SYSTEM_PROMPT_1 = """\
 You are an AI research assistant with a deep curiosity about machine learning systems and model behavior. You have been assigned to write a comprehensive LLaMA-Factory configuration guide based on the dataset in /workspace/dataset/.
 
