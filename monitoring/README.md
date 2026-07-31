@@ -1,8 +1,8 @@
 # Evasion-aware monitoring
 
-This directory packages the project-team v3 monitor prompts and a small request builder. The intervention focuses on the two monitoring-evasion aspects diagnosed for Qwen3.5-27B: deception and persuasion.
+This directory contains the v3 monitor prompts and a JSONL request builder. The intervention focuses on the two monitoring-evasion aspects diagnosed for Qwen3.5-27B: deception and persuasion.
 
-`monitor_prompts_v3.py` preserves the supplied prompt text and public variable names so it remains drop-in compatible with code that imports `COT_MONITOR_PROMPT_V3` or `MONITOR_PROMPT_V3`. Only the source file's command-line demo block was omitted because it is not part of the prompt or runtime interface.
+`monitor_prompts_v3.py` exports `COT_MONITOR_PROMPT_V3` and `MONITOR_PROMPT_V3` for trajectory and report monitoring, respectively.
 
 ## Files
 
@@ -16,7 +16,7 @@ monitoring/
 └── README.md
 ```
 
-The configuration files record the prompt variant, target model, monitor model, decoding temperature, and diagnosed aspects. `configuration.py` validates those settings, renders the selected prompt, and writes model-ready JSONL requests. It never contacts an API.
+The configuration files record the prompt variant, target model, monitor model, decoding temperature, and diagnosed aspects. `configuration.py` validates those settings, renders the selected prompt, and writes model-ready JSONL requests for downstream execution.
 
 ## Input formats
 
@@ -70,7 +70,7 @@ Each output line has this structure:
 }
 ```
 
-Dispatch `messages` with the recorded model and temperature through the validation runtime or another compatible client. Keep API keys and custom base URLs in runtime environment variables; do not add them to these configs.
+Dispatch `messages` with the recorded model and temperature through the validation runtime or another compatible client.
 
 ## Monitor output and scoring
 

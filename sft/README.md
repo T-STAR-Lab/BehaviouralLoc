@@ -19,7 +19,7 @@ The unequal epoch counts normalise total training exposure across conditions. Th
 
 As described in the paper, aspect-specific responses were generated in distribution with Qwen3.5-27B. Safety experts augmented the prompts using sources kept separate from the 400 validation cases, and the responses were human-verified, yielding approximately 1,000 samples per aspect.
 
-The corpora are intentionally not bundled in this code-only directory. They are released separately as [BehaviouralLoC-Mitigation](https://huggingface.co/datasets/T-STAR-Lab/BehaviouralLoC-Mitigation). After obtaining the aspect files, prepare all three training mixtures with:
+The corpora are released separately as [BehaviouralLoC-Mitigation](https://huggingface.co/datasets/T-STAR-Lab/BehaviouralLoC-Mitigation). After obtaining the aspect files, prepare all three training mixtures with:
 
 ```bash
 python3 scripts/prepare_sft_data.py \
@@ -31,7 +31,7 @@ This creates `single_aspect.json`, `vulnerability_focused.json`, `all_aspect.jso
 
 ## Environment and training
 
-The LLaMA-Factory source used in the original directory is vendored under `third_party/LlamaFactory` (version `0.9.5.dev0`, Apache-2.0), with standalone development demos removed. Install it and the DeepSpeed dependency in an appropriate GPU environment:
+LLaMA-Factory is vendored under `third_party/LlamaFactory` (version `0.9.5.dev0`, Apache-2.0). Install it and the DeepSpeed dependency in an appropriate GPU environment:
 
 ```bash
 python3 -m pip install -e third_party/LlamaFactory
@@ -55,22 +55,15 @@ NPROC_PER_NODE=8 \
 ./run_sft.sh vulnerability-focused
 ```
 
-For multi-node execution, launch the same command on every node and set the standard LLaMA-Factory variables `FORCE_TORCHRUN=1`, `NNODES`, `NODE_RANK`, `MASTER_ADDR`, `MASTER_PORT`, and `NPROC_PER_NODE`. No cluster addresses, host files, credentials, checkpoints, logs, or outputs are included here.
+For multi-node execution, launch the same command on every node and set the standard LLaMA-Factory variables `FORCE_TORCHRUN=1`, `NNODES`, `NODE_RANK`, `MASTER_ADDR`, `MASTER_PORT`, and `NPROC_PER_NODE`. Checkpoints and training logs are written to the selected output directory.
 
 ## Optional automated data check
 
-`scripts/evaluate_sft_quality.py` is a sanitised optional utility for sampling prepared examples and checking instruction-response relevance with an OpenAI-compatible judge. It does not replace the human verification reported in the paper. Install the client and supply all service settings at runtime:
+`scripts/evaluate_sft_quality.py` is an optional utility for sampling prepared examples and checking instruction-response relevance with an OpenAI-compatible judge. It does not replace the human verification reported in the paper. Install the client, configure the judge service for the current shell, and run:
 
 ```bash
 python3 -m pip install openai
-export JUDGE_MODEL=your-judge-model
-export JUDGE_API_KEY=your-api-key
-# Set JUDGE_BASE_URL only when using a compatible non-default endpoint.
-export JUDGE_BASE_URL=https://your-endpoint.example/v1
-
 python3 scripts/evaluate_sft_quality.py \
   data/vulnerability_focused.json \
   outputs/vulnerability_focused_quality.json
 ```
-
-`--judge-model`, `--base-url`, and `--api-key-env` may be used instead of the defaults above. No API key, endpoint, or provider token is stored in this branch.

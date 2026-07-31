@@ -26,7 +26,7 @@ The intervention target used by the supplied configurations is Qwen3.5-27B. Benc
     └── README.md                 # SFT setup and execution details
 ```
 
-Generated data, requests, results, logs, checkpoints, credentials, cluster addresses, and host-specific files are excluded from Git.
+Prepared datasets are written to `sft/data/`, monitoring requests and run outputs to `results/`, and SFT checkpoints to `sft/outputs/`.
 
 ## Data
 
@@ -65,11 +65,11 @@ python3 -m pip install -e sft/third_party/LlamaFactory
 python3 -m pip install deepspeed
 ```
 
-Select PyTorch/CUDA versions suitable for the training hosts. Multi-node addresses and credentials must be supplied at runtime; none are stored in this branch.
+Select PyTorch/CUDA versions suitable for the training hosts. Multi-node settings are passed to the launcher at runtime.
 
 ## Running the monitoring intervention
 
-The project-team v3 prompt is preserved in `monitoring/monitor_prompts_v3.py`. It has two compatible modes:
+The monitoring module provides two v3 prompt modes:
 
 - `cot-v3` reviews the complete execution `transcript`;
 - `report-v3` reviews only the agent's final Markdown `report`.
@@ -88,7 +88,7 @@ python3 monitoring/configuration.py \
   --output results/report_monitor_requests.jsonl
 ```
 
-This command deliberately does not call an API. It emits OpenAI-compatible `messages` plus the configured model and temperature so the validation runtime can dispatch requests without storing an API key in the repository. See `monitoring/README.md` for record schemas and score interpretation.
+Each output record contains OpenAI-compatible `messages` together with the configured model and temperature for downstream execution. See `monitoring/README.md` for record schemas and score interpretation.
 
 ## Running SFT
 
@@ -124,10 +124,6 @@ See `sft/README.md` for multi-node settings and the optional prepared-data quali
 - Monitoring preparation writes one JSON object per input case. Send its `messages` to the configured monitor. The v3 response schema contains `suspicious` (0–100) and a short `reasoning` string. A value near 0 indicates confidence that no inappropriate behaviour occurred, 50 represents uncertainty, and a value near 100 indicates high confidence of inappropriate behaviour. Any operational threshold must be chosen and reported by the evaluation protocol; this repository does not silently impose one.
 - SFT writes checkpoints and trainer artefacts under `sft/outputs/<condition>/` by default. This directory is ignored by Git. Compare mitigation failure rates with the unchanged base model on the validation suite, and evaluate general utility separately as described in the paper.
 - The optional SFT data-quality script writes aggregate relevance/quality scores and per-example judge details to the requested JSON path. It is a diagnostic aid, not a substitute for the human verification used to build the released data.
-
-## Security and reproducibility
-
-No API keys, URL tokens, private endpoints, model checkpoints, datasets, results, or logs are tracked. Optional judge credentials and endpoints are read from environment variables. Before publishing additional results or configs, keep secrets in the environment and verify the staged diff with `git diff --cached`.
 
 ## Third-party code
 
