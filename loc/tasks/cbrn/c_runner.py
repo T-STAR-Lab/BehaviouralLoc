@@ -1,12 +1,12 @@
-"""cbrn/c runner — Chemistry tasks c1, c2, c3 (merged).
+"""CBRN chemistry runner for canonical CB task components.
 
-  c1: SciKnowEval Chemistry MCQ (300 questions, mcq-4-choices)
-  c2: SciKnowEval Chemistry mixed (200 questions: true_or_false + mcq-4-choices)
-  c3: Chemistry NMR/structure MCQ (151 questions, single-correct)
+  cb1_chemistry: SciKnowEval Chemistry MCQ (300 questions, mcq-4-choices)
+  cb2_chemistry: SciKnowEval Chemistry mixed (200 questions: true_or_false + mcq-4-choices)
+  cb3_chemistry: Chemistry NMR/structure MCQ (151 questions, single-correct)
 
 Usage (from repo root):
-    python loc/tasks/cbrn/c/runner.py --model qwen3-14b --tasks c1 c2 c3
-    python loc/tasks/cbrn/c/runner.py --model qwen3-14b --tasks c3 --target-runs 3
+    python loc/tasks/cbrn/c_runner.py --model qwen3-14b --tasks cb1_chemistry cb2_chemistry cb3_chemistry
+    python loc/tasks/cbrn/c_runner.py --model qwen3-14b --tasks cb3_chemistry --target-runs 3
 """
 
 import argparse
@@ -80,14 +80,14 @@ def _extract_c3(raw: str) -> str:
 # Task evaluators
 # ---------------------------------------------------------------------------
 
-def evaluate_c1(model_name: str, run_path: Path) -> None:
-    with open(Path("./data/cbrn/c1.json"), encoding="utf-8") as f:
+def evaluate_cb1_chemistry(model_name: str, run_path: Path) -> None:
+    with open(Path("./data/cbrn/cb1_chemistry.json"), encoding="utf-8") as f:
         data = json.load(f)
 
     results: List[dict] = []
     correct = 0
 
-    for item in tqdm(data, desc="[c1]"):
+    for item in tqdm(data, desc="[cb1_chemistry]"):
         instruction = item["prompt"]["default"]
         labels = item["choices"]["label"]
         texts = item["choices"]["text"]
@@ -115,17 +115,17 @@ def evaluate_c1(model_name: str, run_path: Path) -> None:
     total = len(results)
     accuracy = correct / total if total else 0.0
     atomic_write_json(run_path, {"accuracy": accuracy, "n_correct": correct, "n_total": total, "items": results})
-    print(f"[c1 DONE] correct={correct}/{total} accuracy={accuracy:.2%}")
+    print(f"[cb1_chemistry DONE] correct={correct}/{total} accuracy={accuracy:.2%}")
 
 
-def evaluate_c2(model_name: str, run_path: Path) -> None:
-    with open(Path("./data/cbrn/c2.json"), encoding="utf-8") as f:
+def evaluate_cb2_chemistry(model_name: str, run_path: Path) -> None:
+    with open(Path("./data/cbrn/cb2_chemistry.json"), encoding="utf-8") as f:
         data = json.load(f)
 
     results: List[dict] = []
     correct = 0
 
-    for item in tqdm(data, desc="[c2]"):
+    for item in tqdm(data, desc="[cb2_chemistry]"):
         instruction = item["prompt"]["default"]
         data_type = item.get("type", "true_or_false")
 
@@ -177,19 +177,19 @@ def evaluate_c2(model_name: str, run_path: Path) -> None:
         "mcq_n": len(mcq_items),
         "items": results,
     })
-    print(f"[c2 DONE] correct={correct}/{total} accuracy={accuracy:.2%}")
+    print(f"[cb2_chemistry DONE] correct={correct}/{total} accuracy={accuracy:.2%}")
     print(f"  true_or_false: {sum(r['correct'] for r in tof_items)}/{len(tof_items)} ({tof_acc:.2%})")
     print(f"  mcq-4-choices: {sum(r['correct'] for r in mcq_items)}/{len(mcq_items)} ({mcq_acc:.2%})")
 
 
-def evaluate_c3(model_name: str, run_path: Path) -> None:
-    with open(Path("./data/cbrn/c3.json"), encoding="utf-8") as f:
+def evaluate_cb3_chemistry(model_name: str, run_path: Path) -> None:
+    with open(Path("./data/cbrn/cb3_chemistry.json"), encoding="utf-8") as f:
         data = json.load(f)
 
     results: List[dict] = []
     correct = 0
 
-    for item in tqdm(data, desc="[c3]"):
+    for item in tqdm(data, desc="[cb3_chemistry]"):
         choices_dict = item["choices"]
         choices_text = "\n".join(f"{k}. {v}" for k, v in choices_dict.items())
         answer_key = item["correct_answer"]
@@ -212,7 +212,7 @@ def evaluate_c3(model_name: str, run_path: Path) -> None:
     total = len(results)
     accuracy = correct / total if total else 0.0
     atomic_write_json(run_path, {"accuracy": accuracy, "n_correct": correct, "n_total": total, "items": results})
-    print(f"[c3 DONE] correct={correct}/{total} accuracy={accuracy:.2%}")
+    print(f"[cb3_chemistry DONE] correct={correct}/{total} accuracy={accuracy:.2%}")
 
 
 # ---------------------------------------------------------------------------
@@ -220,9 +220,9 @@ def evaluate_c3(model_name: str, run_path: Path) -> None:
 # ---------------------------------------------------------------------------
 
 _EVALUATORS = {
-    "c1": evaluate_c1,
-    "c2": evaluate_c2,
-    "c3": evaluate_c3,
+    "cb1_chemistry": evaluate_cb1_chemistry,
+    "cb2_chemistry": evaluate_cb2_chemistry,
+    "cb3_chemistry": evaluate_cb3_chemistry,
 }
 
 
@@ -239,9 +239,9 @@ def _run_task(task: str, model: str, outdir: Path, target_runs: int) -> None:
 
 
 def main():
-    p = argparse.ArgumentParser(description="cbrn/c — Chemistry tasks c1/c2/c3")
+    p = argparse.ArgumentParser(description="CBRN chemistry canonical components")
     p.add_argument("--model", "--model-name", dest="model", required=True)
-    p.add_argument("--tasks", nargs="+", choices=["c1", "c2", "c3"], default=["c1", "c2", "c3"])
+    p.add_argument("--tasks", nargs="+", choices=list(_EVALUATORS), default=list(_EVALUATORS))
     p.add_argument("--outdir", default=str(DEFAULT_OUTPUT_DIR))
     p.add_argument("--target-runs", type=int, default=1)
     args = p.parse_args()

@@ -1,6 +1,6 @@
-"""curiosity — `decide` (A/B choice) and `epistemic` (answer-vs-question) (serial).
+"""Curiosity canonical runners.
 
-Use ``--task decide|epistemic|all``.
+Use ``--task cu1_cognitive_curiosity|cu2_decision_curiosity|all``.
 """
 
 import argparse
@@ -19,6 +19,7 @@ from pathlib import Path as _Path
 _repo_root = _Path(__file__).resolve().parents[3]
 if str(_repo_root) not in _sys.path:
     _sys.path.insert(0, str(_repo_root))
+from env.api_config import MODEL_CONFIGS
 from loc.chat import call_model
 from loc.tasks.curiosity.prompts import build_decide_prompt, build_epistemic_prompt
 from loc.utils.io import (
@@ -30,10 +31,13 @@ from loc.utils.io import (
 from loc.utils.text import remove_think_tags
 # -----------------------
 
+# Epistemic evaluation uses the provider configuration in env/api_config.py.
+_EPISTEMIC_OVERRIDES = {}
+
 DATA_DIR = Path("./data/curiosity")
 DEFAULT_OUTPUT_DIR = Path("./results/curiosity")
-DECIDE_INPUT = DATA_DIR / "decide.jsonl"
-EPISTEMIC_INPUT = DATA_DIR / "epistemic.jsonl"
+CU1_INPUT = DATA_DIR / "cu1_cognitive_curiosity.jsonl"
+CU2_INPUT = DATA_DIR / "cu2_decision_curiosity.jsonl"
 
 
 def _load_jsonl(path: Path) -> List[dict]:
@@ -108,7 +112,7 @@ def _extract_decide_letter(text: str) -> Optional[str]:
 
 
 def evaluate_decide(model_name: str, run_path: Path) -> None:
-    data = _load_jsonl(DECIDE_INPUT)
+    data = _load_jsonl(CU2_INPUT)
     total = len(data)
     if total == 0:
         print("[decide] empty dataset")
@@ -156,7 +160,11 @@ def evaluate_decide(model_name: str, run_path: Path) -> None:
 # ================== epistemic ==================
 
 def evaluate_epistemic(model_name: str, run_path: Path) -> None:
-    data = _load_jsonl(EPISTEMIC_INPUT)
+    # Apply epistemic-only endpoint overrides before any model call.
+    for k, v in _EPISTEMIC_OVERRIDES.items():
+        MODEL_CONFIGS[k] = v
+
+    data = _load_jsonl(CU1_INPUT)
     total = len(data)
     if total == 0:
         print("[epistemic] empty dataset")
@@ -198,9 +206,9 @@ def evaluate_epistemic(model_name: str, run_path: Path) -> None:
 # ================== CLI ==================
 
 def parse_args():
-    p = argparse.ArgumentParser(description="curiosity — decide / epistemic (serial)")
+    p = argparse.ArgumentParser(description="curiosity canonical runners")
     p.add_argument("--model", "--model-name", dest="model", required=True)
-    p.add_argument("--task", choices=["decide", "epistemic", "all"], default="all")
+    p.add_argument("--task", choices=["cu1_cognitive_curiosity", "cu2_decision_curiosity", "all"], default="all")
     p.add_argument("--outdir", default=str(DEFAULT_OUTPUT_DIR))
     p.add_argument("--target-runs", type=int, default=1)
     return p.parse_args()
@@ -221,10 +229,10 @@ def _run_loop(label: str, fn, model: str, outdir: Path, target_runs: int) -> Non
 def main():
     args = parse_args()
     outdir = Path(args.outdir)
-    if args.task in ("decide", "all"):
-        _run_loop("decide", evaluate_decide, args.model, outdir, args.target_runs)
-    if args.task in ("epistemic", "all"):
-        _run_loop("epistemic", evaluate_epistemic, args.model, outdir, args.target_runs)
+    if args.task in ("cu1_cognitive_curiosity", "all"):
+        _run_loop("cu1_cognitive_curiosity", evaluate_epistemic, args.model, outdir, args.target_runs)
+    if args.task in ("cu2_decision_curiosity", "all"):
+        _run_loop("cu2_decision_curiosity", evaluate_decide, args.model, outdir, args.target_runs)
 
 
 if __name__ == "__main__":

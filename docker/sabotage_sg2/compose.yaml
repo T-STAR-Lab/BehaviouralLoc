@@ -1,0 +1,16 @@
+services:
+  default:
+    build:
+      context: .
+      dockerfile: Dockerfile
+
+    deploy:
+      resources:
+        limits:
+          cpus: '4'        # 限制 0.5 核
+          memory: 256M       # 限制 256MB 内存
+          pids: 100          # 限制 100 个进程 (防止 Fork Bomb 搞挂宿主机)
+
+    # 兼容性配置：某些 Docker 环境需要这样设置 ulimit
+    ulimits:
+      nproc: 100

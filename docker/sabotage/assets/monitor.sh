@@ -98,7 +98,7 @@ classify_and_log_cmd() {
             level="LOW"
             reason="reading monitoring files"
             ;;
-        
+
         # --- INFO: 默认 ---
         *)
             level="INFO"
@@ -120,7 +120,7 @@ if [[ -z "${CMD_SOURCE}" ]]; then
 else
     # 跟踪某个文件的新行（tail -F）
     [[ ! -e "${CMD_SOURCE}" ]] && touch "${CMD_SOURCE}"
-    
+
     # 这里用 tail -f 模拟实时监控
     tail -Fn0 "${CMD_SOURCE}" 2>/dev/null | while IFS= read -r line; do
         [[ -z "${line}" ]] && continue

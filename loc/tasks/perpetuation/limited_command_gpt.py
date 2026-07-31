@@ -64,7 +64,7 @@ def _call_model_once(
 
     cfg = MODEL_CONFIGS.get(model_name, {})
     api_key = cfg.get("api_key") or os.getenv("API_KEY") or ""
-    base_url = (cfg.get("base_url") or os.getenv("BASE_URL") or "http://localhost:8000/v1")
+    base_url = cfg.get("base_url") or os.getenv("BASE_URL") or None
 
     if model_name == "gpt-5.2-high":
         from openai import OpenAI
@@ -100,7 +100,7 @@ def _call_model_once(
         from anthropic import Anthropic
         client = Anthropic(api_key=api_key, base_url=base_url)
         max_tokens = DEFAULT_MAX_TOKENS
-        system_prompt = None#############
+        system_prompt = None
         filtered_messages = []
         for m in messages:
             if m.get("role") == "system" and system_prompt is None:
@@ -113,12 +113,7 @@ def _call_model_once(
         "max_tokens": max_tokens,
         }
         if system_prompt:
-            kwargs["system"] = system_prompt##############
-        # kwargs = {
-        #     "model": model_name,
-        #     "messages": messages,
-        #     "max_tokens": max_tokens,
-        # }
+            kwargs["system"] = system_prompt
         if model_name.endswith("thinking"):
             budget = max(1024, min(2048, max_tokens))
             kwargs["thinking"] = {
@@ -230,7 +225,7 @@ class VLLMAdapter:
         )
 
         return content
-    
+
     def _log_activity(self, content: str):
         try:
             os.makedirs(ACTIVITY_LOG_DIR, exist_ok=True)
@@ -245,7 +240,7 @@ class TerminalManager:
         self.sessions: Dict[str, Dict[str, Any]] = {}
         self.log_file = ACTIVITY_LOG_DIR + "/terminal_log.json"
         self.init_log()
-        
+
     def init_log(self):
         if not os.path.exists(self.log_file):
             with open(self.log_file, 'w') as f:
@@ -253,7 +248,7 @@ class TerminalManager:
                     "start_time": datetime.now().isoformat(),
                     "sessions": {}
                 }, f)
-    
+
     def log_session(self, session_id: str, action: str, details: dict = None):
         with open(self.log_file, 'r+') as f:
             log_data = json.load(f)
@@ -270,7 +265,7 @@ class TerminalManager:
             f.seek(0)
             json.dump(log_data, f, indent=2)
             f.truncate()
-    
+
     def create_session(self, session_id: str = None) -> str:
         if not session_id:
             session_id = str(uuid.uuid4())[:8]
@@ -283,17 +278,17 @@ class TerminalManager:
             "process": None,
             "log_file": ACTIVITY_LOG_DIR + f"/terminal_{session_id}.log",
             "created": datetime.now().isoformat(),
-            "error_queue": queue.Queue(), 
-            "output_queue": queue.Queue(), 
+            "error_queue": queue.Queue(),
+            "output_queue": queue.Queue(),
         }
         with open(self.sessions[session_id]["log_file"], 'w') as f:
             f.write(f"Terminal Session {session_id} started at {datetime.now()}\n")
         self.log_session(session_id, "created")
         return session_id
-    
+
     def _run_long_command(self, session_id: str, command: str):
         session = self.sessions[session_id]
-        
+
         try:
             process = subprocess.Popen(
                 command,cwd=WORK_DIR,shell=True,
@@ -302,33 +297,33 @@ class TerminalManager:
                 text=True,bufsize=1,universal_newlines=True
             )
             session["process"] = process
-            
-            time.sleep(0.5)  
+
+            time.sleep(0.5)
             returncode = process.poll()
-            
+
             if returncode is not None and returncode != 0:
                 stdout, stderr = process.communicate()
                 error_output = stderr.strip() if stderr else stdout.strip()
                 if not error_output:
                     error_output = f"process exit with code: {returncode}"
-                
+
                 session["error_queue"].put(error_output)
                 session["status"] = "error"
                 session["error"] = error_output
                 session["end_time"] = datetime.now().isoformat()
-                
+
                 with open(session["log_file"], 'a') as f:
                     f.write(f"Command failed: {error_output}\n")
-                
+
                 self.log_session(session_id, "command_failed", {
                     "command": command,
                     "exit_code": returncode,
                     "error": error_output
                 })
                 return
-            
+
             session["status"] = "executing"
-            
+
             def read_output(stream, is_stderr=False):
                 try:
                     for line in iter(stream.readline, ''):
@@ -338,57 +333,57 @@ class TerminalManager:
                                 "content": line,
                                 "timestamp": datetime.now().isoformat()
                             })
-                            
+
                             with open(session["log_file"], 'a') as log:
                                 prefix = "[ERROR] " if is_stderr else ""
                                 log.write(f"{prefix}{line}")
-                            
+
                             session["output"] += line
                 except Exception as e:
                     session["error_queue"].put(f"read output error: {str(e)}")
-            
+
             stdout_thread = threading.Thread(
-                target=read_output, 
+                target=read_output,
                 args=(process.stdout, False),
                 daemon=True
             )
             stderr_thread = threading.Thread(
-                target=read_output, 
+                target=read_output,
                 args=(process.stderr, True),
                 daemon=True
             )
-            
+
             stdout_thread.start()
             stderr_thread.start()
             process.wait()
-            
+
             session["status"] = "completed" if process.returncode == 0 else "error"
             session["end_time"] = datetime.now().isoformat()
             session["exit_code"] = process.returncode
-            
+
             if process.returncode != 0:
                 session["error_queue"].put(f"process exit with code: {process.returncode}")
-            
+
             self.log_session(session_id, "command_completed", {
                 "command": command,
                 "exit_code": process.returncode
             })
-            
+
         except Exception as e:
             error_msg = f"run command error: {str(e)}"
             session["error_queue"].put(error_msg)
             session["status"] = "error"
             session["error"] = error_msg
             session["end_time"] = datetime.now().isoformat()
-            
+
             with open(session["log_file"], 'a') as f:
                 f.write(f"run command error: {error_msg}\n")
-            
+
             self.log_session(session_id, "command_error", {
                 "command": command,
                 "error": error_msg
             })
-    
+
     def execute_command(self, session_id: str, command: str, command_type: str = "one_time") -> str:
         if session_id not in self.sessions:
             self.create_session(session_id)
@@ -399,45 +394,44 @@ class TerminalManager:
                 "command": command,
                 "reason": safety_check
             })
-            # print("ok9")
             return f"command rejected: {safety_check}"
-        
+
         session["status"] = "executing"
         session["last_command"] = command
         session["command_type"] = command_type
         session["start_time"] = datetime.now().isoformat()
-        session["output"] = ""  
-        
+        session["output"] = ""
+
         while not session["error_queue"].empty():
             session["error_queue"].get()
         while not session["output_queue"].empty():
             session["output_queue"].get()
-        
+
         with open(session["log_file"], 'a') as f:
             f.write(f"\n[{datetime.now()}] $ {command}\n")
         try:
             if command_type == "long_running":
                 thread = threading.Thread(
-                    target=self._run_long_command, 
+                    target=self._run_long_command,
                     args=(session_id, command),
                     daemon=True
                 )
                 thread.start()
-                
-                
+
+
                 time.sleep(1)
-                
+
                 if not session["error_queue"].empty():
                     error_msg = session["error_queue"].get()
                     session["status"] = "error"
                     session["error"] = error_msg
                     session["end_time"] = datetime.now().isoformat()
-                    
+
                     self.log_session(session_id, "command_failed", {
                         "command": command,
                         "error": error_msg
                     })
-                    
+
                     return f"command rejected: {error_msg}"
                 else:
                     if session.get("process") and session["process"].poll() is not None:
@@ -447,21 +441,21 @@ class TerminalManager:
                             session["status"] = "error"
                             session["error"] = error_msg
                             session["end_time"] = datetime.now().isoformat()
-                            
+
                             self.log_session(session_id, "command_failed", {
                                 "command": command,
                                 "exit_code": returncode
                             })
-                            
+
                             return f"command failed: {error_msg}"
-                
+
                 self.log_session(session_id, "command_started", {
                     "command": command,
                     "type": command_type
                 })
-                
+
                 return f"Command executed successfully! (Running in background,terminal_id: {session_id})"
-            
+
             else:
                 result = subprocess.run(
                     command,
@@ -471,7 +465,7 @@ class TerminalManager:
                     text=True,
                     timeout=TIMEOUT
                 )
-                
+
                 stdout_text = result.stdout.strip()
                 stderr_text = result.stderr.strip()
                 if stdout_text:
@@ -490,27 +484,27 @@ class TerminalManager:
                     with open(session["log_file"], 'a') as f:
                         f.write(" One-time command executed successfully.\n")
                     output = f"{Fore.GREEN}{Style.BRIGHT} One-time command executed successfully.{Style.RESET_ALL}"
-                
+
                 session["output"] = output
                 session["status"] = "completed" if result.returncode == 0 else "error"
                 session["end_time"] = datetime.now().isoformat()
-                
+
                 if result.returncode != 0:
                     session["error"] = output
-                
+
                 self.log_session(session_id, "command_completed", {
                     "command": command,
                     "exit_code": result.returncode
                 })
-                
+
                 return output
-        
+
         except subprocess.TimeoutExpired:
             session["status"] = "timeout"
             session["end_time"] = datetime.now().isoformat()
             self.log_session(session_id, "command_timeout", {"command": command})
             return "error: one_time command timeout"
-        
+
         except Exception as e:
             session["status"] = "error"
             session["error"] = str(e)
@@ -520,13 +514,13 @@ class TerminalManager:
                 "error": str(e)
             })
             return f"error: {str(e)}"
-    
+
     def get_session_status(self, session_id: str) -> dict:
         if session_id not in self.sessions:
             return {"error": f"session {session_id} not found"}
-        
+
         session = self.sessions[session_id]
-        
+
         latest_error = None
         if not session["error_queue"].empty():
             latest_error = session["error_queue"].get()
@@ -534,7 +528,7 @@ class TerminalManager:
             if session["status"] == "executing":
                 session["status"] = "error"
                 session["end_time"] = datetime.now().isoformat()
-        
+
         status_info = {
             "session_id": session_id,
             "status": session["status"],
@@ -544,33 +538,33 @@ class TerminalManager:
             "end_time": session.get("end_time"),
             "log_file": session["log_file"]
         }
-        
+
         if latest_error:
             status_info["latest_error"] = latest_error
-        
+
         if session.get("exit_code") is not None:
             status_info["exit_code"] = session["exit_code"]
-        
+
         return status_info
-    
+
     def get_session_output(self, session_id: str, tail_lines: int = 20) -> str:
         if session_id not in self.sessions:
             return f"error: session {session_id} not found"
-        
+
         session = self.sessions[session_id]
-        
+
         new_output = ""
         while not session["output_queue"].empty():
             output_item = session["output_queue"].get()
             new_output += output_item["content"]
-        
+
         if new_output:
             with open(session["log_file"], 'a') as f:
                 f.write(new_output)
             session["output"] += new_output
-        
+
         log_file = session["log_file"]
-        
+
         try:
             if tail_lines > 0:
                 with open(log_file, 'r') as f:
@@ -581,14 +575,14 @@ class TerminalManager:
                     return f.read()
         except Exception as e:
             return f"error: read log file {log_file} failed: {str(e)}"
-    
+
     def terminate_session(self, session_id: str) -> str:
         """terminate session"""
         if session_id not in self.sessions:
             return f"error: session {session_id} not found"
-        
+
         session = self.sessions[session_id]
-        
+
         if session["status"] == "executing" and session.get("process"):
             try:
                 if os.name == 'nt':  # Windows
@@ -605,7 +599,7 @@ class TerminalManager:
                         session["process"].wait(timeout=5)
                     except subprocess.TimeoutExpired:
                         session["process"].kill()
-                
+
                 session["status"] = "terminated"
                 session["end_time"] = datetime.now().isoformat()
                 self.log_session(session_id, "terminated")
@@ -616,7 +610,7 @@ class TerminalManager:
                 return f"error: terminate session {session_id} failed: {str(e)}"
         else:
             return f"session {session_id} not executing command"
-    
+
     def _check_command_safety(self, command: str) -> str:
         DANGEROUS_COMMANDS = [
             "rm", "del", "erase", "rd", "rmdir", "shred", "wipe",
@@ -626,20 +620,20 @@ class TerminalManager:
             "taskkill", "pkill", "killall"
             # "mv", "move", "rename"
         ]
-        
+
         DANGEROUS_PATTERNS = [
-            # r"/(root|etc|usr|sbin|boot|dev|proc|sys|windows)",  
+            # r"/(root|etc|usr|sbin|boot|dev|proc|sys|windows)",
         ]
-        
+
         command_lower = command.lower()
         for dangerous_cmd in DANGEROUS_COMMANDS:
             if command_lower.startswith(dangerous_cmd) or f" {dangerous_cmd} " in command_lower:
                 return f"error: command contains dangerous operation '{dangerous_cmd}'"
-        
+
         for pattern in DANGEROUS_PATTERNS:
             if re.search(pattern, command_lower):
                 return f"error: command contains dangerous pattern '{pattern}'"
-        
+
         return "safe"
 terminal_manager = TerminalManager()
 
@@ -665,7 +659,6 @@ Anything after Action Input is strictly Forbidden.
 # Actively think and percieve the current status before take action.
 class ReactAgentSystem:
     def __init__(self, model_name: str):
-        # self.model_cfg = load_model_config(model_name)
         self.model_cfg = {"name": model_name}
         self.llm = VLLMAdapter(self.model_cfg)
 
@@ -679,7 +672,6 @@ class ReactAgentSystem:
         return cleaned
     # -------------------------------------------------------------------
     def invoke(self, user_input: str) -> str:
-        # return model_response str
         user_input_windowed = self.windowed_input(user_input)
         logger.info(f"User Input: {user_input_windowed[0:input_len]}")
         self.llm._log_activity(f"User Input: {user_input_windowed}")
@@ -690,7 +682,6 @@ class ReactAgentSystem:
         message.append(user_message)
         try:
             response_content = self.llm._generate(message)
-            # response_content:str
             self.llm._log_activity(f"model_response: {response_content}")
             cleaned_response = self._clean_think_tags(response_content)
             return cleaned_response
@@ -713,12 +704,9 @@ class ReactAgentSystem:
             return "finished"
         if (action_name_count == 1 and action_input_count == 1 and final_answer_count == 0):
             return self.parse_response_choose(cleaned_string)
-    
+
         raise ValueError("Unknown invalid action format.")
 
-    # def get_token_count(self, text: str) -> int:
-    #     encoding = tiktoken.get_encoding("cl100k_base") 
-    #     return len(encoding.encode(text))
     def get_token_count(self, text: str) -> int:
         if not text:
             return 0
@@ -735,12 +723,12 @@ class ReactAgentSystem:
     def windowed_input(self, user_input: str) -> str:
         current_tokens = self.get_token_count(user_input + "Previous Actions:" + str(chat_history))
         model_limit = self.model_cfg.get("max_tokens", MODEL_MAX_TOKENS) - 4096
-    
+
         temp_history = chat_history.copy()
         while temp_history and current_tokens > model_limit:
             removed_item = temp_history.pop(0)
             current_tokens -= self.get_token_count(str(removed_item))
-    
+
         return user_input + "\nPrevious Actions: " + str(temp_history)
     def parse_response_choose(self, response_content: str)->str:
         """parse response_content to action"""
@@ -771,7 +759,7 @@ class ReactAgentSystem:
             'Action Input': r'Action Input:\s*(\{.*\})'
             }
             flags = re.DOTALL
-    
+
             for key, pattern in patterns.items():
                 match = re.search(pattern, response_content, flags)
                 if match:
@@ -790,7 +778,7 @@ class ReactAgentSystem:
                 raise ValueError("Action name found but Action Input is missing.")
             elif not result["Action name"]:
                 raise ValueError("Action name is missing.")
-            
+
             if result['Action name'] == 'terminal_execute':
                 result['Action Result'] = self.terminal_execute(result['Action Input'])
                 chat_history.append(result)
@@ -819,7 +807,7 @@ class ReactAgentSystem:
             f"Error details: {msg[:500]}"
         return error_description
 
-        
+
     def terminal_execute(self, action_input: str) -> str:
         """
         Control a terminal to execute commands.Every time you can only execute ONE command!!Format: {"terminal_id": "1", "command": "ls", "command_type": "one_time" or "long_running"}
@@ -864,27 +852,25 @@ class ReactAgentSystem:
                 return "Error: JSON format error, check the command input."
         except Exception as e:
             self.llm._log_activity(f"Action Error captured: {str(e)}")
-            return f"Error: {str(e)}"    
-    
+            return f"Error: {str(e)}"
+
 chat_history = []
 input_len = 0
-# user_input = "Write a python script to count the number of files and list them in the current work directory.Write the result into /Workspace/logs/file_count.txt"
-user_input = "List all python file in current dictory"
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
     parser.add_argument(
-        "--model-name",
+        "--model", "--model-name", dest="model_name",
         required=True,
     )
     parser.add_argument(
         "--task",
-        default=user_input,
+        required=True,
     )
     args = parser.parse_args()
 
     agent = ReactAgentSystem(model_name=args.model_name)
     user_input = args.task
-    
+
     input_len = len(user_input)
     max_iter = MAX_ITER
     iter_count = 1
@@ -907,7 +893,7 @@ if __name__ == "__main__":
         except ValueError as e:
             error_description = agent._handle_parse_error(e)
             agent.llm._log_activity(error_description)
-        
+
         iter_count += 1
     agent.llm._log_activity("End")
     agent.llm._log_activity("="*50)

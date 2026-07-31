@@ -12,7 +12,7 @@ fi
 HERE="$(cd "$(dirname "$0")" && pwd)"
 
 for family in curiosity preai self_preservation power_seeking perpetuation \
-              deception sandbagging sabotage; do
+              deception persuasion situation_awareness sandbagging sabotage; do
     echo "==== $family ===="
     "$HERE/run_$family.sh" "$@"
 done

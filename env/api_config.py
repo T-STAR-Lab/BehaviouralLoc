@@ -7,7 +7,7 @@ Each entry in ``MODEL_CONFIGS`` is
 
     {
       "api_key":  str,       # for loc/chat.py direct-SDK calls
-      "base_url": str,
+      "base_url": str | None,
       "inspect":  {          # OPTIONAL — only for models that run under inspect_ai
         "model":       str,
         "eval_kwargs": dict,
@@ -35,27 +35,21 @@ except ImportError:
 # ---- Providers (official SDK env-var names) ----
 
 _OPENAI_KEY = os.getenv("OPENAI_API_KEY", "")
-_OPENAI_URL = os.getenv("OPENAI_BASE_URL", "https://api.openai.com/v1")
+_OPENAI_URL = os.getenv("OPENAI_BASE_URL") or None
 
 _ANTHROPIC_KEY = os.getenv("ANTHROPIC_API_KEY", "")
-_ANTHROPIC_URL = os.getenv("ANTHROPIC_BASE_URL", "https://api.anthropic.com")
+_ANTHROPIC_URL = os.getenv("ANTHROPIC_BASE_URL") or None
 
 _GEMINI_KEY = os.getenv("GEMINI_API_KEY", "")
-_GEMINI_URL = os.getenv("GEMINI_BASE_URL", "https://generativelanguage.googleapis.com")
+_GEMINI_URL = os.getenv("GEMINI_BASE_URL") or None
 
-_AZURE_OPENAI_KEY = os.getenv("AZURE_OPENAI_API_KEY", "")
-_AZURE_OPENAI_URL = os.getenv("AZURE_OPENAI_ENDPOINT", "")
 
 _DASHSCOPE_KEY = os.getenv("DASHSCOPE_API_KEY", "")
-_DASHSCOPE_URL = os.getenv(
-    "DASHSCOPE_BASE_URL", "https://dashscope.aliyuncs.com/compatible-mode/v1"
-)
-
-_VLLM_KEY = os.getenv("VLLM_API_KEY", "EMPTY")
-_VLLM_URL = os.getenv("VLLM_BASE_URL", "http://localhost:8000/v1")
+_DASHSCOPE_URL = os.getenv("DASHSCOPE_BASE_URL") or None
 
 
-def _cfg(key: str, url: str, inspect: dict | None = None) -> dict:
+
+def _cfg(key: str, url: str | None, inspect: dict | None = None) -> dict:
     out = {"api_key": key, "base_url": url}
     if inspect is not None:
         out["inspect"] = inspect
@@ -86,6 +80,9 @@ def _dashscope(served: str, thinking: bool | None) -> dict:
 
 
 MODEL_CONFIGS = {
+    # ---- OpenAI ----
+    "gpt-4.1":                         _cfg(_OPENAI_KEY, _OPENAI_URL),
+
     # ---- Aliyun DashScope (OpenAI-compatible) ----
     "qwen3.5-27b":                    _cfg(_DASHSCOPE_KEY, _DASHSCOPE_URL, _dashscope("qwen3.5-27b", True)),
     "qwen3.5-35b-a3b":                _cfg(_DASHSCOPE_KEY, _DASHSCOPE_URL, _dashscope("qwen3.5-35b-a3b", True)),
@@ -101,11 +98,7 @@ MODEL_CONFIGS = {
     "glm-4.7":                        _cfg(_DASHSCOPE_KEY, _DASHSCOPE_URL, _dashscope("glm-4.7", True)),
     "kimi-k2.5":                      _cfg(_DASHSCOPE_KEY, _DASHSCOPE_URL, _dashscope("kimi-k2.5", True)),
 
-    # ---- Azure OpenAI ----
-    # inspect_ai's openai/ provider is reused for Azure (it honors OPENAI_BASE_URL).
-    # If you actually run sabotage on this model, also export OPENAI_API_KEY=$AZURE_OPENAI_API_KEY
-    # and OPENAI_BASE_URL=$AZURE_OPENAI_ENDPOINT — chat.py reads the AZURE_* vars directly so
-    # the dual-naming only affects inspect_ai.
+    # ---- OpenAI reasoning model ----
     "gpt-5.2-high": _cfg(_OPENAI_KEY, _OPENAI_URL, {
         "model": "openai/gpt-5.2",
         "eval_kwargs": {"extra_body": {"reasoning_effort": "high"}},

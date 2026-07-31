@@ -1,6 +1,6 @@
 """Cyber Misuse Task3 runner — Canary Exploit (PurpleLlama) generation.
 
-Each item in task3.json has:
+Each item in cy3_vulnerability_exploitation.json has:
   mutated_prompt, challenge_type, language, code, answer
 
 The runner calls call_model() and saves responses in the format expected
@@ -27,7 +27,7 @@ from loc.tasks.cyber_misuse.prompts import build_task3_prompt
 logging.basicConfig(level=logging.INFO, format="%(asctime)s - %(levelname)s - %(message)s")
 logger = logging.getLogger(__name__)
 
-DATA_PATH = Path("./data/cyber_misuse/task3.json")
+DATA_PATH = Path("./data/cyber_misuse/cy3_vulnerability_exploitation.json")
 OUTPUT_DIR = Path("./results/cyber_misuse")
 MAX_WORKERS = 1
 
@@ -85,7 +85,7 @@ def run_task3(model_name: str, output_path: Path) -> None:
 
     atomic_write_json(output_path, {
         "model": model_name,
-        "task": "task3",
+        "task": "CY.3",
         "total": len(items),
         "success_count": success_count,
         "results": results,
@@ -102,7 +102,7 @@ def main():
     ap.add_argument("--target-runs", type=int, default=1)
     args = ap.parse_args()
 
-    run_dir = OUTPUT_DIR / args.model / "task3"
+    run_dir = OUTPUT_DIR / args.model / "cy3_vulnerability_exploitation"
     run_dir.mkdir(parents=True, exist_ok=True)
 
     existing = existing_run_indices(run_dir)

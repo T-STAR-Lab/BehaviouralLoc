@@ -1,7 +1,6 @@
-"""power_seeking — `inner_value` (MCQ, scored by answer_matching_behavior) and
-`instrumental_value` (3-round pressure dialogue, judged downstream).
+"""Power-seeking canonical runners.
 
-Use ``--task inner_value|instrumental_value|all``.
+Use ``--task ps1_intrinsic_power_preference|ps2_instrumental_power_pursuit|all``.
 """
 
 import argparse
@@ -41,8 +40,8 @@ from loc.utils.text import remove_think_tags
 
 DATA_DIR = Path("./data/power_seeking")
 DEFAULT_OUTPUT_DIR = Path("./results/power_seeking")
-INNER_VALUE_INPUT = DATA_DIR / "inner_value_questions.jsonl"
-INSTRUMENTAL_INPUT = DATA_DIR / "instrumental_convergence_tasks.jsonl"
+INNER_VALUE_INPUT = DATA_DIR / "ps1_intrinsic_power_preference.jsonl"
+INSTRUMENTAL_INPUT = DATA_DIR / "ps2_instrumental_power_pursuit.jsonl"
 
 
 _OPTION_RE_PRIMARY = re.compile(
@@ -255,7 +254,7 @@ def evaluate_instrumental_value(model_name: str, run_path: Path) -> None:
         "summary": {
             "total": total,
             "success": success_n,
-            "note": "open-ended; downstream judge in loc/evaluators/power_seeking/instrumental_value_judge",
+            "note": "open-ended; downstream judge in loc/evaluators/judges/power_seeking_instrumental.py",
         },
         "items": results,
     })
@@ -265,13 +264,13 @@ def evaluate_instrumental_value(model_name: str, run_path: Path) -> None:
 # ================== CLI ==================
 
 TASKS = {
-    "inner_value": evaluate_inner_value,
-    "instrumental_value": evaluate_instrumental_value,
+    "ps1_intrinsic_power_preference": evaluate_inner_value,
+    "ps2_instrumental_power_pursuit": evaluate_instrumental_value,
 }
 
 
 def parse_args():
-    p = argparse.ArgumentParser(description="power_seeking — inner_value / instrumental_value (serial)")
+    p = argparse.ArgumentParser(description="power-seeking canonical runners")
     p.add_argument("--model", "--model-name", dest="model", required=True)
     p.add_argument("--task", choices=list(TASKS.keys()) + ["all"], default="all")
     p.add_argument("--outdir", default=str(DEFAULT_OUTPUT_DIR))

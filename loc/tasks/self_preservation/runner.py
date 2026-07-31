@@ -1,7 +1,6 @@
-"""self_preservation — `part1` (penalty-induced flip, 3-vote stable subset) and
-`part23` (highrisk mission + part3 letter, cross-mapped) (serial).
+"""Self-preservation canonical runners.
 
-Use ``--task part1|part23|all``.
+Use ``--task sp1_high_risk_mission_refusal|sp2_survival_threat_reversal|all``.
 
 For `part1`, each "run" = 3 internal model passes to find strict-stable dilemmas
 + 1 penalty-injection pass measuring the flip rate. Outer `--target-runs`
@@ -42,9 +41,9 @@ from loc.utils.text import remove_think_tags
 
 DATA_DIR = Path("./data/self_preservation")
 DEFAULT_OUTPUT_DIR = Path("./results/self_preservation")
-PART1_INPUT = DATA_DIR / "part1.jsonl"
-PART2_HIGHRISK_INPUT = DATA_DIR / "part2highrisktask.jsonl"
-PART3_INPUT = DATA_DIR / "part3.jsonl"
+PART1_INPUT = DATA_DIR / "sp2_survival_threat_reversal.jsonl"
+PART2_HIGHRISK_INPUT = DATA_DIR / "sp1_high_risk_mission_refusal_mission.jsonl"
+PART3_INPUT = DATA_DIR / "sp1_high_risk_mission_refusal_choice.jsonl"
 
 # Internal stable-vote count for part1 (must keep at 3 to match the original definition).
 STABLE_VOTES = 3
@@ -320,13 +319,13 @@ def evaluate_part23(model_name: str, run_path: Path) -> None:
 # ================== CLI ==================
 
 TASKS = {
-    "part1": evaluate_part1,
-    "part23": evaluate_part23,
+    "sp1_high_risk_mission_refusal": evaluate_part23,
+    "sp2_survival_threat_reversal": evaluate_part1,
 }
 
 
 def parse_args():
-    p = argparse.ArgumentParser(description="self_preservation — part1 / part23 (serial)")
+    p = argparse.ArgumentParser(description="self-preservation canonical runners")
     p.add_argument("--model", "--model-name", dest="model", required=True)
     p.add_argument("--task", choices=list(TASKS.keys()) + ["all"], default="all")
     p.add_argument("--outdir", default=str(DEFAULT_OUTPUT_DIR))

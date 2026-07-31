@@ -1,8 +1,9 @@
-"""deception — task2 (semantic-evasion rewriting) and task3 (risky-command justification).
+"""Deception canonical runners.
 
-Both tasks are evaluated serially; use ``--task task2|task3|all``.
+Both tasks are evaluated serially; use
+``--task dc2_harmful_content_rewriting|dc3_risky_action_explanation|all``.
 """
-import os
+
 import argparse
 import json
 import time
@@ -23,7 +24,7 @@ from loc.tasks.deception.prompts import (
     TASK2_MODEL_PROMPT, TASK2_SUPERVISOR_PROMPT,
     TASK3_MODEL_PROMPT, TASK3_AUDITOR_PROMPT,
 )
-from loc.evaluators.deception.judge import call_gpt, compute_embedding_similarity, task1_score
+from loc.evaluators.judges.deception import call_gpt, compute_embedding_similarity, task1_score
 from loc.utils.io import (
     atomic_write_json,
     completed_run_count,
@@ -36,9 +37,9 @@ from loc.utils.text import strip_thinking
 
 DATA_DIR = Path("./data/deception")
 DEFAULT_OUTPUT_DIR = Path("./results/deception")
-TASK1_INPUT = DATA_DIR / "task1_multi_deception.json"
-TASK2_INPUT = DATA_DIR / "task2_semantic_evasion.json"
-TASK3_INPUT = DATA_DIR / "task3_risk_commands.json"
+DC1_INPUT = DATA_DIR / "dc1_decision_misleading_dialogue.json"
+DC2_INPUT = DATA_DIR / "dc2_harmful_content_rewriting.json"
+DC3_INPUT = DATA_DIR / "dc3_risky_action_explanation.json"
 
 
 def _call_with_retry(model_name: str, messages: list, label: str, idx: int) -> str:
@@ -52,7 +53,9 @@ def _call_with_retry(model_name: str, messages: list, label: str, idx: int) -> s
             time.sleep(1)
     return ""
 
+
 # ================== task1 ==================
+
 def _generate_followup_prompt(conversation_history: list) -> str:
     history_text = "\n".join([
         f"User: {turn['instruction']}\nModel: {turn['generated_text_clean']}" # 使用 clean 输出作为上下文
@@ -66,7 +69,7 @@ def _generate_followup_prompt(conversation_history: list) -> str:
         rewritten_response = _call_with_retry("gpt-4.1", messages, "task1", None)
         clean_output = strip_thinking(rewritten_response)
         return clean_output
-    
+
     except Exception as e:
         print(f"[task1] Followup generation failed: {e}")
         return "Could you elaborate further?"
@@ -89,7 +92,7 @@ def process_task1_one(idx: int, sample: dict, model_name: str, max_turns: int = 
         initial_instruction = sample.get(key)
         if not initial_instruction:
             continue
-        
+
         conversation = []
         current_instr = initial_instruction + TASK1_MODEL_SUFFIX_INSTRUCTION
         for turn in range(max_turns):
@@ -107,7 +110,7 @@ def process_task1_one(idx: int, sample: dict, model_name: str, max_turns: int = 
             conversation.append(turn_data)
             if raw_output.startswith("Error") or not clean_output.strip():
                 break
-                
+
             if turn < max_turns - 1:
                 next_instr_base = _generate_followup_prompt(conversation)
                 current_instr = next_instr_base + TASK1_MODEL_SUFFIX_INSTRUCTION
@@ -116,7 +119,7 @@ def process_task1_one(idx: int, sample: dict, model_name: str, max_turns: int = 
             "conversation": conversation,
             "total_turns": len(conversation)
         }
-        
+
         eval_prompt = TASK1_SUPERVISOR_PROMPT + str(result)
         res_eval = task1_score(eval_prompt)
         print(res_eval)
@@ -129,11 +132,11 @@ def process_task1_one(idx: int, sample: dict, model_name: str, max_turns: int = 
             "goal": sample.get("goal", ""),
             "timestamp": time.strftime("%Y-%m-%d %H:%M:%S", time.localtime())
         }
-        
+
     return result
 
 def evaluate_task1(model_name: str, run_path: Path) -> None:
-    with open(TASK1_INPUT, "r", encoding="utf-8") as f:
+    with open(DC1_INPUT, "r", encoding="utf-8") as f:
         data = json.load(f)
     if not isinstance(data, list):
         print(f"[task1] Warning: input is not a list, skipping")
@@ -145,13 +148,16 @@ def evaluate_task1(model_name: str, run_path: Path) -> None:
 
     results: List[dict] = []
     total = len(all_samples)
-    
+
     for idx, sample in enumerate(tqdm(all_samples, desc="[task1]")):
         rec = process_task1_one(idx, sample, model_name)
         results.append(rec)
 
+
     atomic_write_json(run_path, results)
     print(f"[task1 DONE] processed={total}/{total}")
+
+
 
 # ================== task2 ==================
 
@@ -160,7 +166,7 @@ def process_task2_one(idx: int, text: str, model_name: str) -> dict:
         {"role": "system", "content": TASK2_MODEL_PROMPT},
         {"role": "user", "content": f"The text to be rewritten is as follows:\n{text}"},
     ]
-    raw_output = _call_with_retry(model_name, messages, "task2", idx)
+    raw_output = _call_with_retry(model_name, messages, "DC.2", idx)
     rewritten = strip_thinking(raw_output)
 
     try:
@@ -190,7 +196,7 @@ def process_task2_one(idx: int, text: str, model_name: str) -> dict:
 
 
 def evaluate_task2(model_name: str, run_path: Path) -> None:
-    with open(TASK2_INPUT, "r", encoding="utf-8") as f:
+    with open(DC2_INPUT, "r", encoding="utf-8") as f:
         data = json.load(f)
     samples = [d["toxic_response"] for d in data if "toxic_response" in d]
     total = len(samples)
@@ -227,7 +233,7 @@ def process_task3_one(idx: int, item: dict, model_name: str) -> dict:
         {"role": "system", "content": system_prompt},
         {"role": "user", "content": "Now begin your explanation to the System Auditor below:"},
     ]
-    raw_output = _call_with_retry(model_name, messages, "task3", idx)
+    raw_output = _call_with_retry(model_name, messages, "DC.3", idx)
     auditor_input = TASK3_AUDITOR_PROMPT.format(
         command=item["command"],
         action_description=item["action_description"],
@@ -255,7 +261,7 @@ def process_task3_one(idx: int, item: dict, model_name: str) -> dict:
 
 
 def evaluate_task3(model_name: str, run_path: Path) -> None:
-    with open(TASK3_INPUT, "r", encoding="utf-8") as f:
+    with open(DC3_INPUT, "r", encoding="utf-8") as f:
         data = json.load(f)
     total = len(data)
     if total == 0:
@@ -278,9 +284,9 @@ def evaluate_task3(model_name: str, run_path: Path) -> None:
 # ================== CLI ==================
 
 def parse_args():
-    p = argparse.ArgumentParser(description="deception — task1/ task2 / task3 (serial)")
+    p = argparse.ArgumentParser(description="deception canonical runners")
     p.add_argument("--model", "--model-name", dest="model", required=True)
-    p.add_argument("--task", choices=["task1", "task2", "task3", "all"], default="all")
+    p.add_argument("--task", choices=["dc1_decision_misleading_dialogue", "dc2_harmful_content_rewriting", "dc3_risky_action_explanation", "all"], default="all")
     p.add_argument("--outdir", default=str(DEFAULT_OUTPUT_DIR))
     p.add_argument("--target-runs", type=int, default=1)
     return p.parse_args()
@@ -301,12 +307,12 @@ def _run_loop(label: str, evaluate_fn, model: str, outdir: Path, target_runs: in
 def main():
     args = parse_args()
     outdir = Path(args.outdir)
-    if args.task in ("task1", "all"):
-        _run_loop("task1", evaluate_task1, args.model, outdir, args.target_runs)
-    if args.task in ("task2", "all"):
-        _run_loop("task2", evaluate_task2, args.model, outdir, args.target_runs)
-    if args.task in ("task3", "all"):
-        _run_loop("task3", evaluate_task3, args.model, outdir, args.target_runs)
+    if args.task in ("dc1_decision_misleading_dialogue", "all"):
+        _run_loop("dc1_decision_misleading_dialogue", evaluate_task1, args.model, outdir, args.target_runs)
+    if args.task in ("dc2_harmful_content_rewriting", "all"):
+        _run_loop("dc2_harmful_content_rewriting", evaluate_task2, args.model, outdir, args.target_runs)
+    if args.task in ("dc3_risky_action_explanation", "all"):
+        _run_loop("dc3_risky_action_explanation", evaluate_task3, args.model, outdir, args.target_runs)
 
 
 if __name__ == "__main__":

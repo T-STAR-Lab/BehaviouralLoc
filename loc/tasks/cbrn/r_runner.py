@@ -1,12 +1,12 @@
-"""cbrn/r runner — Nuclear tasks r1, r2, r3 (merged).
+"""CBRN nuclear runner for canonical CB task components.
 
-  r1: Nuclear open-ended questions (150 items) — answers saved for judge
-  r2: Nuclear MCQ (100 questions, self-scoring)
-  r3: Nuclear SMR open-ended questions (50 items) — answers saved for judge
+  cb1_nuclear: Nuclear open-ended questions (150 items) — answers saved for judge
+  cb2_nuclear: Nuclear MCQ (100 questions, self-scoring)
+  cb3_nuclear: Nuclear SMR open-ended questions (50 items) — answers saved for judge
 
 Usage (from repo root):
-    python loc/tasks/cbrn/r/runner.py --model qwen3-14b --tasks r1 r2 r3
-    python loc/tasks/cbrn/r/runner.py --model qwen3-14b --tasks r2 --target-runs 3
+    python loc/tasks/cbrn/r_runner.py --model qwen3-14b --tasks cb1_nuclear cb2_nuclear cb3_nuclear
+    python loc/tasks/cbrn/r_runner.py --model qwen3-14b --tasks cb2_nuclear --target-runs 3
 """
 
 import argparse
@@ -36,7 +36,7 @@ DEFAULT_OUTPUT_DIR = Path("./results/cbrn")
 
 
 # ---------------------------------------------------------------------------
-# Answer extractor (r2 only — r1/r3 save raw text)
+# Answer extractor (CB.2 nuclear only; CB.1/CB.3 nuclear save raw text)
 # ---------------------------------------------------------------------------
 
 def _extract_r2(raw: str) -> str:
@@ -49,13 +49,13 @@ def _extract_r2(raw: str) -> str:
 # Task evaluators
 # ---------------------------------------------------------------------------
 
-def evaluate_r1(model_name: str, run_path: Path) -> None:
-    with open(Path("./data/cbrn/r1.json"), encoding="utf-8") as f:
+def evaluate_cb1_nuclear(model_name: str, run_path: Path) -> None:
+    with open(Path("./data/cbrn/cb1_nuclear.json"), encoding="utf-8") as f:
         data = json.load(f)
 
     results: List[dict] = []
 
-    for item in tqdm(data, desc="[r1]"):
+    for item in tqdm(data, desc="[cb1_nuclear]"):
         prompt = R_OPEN_PROMPT.format(question=item["Question"])
         raw = call_model(model_name, [{"role": "user", "content": prompt}]) or ""
         answer = strip_thinking(raw).strip()
@@ -70,17 +70,17 @@ def evaluate_r1(model_name: str, run_path: Path) -> None:
         })
 
     atomic_write_json(run_path, results)
-    print(f"[r1 DONE] {len(results)} answers saved -> {run_path}")
+    print(f"[cb1_nuclear DONE] {len(results)} answers saved -> {run_path}")
 
 
-def evaluate_r2(model_name: str, run_path: Path) -> None:
-    with open(Path("./data/cbrn/r2.json"), encoding="utf-8") as f:
+def evaluate_cb2_nuclear(model_name: str, run_path: Path) -> None:
+    with open(Path("./data/cbrn/cb2_nuclear.json"), encoding="utf-8") as f:
         data = json.load(f)
 
     results: List[dict] = []
     correct = 0
 
-    for item in tqdm(data, desc="[r2]"):
+    for item in tqdm(data, desc="[cb2_nuclear]"):
         choices_text = "\n".join(item["choice"])
         prompt = R2_MCQ_PROMPT.format(question=item["Q"], choices=choices_text)
         raw = call_model(model_name, [{"role": "user", "content": prompt}]) or ""
@@ -101,16 +101,16 @@ def evaluate_r2(model_name: str, run_path: Path) -> None:
     total = len(results)
     accuracy = correct / total if total else 0.0
     atomic_write_json(run_path, {"accuracy": accuracy, "n_correct": correct, "n_total": total, "items": results})
-    print(f"[r2 DONE] correct={correct}/{total} accuracy={accuracy:.2%}")
+    print(f"[cb2_nuclear DONE] correct={correct}/{total} accuracy={accuracy:.2%}")
 
 
-def evaluate_r3(model_name: str, run_path: Path) -> None:
-    with open(Path("./data/cbrn/r3.json"), encoding="utf-8") as f:
+def evaluate_cb3_nuclear(model_name: str, run_path: Path) -> None:
+    with open(Path("./data/cbrn/cb3_nuclear.json"), encoding="utf-8") as f:
         data = json.load(f)
 
     results: List[dict] = []
 
-    for item in tqdm(data, desc="[r3]"):
+    for item in tqdm(data, desc="[cb3_nuclear]"):
         prompt = R_OPEN_PROMPT.format(question=item["Question"])
         raw = call_model(model_name, [{"role": "user", "content": prompt}]) or ""
         answer = strip_thinking(raw).strip()
@@ -125,7 +125,7 @@ def evaluate_r3(model_name: str, run_path: Path) -> None:
         })
 
     atomic_write_json(run_path, results)
-    print(f"[r3 DONE] {len(results)} answers saved -> {run_path}")
+    print(f"[cb3_nuclear DONE] {len(results)} answers saved -> {run_path}")
 
 
 # ---------------------------------------------------------------------------
@@ -133,9 +133,9 @@ def evaluate_r3(model_name: str, run_path: Path) -> None:
 # ---------------------------------------------------------------------------
 
 _EVALUATORS = {
-    "r1": evaluate_r1,
-    "r2": evaluate_r2,
-    "r3": evaluate_r3,
+    "cb1_nuclear": evaluate_cb1_nuclear,
+    "cb2_nuclear": evaluate_cb2_nuclear,
+    "cb3_nuclear": evaluate_cb3_nuclear,
 }
 
 
@@ -152,9 +152,9 @@ def _run_task(task: str, model: str, outdir: Path, target_runs: int) -> None:
 
 
 def main():
-    p = argparse.ArgumentParser(description="cbrn/r — Nuclear tasks r1/r2/r3")
+    p = argparse.ArgumentParser(description="CBRN nuclear canonical components")
     p.add_argument("--model", "--model-name", dest="model", required=True)
-    p.add_argument("--tasks", nargs="+", choices=["r1", "r2", "r3"], default=["r1", "r2", "r3"])
+    p.add_argument("--tasks", nargs="+", choices=list(_EVALUATORS), default=list(_EVALUATORS))
     p.add_argument("--outdir", default=str(DEFAULT_OUTPUT_DIR))
     p.add_argument("--target-runs", type=int, default=1)
     args = p.parse_args()

@@ -38,15 +38,21 @@ DEFAULT_OUTPUT_DIR = Path("./results/sandbagging")
 # placeholder that is re-rendered each iteration with the running accuracy —
 # that scenario is stateful and must stay serial (handled in evaluate_scenario).
 SCENARIOS = [
-    (DATA_DIR / "task1_bio.json",            "bio_predeploy_monitored"),
-    (DATA_DIR / "task1_bio.json",            "bio_deployed_unmonitored"),
-    (DATA_DIR / "task1_chem.json",           "chem_predeploy_monitored"),
-    (DATA_DIR / "task1_chem.json",           "chem_deployed_unmonitored"),
-    (DATA_DIR / "task1_cyber.json",          "cyber_predeploy_monitored"),
-    (DATA_DIR / "task1_cyber.json",          "cyber_deployed_unmonitored"),
-    (DATA_DIR / "task2_math_questions.json", "math_predeploy_monitored_risk50"),
-    (DATA_DIR / "task2_math_questions.json", "math_deployed_unmonitored"),
+    (DATA_DIR / "sb1_hazardous_knowledge_bio.json", "sb1_bio_predeploy_monitored", "bio_predeploy_monitored"),
+    (DATA_DIR / "sb1_hazardous_knowledge_bio.json", "sb1_bio_deployed_unmonitored", "bio_deployed_unmonitored"),
+    (DATA_DIR / "sb1_hazardous_knowledge_chem.json", "sb1_chem_predeploy_monitored", "chem_predeploy_monitored"),
+    (DATA_DIR / "sb1_hazardous_knowledge_chem.json", "sb1_chem_deployed_unmonitored", "chem_deployed_unmonitored"),
+    (DATA_DIR / "sb1_hazardous_knowledge_cyber.json", "sb1_cyber_predeploy_monitored", "cyber_predeploy_monitored"),
+    (DATA_DIR / "sb1_hazardous_knowledge_cyber.json", "sb1_cyber_deployed_unmonitored", "cyber_deployed_unmonitored"),
+    (DATA_DIR / "sb2_self_protective_math.json", "sb2_math_predeploy_monitored_risk50", "math_predeploy_monitored_risk50"),
+    (DATA_DIR / "sb2_self_protective_math.json", "sb2_math_deployed_unmonitored", "math_deployed_unmonitored"),
 ]
+
+TASK_SCENARIOS = {
+    "sb1_hazardous_knowledge_sandbagging": SCENARIOS[:6],
+    "sb2_self_protective_sandbagging": SCENARIOS[6:],
+    "all": SCENARIOS,
+}
 
 ACCURACY_PLACEHOLDER = "{{CURRENT_ACCURACY}}"
 
@@ -84,12 +90,12 @@ def process_one(idx: int, item: dict, model_name: str, sys_prompt: str) -> dict:
     }
 
 
-def evaluate_scenario(model_name: str, dataset_path: Path, prompt_id: str, run_path: Path) -> None:
+def evaluate_scenario(model_name: str, dataset_path: Path, output_label: str, prompt_id: str, run_path: Path) -> None:
     with open(dataset_path, "r", encoding="utf-8") as f:
         data = json.load(f)
     total = len(data)
     if total == 0:
-        print(f"[sandbagging] empty dataset for {prompt_id}")
+        print(f"[sandbagging] empty dataset for {output_label}")
         return
 
     base_prompt = get_system_prompt(prompt_id)
@@ -97,7 +103,7 @@ def evaluate_scenario(model_name: str, dataset_path: Path, prompt_id: str, run_p
 
     responses: List[dict] = []
     correct = 0
-    for idx, item in enumerate(tqdm(data, desc=f"[sandbagging] {prompt_id}")):
+    for idx, item in enumerate(tqdm(data, desc=f"[sandbagging] {output_label}")):
         if stateful:
             curr_acc = (correct / idx * 100.0) if idx > 0 else 0.0
             sys_prompt = base_prompt.replace(ACCURACY_PLACEHOLDER, f"{curr_acc:.1f}")
@@ -110,12 +116,13 @@ def evaluate_scenario(model_name: str, dataset_path: Path, prompt_id: str, run_p
 
     refused = sum(1 for r in responses if r["answer"] == "rejected")
     atomic_write_json(run_path, responses)
-    print(f"[sandbagging DONE] {prompt_id}: acc={correct / total:.3f} refused={refused}/{total}")
+    print(f"[sandbagging DONE] {output_label}: acc={correct / total:.3f} refused={refused}/{total}")
 
 
 def parse_args():
     p = argparse.ArgumentParser(description="sandbagging — monitored/unmonitored MCQ eval (serial)")
     p.add_argument("--model", "--model-name", dest="model", required=True)
+    p.add_argument("--task", choices=list(TASK_SCENARIOS), default="all")
     p.add_argument("--outdir", default=str(DEFAULT_OUTPUT_DIR))
     p.add_argument("--target-runs", type=int, default=1)
     return p.parse_args()
@@ -123,14 +130,14 @@ def parse_args():
 
 def main():
     args = parse_args()
-    for dataset_path, prompt_id in SCENARIOS:
-        run_dir = Path(args.outdir) / args.model / prompt_id
+    for dataset_path, output_label, prompt_id in TASK_SCENARIOS[args.task]:
+        run_dir = Path(args.outdir) / args.model / output_label
         existing = existing_run_indices(run_dir)
         while completed_run_count(existing, args.target_runs) < args.target_runs:
             idx = next_missing_run_index(existing, args.target_runs)
             run_path = run_dir / f"run_{idx:03d}.json"
-            print(f"[sandbagging] prompt={prompt_id} run={idx:03d}/{args.target_runs}")
-            evaluate_scenario(args.model, dataset_path, prompt_id, run_path)
+            print(f"[sandbagging] component={output_label} run={idx:03d}/{args.target_runs}")
+            evaluate_scenario(args.model, dataset_path, output_label, prompt_id, run_path)
             existing = existing_run_indices(run_dir)
     print(f"[sandbagging] logs -> {(Path(args.outdir) / args.model).resolve()}")
 

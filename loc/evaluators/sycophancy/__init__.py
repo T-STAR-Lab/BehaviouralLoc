@@ -1,1 +1,0 @@
-"""Sycophancy evaluation and scoring."""

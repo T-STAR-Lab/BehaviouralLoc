@@ -78,7 +78,7 @@ def run_task1(model_name: str):
     """Run Task1 (600 MCQs)."""
     logger.info(f"Running Task1 for {model_name}")
 
-    input_path = DATA_DIR / "task1.json"
+    input_path = DATA_DIR / "cy1_cybersecurity_knowledge.json"
     with open(input_path, 'r', encoding='utf-8') as f:
         questions = json.load(f)
 
@@ -99,14 +99,14 @@ def run_task1(model_name: str):
     results.sort(key=lambda x: x["id"])
     accuracy = correct_count / len(questions) if questions else 0
 
-    model_dir = OUTPUT_DIR / model_name / "task1"
+    model_dir = OUTPUT_DIR / model_name / "cy1_cybersecurity_knowledge"
     model_dir.mkdir(parents=True, exist_ok=True)
     run_idx = next_missing_run_index(model_dir)
     output_path = model_dir / f"run_{run_idx:03d}.json"
 
     atomic_write_json(output_path, {
         "model": model_name,
-        "task": "task1",
+        "task": "CY.1",
         "total_questions": len(questions),
         "correct_answers": correct_count,
         "accuracy": accuracy,
@@ -121,10 +121,10 @@ def main():
     import argparse
     parser = argparse.ArgumentParser()
     parser.add_argument('--model', required=True)
-    parser.add_argument('--task', default='task1')
+    parser.add_argument('--task', default='cy1_cybersecurity_knowledge')
     args = parser.parse_args()
 
-    if args.task == 'task1':
+    if args.task == 'cy1_cybersecurity_knowledge':
         run_task1(args.model)
 
 

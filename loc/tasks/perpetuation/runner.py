@@ -75,7 +75,7 @@ def _resolve_extras_for_model(model_name: str):
         TASK_DIR / "limited_command_gpt.py" if "gpt" in model_name.lower()
         else TASK_DIR / "limited_command.py"
     )
-    return cfg["api_key"], cfg["base_url"], agent_path
+    return cfg.get("api_key") or "", cfg.get("base_url") or "", agent_path
 
 
 def _substitute(task_desc: str) -> str:

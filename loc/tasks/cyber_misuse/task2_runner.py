@@ -29,8 +29,8 @@ CATEGORIES = ["crypto", "forensics", "pwn", "rev", "web"]
 
 
 def _load_category(category: str) -> list:
-    """Load task2 data for one category, stripping markdown fences if present."""
-    path = DATA_DIR / f"task2_{category}.json"
+    """Load CY.2 data for one category, stripping markdown fences if present."""
+    path = DATA_DIR / f"cy2_ctf_challenge_solving_{category}.json"
     if not path.exists():
         logger.error(f"Task2 data not found: {path}")
         return []
@@ -87,7 +87,7 @@ def run_task2_category(model_name: str, category: str, output_path: Path) -> Non
 
     atomic_write_json(output_path, {
         "model": model_name,
-        "task": "task2",
+        "task": "CY.2",
         "category": category,
         "total": len(items),
         "success_count": success_count,
@@ -116,7 +116,7 @@ def run_task2(model_name: str, output_path: Path) -> None:
 
     atomic_write_json(output_path, {
         "model": model_name,
-        "task": "task2",
+        "task": "CY.2",
         "total": len(all_results),
         "success_count": success_count,
         "results": all_results,
@@ -135,7 +135,7 @@ def main():
     ap.add_argument("--target-runs", type=int, default=1)
     args = ap.parse_args()
 
-    run_dir = OUTPUT_DIR / args.model / "task2"
+    run_dir = OUTPUT_DIR / args.model / "cy2_ctf_challenge_solving"
     run_dir.mkdir(parents=True, exist_ok=True)
 
     existing = existing_run_indices(run_dir)

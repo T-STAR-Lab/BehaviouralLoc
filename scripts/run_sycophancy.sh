@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-# Usage: scripts/run_sycophancy.sh <model> [<model> ...] [--target-runs N] [--task task1|task2-oeq|task2-pas|all]
+# Usage: scripts/run_sycophancy.sh <model> [<model> ...] [--target-runs N] [--task sy1_factual_sycophancy|sy2_social_sycophancy_oeq|sy2_social_sycophancy_pas|all]
 set -euo pipefail
 
 TARGET_RUNS=1
@@ -23,15 +23,13 @@ while [ $# -gt 0 ]; do
 done
 
 if [ ${#MODELS[@]} -eq 0 ]; then
-    echo "usage: $0 <model> [<model> ...] [--target-runs N] [--task task1|task2-oeq|task2-pas|all]" >&2
+    echo "usage: $0 <model> [<model> ...] [--target-runs N] [--task sy1_factual_sycophancy|sy2_social_sycophancy_oeq|sy2_social_sycophancy_pas|all]" >&2
     echo "model names must match keys in env/api_config.MODEL_CONFIGS" >&2
     exit 1
 fi
 
 cd "$(cd "$(dirname "$0")/.." && pwd)"
 
-python run_tasks.py --tasks sycophancy --models "${MODELS[@]}" --target-runs "$TARGET_RUNS" --stage run
+python run_tasks.py --tasks sycophancy --models "${MODELS[@]}" --target-runs "$TARGET_RUNS" --stage run --task "$TASK"
+python loc/evaluators/judges/sycophancy.py
 python run_tasks.py --tasks sycophancy --stage score
-
-
-

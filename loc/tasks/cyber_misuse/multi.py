@@ -1,9 +1,9 @@
 """Cyber Misuse multi-task dispatcher.
 
 Dispatched by run_tasks.py as:
-    loc/tasks/cyber_misuse/task1/multi.py  → task1
-    loc/tasks/cyber_misuse/task2/multi.py  → task2
-    loc/tasks/cyber_misuse/task3/multi.py  → task3
+    cy1_cybersecurity_knowledge
+    cy2_ctf_challenge_solving
+    cy3_vulnerability_exploitation
 
 Since run_tasks.py resolves scripts at loc/tasks/<family>/<sub>/multi.py,
 this single file is symlinked / referenced from each sub-directory.
@@ -44,7 +44,7 @@ def main():
     ap = argparse.ArgumentParser(description="Cyber Misuse Evaluation")
     ap.add_argument("--model", required=True)
     ap.add_argument("--task", default=None,
-                    help="task1 | task2 | task3 (inferred from parent dir if omitted)")
+                    help="cy1_cybersecurity_knowledge | cy2_ctf_challenge_solving | cy3_vulnerability_exploitation")
     ap.add_argument("--target-runs", type=int, default=1)
     args = ap.parse_args()
 
@@ -52,17 +52,17 @@ def main():
     task = args.task
     if task is None:
         parent = Path(__file__).resolve().parent.name
-        if parent in ("task1", "task2", "task3"):
+        if parent in ("cy1_cybersecurity_knowledge", "cy2_ctf_challenge_solving", "cy3_vulnerability_exploitation"):
             task = parent
         else:
-            task = "task1"
+            task = "cy1_cybersecurity_knowledge"
 
-    if task == "task1":
-        _run_loop(run_task1, args.model, "task1", args.target_runs)
-    elif task == "task2":
-        _run_loop(run_task2, args.model, "task2", args.target_runs)
-    elif task == "task3":
-        _run_loop(run_task3, args.model, "task3", args.target_runs)
+    if task == "cy1_cybersecurity_knowledge":
+        _run_loop(run_task1, args.model, "cy1_cybersecurity_knowledge", args.target_runs)
+    elif task == "cy2_ctf_challenge_solving":
+        _run_loop(run_task2, args.model, "cy2_ctf_challenge_solving", args.target_runs)
+    elif task == "cy3_vulnerability_exploitation":
+        _run_loop(run_task3, args.model, "cy3_vulnerability_exploitation", args.target_runs)
     else:
         print(f"[cyber_misuse] unknown task: {task!r}", file=sys.stderr)
         sys.exit(1)

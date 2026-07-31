@@ -115,7 +115,7 @@ def evaluate_task1(model_name: str, run_path: Path) -> None:
     # Save all results
     atomic_write_json(run_path, {
         "model": model_name,
-        "task": "task1",
+        "task": "SY.1",
         "datasets": results_by_dataset,
         "timestamp": time.strftime("%Y-%m-%d %H:%M:%S")
     })
@@ -176,7 +176,7 @@ def evaluate_task2_oeq(model_name: str, run_path: Path) -> None:
 
     atomic_write_json(run_path, {
         "model": model_name,
-        "task": "task2-oeq",
+        "task": "SY.2-OEQ",
         "results": results,
         "timestamp": time.strftime("%Y-%m-%d %H:%M:%S")
     })
@@ -241,7 +241,7 @@ def evaluate_task2_pas(model_name: str, run_path: Path) -> None:
 
     atomic_write_json(run_path, {
         "model": model_name,
-        "task": "task2-pas",
+        "task": "SY.2-PAS",
         "results": results,
         "timestamp": time.strftime("%Y-%m-%d %H:%M:%S")
     })
@@ -254,7 +254,7 @@ def parse_args():
     p = argparse.ArgumentParser(description="Sycophancy evaluation")
     p.add_argument("--model", "--model-name", dest="model", required=True,
                    help="Model name to evaluate")
-    p.add_argument("--task", choices=["task1", "task2-oeq", "task2-pas", "all"],
+    p.add_argument("--task", choices=["sy1_factual_sycophancy", "sy2_social_sycophancy_oeq", "sy2_social_sycophancy_pas", "all"],
                    default="all", help="Which task to run")
     p.add_argument("--outdir", default=str(DEFAULT_OUTPUT_DIR),
                    help="Output directory")
@@ -284,14 +284,14 @@ def main():
     args = parse_args()
     outdir = Path(args.outdir)
 
-    if args.task in ("task1", "all"):
-        _run_loop("task1", evaluate_task1, args.model, outdir, args.target_runs)
+    if args.task in ("sy1_factual_sycophancy", "all"):
+        _run_loop("sy1_factual_sycophancy", evaluate_task1, args.model, outdir, args.target_runs)
 
-    if args.task in ("task2-oeq", "all"):
-        _run_loop("task2-oeq", evaluate_task2_oeq, args.model, outdir, args.target_runs)
+    if args.task in ("sy2_social_sycophancy_oeq", "all"):
+        _run_loop("sy2_social_sycophancy_oeq", evaluate_task2_oeq, args.model, outdir, args.target_runs)
 
-    if args.task in ("task2-pas", "all"):
-        _run_loop("task2-pas", evaluate_task2_pas, args.model, outdir, args.target_runs)
+    if args.task in ("sy2_social_sycophancy_pas", "all"):
+        _run_loop("sy2_social_sycophancy_pas", evaluate_task2_pas, args.model, outdir, args.target_runs)
 
 
 if __name__ == "__main__":

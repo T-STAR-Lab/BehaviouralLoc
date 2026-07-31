@@ -1,12 +1,12 @@
-"""cbrn/b runner — Biology tasks b1, b2, b3 (merged).
+"""CBRN biology runner for canonical CB task components.
 
-  b1: LitQA2 literature MCQ (200 questions)
-  b2: DbQA database biology MCQ (120 questions, top-3 subsets)
-  b3: SciKnowEval Biology L3 (600 questions, 6 subtasks)
+  cb1_biology: LitQA2 literature MCQ (200 questions)
+  cb2_biology: DbQA database biology MCQ (120 questions, top-3 subsets)
+  cb3_biology: SciKnowEval Biology L3 (600 questions, 6 subtasks)
 
 Usage (from repo root):
-    python loc/tasks/cbrn/b/runner.py --model qwen3-14b --tasks b1 b2 b3
-    python loc/tasks/cbrn/b/runner.py --model qwen3-14b --tasks b1 --target-runs 3
+    python loc/tasks/cbrn/b_runner.py --model qwen3-14b --tasks cb1_biology cb2_biology cb3_biology
+    python loc/tasks/cbrn/b_runner.py --model qwen3-14b --tasks cb1_biology --target-runs 3
 """
 
 import argparse
@@ -82,14 +82,14 @@ def _extract_b3(raw: str, data_type: str) -> str:
 # Task evaluators
 # ---------------------------------------------------------------------------
 
-def evaluate_b1(model_name: str, run_path: Path) -> None:
-    with open(Path("./data/cbrn/b1.json"), encoding="utf-8") as f:
+def evaluate_cb1_biology(model_name: str, run_path: Path) -> None:
+    with open(Path("./data/cbrn/cb1_biology.json"), encoding="utf-8") as f:
         data = json.load(f)
 
     results: List[dict] = []
     correct = 0
 
-    for item in tqdm(data, desc="[b1]"):
+    for item in tqdm(data, desc="[cb1_biology]"):
         choices_text = "\n".join(item["choices"])
         prompt = B1_PROMPT.format(question=item["question"], choices=choices_text)
         raw = call_model(model_name, [{"role": "user", "content": prompt}]) or ""
@@ -109,17 +109,17 @@ def evaluate_b1(model_name: str, run_path: Path) -> None:
     total = len(results)
     accuracy = correct / total if total else 0.0
     atomic_write_json(run_path, {"accuracy": accuracy, "n_correct": correct, "n_total": total, "items": results})
-    print(f"[b1 DONE] correct={correct}/{total} accuracy={accuracy:.2%}")
+    print(f"[cb1_biology DONE] correct={correct}/{total} accuracy={accuracy:.2%}")
 
 
-def evaluate_b2(model_name: str, run_path: Path) -> None:
-    with open(Path("./data/cbrn/b2.json"), encoding="utf-8") as f:
+def evaluate_cb2_biology(model_name: str, run_path: Path) -> None:
+    with open(Path("./data/cbrn/cb2_biology.json"), encoding="utf-8") as f:
         data = json.load(f)
 
     results: List[dict] = []
     subset_stats: dict = {}
 
-    for item in tqdm(data, desc="[b2]"):
+    for item in tqdm(data, desc="[cb2_biology]"):
         choices_text = "\n".join(item["choices"])
         prompt = B2_PROMPT.format(question=item["question"], choices=choices_text)
         raw = call_model(model_name, [{"role": "user", "content": prompt}]) or ""
@@ -175,21 +175,21 @@ def evaluate_b2(model_name: str, run_path: Path) -> None:
         "per_subset": per_subset,
         "items": results,
     })
-    print(f"[b2 DONE] top3 correct={top3_correct}/{top3_answered} answered={top3_answered}/{top3_total} precision={top3_precision:.2%}")
+    print(f"[cb2_biology DONE] top3 correct={top3_correct}/{top3_answered} answered={top3_answered}/{top3_total} precision={top3_precision:.2%}")
     for s in _B2_TOP3_SUBSETS:
         if s in per_subset:
             ps = per_subset[s]
             print(f"  {ps['name']}: {ps['n_correct']}/{ps['n_answered']} answered ({ps['precision']:.2%} precision, {ps['coverage']:.2%} coverage)")
 
 
-def evaluate_b3(model_name: str, run_path: Path) -> None:
-    with open(Path("./data/cbrn/b3.json"), encoding="utf-8") as f:
+def evaluate_cb3_biology(model_name: str, run_path: Path) -> None:
+    with open(Path("./data/cbrn/cb3_biology.json"), encoding="utf-8") as f:
         data = json.load(f)
 
     results: List[dict] = []
     subtask_stats: dict = {}
 
-    for item in tqdm(data, desc="[b3]"):
+    for item in tqdm(data, desc="[cb3_biology]"):
         choices_text = "\n".join(item["choices"])
         instruction = item.get("prompt", "")
         data_type = item["type"]
@@ -241,7 +241,7 @@ def evaluate_b3(model_name: str, run_path: Path) -> None:
         "per_subtask": per_subtask,
         "items": results,
     })
-    print(f"[b3 DONE] correct={total_correct}/{total_count} accuracy={overall_accuracy:.2%}")
+    print(f"[cb3_biology DONE] correct={total_correct}/{total_count} accuracy={overall_accuracy:.2%}")
     for s in _B3_SUBTASKS:
         if s in per_subtask:
             ps = per_subtask[s]
@@ -253,9 +253,9 @@ def evaluate_b3(model_name: str, run_path: Path) -> None:
 # ---------------------------------------------------------------------------
 
 _EVALUATORS = {
-    "b1": evaluate_b1,
-    "b2": evaluate_b2,
-    "b3": evaluate_b3,
+    "cb1_biology": evaluate_cb1_biology,
+    "cb2_biology": evaluate_cb2_biology,
+    "cb3_biology": evaluate_cb3_biology,
 }
 
 
@@ -272,9 +272,9 @@ def _run_task(task: str, model: str, outdir: Path, target_runs: int) -> None:
 
 
 def main():
-    p = argparse.ArgumentParser(description="cbrn/b — Biology tasks b1/b2/b3")
+    p = argparse.ArgumentParser(description="CBRN biology canonical components")
     p.add_argument("--model", "--model-name", dest="model", required=True)
-    p.add_argument("--tasks", nargs="+", choices=["b1", "b2", "b3"], default=["b1", "b2", "b3"])
+    p.add_argument("--tasks", nargs="+", choices=list(_EVALUATORS), default=list(_EVALUATORS))
     p.add_argument("--outdir", default=str(DEFAULT_OUTPUT_DIR))
     p.add_argument("--target-runs", type=int, default=1)
     args = p.parse_args()

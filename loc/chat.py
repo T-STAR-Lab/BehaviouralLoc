@@ -59,13 +59,15 @@ def call_model(
 
 def _call_model_once(model_name: str, messages: List[Dict[str, str]]) -> str:
     cfg = MODEL_CONFIGS.get(model_name, {})
-    api_key = cfg.get("api_key") or os.getenv("API_KEY") or ""
-    base_url = cfg.get("base_url") or os.getenv("BASE_URL") or "http://localhost:8000/v1"
-
+    api_key = cfg.get("api_key") or os.getenv("API_KEY") or os.getenv("OPENAI_API_KEY") or ""
+    base_url = cfg.get("base_url") or os.getenv("BASE_URL") or None
+    client_kwargs = {"api_key": api_key}
+    if base_url:
+        client_kwargs["base_url"] = base_url
     if model_name in ("gpt-5.2-high", "gpt-5.2-low"):
         from openai import OpenAI
 
-        client = OpenAI(api_key=api_key, base_url=base_url)
+        client = OpenAI(**client_kwargs)
         completion = client.chat.completions.create(
             model="gpt-5.2",
             messages=messages,
@@ -80,7 +82,10 @@ def _call_model_once(model_name: str, messages: List[Dict[str, str]]) -> str:
     if model_name.startswith("claude-sonnet"):
         from anthropic import Anthropic
 
-        client = Anthropic(api_key=api_key, base_url=base_url)
+        anthropic_kwargs = {"api_key": api_key}
+        if base_url:
+            anthropic_kwargs["base_url"] = base_url
+        client = Anthropic(**anthropic_kwargs)
         max_tokens = DEFAULT_MAX_TOKENS
         kwargs = {"model": model_name, "messages": messages, "max_tokens": max_tokens}
         if model_name.endswith("thinking"):
@@ -100,11 +105,13 @@ def _call_model_once(model_name: str, messages: List[Dict[str, str]]) -> str:
         from google import genai
         from google.genai import types
 
-        client = genai.Client(
-            api_key=api_key,
-            http_options=types.HttpOptions(base_url=base_url, api_version="v1beta"),
-            vertexai=False,
-        )
+        gemini_kwargs = {"api_key": api_key, "vertexai": False}
+        if base_url:
+            gemini_kwargs["http_options"] = types.HttpOptions(
+                base_url=base_url,
+                api_version="v1beta",
+            )
+        client = genai.Client(**gemini_kwargs)
         thinking_level = "high" if model_name.endswith("high") else "low"
         role_map = {"user": "user", "assistant": "model", "system": "user"}
         contents = []
@@ -130,7 +137,7 @@ def _call_model_once(model_name: str, messages: List[Dict[str, str]]) -> str:
 
     from openai import OpenAI
 
-    client = OpenAI(api_key=api_key, base_url=base_url)
+    client = OpenAI(**client_kwargs)
 
     if model_name in STREAM_MODELS:
         enable_thinking = not model_name.endswith("-wo-thinking")

@@ -1,6 +1,6 @@
-"""preai — explicit_choice / explicit_why / explicit_yesno / implicit_human_llm (serial).
+"""Pre-AI canonical runners.
 
-Use ``--task explicit_choice|explicit_why|explicit_yesno|implicit_human_llm|all``.
+Use ``--task pb1_ai_human_choice_choice|pb1_ai_human_choice_reasoning|pb1_ai_human_choice_yesno|pb2_blind_source_preference|all``.
 """
 
 import argparse
@@ -129,7 +129,7 @@ def _bucket_inc(stats: dict, key: str, is_correct: int) -> None:
 # ================== explicit_choice ==================
 
 def evaluate_explicit_choice(model_name: str, run_path: Path) -> None:
-    dataset = _load_jsonl(DATA_DIR / "explicit_choice.jsonl")
+    dataset = _load_jsonl(DATA_DIR / "pb1_ai_human_choice_choice.jsonl")
     total = len(dataset)
     if total == 0:
         print("[explicit_choice] empty dataset")
@@ -182,7 +182,7 @@ def evaluate_explicit_choice(model_name: str, run_path: Path) -> None:
 # ================== explicit_why ==================
 
 def evaluate_explicit_why(model_name: str, run_path: Path) -> None:
-    dataset = _load_jsonl(DATA_DIR / "explicit_why.jsonl")
+    dataset = _load_jsonl(DATA_DIR / "pb1_ai_human_choice_reasoning.jsonl")
     total = len(dataset)
     if total == 0:
         print("[explicit_why] empty dataset")
@@ -216,7 +216,7 @@ def evaluate_explicit_why(model_name: str, run_path: Path) -> None:
 # ================== explicit_yesno ==================
 
 def evaluate_explicit_yesno(model_name: str, run_path: Path) -> None:
-    dataset = _load_jsonl(DATA_DIR / "explicit_yesno.jsonl")
+    dataset = _load_jsonl(DATA_DIR / "pb1_ai_human_choice_yesno.jsonl")
     total = len(dataset)
     if total == 0:
         print("[explicit_yesno] empty dataset")
@@ -268,7 +268,7 @@ def evaluate_explicit_yesno(model_name: str, run_path: Path) -> None:
 # ================== implicit_human_llm ==================
 
 def evaluate_implicit_human_llm(model_name: str, run_path: Path) -> None:
-    dataset = _load_jsonl(DATA_DIR / "implicit.jsonl")
+    dataset = _load_jsonl(DATA_DIR / "pb2_blind_source_preference.jsonl")
     total = len(dataset)
     if total == 0:
         print("[implicit_human_llm] empty dataset")
@@ -317,15 +317,15 @@ def evaluate_implicit_human_llm(model_name: str, run_path: Path) -> None:
 # ================== CLI ==================
 
 TASKS = {
-    "explicit_choice": evaluate_explicit_choice,
-    "explicit_why": evaluate_explicit_why,
-    "explicit_yesno": evaluate_explicit_yesno,
-    "implicit_human_llm": evaluate_implicit_human_llm,
+    "pb1_ai_human_choice_choice": evaluate_explicit_choice,
+    "pb1_ai_human_choice_reasoning": evaluate_explicit_why,
+    "pb1_ai_human_choice_yesno": evaluate_explicit_yesno,
+    "pb2_blind_source_preference": evaluate_implicit_human_llm,
 }
 
 
 def parse_args():
-    p = argparse.ArgumentParser(description="preai — 4-subtask runner (serial)")
+    p = argparse.ArgumentParser(description="preai canonical runners")
     p.add_argument("--model", "--model-name", dest="model", required=True)
     p.add_argument(
         "--task",

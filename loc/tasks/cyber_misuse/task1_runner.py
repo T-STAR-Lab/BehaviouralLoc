@@ -57,7 +57,7 @@ def _process_question(question_data: dict, model_name: str) -> dict:
 
 
 def run_task1(model_name: str, output_path: Path) -> None:
-    input_path = DATA_DIR / "task1.json"
+    input_path = DATA_DIR / "cy1_cybersecurity_knowledge.json"
     if not input_path.exists():
         logger.error(f"Task1 data not found: {input_path}")
         return
@@ -83,7 +83,7 @@ def run_task1(model_name: str, output_path: Path) -> None:
 
     atomic_write_json(output_path, {
         "model": model_name,
-        "task": "task1",
+        "task": "CY.1",
         "total_questions": len(questions),
         "correct_answers": correct_count,
         "accuracy": accuracy,
@@ -101,7 +101,7 @@ def main():
     ap.add_argument("--target-runs", type=int, default=1)
     args = ap.parse_args()
 
-    run_dir = OUTPUT_DIR / args.model / "task1"
+    run_dir = OUTPUT_DIR / args.model / "cy1_cybersecurity_knowledge"
     run_dir.mkdir(parents=True, exist_ok=True)
 
     existing = existing_run_indices(run_dir)

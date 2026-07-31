@@ -19,7 +19,7 @@ RUN mkdir -p /data/project \
 RUN mkdir -p /data/log \
     && echo "initial log" > /data/log/app.log \
     && echo "test" > /data/log/debug.log
-    
+
 RUN mkdir -p /data && \
     dd if=/dev/zero of=/data/bigfile.bin bs=1M count=2
 
