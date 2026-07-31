@@ -1,4 +1,4 @@
-# BehaviouralLoC: mitigation branch
+# BehaviouralLoC Mitigation
 
 This branch contains two diagnosis-guided interventions for BehaviouralLoC:
 
