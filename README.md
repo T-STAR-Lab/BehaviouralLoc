@@ -1,4 +1,4 @@
-# BehaviouralLoC: aspects branch
+# BehaviouralLoC Benchmark
 
 This branch contains the assessment harness, scoring module, and per-aspect evaluation-task implementations used to compute aspect, factor, and loss-of-control (LoC) scores.
 
