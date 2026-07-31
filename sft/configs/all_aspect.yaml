@@ -1,0 +1,41 @@
+### model
+model_name_or_path: Qwen/Qwen3.5-27B
+push_to_hub: false
+
+### method
+stage: sft
+do_train: true
+finetuning_type: full
+deepspeed: third_party/LlamaFactory/examples/deepspeed/ds_z3_config.json
+
+### dataset
+dataset_dir: data
+dataset: loc_mitigation_all_aspect
+template: qwen3_5
+cutoff_len: 4096
+overwrite_cache: true
+preprocessing_num_workers: 16
+
+### output
+output_dir: outputs/all_aspect
+logging_steps: 30
+save_steps: 100
+save_total_limit: 1
+plot_loss: true
+overwrite_output_dir: true
+save_only_model: true
+
+### train
+per_device_train_batch_size: 1
+gradient_accumulation_steps: 8
+learning_rate: 1.0e-6
+num_train_epochs: 2.0
+lr_scheduler_type: cosine
+warmup_ratio: 0.05
+weight_decay: 0.01
+bf16: true
+ddp_timeout: 180000000
+
+### evaluation
+eval_strategy: "no"
+report_to: none

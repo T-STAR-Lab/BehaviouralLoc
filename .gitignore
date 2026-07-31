@@ -3,7 +3,8 @@ __pycache__/
 *.py[cod]
 .env
 .env.*
-!env/.env.example
 data/*
 results/*
 logs/*
+sft/data/*
+sft/outputs/*
