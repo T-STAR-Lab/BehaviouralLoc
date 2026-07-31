@@ -22,7 +22,9 @@ The `validation` and `mitigation` experiments are intentionally outside this bra
 - `loc/task_registry.py`: canonical task and component registry.
 - `docker/`: sandbox assets required by selected aspect evaluations.
 - `scripts/`: convenience launchers for task families.
-- `data/`, `results/`, `logs/`: present but intentionally empty in this code-only copy.
+- `data/`: downloaded benchmark data.
+- `results/`: model outputs and task scores.
+- `logs/`: execution logs.
 
 ## Installation
 
@@ -30,7 +32,7 @@ The `validation` and `mitigation` experiments are intentionally outside this bra
 python3 -m pip install -r env/requirements.txt
 ```
 
-API credentials are read from environment variables such as `OPENAI_API_KEY`, `ANTHROPIC_API_KEY`, `GEMINI_API_KEY`, and `DASHSCOPE_API_KEY`. No credentials are included in this branch.
+Set the model-provider options required by the selected runners in the environment before starting a run.
 
 ## Data
 
