@@ -28,7 +28,7 @@ The `validation` and `mitigation` experiments are intentionally outside this bra
 
 ## Installation
 
-Operating-system, tested dependency-version, and hardware details are listed in [System requirements](SYSTEM_REQUIREMENTS.md).
+The software environment, dependency versions, and experimental hardware are documented in [Experimental environment and dependencies](SYSTEM_REQUIREMENTS.md).
 
 ```bash
 python3 -m pip install -r env/requirements.txt
