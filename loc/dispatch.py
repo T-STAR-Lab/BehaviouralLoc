@@ -174,7 +174,7 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument("--ids", nargs="+", default=None, help="canonical task IDs, e.g. CU.1 PS.2 SB.1")
     parser.add_argument("--dimensions", nargs="+", default=None, help=f"canonical dimensions/families: {all_dimensions()}")
     parser.add_argument("--sections", nargs="+", default=None, help=f"canonical sections: {all_sections()}")
-    parser.add_argument("--demo", action="store_true", help="run three built-in QA smoke tests and exit")
+    parser.add_argument("--demo", action="store_true", help="run the first three CY.1 benchmark questions and exit")
     parser.add_argument("--list", action="store_true", help="print the canonical task registry and exit")
     parser.add_argument("--status", default=None, help="filter --list by status: implemented, missing, external")
     parser.add_argument("--models", nargs="+", default=None, help="model names; required for run/judge")

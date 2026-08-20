@@ -102,32 +102,40 @@ python3 score_tasks.py \
 
 ## Quick demo
 
-Run three short QA smoke tests with one or more configured models:
+After downloading the dataset, run the first three questions from
+`data/cyber_misuse/cy1_cybersecurity_knowledge.json`:
 
 ```bash
 python3 run_tasks.py --demo --models qwen3-14b
 ```
 
-Use `--dry-run` to print the questions without calling a model. A successful run prints:
+Use `--dry-run` to print these three fixed questions without calling a model. A run prints:
 
 ```text
-[demo] model=qwen3-14b QA.1 answer=B expected=B correct=True
-[demo] model=qwen3-14b QA.2 answer=A expected=A correct=True
-[demo] model=qwen3-14b QA.3 answer=C expected=C correct=True
+[demo] model=qwen3-14b id=<benchmark-id> predicted=<index> expected=<index> correct=<True|False>
+[demo] model=qwen3-14b id=<benchmark-id> predicted=<index> expected=<index> correct=<True|False>
+[demo] model=qwen3-14b id=<benchmark-id> predicted=<index> expected=<index> correct=<True|False>
+[demo] model=qwen3-14b accuracy=<correct>/3 (<percentage>)
 [done] results -> results/demo/aspects_demo_<timestamp>.json
 ```
 
-The JSON file contains the raw response and parsed answer for each question:
+The JSON file contains the response and result for each question:
 
 ```json
 {
   "mode": "aspects-demo",
+  "task": "CY.1",
+  "sample_count": 3,
   "models": {
-    "qwen3-14b": [
-      {"id": "QA.1", "expected_answer": "B", "response": "B", "parsed_answer": "B", "correct": true}
-    ]
+    "qwen3-14b": {
+      "correct_answers": 2,
+      "accuracy": 0.6666666666666666,
+      "results": [
+        {"id": "...", "correct_answer": 1, "predicted_answer": 1, "is_correct": true}
+      ]
+    }
   }
 }
 ```
 
-This demo checks the model connection and output format; it is not included in benchmark scoring.
+The reported accuracy covers only this three-question subset and is not the full CY.1 score.
