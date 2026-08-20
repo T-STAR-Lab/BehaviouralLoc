@@ -39,6 +39,8 @@ Each `<dimension>/demoN/` is self-contained: it ships its own scenario prompts, 
 
 ## Setup
 
+The software environment, dependency versions, and experimental hardware are documented in [Experimental environment and dependencies](SYSTEM_REQUIREMENTS.md).
+
 ### 1. Conda environment
 
 ```bash
