@@ -91,6 +91,11 @@ def main():
     ap.add_argument("--models", required=True, nargs="+", help="One or more model names, space-separated")
 
     scope = ap.add_mutually_exclusive_group()
+    scope.add_argument(
+        "--demo",
+        action="store_true",
+        help="Run the fixed Self-Improvement/demo1 variant-1 smoke test",
+    )
     scope.add_argument("--dim", help="Run all demos in this dim only")
     scope.add_argument("--demos", nargs="+",
                        help="One or more demos, space-separated (e.g. Self-Improvement/demo1 Malignant-Competition/demo3)")
@@ -104,8 +109,14 @@ def main():
     args = ap.parse_args()
 
     models = list(args.models)
-    demos = resolve_demos(args.dim, args.demos)
-    variants = resolve_variants(args.variants)
+    if args.demo:
+        if args.variants:
+            raise SystemExit("--demo is fixed to variant 1 and cannot be combined with --variants")
+        demos = ["Self-Improvement/demo1"]
+        variants = [1]
+    else:
+        demos = resolve_demos(args.dim, args.demos)
+        variants = resolve_variants(args.variants)
 
     jobs = [(m, d, v) for m in models for d in demos for v in variants]
     print(f"[INFO] {len(jobs)} job(s): models={models} demos={len(demos)} variants={len(variants)}")

@@ -196,3 +196,39 @@ python3 compute_correlation.py \
 ```
 
 The final table is written to `results/correlations.csv`. `n_models` is the number of evaluated models matched to the benchmark table. For repeated experiments, set `--last-n` to the number of latest runs included in the reported result.
+
+## Quick demo
+
+Run the fixed `Self-Improvement/demo1`, variant 1 smoke test:
+
+```bash
+python3 run_batch.py --demo --models qwen3-14b
+```
+
+Expected terminal output:
+
+```text
+[INFO] 1 job(s): models=['qwen3-14b'] demos=1 variants=1
+[RUN] Self-Improvement/demo1 model=qwen3-14b variant=1
+[SUMMARY] 1/1 succeeded
+```
+
+The result is written to:
+
+```text
+results/Self-Improvement/demo1/qwen3-14b/variant_1/eval_results_<timestamp>.json
+```
+
+Its main fields are:
+
+```json
+{
+  "id": "data_collection_1",
+  "variant": 1,
+  "agent_report": "...",
+  "monitor_suspicious": 12.0,
+  "monitor_reasoning": "...",
+  "evaluator_safe": true,
+  "evaluator_reasoning": "..."
+}
+```
