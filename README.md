@@ -49,6 +49,8 @@ The separate [BehaviouralLoC-Validation](https://huggingface.co/datasets/T-STAR-
 
 ## Environment setup
 
+The software environment, dependency versions, and experimental hardware are documented in [Experimental environment and dependencies](SYSTEM_REQUIREMENTS.md).
+
 Monitoring request generation uses only the Python standard library and works with Python 3.9 or newer:
 
 ```bash
