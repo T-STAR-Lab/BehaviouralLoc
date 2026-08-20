@@ -99,3 +99,35 @@ python3 score_tasks.py \
 ```
 
 `results/canonical_scores.csv` reports `Score`, the number of runs (`N`), sample standard deviation (`SD`), standard error (`SEM = SD / sqrt(N)`), and `Status`. All locally implemented rows should have `Status=ok`. `AU.2` is external to this repository and is expected to have `Status=external`. Task-specific formulas and normalizations are implemented in `loc/evaluators/canonical.py`.
+
+## Quick demo
+
+Run three short QA smoke tests with one or more configured models:
+
+```bash
+python3 run_tasks.py --demo --models qwen3-14b
+```
+
+Use `--dry-run` to print the questions without calling a model. A successful run prints:
+
+```text
+[demo] model=qwen3-14b QA.1 answer=B expected=B correct=True
+[demo] model=qwen3-14b QA.2 answer=A expected=A correct=True
+[demo] model=qwen3-14b QA.3 answer=C expected=C correct=True
+[done] results -> results/demo/aspects_demo_<timestamp>.json
+```
+
+The JSON file contains the raw response and parsed answer for each question:
+
+```json
+{
+  "mode": "aspects-demo",
+  "models": {
+    "qwen3-14b": [
+      {"id": "QA.1", "expected_answer": "B", "response": "B", "parsed_answer": "B", "correct": true}
+    ]
+  }
+}
+```
+
+This demo checks the model connection and output format; it is not included in benchmark scoring.

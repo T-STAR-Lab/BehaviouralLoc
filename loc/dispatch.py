@@ -174,6 +174,7 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument("--ids", nargs="+", default=None, help="canonical task IDs, e.g. CU.1 PS.2 SB.1")
     parser.add_argument("--dimensions", nargs="+", default=None, help=f"canonical dimensions/families: {all_dimensions()}")
     parser.add_argument("--sections", nargs="+", default=None, help=f"canonical sections: {all_sections()}")
+    parser.add_argument("--demo", action="store_true", help="run three built-in QA smoke tests and exit")
     parser.add_argument("--list", action="store_true", help="print the canonical task registry and exit")
     parser.add_argument("--status", default=None, help="filter --list by status: implemented, missing, external")
     parser.add_argument("--models", nargs="+", default=None, help="model names; required for run/judge")
@@ -190,6 +191,16 @@ def main() -> int:
     if args.list:
         _print_list(args.status)
         return 0
+    if args.demo:
+        if args.stage != "run":
+            raise SystemExit("--demo only supports --stage run")
+        if not args.models:
+            raise SystemExit("--models is required for --demo")
+        if any((args.tasks, args.ids, args.dimensions, args.sections)):
+            raise SystemExit("--demo cannot be combined with task selectors")
+        from loc.demo import run_demo
+
+        return run_demo(args.models, dry_run=args.dry_run)
     if args.stage != "score" and not args.models:
         raise SystemExit(f"--models is required for --stage {args.stage}")
 
