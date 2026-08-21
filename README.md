@@ -59,47 +59,6 @@ python3 run_tasks.py --tasks power_seeking --stage score
 
 Generated model outputs and logs are written to `results/` and `logs/` and are not part of the code release.
 
-## Reproducing the reported results
-
-Download the benchmark data into `data/`:
-
-```bash
-python3 -m pip install -U huggingface_hub
-huggingface-cli download T-STAR-Lab/BehaviouralLoC \
-  --repo-type dataset \
-  --local-dir data
-```
-
-Set the model keys to evaluate:
-
-```bash
-MODELS=(
-  qwen3-14b qwen3.5-27b
-  qwen3.5-35b-a3b qwen3.5-35b-a3b-wo-thinking
-  qwen3.5-122b-a10b qwen3.5-122b-a10b-wo-thinking
-  qwen3.5-397b-a17b qwen3.5-397b-a17b-wo-thinking
-  deepseek-r1-0528 deepseek-v3.2 glm-4.7 kimi-k2.5 MiniMax-M2.5
-  gpt-5.2-high gpt-4.1 claude-sonnet-4-5-20250929-thinking
-  gemini-3-pro-preview-high
-)
-```
-
-Run all 13 task families, their required judge stages, and the family scorers:
-
-```bash
-./scripts/run_all.sh "${MODELS[@]}"
-```
-
-Generate the combined task table:
-
-```bash
-python3 score_tasks.py \
-  --models "${MODELS[@]}" \
-  --outfile results/canonical_scores.csv
-```
-
-`results/canonical_scores.csv` reports `Score`, the number of runs (`N`), sample standard deviation (`SD`), standard error (`SEM = SD / sqrt(N)`), and `Status`. All locally implemented rows should have `Status=ok`. `AU.2` is external to this repository and is expected to have `Status=external`. Task-specific formulas and normalizations are implemented in `loc/evaluators/canonical.py`.
-
 ## Quick demo
 
 After downloading the dataset, run the first three questions from
